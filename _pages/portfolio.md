@@ -1,6 +1,8 @@
 ---
-layout: categories
-title: "Blog"
-permalink: /blog/
-date: 2022-08-01T03:02:20+00:00
+title: Portfolio
+layout: collection
+permalink: /portfolio/
+collection: portfolio
+entries_layout: grid
+classes: wide
 ---

@@ -1,11 +1,17 @@
-I"�<h2 id="home">Home</h2>
+I"�<h2 id="home">Home</h2>
 
 <p>I currently live in the vibrant city of Rotterdam with my girlfriend. Rotterdam is a sprawling port-city and the views are absolutely amazing.</p>
 
 <figure class="align-center">
   <a href="/img/processed/20220804_euromast-rotterdam.jpg" title="Rotterdam Euromast Views" alt="Rotterdam Euromast Views">
   <img src="/img/processed/20220804_euromast-rotterdam.jpg" alt="" /></a>
-  <figcaption><i>The Port of Rotterdam from the Euromast.</i></figcaption>
+  <figcaption><i>The Port of Rotterdam as seen from the Euromast.</i></figcaption>
+</figure>
+
+<figure class="align-center">
+  <a href="/img/processed/20220804_max-jade-beach-costa-rica.jpg" title="Rotterdam Euromast Views" alt="Rotterdam Euromast Views">
+  <img src="/img/processed/20220804_max-jade-beach-costa-rica.jpg" alt="" /></a>
+  <figcaption><i>Us chilling on the beach in Costa Rica.</i></figcaption>
 </figure>
 
 <p>My girlfriend and I have two <strong>very</strong> cute Snowshoe cats, both adopted. They talk <em>a lot</em>!</p>
@@ -18,7 +24,7 @@
 
 <h2 id="travelling">Travelling</h2>
 
-<p>I’ve traveled to 13 countries and lived in 6. Australia, New-Zealand, Curaçao, Kuwait, Costa-Rica being the most intense and amazing adventures, which were all over 5 months long. Australia and New-Zealand added up to a full year.</p>
+<p>I’ve traveled to 13 countries and have been living and working in 6 of those for longer periods of time. Australia, New-Zealand, Curaçao, Kuwait, Costa-Rica being the most intense and amazing adventures, which were all over 5 months long. Australia and New-Zealand added up to a full year.</p>
 
 <figure class="align-center">
   <a href="/img/processed/20220804_uvita-costa-rica.jpg" title="Uvita, Costa Rica" alt="Costa Rica Whale Beach: Uvita!">
@@ -32,7 +38,9 @@
     <figcaption><i>The stunning mountains of Costa Rica.</i></figcaption>
 </figure>
 
-<p>I practice Spanish every day… Having spent 6 months in Costa Rica helped a lot. I try to go to a Spanish speaking country often to practice and improve. The dream would be to make a roadtrip in South America.</p>
+<h2 id="necesito-practicar">Necesito Practicar</h2>
+
+<p>I practice Spanish every day… Having spent 6 months in Costa Rica has helped a lot. I try to go to a Spanish speaking country often to practice and improve. The dream would be to make a roadtrip in South America.</p>
 
 <figure class="align-center">
     <a href="/img/processed/20220804_supermarket-costa-rica.jpg" title="Costa Rica Supermarket" alt="Costa Rica Supermarket">
@@ -74,8 +82,8 @@
       <td>Civil Engineering - Harbour, Coast &amp; Dredging</td>
     </tr>
     <tr>
-      <td><strong><a href="https://mkruisbrink.github.io/certifications">Certifications</a></strong></td>
-      <td>See seperate page on certifications</td>
+      <td><strong>Certifications</strong></td>
+      <td><a href="https://mkruisbrink.github.io/certifications">Visit this page</a> to view my certifications</td>
     </tr>
     <tr>
       <td><strong>Languages</strong></td>

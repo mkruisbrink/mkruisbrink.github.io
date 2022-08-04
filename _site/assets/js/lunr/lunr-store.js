@@ -1,4 +1,10 @@
 var store = [{
+        "title": "Wild Mail",
+        "excerpt":"Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn’t a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening &amp; War section...","categories": [],
+        "tags": [],
+        "url": "/portfolio/active-campaign/",
+        "teaser": "/assets/images/foo-bar-identity-th.jpg"
+      },{
         "title": "Centralized vs. Decentralized Exchanges",
         "excerpt":"We’re going to discuss the following topics: Install RStudio, R and relevant packages Choose what data you wish to work with Nomics Find an endpoint you want to look at Construct the endpoint URL Explore the data Clean the data Manipulate and alter the data if required Visualise the data...","categories": ["R"],
         "tags": [],

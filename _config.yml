@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Max Kruisbrink"
   avatar           : "/img/max-bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I like to **build** quality stuff with a long-term vision."
+  bio              : "I like to **build** quality stuff with long-term vision."
   location         : "Rotterdam"
   email            : "max@cryptocommunity.nl"
   links:
@@ -280,6 +280,12 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -301,3 +307,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true    

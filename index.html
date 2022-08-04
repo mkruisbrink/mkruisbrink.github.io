@@ -1,9 +1,37 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+permalink: /
+hidden: true
 header:
-  image: /img/processed/20220804_euromast-rotterdam.jpg
-  image_description: "a high quality photo of a galaxy by NASA"
-  caption: "Photo credit: [**Cai Ferguson**]"
+  overlay_color: "#5e616c"
+  overlay_image: /img/processed/20220804_euromast-rotterdam.jpg
+  actions:
+    - label: "<i class='fas fa-envelope'></i> Contact me"
+      url: "mailto:max@cryptomanuals.com"
+excerpt: >
+  I do process automation for small businesses and data science work, mainly focused on (but not limited to) cryptocurrency and blockchain related subjects.
+feature_row:
+  - image_path: /img/bg-contact.jpg
+    alt: "customizable"
+    title: "Automation"
+    excerpt: "I love to make things faster, smoother, nicer and... automated."
+    url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /img/bg-about.jpg
+    alt: "fully responsive"
+    title: "Exploration"
+    excerpt: "Plowing my way through tons of different data, automated ofcourse."
+    url: "/docs/layouts/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /img/bg-post.jpg
+    alt: "100% free"
+    title: "Visualization"
+    excerpt: "Continiously looking for ways to make the boring world of data interesting through visualizations."
+    url: "/docs/license/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"      
 ---
 
+{% include feature_row %}

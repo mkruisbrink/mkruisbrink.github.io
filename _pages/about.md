@@ -16,8 +16,15 @@ I currently live in the vibrant city of Rotterdam with my girlfriend. Rotterdam 
 <figure class="align-center">
   <a href="/img/processed/20220804_euromast-rotterdam.jpg" title="Rotterdam Euromast Views" alt="Rotterdam Euromast Views">
   <img src="/img/processed/20220804_euromast-rotterdam.jpg" alt=""></a>
-  <figcaption><i>The Port of Rotterdam from the Euromast.</i></figcaption>
+  <figcaption><i>The Port of Rotterdam as seen from the Euromast.</i></figcaption>
 </figure>
+
+<figure class="align-center">
+  <a href="/img/processed/20220804_max-jade-beach-costa-rica.jpg" title="Romance at the beach..." alt="Us on the beach in Costa Rica">
+  <img src="/img/processed/20220804_max-jade-beach-costa-rica.jpg" alt=""></a>
+  <figcaption><i>Us chilling on the beach in Costa Rica.</i></figcaption>
+</figure>
+
 
 My girlfriend and I have two **very** cute Snowshoe cats, both adopted. They talk *a lot*!
 
@@ -29,7 +36,7 @@ My girlfriend and I have two **very** cute Snowshoe cats, both adopted. They tal
 
 ## Travelling
 
-I've traveled to 13 countries and lived in 6. Australia, New-Zealand, Curaçao, Kuwait, Costa-Rica being the most intense and amazing adventures, which were all over 5 months long. Australia and New-Zealand added up to a full year.
+I've traveled to 13 countries and have been living and working in 6 of those for longer periods of time. Australia, New-Zealand, Curaçao, Kuwait, Costa-Rica being the most intense and amazing adventures, which were all over 5 months long. Australia and New-Zealand added up to a full year.
 
 <figure class="align-center">
   <a href="/img/processed/20220804_uvita-costa-rica.jpg" title="Uvita, Costa Rica" alt="Costa Rica Whale Beach: Uvita!">
@@ -43,8 +50,9 @@ I've traveled to 13 countries and lived in 6. Australia, New-Zealand, Curaçao, 
     <figcaption><i>The stunning mountains of Costa Rica.</i></figcaption>
 </figure>
 
+## Necesito Practicar
 
-I practice Spanish every day... Having spent 6 months in Costa Rica helped a lot. I try to go to a Spanish speaking country often to practice and improve. The dream would be to make a roadtrip in South America. 
+I practice Spanish every day... Having spent 6 months in Costa Rica has helped a lot. I try to go to a Spanish speaking country often to practice and improve. The dream would be to make a roadtrip in South America. 
 
 
 <figure class="align-center">
@@ -81,7 +89,7 @@ Oh, and I also play tennis with my girlfriend but I do not have a cool picture (
 After spending a few years traveling, working, gaming and trying to get clear what I actually wanted to do with my life, I decided to study civil engineering. After working in the industry for a short time, I quickly realised that I much preferred other things in life and went to pursue those. 
 
 | **Degree** | Civil Engineering - Harbour, Coast & Dredging |
-| **[Certifications](https://mkruisbrink.github.io/certifications)** | See seperate page on certifications | 
+| **Certifications** | [Visit this page](https://mkruisbrink.github.io/certifications) to view my certifications | 
 | **Languages** | Dutch, English, Spanish |
 | **Skills** | Cryptocurrency, blockchain, programming, automation, development |
 | **Personal Traits** | Perfectionist, enthusiastic, strategic, pro-active, flexible, result-orientated |
