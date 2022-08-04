@@ -6,7 +6,7 @@ main:
     url: /about/
   - title: "Blog"
     url: /blog/
-  - title: "Contact"
-    url: /contact/    
+#  - title: "Contact"
+#    url: /contact/    
 #  - title: "Sitemap"
 #    url: /sitemap/

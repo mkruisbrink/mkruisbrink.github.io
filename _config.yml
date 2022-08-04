@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Max Kruisbrink"
   avatar           : "/img/max-bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I like to **build** good stuff"
+  bio              : "I like to **build** quality stuff with a long-term vision."
   location         : "Rotterdam"
   email            : "max@cryptocommunity.nl"
   links:
@@ -130,7 +130,7 @@ author:
       url: "https://github.com/mkruisbrink"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:

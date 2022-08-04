@@ -2,11 +2,12 @@
 title: "About"
 permalink: /about/
 date: 2022-08-01T03:02:20+00:00
+excerpt: "Get to know a little about me..."
 header:
-    image: /img/processed/20220804_euromast-rotterdam.jpg
+  overlay_image: /img/originals/nasa-galaxy.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Credit: [**NASA**](https://unsplash.com)"
 ---
-
-Get to know a little about me... 
 
 ## Home 
 

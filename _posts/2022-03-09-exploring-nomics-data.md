@@ -2,15 +2,14 @@
 #layout: post
 title: Centralized vs. Decentralized Exchanges
 subtitle: Exploring the Nomics API
+excerpt: "How many cryptocurrency exchanges are there? How many of these are centralized or decentralized? What does this imply in relation to the transparancy of the volumes in cryptocurrency? Let's find out."
 header:
-    image: /img/posts/01-exchanges/nomics-api.jpg
+  overlay_image: /img/posts/01-exchanges/nomics-api.jpg
+  overlay_filter: rgba(0, 0, 0, 0.3)
 category: R
 ---
-
-In this short article we will look at the total amount of exchanges
-there are, how many of them are centralized and decentralized and
-compare that with the amount of transparant volume flowing through these
-exchanges. The following items will be discussed:
+  
+We're going to discuss the following topics:
 
 -   Install RStudio, R and relevant packages
 -   Choose what data you wish to work with
