@@ -1,0 +1,304 @@
+I"ln<p>In this short article we will look at the total amount of exchanges
+there are, how many of them are centralized and decentralized and
+compare that with the amount of transparant volume flowing through these
+exchanges. The following items will be discussed:</p>
+
+<ul>
+  <li>Install RStudio, R and relevant packages</li>
+  <li>Choose what data you wish to work with
+    <ul>
+      <li>Nomics</li>
+      <li>Find an endpoint you want to look at</li>
+    </ul>
+  </li>
+  <li>Construct the endpoint URL</li>
+  <li>Explore the data</li>
+  <li>Clean the data</li>
+  <li>Manipulate and alter the data if required</li>
+  <li>Visualise the data</li>
+  <li>Analyze the data</li>
+</ul>
+
+<hr />
+
+<h2 id="step-1-install--load-packages">Step 1: Install &amp; Load Packages</h2>
+
+<p>Download RStudio and install R if you haven’t already. We are going to
+load some libraries that we need. These provide added functionality.
+Open a new R script (CTRL+SHIFT+N) and type in the following:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#install.packages("package_name") </span><span class="w">
+
+</span><span class="c1">#working with API data</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span><span class="w">
+
+</span><span class="c1">#data visualization</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ggthemes</span><span class="p">)</span><span class="w"> </span><span class="c1">#bonus for ggplot</span><span class="w">
+
+</span><span class="c1">#data manipulation &amp; wrangling</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+
+</span><span class="c1">#html widgets</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">htmlwidgets</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">readr</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="step-2-initiate-nomics-api--gather-results">Step 2: Initiate Nomics API &amp; Gather Results</h2>
+
+<p>Now we need to get our hands on some data. In this case the data is
+obtained via the <a href="https://p.nomics.com/cryptocurrency-bitcoin-api">Nomics
+API</a>. In order to
+receive your own personal API key, you have to sign up for a free
+account. A good place to start is the <a href="https://nomics.com/docs/">API
+documentation</a>. Here you will see the
+obtainable data, categorized by endpoints. You must include your API Key
+as a query parameter in every request you make. For example:
+<a href="https://api.nomics.com/v1/markets?key=your-key-here">https://api.nomics.com/v1/markets?key=your-key-here</a>.</p>
+
+<p>Each endpoint is basically a URL. The URL in the code snippet below is
+part of the ‘exchanges’ endpoint and returns some exchange-related data.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">baseurl</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"https://api.nomics.com/v1/exchanges/ticker?key=your-key-here"</span><span class="w">
+</span></code></pre></div></div>
+
+<p>You will need to obtain data from this URL and convert it into something
+readable. Let’s first store the output in a data frame and have a look.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">exchanges_ticker</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fromJSON</span><span class="p">(</span><span class="n">baseurl</span><span class="p">)</span><span class="w">
+
+</span><span class="n">glimpse</span><span class="p">(</span><span class="n">exchanges_ticker</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Rows: 100
+## Columns: 18
+## $ id                 &lt;chr&gt; "binance", "ftx", "cryptomkt", "gdax", "uniswapv3",~
+## $ name               &lt;chr&gt; "Binance", "FTX", "CryptoMarket", "Coinbase Exchang~
+## $ logo_url           &lt;chr&gt; "https://s3.us-east-2.amazonaws.com/nomics-api/stat~
+## $ transparency_grade &lt;chr&gt; "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "~
+## $ coverage_type      &lt;chr&gt; "trades", "trades", "trades", "trades", "trades", "~
+## $ order_books        &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU~
+## $ first_trade        &lt;chr&gt; "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20~
+## $ first_candle       &lt;chr&gt; "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20~
+## $ first_order_book   &lt;chr&gt; "2018-08-29T00:00:00Z", "2019-10-15T00:00:00Z", "20~
+## $ num_pairs          &lt;chr&gt; "2201", "1969", "159", "493", "3741", "325", "2641"~
+## $ num_pairs_unmapped &lt;chr&gt; "9", "99", "5", "16", "2332", "486", "68", "4", "96~
+## $ last_updated       &lt;chr&gt; "2022-03-09T19:45:48.546Z", "2022-03-09T19:45:50.58~
+## $ fiat_currencies    &lt;list&gt; &lt;"AUD", "BRL", "EUR", "GBP", "NGN", "RUB", "TRY", ~
+## $ rank               &lt;chr&gt; "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", ~
+## $ weight             &lt;chr&gt; "1.0000", "0.8284", "0.5390", "0.8984", "0.8257", "~
+## $ centralized        &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TR~
+## $ decentralized      &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FAL~
+## $ `1d`               &lt;df[,12]&gt; &lt;data.frame[26 x 12]&gt;
+</code></pre></div></div>
+
+<p>Note that there are only 100 rows. In this case there are several pages
+of data for exchanges and we would want to get all pages in the same
+object. The URL changes slightly per page so we will make a for loop. We
+will make an empty list and store each iteration of the loop inside that
+list. Then we construct the data frame from the list.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#for loop to get more pages for exchanges ticker - store all pages in a list first</span><span class="w">
+</span><span class="n">pages</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">()</span><span class="w">
+
+  </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">0</span><span class="o">:</span><span class="m">4</span><span class="p">){</span><span class="w">
+    </span><span class="n">mydata</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fromJSON</span><span class="p">(</span><span class="n">paste0</span><span class="p">(</span><span class="n">baseurl</span><span class="p">,</span><span class="w"> </span><span class="s2">"&amp;page="</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">))</span><span class="w">
+    </span><span class="n">message</span><span class="p">(</span><span class="s2">"Retrieving page "</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w">
+    </span><span class="n">pages</span><span class="p">[[</span><span class="n">i</span><span class="m">+1</span><span class="p">]]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">mydata</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+
+</span><span class="c1">#combine all pages into one df</span><span class="w">
+</span><span class="n">exchanges_ticker</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind_pages</span><span class="p">(</span><span class="n">pages</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<hr />
+
+<h2 id="step-3-explore-the-data">Step 3: Explore the data</h2>
+
+<p>Let’s have a look at the data frame we just created.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">glimpse</span><span class="p">(</span><span class="n">exchanges_ticker</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Rows: 500
+## Columns: 18
+## $ id                 &lt;chr&gt; "binance", "ftx", "cryptomkt", "gdax", "uniswapv3",~
+## $ name               &lt;chr&gt; "Binance", "FTX", "CryptoMarket", "Coinbase Exchang~
+## $ logo_url           &lt;chr&gt; "https://s3.us-east-2.amazonaws.com/nomics-api/stat~
+## $ transparency_grade &lt;chr&gt; "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "~
+## $ coverage_type      &lt;chr&gt; "trades", "trades", "trades", "trades", "trades", "~
+## $ order_books        &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU~
+## $ first_trade        &lt;chr&gt; "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20~
+## $ first_candle       &lt;chr&gt; "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20~
+## $ first_order_book   &lt;chr&gt; "2018-08-29T00:00:00Z", "2019-10-15T00:00:00Z", "20~
+## $ num_pairs          &lt;chr&gt; "2201", "1969", "159", "493", "3741", "325", "2641"~
+## $ num_pairs_unmapped &lt;chr&gt; "9", "99", "5", "16", "2332", "486", "68", "4", "96~
+## $ last_updated       &lt;chr&gt; "2022-03-09T19:41:35.092Z", "2022-03-09T19:41:46.02~
+## $ fiat_currencies    &lt;list&gt; &lt;"AUD", "BRL", "EUR", "GBP", "NGN", "RUB", "TRY", ~
+## $ rank               &lt;chr&gt; "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", ~
+## $ weight             &lt;chr&gt; "1.0000", "0.8284", "0.5390", "0.8984", "0.8257", "~
+## $ centralized        &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TR~
+## $ decentralized      &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FAL~
+## $ `1d`               &lt;df[,12]&gt; &lt;data.frame[26 x 12]&gt;
+</code></pre></div></div>
+
+<p>Note that there are a lot of character and some logical variables. There
+is also a list and a data frame nested inside the return. We will have
+to change some character variables to numerical variables and integers.
+We also see a logical variables relating to the type of exchange
+(centralized versus decentralized) and we might want to change that to a
+single column and a categorical variable.</p>
+
+<hr />
+
+<p>Also, If we want to order by transparency grade later, we need to
+reorder the variable. Have a look at how this is being sorted.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sort</span><span class="p">(</span><span class="n">exchanges_ticker</span><span class="o">$</span><span class="n">transparency</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   [1] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+##  [16] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+##  [31] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+##  [46] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+##  [61] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+##  [76] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+##  [91] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+## [106] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+## [121] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+## [136] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+## [151] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+## [166] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+## [181] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+## [196] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+## [211] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A-" "A-"
+## [226] "A-" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+"
+## [241] "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+"
+## [256] "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "B"  "B"  "B"  "B"  "B" 
+## [271] "B"  "B"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+## [286] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+## [301] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+## [316] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+## [331] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+## [346] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+## [361] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+## [376] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "D"  "D"  "D"  "D"  "D"  "D" 
+## [391] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+## [406] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+## [421] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+## [436] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+## [451] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+## [466] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+## [481] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+## [496] "D"  "D"  "D"  "D"  "D"
+</code></pre></div></div>
+
+<p>Since it is a character variable it will default to sorting
+alphabetically (hence the better score (A+) will not be ranked on top).
+We will manually have to reorder this variable.</p>
+
+<hr />
+
+<h2 id="step-4-clean-the-data">Step 4: Clean the data</h2>
+
+<p>We redefine the ‘cleaned’ data frame itself as a new variable so we keep
+the original data frame intact in case we need to go back.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#mutate data</span><span class="w">
+</span><span class="n">exchanges_ticker_clean</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">exchanges_ticker</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> 
+  </span><span class="n">mutate</span><span class="p">(</span><span class="n">transparency_grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">transparency_grade</span><span class="p">,</span><span class="w"> 
+                                     </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"A+"</span><span class="p">,</span><span class="s2">"A"</span><span class="p">,</span><span class="s2">"A-"</span><span class="p">,</span><span class="s2">"B"</span><span class="p">,</span><span class="s2">"C"</span><span class="p">,</span><span class="s2">"D"</span><span class="p">)),</span><span class="w">
+         </span><span class="n">first_trade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">as.Date</span><span class="p">(</span><span class="n">first_trade</span><span class="p">),</span><span class="w">
+         </span><span class="n">first_candle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">as.Date</span><span class="p">(</span><span class="n">first_candle</span><span class="p">),</span><span class="w">
+         </span><span class="n">first_order_book</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">as.Date</span><span class="p">(</span><span class="n">first_order_book</span><span class="p">),</span><span class="w">
+         </span><span class="n">num_pairs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="n">num_pairs</span><span class="p">),</span><span class="w">
+         </span><span class="n">num_pairs_unmapped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="n">num_pairs_unmapped</span><span class="p">),</span><span class="w">
+         </span><span class="n">last_updated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">as.Date</span><span class="p">(</span><span class="n">last_updated</span><span class="p">),</span><span class="w">
+         </span><span class="n">rank</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.integer</span><span class="p">(</span><span class="n">rank</span><span class="p">),</span><span class="w">
+         </span><span class="n">weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">weight</span><span class="p">),</span><span class="w">
+         </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">if_else</span><span class="p">(</span><span class="n">centralized</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="s2">"centralized"</span><span class="p">,</span><span class="w"> </span><span class="s2">"decentralized"</span><span class="p">)</span><span class="w">
+         </span><span class="p">)</span><span class="w">
+
+</span><span class="n">glimpse</span><span class="p">(</span><span class="n">exchanges_ticker_clean</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Rows: 500
+## Columns: 19
+## $ id                 &lt;chr&gt; "binance", "ftx", "cryptomkt", "gdax", "uniswapv3",~
+## $ name               &lt;chr&gt; "Binance", "FTX", "CryptoMarket", "Coinbase Exchang~
+## $ logo_url           &lt;chr&gt; "https://s3.us-east-2.amazonaws.com/nomics-api/stat~
+## $ transparency_grade &lt;fct&gt; A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, ~
+## $ coverage_type      &lt;chr&gt; "trades", "trades", "trades", "trades", "trades", "~
+## $ order_books        &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU~
+## $ first_trade        &lt;date&gt; 2017-07-13, 2019-03-05, 2013-12-27, 2014-12-01, 20~
+## $ first_candle       &lt;date&gt; 2017-07-13, 2019-03-05, 2013-12-27, 2014-12-01, 20~
+## $ first_order_book   &lt;date&gt; 2018-08-29, 2019-10-15, 2021-12-01, 2018-09-11, 20~
+## $ num_pairs          &lt;int&gt; 2201, 1969, 159, 493, 3741, 325, 2641, 480, 1398, 5~
+## $ num_pairs_unmapped &lt;int&gt; 9, 99, 5, 16, 2332, 486, 68, 4, 96, 221, 0, 790720,~
+## $ last_updated       &lt;date&gt; 2022-03-09, 2022-03-09, 2022-03-09, 2022-03-09, 20~
+## $ fiat_currencies    &lt;list&gt; &lt;"AUD", "BRL", "EUR", "GBP", "NGN", "RUB", "TRY", ~
+## $ rank               &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ~
+## $ weight             &lt;dbl&gt; 1.0000, 0.8284, 0.5390, 0.8984, 0.8257, 0.7486, 0.7~
+## $ centralized        &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TR~
+## $ decentralized      &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FAL~
+## $ `1d`               &lt;df[,12]&gt; &lt;data.frame[26 x 12]&gt;
+## $ type               &lt;chr&gt; "centralized", "centralized", "centralized", "c~
+</code></pre></div></div>
+
+<p>Note that this already looks a lot better and we are getting close to
+being able to work with this output.</p>
+
+<hr />
+
+<h2 id="step-5-select-manipulate-and-plot">Step 5: Select, manipulate and plot</h2>
+
+<p>Here we filter our cleaned data into a ggplot. We want to visualize the
+counts of the two different types of exchanges (centralized and
+decentralized). Then we fill the bars based on the transparency grade to
+see where most of the transparent volume originates from.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#plot types of exchanges</span><span class="w">
+</span><span class="n">exchanges_ticker_clean</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">  
+  </span><span class="n">ggplot</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="o">=</span><span class="n">transparency_grade</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+  </span><span class="n">geom_bar</span><span class="p">(</span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"black"</span><span class="p">,</span><span class="w">
+           </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"stack"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Types of Exchanges (CEX vs. DEX)"</span><span class="p">,</span><span class="w">
+       </span><span class="n">subtitle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Source: Nomics API"</span><span class="p">,</span><span class="w">
+       </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Exchange Type"</span><span class="p">,</span><span class="w">
+       </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Number of Exchanges"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">theme_fivethirtyeight</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">theme</span><span class="p">(</span><span class="n">axis.title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element_text</span><span class="p">(),</span><span class="w">
+        </span><span class="n">legend.text</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">element_text</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="m">10</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+  </span><span class="n">scale_fill_brewer</span><span class="p">(</span><span class="n">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">guides</span><span class="p">(</span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">guide_legend</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Transparency Grade"</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/img/posts/01-exchanges/exchange-types.png" alt="" /><!-- --></p>
+
+<p>Here we do the same thing, but the other way around. We plot the
+different transparency grades on the x-axis, and the count on the
+y-axis. The fill resembles the type of exchange.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#plot exchange types</span><span class="w">
+</span><span class="n">exchanges_ticker_clean</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> 
+  </span><span class="n">ggplot</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">transparency_grade</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="o">=</span><span class="n">type</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+  </span><span class="n">geom_bar</span><span class="p">(</span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"black"</span><span class="p">,</span><span class="w">
+           </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"stack"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Transparancy Grade by Exchange Type"</span><span class="p">,</span><span class="w">
+       </span><span class="n">subtitle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Source: Nomics API"</span><span class="p">,</span><span class="w">
+       </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Transparancy Grade"</span><span class="p">,</span><span class="w">
+       </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Number of Exchanges"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">theme_fivethirtyeight</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">theme</span><span class="p">(</span><span class="n">axis.title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element_text</span><span class="p">(),</span><span class="w">
+        </span><span class="n">legend.text</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">element_text</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="m">10</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">guides</span><span class="p">(</span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">guide_legend</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Type"</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/img/posts/01-exchanges/exchange-transparency.png" alt="" /><!-- --></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>It would appear that most of the transparent volume originates from the
+decentralized exchanges.</p>
+:ET

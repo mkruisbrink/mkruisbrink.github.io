@@ -25,6 +25,7 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (2.1.0)
     ffi (1.15.5)
+    ffi (1.15.5-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.12.0)
@@ -93,17 +94,24 @@ GEM
       faraday (>= 0.17.3, < 3)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2022.1)
+      tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
     webrick (1.7.0)
 
 PLATFORMS
   arm64-darwin-21
+  x64-mingw-ucrt
 
 DEPENDENCIES
   bundler
   jekyll-remote-theme
   minimal-mistakes-jekyll!
   rake (>= 12.3.3)
+  tzinfo
+  tzinfo-data
   webrick
 
 BUNDLED WITH

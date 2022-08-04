@@ -1,0 +1,77 @@
+I"–	<p>Ideas regarding cryptocurrency macro investorsâ€™ dashboard:</p>
+
+<p>Goal: to clearly demonstrate growth, adoption, trends etcetera and
+create additional clarity, confidence for people that have a long term
+mindset but find it difficult with all the noise and lots of focus on
+TA.aa</p>
+
+<p>Some ideas that I have and would like to work out include but are
+certainly not limited to:</p>
+
+<ul>
+  <li>The decline and erosion of traditional financial infrastructure
+    <ul>
+      <li>Traditional financial metrics (could use quantmod package with
+FRED data?)</li>
+      <li>Inflation rates (we use crypto as a hedge)</li>
+      <li>Purchasing power</li>
+    </ul>
+  </li>
+  <li>Cryptocurrency market as a whole compared to financial markets and
+S&amp;P500</li>
+  <li>Interactive Portfolio dashboard included working with candlestick
+data from aggregators such as Nomics.com
+    <ul>
+      <li>I already have a custom google sheet portfolio tracker that I
+use: https://docs.google.com/spreadsheets/d/1_yEMj1vH9O6KTq_uDQuMFmp3dj3gpWEZVW6uwnxGprQ/edit?usp=sharing</li>
+    </ul>
+  </li>
+  <li>Summarizing market metrics
+    <ul>
+      <li>Total amount of projects</li>
+      <li>Active/inactive</li>
+      <li>Dead coins</li>
+    </ul>
+  </li>
+  <li>Ecosystem(s)
+    <ul>
+      <li>Segmentation of market (mcap tiers)</li>
+      <li>Segmentation of market on ecosystems (chains)</li>
+    </ul>
+  </li>
+  <li>Where is the value?
+    <ul>
+      <li>Size of ecosystems in terms of projects &amp; user-base</li>
+      <li>Volume</li>
+    </ul>
+  </li>
+  <li>On-chain data
+    <ul>
+      <li>Throughputs, growth, users, whale indicators</li>
+    </ul>
+  </li>
+  <li>Social indicators?
+    <ul>
+      <li>Hype/panic indicators</li>
+      <li>Heatmaps</li>
+      <li>Overbought/oversold</li>
+    </ul>
+  </li>
+  <li>Creating reproducible analysis .Rmd files as flex dashboards?</li>
+  <li>Additionally, publish to static hosted Jekyll site that shows
+analysis source codes in blog form, cool for transparancy and
+sharing analysis methods and getting feedback?</li>
+</ul>
+
+<hr />
+
+<p>In the end, I see it as visual data exploration/science project, some
+reconstruction of rather simple and well-known metrics/charts but most
+importantly: visualizing the rather boring and abstract information,
+both financial and crypto-related.</p>
+
+<p>Making this available on a website, on a dashboard or something else,
+open for everything.</p>
+
+<p>What are your thoughts?</p>
+:ET
