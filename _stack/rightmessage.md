@@ -9,6 +9,8 @@ header:
       url: "https://unsplash.com" #referral link
 sidebar:
     nav: "stack"
+categories:
+  - aciform
 ---
 
 >

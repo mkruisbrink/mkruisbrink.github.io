@@ -6,7 +6,10 @@ excerpt: "What I'm trying to build."
 header: 
     overlay_image: /img/posts/02-data-project/bg-contact.jpg
     overlay_filter: rgba(0, 0, 0, 0.3)
-category: R
+category: 
+- Data Science
+tags:
+- R
 ---
 
 

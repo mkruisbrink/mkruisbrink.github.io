@@ -6,7 +6,10 @@ excerpt: "How many cryptocurrency exchanges are there? How many of these are cen
 header:
   overlay_image: /img/posts/01-exchanges/nomics-api.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
-category: R
+category: 
+- Data Science
+tags:
+- R
 ---
   
 We're going to discuss the following topics:
