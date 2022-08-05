@@ -84,24 +84,3 @@ I try to go scuba-diving whenever I get the chance on a holiday or such. I've ob
 </figure>
 
 Oh, and I also play tennis with my girlfriend but I do not have a cool picture (yet).
-
-## Knowledge
-After spending a few years traveling, working, gaming and trying to get clear what I actually wanted to do with my life, I decided to study civil engineering. After working in the industry for a short time, I quickly realised that I much preferred other things in life and went to pursue those. 
-
-| **Degree** | Civil Engineering - Harbour, Coast & Dredging |
-| **Certifications** | [Visit this page](https://mkruisbrink.github.io/certifications) to view my certifications | 
-| **Languages** | Dutch, English, Spanish |
-| **Skills** | Cryptocurrency, blockchain, programming, automation, development |
-| **Personal Traits** | Perfectionist, enthusiastic, strategic, pro-active, flexible, result-orientated |
-
-## Interests
-Here are some of the other things I like to spend time on.
-
-- Programming & Web Development
-- Data Science & Automation
-- The Internet of Things (IoT)
-- The Internet of Value (IoV)
-- Climate change & biodiversity issues  
-- Cryptocurrencies and blockchain
-- Digitisation / Web 3.0
-- FinTech / DeFi

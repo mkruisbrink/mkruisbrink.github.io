@@ -1,11 +1,11 @@
 ---
-title: "BuddyBoss"
-excerpt: "Amazing plug-and-play community platform that looks straight up gorgeous."
+title: "RightMessage"
+excerpt: "Create an immensely personalized and polished opt-in experience for your customers!"
 header:
-  overlay_color: "#e86d2a" #BuddyBoss primary colour
-  teaser: img/originals/20220805_buddyboss.PNG
+  overlay_color: "#fe8045" # brand colour
+  teaser: img/originals/20220804_rightmessage.PNG
   actions:
-    - label: "Visit BuddyBoss"
+    - label: "Visit RightMessage"
       url: "https://unsplash.com" #referral link
 sidebar:
     nav: "stack"
