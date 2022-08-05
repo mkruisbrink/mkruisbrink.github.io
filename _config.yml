@@ -12,7 +12,7 @@
 
 #theme                   : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "default", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "neon", "dirt", "dark", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -23,7 +23,7 @@ name                     : "Max Kruisbrink"
 description              : # "Data Exploration, Visualisation & Automation."
 url                      : # "https://maxplaining.github.io"
 baseurl                  : # "/maxplaining" # the subpath of your site, e.g. "/blog"
-repository               : "mkruisbrink/maxplaining" #GitHub username/repo-name e.g. 
+repository               : "mkruisbrink/mkruisbrink.github.io" #GitHub username/repo-name e.g. 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -107,7 +107,7 @@ author:
   name             : "Max Kruisbrink"
   avatar           : "/img/max-bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I like to **build** quality stuff with long-term vision."
-  location         : "Rotterdam"
+  location         : "Rotterdam, the Netherlands"
   email            : "max@cryptocommunity.nl"
   links:
     - label: "Email"
@@ -282,7 +282,7 @@ compress_html:
 
 # Collections
 collections:
-  portfolio:
+  stack:
     output: true
     permalink: /:collection/:path/
 
@@ -307,11 +307,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _portfolio
+  # _stack
   - scope:
       path: ""
-      type: portfolio
+      type: stack
     values:
       layout: single
-      author_profile: false
-      share: true    
+      #author_profile: true
+      share: true
+    sidebar:
+      nav: "docs"
+

@@ -4,11 +4,36 @@ main:
 #    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Blog"
     url: /blog/
-#  - title: "Portfolio"
-#    url: /portfolio/
+  - title: "Stack"
+    url: /stack/
   - title: "About"
     url: /about/
 #  - title: "Contact"
 #    url: /contact/    
 #  - title: "Sitemap"
 #    url: /sitemap/
+
+
+# documentation
+stack:
+  - title: Stack
+    children:
+      - title: "GitHub Pages"
+        #url: /docs/installation/
+      - title: "WPFusion"
+        #url: /docs/structure/
+      - title: "ActiveCampaign"
+        #url: /stack/activecampaign/
+      - title: "BuddyBoss"
+        #url: /docs/structure/
+      - title: "RightMessage"
+        #url: /docs/structure/
+      - title: "TimerCampaign"
+        #url: /docs/structure/
+      - title: "Bonjoro"
+        #url: /docs/structure/
+
+  - title: Extras
+    children:
+      - title: "Templates"
+        url: /docs/stylesheets/
