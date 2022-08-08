@@ -12,7 +12,7 @@
 
 #theme                   : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "neon", "dirt", "dark", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "neon", "dirt", "default", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -25,8 +25,8 @@ url                      : # "https://maxplaining.github.io"
 baseurl                  : # "/maxplaining" # the subpath of your site, e.g. "/blog"
 repository               : "mkruisbrink/mkruisbrink.github.io" #GitHub username/repo-name e.g. 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : /img/midjourney/20220808_Brink_Calligraphy_letter_M_and_X_combined_into_a_logo.jpg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
 #breadcrumbs             : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Max Kruisbrink"
-  avatar           : "/img/max-bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/img/processed/max-bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I like to **build** quality stuff with long-term vision."
   location         : "Rotterdam, the Netherlands"
   email            : "max@cryptocommunity.nl"

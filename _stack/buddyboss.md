@@ -1,6 +1,6 @@
 ---
 title: "BuddyBoss"
-excerpt: "Amazing plug-and-play community platform that looks straight up gorgeous."
+excerpt: "Host your entire community with BuddyBoss, a straight up gorgeous community platform."
 header:
   overlay_color: "#e86d2a" #BuddyBoss primary colour
   teaser: img/originals/20220805_buddyboss.PNG

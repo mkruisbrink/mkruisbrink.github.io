@@ -204,10 +204,11 @@ figure {
   }
 
   img {
-    width: 100%;
+    width: 100%; 
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
     transition: $global-transition;
+    box-shadow: 0 0 10px #ccc; //added boxshadow 2022-08-08
   }
 
   > a {
@@ -239,6 +240,14 @@ figure {
       width: 100%;
     }
   }
+
+  // centering of img 80% width
+  &.centered {
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+ 
 }
 
 /* Figure captions */

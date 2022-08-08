@@ -20,20 +20,20 @@ main:
 stack:
   - title: Stack
     children:
-      - title: "GitHub Pages"
-        #url: /docs/installation/
-      - title: "WPFusion"
-        #url: /docs/structure/
       - title: "ActiveCampaign"
-        #url: /stack/activecampaign/
+        url: /stack/activecampaign/
       - title: "BuddyBoss"
-        #url: /docs/structure/
+        url: /stack/buddyboss/
+      - title: "WPFusion"
+        url: /stack/wpfusion/
       - title: "RightMessage"
-        #url: /docs/structure/
+        url: /stack/rightmessage/
       - title: "TimerCampaign"
-        #url: /docs/structure/
+        url: /stack/timercampaign/
       - title: "Bonjoro"
-        #url: /docs/structure/
+        url: /stack/bonjoro/
+      - title: "GitHub Pages"
+        #url: /stack/github-pages/
 
   - title: Extras
     children:
