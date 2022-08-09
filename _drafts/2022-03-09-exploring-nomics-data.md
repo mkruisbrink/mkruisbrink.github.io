@@ -10,28 +10,38 @@ category:
 - Data Science
 tags:
 - R
+- RStudio
+- Nomics
+- API
 ---
   
-We're going to discuss the following topics:
+## Introduction
 
--   Install RStudio, R and relevant packages
--   Choose what data you wish to work with
-    -   Nomics
-    -   Find an endpoint you want to look at
--   Construct the endpoint URL
--   Explore the data
--   Clean the data
--   Manipulate and alter the data if required
--   Visualise the data
--   Analyze the data
+In this article we're going to import cryptocurrency related data via the API provided by [Nomics.com](https://www.nomics.com) into RStudio. 
+
+* Find an endpoint you want to look at
+* Construct the endpoint URL
+* Import the data into RStudio
+* Explore the data
+* Clean the data
+* Manipulate and alter the data if required
+* Visualise the data
+* Analyze the data
 
 ------------------------------------------------------------------------
 
+## Prerequisites
+
+I am assuming you have R and RStudio installed and know the basics of how to use RStudio. If not, follow:
+
+1. [My guide for base R installation]({% post_url 2022-08-08-installing-base-R %})
+2. [My guide for RStudio installation]({% post_url 2022-08-08-installing-RStudio %})
+3. [My guide for an RStudio introduction]({% post_url 2022-08-08-introduction-RStudio %}) 
+
 ## Step 1: Install & Load Packages
 
-Download RStudio and install R if you haven’t already. We are going to
-load some libraries that we need. These provide added functionality.
-Open a new R script (CTRL+SHIFT+N) and type in the following:
+We are going to load some libraries that we need. These provide added functionality.
+Open up your R Project or opena new R script and type in the following:
 
 ``` r
 #install.packages("package_name") 

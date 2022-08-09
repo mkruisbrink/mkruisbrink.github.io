@@ -21,7 +21,6 @@ In this guide I'm going to show you how to get familiar with the very basics of 
 * What is RStudio? (brief)
 * The RStudio layout
 * Using RStudio
-* Usefull links to get started
 
 ## Prerequisites
 
@@ -38,11 +37,11 @@ For me it is most important that my work is reproducable. With R & RStudio I can
 RStudio can be learned by anyone. It's layout (default) is made up out of four different panels and rather intuitive. On the top left we have a source code editor packed with features (including syntax highlighting). On the top right we got the environment pane, which tells you what information you have currently stored in R in various objects. On the bottom left you will have the R console or terminal respectively. And on the bottom right you will find the explorer, help window, plot window and much more. Note that you can tweak your panel layout with ease.
 
 
-## Layout
+## RStudio Layout
 
 When you open up RStudio you immediately see four distinctive panes. All of which will be discussed here.
 
-<figure class="centered">
+<figure class="img-center">
     <a href="/img/posts/rstudio-introduction/R-project-demo-1.PNG" title="R Project Demo" alt="R Project Demo">
     <img src="/img/posts/rstudio-introduction/R-project-demo-1.PNG"></a>
 </figure>
@@ -204,10 +203,5 @@ The result looks like this:
 As you can see, with just a few lines of code we were able to create a rather goodlooking graphic (but we barely scratched the surface). At this point you can import data into RStudio and play around with it. 
 
 Goodluck and have fun learning R and RStudio!
-
-## Usefull Links
-
-1. [Rstudio Cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
-2. [HarvardX Data Science Course](https://www.edx.org/professional-certificate/harvardx-data-science)
 
 
