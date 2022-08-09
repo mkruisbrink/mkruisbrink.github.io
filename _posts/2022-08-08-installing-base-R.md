@@ -1,8 +1,8 @@
 ---
 #layout: post
 title: Base R Installation (Windows)
-subtitle: Setting up your RStudio environment
-excerpt: "In this guide I'm going to walk you through on how to install base R. R is an open-source software environment used a lot for statistical computing and graphics."
+subtitle: Getting started with R and RStudio
+excerpt: "In this guide I'm going to walk you through on how to install base R, an open-source software environment used mainly for statistical computing and graphics."
 header:
   overlay_image: /img/posts/01-exchanges/nomics-api.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
@@ -11,6 +11,7 @@ category:
 tags:
 - R
 - RStudio
+- Windows
 ---
  
 In this guide I'm going to show you how to install R (base) for Windows. R is an open-source software environment for statistical computing and graphics that runs on Windows, Mac OS, and many UNIX platforms. With the base installation of R you are able to interact with the R language through the *Command Line Interface* (CLI). 
@@ -22,7 +23,7 @@ If you want a dedicated *Graphical User Interface* (GUI) there are other options
 
 * Navigate to the [official R website](https://www.r-project.org/) and at the very top you will see multiple links that will take you to the official *RStudio Comprehensive R Archive Network* (CRAN) mirror list. 
 
-<figure class="align-center">
+<figure class="centered">
     <a href="/img/posts/base-R-installation-Windows/step0.PNG" title="Download R for Windows" alt="Download R for Windows">
     <img src="/img/posts/base-R-installation-Windows/step0.PNG"></a>
 </figure>
@@ -32,21 +33,21 @@ You can also go to the [CRAN mirror list](https://cran.r-project.org/mirrors.htm
 
 * Select **Download R for Windows** which is the third option from the top.
 
-<figure class="align-center">
+<figure class="centered">
     <a href="/img/posts/base-R-installation-Windows/step2.PNG" title="Download R for Windows" alt="Download R for Windows">
     <img src="/img/posts/base-R-installation-Windows/step2.PNG"></a>
 </figure>
 
 * Select the first option **base** from the list.
 
-<figure class="align-center">
+<figure class="centered">
     <a href="/img/posts/base-R-installation-Windows/Step4.PNG" title="R base" alt="R base">
     <img src="/img/posts/base-R-installation-Windows/Step4.PNG"></a>
 </figure>
 
 * Select the **Download R X.X.X for Windows** option (right now the version number is 4.2.1). Either run the program directly or remember the download location on your local machine to run the installer.
 
-<figure class="align-center">
+<figure class="centered">
     <a href="/img/posts/base-R-installation-Windows/Step5.PNG" title="R base" alt="R base">
     <img src="/img/posts/base-R-installation-Windows/Step5.PNG"></a>
 </figure>
@@ -60,14 +61,14 @@ You can also go to the [CRAN mirror list](https://cran.r-project.org/mirrors.htm
 
 * Select your preferred download location for R. In this example I used a custom directory (I like to refrain from installing too much stuff on my C drive). Click **Next**. 
 
-<figure class="align-center">
+<figure class="centered">
     <a href="/img/posts/base-R-installation-Windows/Step8.PNG" title="R base" alt="R base">
     <img src="/img/posts/base-R-installation-Windows/Step8.PNG"></a>
 </figure>
 
 * Select the components you wish to install. In my case i select 64-bit since I have a 64-bit system (32-bit will be another option for you if you run such a build). Message translations are not required. Click **Next**.
 
-<figure class="align-center">
+<figure class="centered">
     <a href="/img/posts/base-R-installation-Windows/Step9.PNG" title="R base" alt="R base">
     <img src="/img/posts/base-R-installation-Windows/Step9.PNG"></a>
 </figure>
@@ -88,4 +89,4 @@ If you are learning how to use the command line interface (CLI), you can also in
 
 ### Continue with the RStudio installation (Windows)
 
-Now that you have base R installed, it is time to install the integrated development environment (IDE) called RStudio. R and RStudio go hand-in-hand and RStudio is software specifically designed to work with the R computing language and makes working in R a breeze. 
+Now that you have base R installed, it is time [to install the integrated development environment (IDE) called RStudio]({% post_url 2022-08-08-installing-Rstudio %}). R and RStudio go hand-in-hand and RStudio is software specifically designed to work with the R computing language and makes working in R a breeze. 

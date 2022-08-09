@@ -106,53 +106,31 @@ analytics:
 author:
   name             : "Max Kruisbrink"
   avatar           : "/img/processed/max-bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I like to **build** quality stuff with long-term vision."
+  bio              : "I like to **build** *quality stuff* with *long-term vision*."
   location         : "Rotterdam, the Netherlands"
-  email            : "max@cryptocommunity.nl"
+  email            : # "max@cryptocommunity.nl"
   links:
+    - label: "Cryptocommunity"
+      icon: "fas fa-fw fa-globe"
+      url: "https://cryptocommunity.nl"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:max@cryptocommunity.nl"
-    - label: "Cryptocommunity"
-      icon: "fas fa-fw fa-rabbit"
-      url: "https://cryptocommunity.nl"
-    - label: "Certifications"
-      icon: "fas fa-fw fa-certificate"
-      url: "https://mkruisbrink.github.io/certifications"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/mkruisbrink/"
-    - label: "CV"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "/assets/docs/CV_mpkruisbrink.pdf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mkruisbrink"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mkruisbrink"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+    
 
 
 # Reading Files
@@ -221,6 +199,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
+# permalink: date
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Amsterdam # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -300,6 +279,9 @@ defaults:
       comments: # true
       share: true
       related: true
+      toc: true
+      toc_label: Table of Contents
+
   # _pages
   - scope:
       path: ""

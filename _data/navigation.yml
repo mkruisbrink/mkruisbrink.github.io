@@ -34,8 +34,3 @@ stack:
         url: /stack/bonjoro/
       - title: "GitHub Pages"
         #url: /stack/github-pages/
-
-  - title: Extras
-    children:
-      - title: "Templates"
-        url: /docs/stylesheets/

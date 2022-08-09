@@ -13,7 +13,7 @@ After spending a few years traveling, working, gaming and trying to get clear wh
 
 ## Experience
 
-After graduation, I've been working as an engineer at various well-known reputable international offshore/dredging companies. In addition to that I started my own company while on an internship in Costa Rica at the time. If you [take a look at my resume](/assets/docs/CV_mpkruisbrink.pdf) you can see exactly what I've been up to over the past years. I do need to update that file...
+After graduation, I've been working as an engineer at various well-known reputable international construction/offshore/dredging companies. In addition to that I started my own company while on an internship in Costa Rica at the time. If you [take a look at my resume](/assets/docs/CV_mpkruisbrink.pdf) you can see exactly what I've been up to over the past years. I do need to update that file...
 
 >
 | **Degree** | Civil Engineering - Harbour, Coast & Dredging |
