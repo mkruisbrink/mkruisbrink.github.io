@@ -10,8 +10,8 @@ main:
     url: /stack/
   - title: "Experience"
     url: /experience/
-#  - title: "Contact"
-#    url: /contact/    
+  - title: "Resources"
+    url: /resources/    
 #  - title: "Sitemap"
 #    url: /sitemap/
 
