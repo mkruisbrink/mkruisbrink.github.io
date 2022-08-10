@@ -42,8 +42,8 @@ RStudio can be learned by anyone. It's layout (default) is made up out of four d
 When you open up RStudio you immediately see four distinctive panes. All of which will be discussed here.
 
 <figure class="img-center">
-    <a href="/img/posts/rstudio-introduction/R-project-demo-1.PNG" title="R Project Demo" alt="R Project Demo">
-    <img src="/img/posts/rstudio-introduction/R-project-demo-1.PNG"></a>
+    <a href="/img/posts/RStudio-introduction/R-project-demo-1.PNG" title="R Project Demo" alt="R Project Demo">
+    <img src="/img/posts/RStudio-introduction/R-project-demo-1.PNG"></a>
 </figure>
 
 You can zoom in on every quadrant by using the following hotkeys:
@@ -108,30 +108,30 @@ My advice is to create a new R *Project* to experiment and tryout new things as 
 * The New Project Wizard opens
 
 <figure class="centered">
-    <a href="/img/posts/rstudio-introduction/R-project-1.PNG" title="R Project" alt="R Project">
-    <img src="/img/posts/rstudio-introduction/R-project-1.PNG"></a>
+    <a href="/img/posts/RStudio-introduction/R-project-1.PNG" title="R Project" alt="R Project">
+    <img src="/img/posts/RStudio-introduction/R-project-1.PNG"></a>
 </figure>
 
 * If you already have a folder with some R scripts you can associate your Project with this directory. Select **Existing Directory** and provide the location of your folder containing R Scripts.
 
 <figure class="centered">
-    <a href="/img/posts/rstudio-introduction/R-project-5-existing-directory.PNG" title="R Project Existing Directory" alt="R Project Existing Directory">
-    <img src="/img/posts/rstudio-introduction/R-project-5-existing-directory.PNG"></a>
+    <a href="/img/posts/RStudio-introduction/R-project-5-existing-directory.PNG" title="R Project Existing Directory" alt="R Project Existing Directory">
+    <img src="/img/posts/RStudio-introduction/R-project-5-existing-directory.PNG"></a>
 </figure>
 
 * Otherwise, select **New Directory**, click on **New Project** and in the next window provide both the name and location of your new directory as seen in below screenshots. You can uncheck the checkboxes for `git` and `renv` for this introduction. Check **Open in a new session** and click **Create Project**. 
 
 
 <figure class="half">
-    <a href="/img/posts/rstudio-introduction/R-project-2.PNG"><img src="/img/posts/rstudio-introduction/R-project-2.PNG"></a>
-    <a href="/img/posts/rstudio-introduction/R-project-3.PNG"><img src="/img/posts/rstudio-introduction/R-project-3.PNG"></a>
+    <a href="/img/posts/RStudio-introduction/R-project-2.PNG"><img src="/img/posts/rstudio-introduction/R-project-2.PNG"></a>
+    <a href="/img/posts/RStudio-introduction/R-project-3.PNG"><img src="/img/posts/rstudio-introduction/R-project-3.PNG"></a>
 </figure>
 
 * Cool! Now you have created your first R *Project*! You'll see your personal `name.Rproj` file in the *File* explorer tab on the bottom right.
 
 <figure class="img-center">
-    <a href="/img/posts/rstudio-introduction/R-project-4.PNG" title="New R Project" alt="New R Project">
-    <img src="/img/posts/rstudio-introduction/R-project-4.PNG"></a>
+    <a href="/img/posts/RStudio-introduction/R-project-4.PNG" title="New R Project" alt="New R Project">
+    <img src="/img/posts/RStudio-introduction/R-project-4.PNG"></a>
 </figure>
 
 If you navigate to your project directory with the file explorer you'll see the exact same thing, and you can start your R project by clicking on the `demo.Rproj` file. It will load your project with all relevant scripts and data and will know exactly in what location your project related files exist.
@@ -193,8 +193,8 @@ starwars_df <- starwars
 Your RStudio window should look something like this:
 
 <figure class="img-center">
-    <a href="/img/posts/rstudio-introduction/R-project-demo.PNG" title="R Project Demo" alt="R Project Demo">
-    <img src="/img/posts/rstudio-introduction/R-project-demo.PNG"></a>
+    <a href="/img/posts/RStudio-introduction/R-project-demo.PNG" title="R Project Demo" alt="R Project Demo">
+    <img src="/img/posts/RStudio-introduction/R-project-demo.PNG"></a>
 </figure>
 
 ### Visualizing data in RStudio
@@ -216,8 +216,8 @@ starwars %>% ggplot(aes(species, fill = gender)) +
 The result looks like this:
 
 <figure class="centered">
-    <a href="/img/posts/rstudio-introduction/R-project-demo-1.PNG" title="R Project Demo" alt="R Project Demo">
-    <img src="/img/posts/rstudio-introduction/R-project-demo-1.PNG"></a>
+    <a href="/img/posts/RStudio-introduction/R-project-demo-1.PNG" title="R Project Demo" alt="R Project Demo">
+    <img src="/img/posts/RStudio-introduction/R-project-demo-1.PNG"></a>
 </figure>
 
 As you can see, with just a few lines of code we were able to create a rather goodlooking graphic (but we barely scratched the surface). At this point you can import data into RStudio and play around with it.
