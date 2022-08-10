@@ -24,7 +24,7 @@ In this guide I'm going to show you how to get familiar with the very basics of 
 
 ## Prerequisites
 
-You will need to have R and RStudio installed. You can follow [this guide for base R installation]({% post_url 2022-08-08-installing-base-R %}) and [this guide for the installation of RStudio]({% post_url 2022-08-08-installing-Rstudio %}).
+You will need to have R and RStudio installed. You can follow [this guide for base R installation]({% post_url 2022-08-08-installing-base-R %}) and [this guide for the installation of RStudio]({% post_url 2022-08-08-installing-RStudio %}).
 
 ## What is RStudio?
 RStudio is an open-source software project and computer program that allows you to interact with the R computing language that you've previously installed on your system. RStudio provides you with a Graphical User Interface (GUI) that serves as a *front-end* which literally lies on top of R. RStudio is thus an **IDE** specifically for R. 
@@ -48,23 +48,43 @@ When you open up RStudio you immediately see four distinctive panes. All of whic
 
 You can zoom in on every quadrant by using the following hotkeys:
 
-| Top-left              | `<SHIFT> + <CTRL> + 1` |
-| Bottom-left           | `<SHIFT> + <CTRL> + 2` |
-| Top-right             | `<SHIFT> + <CTRL> + 3` |
-| Bottom-right          | `<SHIFT> + <CTRL> + 4` |
-| View all              | `<SHIFT> + <CTRL> + 0` |
+
+| **Where**       | **What**            | **Hotkey Command**     |
+|---              |----                 |                      --|
+| Top-left        | Source              | `<SHIFT> + <CTRL> + 1` |
+| Bottom-left     | Console & Terminal  | `<SHIFT> + <CTRL> + 2` |
+| Top-right       | Environment         | `<SHIFT> + <CTRL> + 3` |
+| Bottom-right    | Explorer & Viewer   | `<SHIFT> + <CTRL> + 4` |
+
+
+You can return to the original viewport via `<SHIFT> + <CTRL> + 0`.
 
 ### Script Editor & Data Viewport
 
 The top-left pane is where you will find the *Script Editor* and view your data(tables). The script editor is where you write your commands (code). These commands form a script and are provided to the R *Console* (bottom-left) as input. The *Script Editor* is an advanced text-editor which is designed for coding specifically. 
 
+<figure class="centered">
+    <a href="/img/posts/rstudio-introduction/pane1-script-editor.PNG" title="R Script Editor Pane" alt="R Script Editor Pane">
+    <img src="/img/posts/rstudio-introduction/pane1-script-editor.PNG"></a>
+</figure>
+
 ### Console & Terminal
 
-The bottom-left pane is where you will find the R *Console*. The *Console* is a viewport into **R** itself. That is where R takes your input (the code) and performs it's magic. It is a live window to the R language. You can use the Console as a calculator or to run commands that you don't want to include in your script. You will also find the terminal window in this pane, which you can use for navigation and other tasks (learning to use terminal will make your life easier).
+The bottom-left pane is where you will find the R *Console*. The *Console* is a viewport into **R** itself. RStudio takes your selected input (the code) when you click *Run* ![Run](/img/icons/r-studio/run-script-rstudio.png) and submits it to R. Then... R does its magic and **outputs** to the *Console*. You can use the Console as a simple calculator or to run commands that you don't want to include in your script. You will also find the terminal window in this pane, which you can use for navigation and other tasks (learning to use terminal will make your life easier).
+
+<figure class="centered">
+    <a href="/img/posts/rstudio-introduction/pane2-console.PNG" title="R Console Pane" alt="R Console Pane">
+    <img src="/img/posts/rstudio-introduction/pane2-console.PNG"></a>
+</figure>
 
 ### Environment & History
 
-The top-right pane is where you will find the R *Environment*. The *Environment* is where RStudio stores all the inputs as objects. This can be data tables, lists, numbers etc. You can double-click on many of these objects to view them in your *Script Editor* (usefull for tables and data frames). In the *History* tab you will find all of the input you have provided to the R *Console*. 
+The top-right pane is where you will find the R *Environment*. The *Environment* is where RStudio stores all the inputs as objects. This can be data tables, lists, numbers etc. You can double-click on many of these objects to view them in your *Script Editor* (usefull for tables and data frames). In the *History* tab you will find all of the input you have provided to the R *Console*. In this case we see a dataframw called `starwars`, containing 87 observations of 14 different variables.
+
+<figure class="centered">
+    <a href="/img/posts/rstudio-introduction/pane3-environment.PNG" title="R Environment Pane" alt="R Environment Pane">
+    <img src="/img/posts/rstudio-introduction/pane3-environment.PNG"></a>
+</figure>
 
 >
 **Note:** You might also see *Connections*, *Git* and *Tutorial*, which are out of the scope of this introduction. Git is important but will be dealt with another time.
@@ -73,20 +93,33 @@ The top-right pane is where you will find the R *Environment*. The *Environment*
 
 The bottom-right pane is made up out of at least five tabs – Files, Plots, Packages, Help, and Viewer. 
 
+<figure class="centered">
+    <a href="/img/posts/rstudio-introduction/pane4-explorer.PNG" title="R Explorer Pane" alt="R Explorer Pane">
+    <img src="/img/posts/rstudio-introduction/pane4-explorer.PNG"></a>
+</figure>
+
 1. The Files tab will show your current directory and allows you to quickly see your working files and folders. These are what make up your R project.
-2. The Plots tab will show the plots (graphics) produced by commands (your scripts) submitted to the Console. 
-3. The Packages tab will show all of the currently installed packages on your system for your current R installation.
-4. The Help tab will show you usefull information regarding packages and functions (click anywhere on a function, i.e. `mutate()` and press `F1`).
-5. Some more advanced tabs that are not required for this introcution:
+2. The Plots tab will show the plots (graphics) produced by commands (your scripts) submitted to the *Console*. 
+3. The Packages tab will show all of the currently installed packages on your system.
+4. The Help tab will show you usefull information regarding packages and functions. You can get help in a few ways:
+    * Click on a function you're unsure about and press `F1`
+    * Type a `?` before any object 
+
+        ```R
+        ?starwars
+        ?data()
+        ?library
+        ?`tidyverse-package`
+        ```
+  
+5. Some more advanced tabs that are not required for this introduction:
     * The Viewer tab is used to display and output local web applications and content. If you are making an interactive application and you want to preview the results, this is where you would see your work.
     * The Presentation tab is used for the creation of slides and presentations that make use of R code and is mostly used in classrooms or teaching in academia.
 
->
-*include RStudio Files, Plots, Packages, Help*
 
 ## Using RStudio
 
-You will use RStudio by creating so-called scripts in the *Script Editor* pane. Scripts are text files that contain (R) code and you will submit your scripts to the *Console* for interpretation. R will then output graphical results to the *Plot* pane and textual or tabular content to the *Console*. If you specified in your R script to store data in variables, your data will be saved into objects in the *Environment* pane. 
+You will use RStudio by creating so-called scripts in the *Script Editor* pane. Scripts are just simple text files that contain (R) code and you will submit your scripts to the *Console* for interpretation. R will then output graphical results to the *Plot* pane and textual or tabular content to the *Console*. If you specified in your R script to store data in variables, your data will be saved into objects in the *Environment* pane. 
 
 ### Creating your first R script
 
@@ -97,13 +130,13 @@ To create your first R script there are a few options:
 3. Simply press `<CTRL> + <Shift> + N` to create a new R script. 
 
 >
-**Note:** Instead of a new R Script, create a new R *Project*. You can think of an R project as a collection of files stored in a folder/directory that are all related. Information about the project is stored in a special R.proj file. When you open your Project, R starts in the correct folder from the start and you have everything you need in one place. 
+**Note:** Instead of a new R Script, create a new R *Project* ![New R Project](/img/icons/r-studio/new-project-rstudio.png). You can think of an R project as a collection of files stored in a folder/directory that are all related. Information about the project is stored in a special `demo.Rproj` file. When you open your R Project, R magically starts in the correct folder and knows where to look for your scripts and data. You have everything you need in one place. 
 
 ### Creating your first R Project
 
 My advice is to create a new R *Project* to experiment and tryout new things as you learn about R. You will have all your *experiments* (scripts) in one place and you are implementing best-practices right from the start by working with R Projects. So let's create that new Project. 
 
-* In the top-left of your screen, click on *Create a project* ![New](/img/icons/r-studio/new-project-rstudio.png)
+* In the top-left of your screen, click on *Create a project* ![New R Project](/img/icons/r-studio/new-project-rstudio.png)
 * Or go to the *File* menu and select the *New Project...* option
 * The New Project Wizard opens
 
@@ -127,7 +160,7 @@ My advice is to create a new R *Project* to experiment and tryout new things as 
     <a href="/img/posts/RStudio-introduction/R-project-3.PNG"><img src="/img/posts/rstudio-introduction/R-project-3.PNG"></a>
 </figure>
 
-* Cool! Now you have created your first R *Project*! You'll see your personal `name.Rproj` file in the *File* explorer tab on the bottom right.
+* Cool! Now you have created your first R *Project*! You'll see your personal `Test.Rproj` file in the *File* explorer tab on the bottom right.
 
 <figure class="img-center">
     <a href="/img/posts/RStudio-introduction/R-project-4.PNG" title="New R Project" alt="New R Project">
@@ -142,13 +175,15 @@ If you navigate to your project directory with the file explorer you'll see the 
 </figure>
 
 
-If you haven't already, open up your new project. Remember how to create your first script? Go ahead and do just that.
+If you haven't already, open up your new project and create a new script if you did not do so earlier.
 
 ### Save your Scripts!
 
-I usually create a script and immediately save it afterwards with the *Save* ![Save](/img/icons/r-studio/save-rstudio.png) command or `<CTRL> + <S>` hotkeys. This might sound obvious but when you're working in a new script it will be an *untitled.R* script and your work is **not** saved before you name and store the R script.
+I usually create a script and immediately save it afterwards with the *Save* ![Save](/img/icons/r-studio/save-rstudio.png) command or `<CTRL> + <S>` hotkeys. This might sound obvious but when you're working in a new script it will be an *untitled.R* script living only in your *Script Editor* and your work is **not** saved to your local machine into your project directory before you save the file. 
 
 ### Installing R Packages
+
+R comes prepacked with a lot of functionality but the good thing about R is that it is open source and the global community has added **tons** of packages that you can install to expand the vocabulary that you can deploy.
 
 We're going to install and load a package called the *Tidyverse*. This package provides a whole lot of additional functionalities that you are going to use *a lot*. In your new R script, type:
 
