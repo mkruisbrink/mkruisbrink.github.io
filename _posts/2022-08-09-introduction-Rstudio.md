@@ -24,7 +24,7 @@ In this guide I'm going to show you how to get familiar with the very basics of 
 
 ## Prerequisites
 
-You will need to have R and RStudio installed. You can follow [this guide for base R installation]({% post_url 2022-08-08-installing-base-R %}) and [this guide for the RStudio installation].
+You will need to have R and RStudio installed. You can follow [this guide for base R installation]({% post_url 2022-08-08-installing-base-R %}) and [this guide for the installation of RStudio]({% post_url 2022-08-08-installing-Rstudio %}).
 
 ## What is RStudio?
 RStudio is an open-source software project and computer program that allows you to interact with the R computing language that you've previously installed on your system. RStudio provides you with a Graphical User Interface (GUI) that serves as a *front-end* which literally lies on top of R. RStudio is thus an **IDE** specifically for R. 
@@ -46,9 +46,17 @@ When you open up RStudio you immediately see four distinctive panes. All of whic
     <img src="/img/posts/rstudio-introduction/R-project-demo-1.PNG"></a>
 </figure>
 
+You can zoom in on every quadrant by using the following hotkeys:
+
+| Top-left              | `<SHIFT> + <CTRL> + 1` |
+| Bottom-left           | `<SHIFT> + <CTRL> + 2` |
+| Top-right             | `<SHIFT> + <CTRL> + 3` |
+| Bottom-right          | `<SHIFT> + <CTRL> + 4` |
+| View all              | `<SHIFT> + <CTRL> + 0` |
+
 ### Script Editor & Data Viewport
 
-The top-left pane is where you will find the *Script Editor* and view your data(tables). The script editor is where you store your commands (code). These commands (the script) are provided to the R *Console* (bottom-left) as input. The *Script Editor* is an advanced text-editor which is designed for coding specifically. 
+The top-left pane is where you will find the *Script Editor* and view your data(tables). The script editor is where you write your commands (code). These commands form a script and are provided to the R *Console* (bottom-left) as input. The *Script Editor* is an advanced text-editor which is designed for coding specifically. 
 
 ### Console & Terminal
 
@@ -93,7 +101,11 @@ To create your first R script there are a few options:
 
 ### Creating your first R Project
 
-My advice is to create a new R *Project* to experiment and tryout new things as you learn about R. You will have all your *experiments* (scripts) in one place and you are implementing best-practices right from the start by working with R Projects. So let's create that new Project. Simply follow the steps after clicking on the *File* menu and selecting the *New Project...* option.
+My advice is to create a new R *Project* to experiment and tryout new things as you learn about R. You will have all your *experiments* (scripts) in one place and you are implementing best-practices right from the start by working with R Projects. So let's create that new Project. 
+
+* In the top-left of your screen, click on *Create a project* ![New](/img/icons/r-studio/new-project-rstudio.png)
+* Or go to the *File* menu and select the *New Project...* option
+* The New Project Wizard opens
 
 <figure class="centered">
     <a href="/img/posts/rstudio-introduction/R-project-1.PNG" title="R Project" alt="R Project">
@@ -115,14 +127,22 @@ My advice is to create a new R *Project* to experiment and tryout new things as 
     <a href="/img/posts/rstudio-introduction/R-project-3.PNG"><img src="/img/posts/rstudio-introduction/R-project-3.PNG"></a>
 </figure>
 
-* Cool! Now you have created your first R *Project*! You'll see the `R.proj` file in the *File* tab on the bottom right.
+* Cool! Now you have created your first R *Project*! You'll see your personal `name.Rproj` file in the *File* explorer tab on the bottom right.
 
-<figure class="centered">
+<figure class="img-center">
     <a href="/img/posts/rstudio-introduction/R-project-4.PNG" title="New R Project" alt="New R Project">
     <img src="/img/posts/rstudio-introduction/R-project-4.PNG"></a>
 </figure>
 
-Remember how to create your first script? Go ahead and do just that.
+If you navigate to your project directory with the file explorer you'll see the exact same thing, and you can start your R project by clicking on the `demo.Rproj` file. It will load your project with all relevant scripts and data and will know exactly in what location your project related files exist.
+
+<figure class="centered">
+    <a href="/img/posts/RStudio-introduction/R-project-file-explorer.PNG" title="New R Project" alt="New R Project">
+    <img src="/img/posts/RStudio-introduction/R-project-file-explorer.PNG"></a>
+</figure>
+
+
+If you haven't already, open up your new project. Remember how to create your first script? Go ahead and do just that.
 
 ### Save your Scripts!
 
@@ -152,7 +172,7 @@ Now we're going to load some data. R comes prepacked with a bunch of dataframes 
 data() # and press <CTRL> + <Enter>!
 ```
 
-I dont want to use these though and because I like Star Wars I'm going to use another dataset that is provided by a package that comes with the *Tidyverse* that we just installed. 
+I dont want to use these data though and because I like Star Wars I'm going to use another dataset that is provided by a package that comes with the *Tidyverse* that we just installed. 
 
 ```R
 #starwars dataset
@@ -172,7 +192,7 @@ starwars_df <- starwars
 ```
 Your RStudio window should look something like this:
 
-<figure class="centered">
+<figure class="img-center">
     <a href="/img/posts/rstudio-introduction/R-project-demo.PNG" title="R Project Demo" alt="R Project Demo">
     <img src="/img/posts/rstudio-introduction/R-project-demo.PNG"></a>
 </figure>
@@ -200,8 +220,14 @@ The result looks like this:
     <img src="/img/posts/rstudio-introduction/R-project-demo-1.PNG"></a>
 </figure>
 
-As you can see, with just a few lines of code we were able to create a rather goodlooking graphic (but we barely scratched the surface). At this point you can import data into RStudio and play around with it. 
+As you can see, with just a few lines of code we were able to create a rather goodlooking graphic (but we barely scratched the surface). At this point you can import data into RStudio and play around with it.
 
 Goodluck and have fun learning R and RStudio!
 
+
+## BONUS: R Coding 101 with Greg Martin
+
+This guy deserves a medal, be sure to checkout his YouTube page.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/orjLGFmx6l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
