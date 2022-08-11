@@ -1,19 +1,3 @@
----
-#layout: post
-title: An introduction to the Tidyverse
-subtitle: Getting started with R and RStudio
-excerpt: "In this guide I'm going to walk you through on how to install base R, an open-source software environment used mainly for statistical computing and graphics."
-header:
-  overlay_image: /img/20220808_supernova-midjourney.jpg
-  overlay_filter: rgba(0, 0, 0, 0.3)
-category: 
-- Packages
-tags:
-- R
-- RStudio
-- tidyverse
----
-
 ## What is the tidyverse?
 
 The tidyverse is a package in R that is - in itself - a collection of
@@ -99,7 +83,7 @@ ggplot(data, aes(height)) +
          geom_density(aes(color = sex))
 ```
 
-<img src="//_reports/figure/ggplot-examples-1.png"/>
+![](/_reports/figure/ggplot-examples-1.png)<!-- -->
 
 ``` r
 # plot height of different species in the data set 
@@ -113,7 +97,7 @@ ggplot(data, aes(species, height,
        y = "height")
 ```
 
-![example2](//_reports/figure/ggplot-examples-2.png)<!-- -->
+![](/_reports/figure/ggplot-examples-2.png)<!-- -->
 
 <img src="/img/icons/r-packages/thumbs/dplyr.png" title="dplyr logo" alt="dplyr logo" style="display: block; margin: auto;" />
 
