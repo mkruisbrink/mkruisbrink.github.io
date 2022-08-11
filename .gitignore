@@ -28,3 +28,9 @@ codekit-config.json
 _asset_bundler_cache
 _site
 _test
+
+#R
+.Rproj.user
+.Rhistory
+mkruisbrink.github.io.Rproj
+_reports
