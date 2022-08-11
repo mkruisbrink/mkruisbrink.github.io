@@ -1,9 +1,9 @@
 ---
 title: "Elementor"
-excerpt: "Build beautifull websites with zero coding knowledge!"
+excerpt: "Build beautifull websites with this drag-and-drop page builder. Zero coding knowledge required!"
 header:
   overlay_color: "#fe8045" # brand colour
-  teaser: img/originals/20220804_rightmessage.PNG
+  teaser: img/stack/20220804_elementor.PNG
   actions:
     - label: "Visit RightMessage"
       url: "https://elementor.com" #referral link

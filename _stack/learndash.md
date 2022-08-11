@@ -1,9 +1,9 @@
 ---
 title: "LearnDash"
-excerpt: "Create engaging courses and stimulate learning for your students!"
+excerpt: "Create and manage engaging courses. Stimulate learning for your students!"
 header:
   overlay_color: "#fe8045" # brand colour
-  teaser: img/originals/20220804_rightmessage.PNG
+  teaser: img/stack/20220811_learndash.PNG
   actions:
     - label: "Visit RightMessage"
       url: "https://learndash.com" #referral link

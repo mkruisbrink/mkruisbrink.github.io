@@ -3,7 +3,7 @@ title: "WildMail (ActiveCampaign)"
 excerpt: "Full-fledged marketing automation tool with insane custimization abilities."
 header:
   overlay_color: "#004CFF" #AC primary colour
-  teaser: img/originals/20220805_AC-master-automation-handler.PNG
+  teaser: img/stack/20220804_wild-audience.PNG
   actions:
     - label: "Visit WildMail"
       url: "https://wildaudience.com/wildmail/?via=max" #referral link
@@ -21,14 +21,16 @@ Today, email marketing is used by companies worldwide to promote their products 
 
 ## What is WildMail?
 
-WildMail __is__ ActiveCampaign but with **extra's**. Offering an array of functions, the platform takes care of all my marketing requirements with powerful automations, from generating leads to handling sales, allowing me to focus my energies elsewhere. 
+WildMail __is__ ActiveCampaign but with **extras**. Offering an array of functions, the platform takes care of all my marketing requirements with powerful automations, from generating leads to handling sales, allowing me to focus my energies elsewhere. 
 WildMail has features built for all stages of a customer journey. It takes care of all my email marketing requirements and yields great results every time. 
 
-While hundreds of service providers claim to be the "best" email marketing platforms, only a handful deliver on their promises. I now happily use WildMail (switched from ActiveCampaign) for all my email marketing needs. Brimming with several high-quality additional features that ActiveCampaign doesn't offer such as completely free courses (Relationship Funnels) and their improved analytics dashboard (WildMetrics). This, combined with the outstanding customer service, made me migrate to this Europe-based ActiveCampaign reseller.
+While hundreds of service providers claim to be the "best" email marketing platforms, only a handful deliver on their promises. I now happily use WildMail (switched from ActiveCampaign) for all my email marketing needs. Brimming with several high-quality additional features that ActiveCampaign doesn't offer such as completely free courses (Relationship Funnels) and their improved analytics dashboard (WildMetrics). Everything they do reflects that they care about their customers and want to build relationships with them. This, combined with the outstanding customer service, made me migrate to this Europe-based ActiveCampaign reseller. 
 
 ### WildMetrics
+Personally I found the analytics provided by ActiveCampaign lacking and frustrating. This is exactly where WildMetrics comes in. It is your custom dashboard showing you exactly how your funnels are performing. They even help you with the set-up via a free call if you need assitance. 
 
 ### Relationship Funnels
+WildMetrics also uses BuddyBoss to host their own learning environment to customers. Here they offer free courses about building a relation with your audience, how you can optimize your funnels and about writing effective copy. You'll not receive something like this elsewhere.
 
 ### Personalized email marketing
 The platform offers effective and personalized email marketing that allows you to build a direct relationship with your customer. Through targeted campaigns and list segmentation, WildMail ensures that every lead gets a personalized experience (if you set it up properly), giving them precisely what they are looking for at the right time. You can design (and send!) newsletters and promotional campaigns to engage the audience at exactly the right time. 

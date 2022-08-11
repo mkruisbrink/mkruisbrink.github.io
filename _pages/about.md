@@ -4,9 +4,9 @@ permalink: /about/
 date: 2022-08-01T03:02:20+00:00
 excerpt: "Get to know a little about me."
 header:
-  overlay_image: /img/originals/nasa-galaxy.jpg
+  overlay_image: /img/20220811_workstation-max.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: "Credit: [**NASA**](https://unsplash.com)"
+  caption: "Credit: **Max Kruisbrink**"
 ---
 
 >

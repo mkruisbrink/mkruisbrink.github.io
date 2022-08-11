@@ -3,7 +3,7 @@ title: "WPFusion"
 excerpt: "Connect your WorPress business with all other tools you use on a daily basis. This is superglue for WordPress."
 header:
   overlay_color: "#fe8045" # brand colour
-  teaser: img/originals/20220804_wpfusion.PNG
+  teaser: img/stack/20220804_wpfusion.PNG
   actions:
     - label: "Visit WPFusion"
       url: "https://wpfusion.com" #referral link

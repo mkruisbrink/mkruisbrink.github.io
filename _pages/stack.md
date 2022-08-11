@@ -7,9 +7,9 @@ entries_layout: grid
 classes: wide
 excerpt: "This is the stuff I use in my business *everyday*."
 header:
-  overlay_image: /img/originals/nasa-galaxy.jpg
+  overlay_image: /img/20220808_spiraling-staircase-to-heaven.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: "Credit: [**NASA**](https://unsplash.com)"
+  caption: "[Credit: **Midjourney**](https://www.midjourney.com/home/)"
 ---
 
 These are the tools I use in my business everyday and have been using for a few years now. They make the entire operation run smooth. With these tools you are able to run a succesfull online business, given that you have a good offer or proposition in the first place.

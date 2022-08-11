@@ -3,7 +3,7 @@ title: "TimerCampaign"
 excerpt: "Create urgency in your business via original and authenthic deadlines that expire exactly when you want them to."
 header:
   overlay_color: "#fe8045" # brand colour
-  teaser: img/originals/20220804_timercampaign.PNG
+  teaser: img/stack/20220804_timercampaign.PNG
   actions:
     - label: "Visit TimerCampaign"
       url: "https://timercampaign.com" #referral link

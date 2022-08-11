@@ -3,7 +3,7 @@ title: "RightMessage"
 excerpt: "Create an immensely personalized and polished opt-in experience for your customers!"
 header:
   overlay_color: "#fe8045" # brand colour
-  teaser: img/originals/20220804_rightmessage.PNG
+  teaser: img/stack/20220804_rightmessage.PNG
   actions:
     - label: "Visit RightMessage"
       url: "https://unsplash.com" #referral link

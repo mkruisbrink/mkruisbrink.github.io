@@ -208,7 +208,6 @@ figure {
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
     transition: $global-transition;
-    box-shadow: 0 0 10px #ccc; //added boxshadow 2022-08-08
   }
 
   > a {
@@ -244,6 +243,13 @@ figure {
   // centering of img 80% width
   &.centered {
     width: 80%; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+
+  // centering of img 50% width  
+  &.small-centered {
+    width: 50%; 
     margin-left: auto; 
     margin-right: auto; 
   }

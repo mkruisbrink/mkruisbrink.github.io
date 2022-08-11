@@ -3,7 +3,7 @@ title: "Bonjoro"
 excerpt: "Send your clients and leads hyper-personalized messages, tailored for their needs at exactly the right time!"
 header:
   overlay_color: "#FFD002" # brand colour
-  teaser: img/originals/20220804_bonjoro.PNG
+  teaser: img/stack/20220804_bonjoro.PNG
   actions:
     - label: "Visit Bonjoro"
       url: "https://www.bonjoro.com/" #referral link
