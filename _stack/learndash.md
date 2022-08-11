@@ -1,14 +1,16 @@
 ---
-title: "ActiveCampaign"
-excerpt: "Full-fledged marketing automation tool with insane custimization abilities."
+title: "LearnDash"
+excerpt: "Create engaging courses and stimulate learning for your students!"
 header:
-  overlay_color: "#004CFF" #AC primary colour
-  teaser: img/originals/20220805_AC-master-automation-handler.PNG
+  overlay_color: "#fe8045" # brand colour
+  teaser: img/originals/20220804_rightmessage.PNG
   actions:
-    - label: "Visit ActiveCampaign"
-      url: "https://unsplash.com" #referral link
+    - label: "Visit RightMessage"
+      url: "https://learndash.com" #referral link
 sidebar:
     nav: "stack"
+categories:
+  - aciform
 ---
 
 >
