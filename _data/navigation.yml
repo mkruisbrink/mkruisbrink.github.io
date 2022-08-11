@@ -20,8 +20,8 @@ main:
 stack:
   - title: Stack
     children:
-      - title: "ActiveCampaign"
-        url: /stack/activecampaign/
+      - title: "WildMail (ActiveCampaign)"
+        url: /stack/wildmail/
       - title: "BuddyBoss"
         url: /stack/buddyboss/
       - title: "WPFusion"
