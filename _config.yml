@@ -297,6 +297,8 @@ defaults:
       layout: single
       #author_profile: true
       share: true
+      toc: true
+      toc_label: Table of Contents
     sidebar:
       nav: "docs"
 
