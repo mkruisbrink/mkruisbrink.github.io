@@ -36,12 +36,17 @@ The tidyverse is a toolkit of functionality that is perfect for data scientists.
 knitr::include_graphics("img/icons/r-packages/thumbs/tidyverse.png", error = FALSE)
 ```
 
-You can install the tidyverse via **`install.packages("tidyverse")`** and you only have to install it once. You can load it afterwards...
+You can install the tidyverse via **`install.packages("tidyverse")`** and you only have to install it once. Lets load the tidyverse and the data we're going to use.
 
 ```{r}
-#loads the tidyverse
+# loads the tidyverse
 library(tidyverse)
-require(tidyverse)
+
+# using the starwars dataset
+data <- starwars
+
+# for the sake of this introduction we will drop all missing values for now
+data <- drop_na(data)
 ```
 
 
@@ -64,21 +69,16 @@ knitr::include_graphics("img/icons/r-packages/thumbs/ggplot2.png", error = FALSE
 `ggplot2` is a system to create beautiful graphics, based on __The Grammar of Graphics__. You provide the data, tell ggplot2 how to map variables to aesthetics, what kind of geometry to use (lines, points, bars etc.), and it takes care of the details. [Go to docs...](https://ggplot2.tidyverse.org/)
 
 #### ggplot2 examples
+
 A few simple illustrations of how to create graphs with ggplot. There is no code from other packages present. I'll implement more of the code from other packages in other examples.
 
-```{R ggplot-examples, warning=FALSE}
+```{r ggplot-examples, warning=FALSE}
 
-# loads ggplot 
-library(tidyverse) 
-
-# using the starwars dataset
-data <- starwars
-
-# plot the height distribution
+# plot the height distribution 
 ggplot(data, aes(height)) + 
          geom_density(aes(color = sex))
 
-# plot height of different species in the data set 
+# plot height of different species
 # color by species
 ggplot(data, aes(species, height, 
                      color = sex)) + 
@@ -97,6 +97,66 @@ knitr::include_graphics("img/icons/r-packages/thumbs/dplyr.png", error = FALSE)
 
 `dplyr` provides a grammar of data manipulation, providing a consistent set of verbs that solve the most common data manipulation challenges. [Go to docs...](https://dplyr.tidyverse.org/)
 
+#### dplyr examples
+
+In the previous examples, we took the entire `data` set as input for `ggplot`. 
+
+>
+The pipe
+dplyr provides the pipe (`%>%`) operator from magrittr. The `%>%` takes what is on the left hand side and pipes it into the right side as the first argument. You can use the pipe to rewrite multiple operations that you can read left-to-right, top-to-bottom (reading the pipe operator as __“and then”__).
+
+With dplyr you get five key functions that will help you solve most - if not all - of your data manipulation challenges. 
+
+* With `filter()` you can pick observations (rows) based on values.
+
+```{r} 
+# normal syntax
+filter(data, sex == "male" & homeworld == "Tatooine") 
+
+# tidy syntax with pipe operator
+data %>% # take the data... and then...
+  filter(sex == "male" & homeworld == "Tatooine")
+```
+
+* With `arrange()` you are able to sort rows. If the variable is not numeric, it defaults to alphabetical sorting.
+
+```{r}
+data %>% arrange(height) 
+```
+
+
+* With `select()` you can pick variables (columns) by their names. You can specify the variable names or provide the numbers, such as variable 1 through 4: `1:4`.
+
+```{r}
+select(male_tatooine, name, height, gender, species)
+```
+
+```{r}
+select(male_tatooine, 1:4)
+```
+
+* With `mutate()` you can create new variables or modify existing ones. Let's say we want to create a `height` to `mass` ratio and we might want to express `height` in meters.
+
+```{r}
+data %>% #and then
+  select(1:3) %>% #and then
+  mutate(ratio = height/mass,
+         height = height/100)
+```
+
+* With `summarise()` you can obtain a succinct summary of one or more variables. 
+
+```{r}
+data %>% 
+  group_by(sex) %>% 
+  summarise(min_height = min(height),
+            avg_height = mean(height),
+            max_height = max(height)
+          )
+```
+
+
+
 ```{r tidyr, echo=FALSE, out.width = '50%', fig.alt = "tidyr logo", fig.align = "center"}
 knitr::include_graphics("img/icons/r-packages/thumbs/tidyr.png", error = FALSE)
 ```
@@ -104,6 +164,15 @@ knitr::include_graphics("img/icons/r-packages/thumbs/tidyr.png", error = FALSE)
 ### [tidyr](https://tidyr.tidyverse.org/) (tidying)
 
 `tidyr` provides a set of functions that help you get to tidy data. Tidy data is data with a consistent form: in brief, every variable goes in a column, and every column is a variable. [Go to docs...](https://tidyr.tidyverse.org/)
+
+#### tidyr examples
+
+```{r}
+data %>% 
+  select(name, films) %>%
+  unnest(films) 
+```
+
 
 ```{r readr, echo=FALSE, out.width = '50%', fig.alt = "readr logo", fig.align = "center"}
 knitr::include_graphics("img/icons/r-packages/thumbs/readr.png", error = FALSE)
