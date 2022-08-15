@@ -16,7 +16,7 @@ knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 # define knitr paths
 base.dir <- "~/Developer/mkruisbrink.github.io/"
 base.url <- "/"
-fig.path <- "_reports/figure/"
+fig.path <- "img/rmd/"
 
 # set knitr parameters
 opts_knit$set(base.dir = base.dir, base.url = base.url)
@@ -36,17 +36,30 @@ The tidyverse is a toolkit of functionality that is perfect for data scientists.
 knitr::include_graphics("img/icons/r-packages/thumbs/tidyverse.png", error = FALSE)
 ```
 
+
+### Example set-up
+
 You can install the tidyverse via **`install.packages("tidyverse")`** and you only have to install it once. Lets load the tidyverse and the data we're going to use.
 
-```{r}
+```{r install and load, warning=FALSE, outp}
+
+# installs the package if required
+#install.packages("tidyverse")
+
 # loads the tidyverse
 library(tidyverse)
+
+```
+
+
+```{r loading data, warning=FALSE}
 
 # using the starwars dataset
 data <- starwars
 
 # for the sake of this introduction we will drop all missing values for now
 data <- drop_na(data)
+
 ```
 
 
@@ -70,7 +83,7 @@ knitr::include_graphics("img/icons/r-packages/thumbs/ggplot2.png", error = FALSE
 
 #### ggplot2 examples
 
-A few simple illustrations of how to create graphs with ggplot. There is no code from other packages present. I'll implement more of the code from other packages in other examples.
+A few simple illustrations of how to create graphs with ggplot. There is no code from other packages present. I'll implement more functionality from other packages into the next examples and the plots will get better.
 
 ```{r ggplot-examples, warning=FALSE}
 
@@ -128,11 +141,16 @@ data %>% arrange(height)
 * With `select()` you can pick variables (columns) by their names. You can specify the variable names or provide the numbers, such as variable 1 through 4: `1:4`.
 
 ```{r}
-select(male_tatooine, name, height, gender, species)
+data %>% #and then
+  select(name, 
+         height, 
+         gender, 
+         species)
 ```
 
 ```{r}
-select(male_tatooine, 1:4)
+data %>% #and then
+  select(1:4)
 ```
 
 * With `mutate()` you can create new variables or modify existing ones. Let's say we want to create a `height` to `mass` ratio and we might want to express `height` in meters.
