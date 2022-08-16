@@ -14,6 +14,8 @@ main:
     url: /resources/    
 #  - title: "Sitemap"
 #    url: /sitemap/
+  - title: "Dashboard"
+    url: "https://www.maxplaining.com/flexdashboard/"
 
 
 # documentation
