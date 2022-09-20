@@ -3,9 +3,9 @@
 The tidyverse is a package in R that is - in itself - a collection of
 individual R packages that all work closely together in the same way
 (they speak thesame kind of language, if you will). Data import &
-export, manipulation, exploration and visualisation becomes simpler and
+export, manipulation, exploration and visualization becomes simpler and
 more elegant by using new and additional syntax which is more intuitive
-to and readible for us humans.
+to and readable for us humans.
 
 > The tidyverse is an opinionated **[collection of R
 > packages](https://www.tidyverse.org/packages)** designed for data
@@ -21,25 +21,25 @@ today.
 <img src="/img/icons/r-packages/thumbs/tidyverse.png" title="tidyverse logo" alt="tidyverse logo" width="50%" style="display: block; margin: auto;" />
 
 You can install the tidyverse via **`install.packages("tidyverse")`**
-and you only have to install it once. You can load it afterwards…
+and you only have to install it once. Check the prompt for the resulting
+output.
 
 ``` r
-#loads the tidyverse
+# installs the tidyverse
+#install.packages("tidyverse")
+
+# loads the tidyverse
 library(tidyverse)
 ```
 
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
-    ## ✔ ggplot2 3.3.6     ✔ purrr   0.3.4
-    ## ✔ tibble  3.1.8     ✔ dplyr   1.0.9
-    ## ✔ tidyr   1.2.0     ✔ stringr 1.4.0
-    ## ✔ readr   2.1.2     ✔ forcats 0.5.1
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
-
-``` r
-require(tidyverse)
-```
+    ## -- Attaching packages --------------------------------------- tidyverse 1.3.2 --
+    ## v ggplot2 3.3.6     v purrr   0.3.4
+    ## v tibble  3.1.8     v dplyr   1.0.9
+    ## v tidyr   1.2.0     v stringr 1.4.0
+    ## v readr   2.1.2     v forcats 0.5.1
+    ## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+    ## x dplyr::filter() masks stats::filter()
+    ## x dplyr::lag()    masks stats::lag()
 
 ## Contents of the tidyverse
 
@@ -59,47 +59,13 @@ are included in the core tidyverse:
 
 ### [ggplot2](https://ggplot2.tidyverse.org/) (visualization)
 
-`ggplot2` is a system to create beautiful graphics, based on **The
-Grammar of Graphics**. You provide the data, tell ggplot2 how to map
-variables to aesthetics, what kind of geometry to use (lines, points,
-bars etc.), and it takes care of the details. [Go to
+`ggplot2` is a system to create beautiful graphics, based on what they
+call ***the grammar of graphics***. You provide the data, tell ggplot2
+how to map variables to aesthetics, what kind of geometry to use (lines,
+points, bars etc.), and it takes care of the details. [Go to
 docs…](https://ggplot2.tidyverse.org/)
 
-#### ggplot2 examples
-
-A few simple illustrations of how to create graphs with ggplot. There is
-no code from other packages present. I’ll implement more of the code
-from other packages in other examples.
-
-``` r
-# loads ggplot 
-library(tidyverse) 
-
-# using the starwars dataset
-data <- starwars
-
-# plot the height distribution
-ggplot(data, aes(height)) + 
-         geom_density(aes(color = sex))
-```
-
-![](/_reports/figure/ggplot-examples-1.png)<!-- -->
-
-``` r
-# plot height of different species in the data set 
-# color by species
-ggplot(data, aes(species, height, 
-                     color = sex)) + 
-  geom_point() +
-  coord_flip() +
-  labs(title = "height distribution of star wars characters by species",
-       x = "species",
-       y = "height")
-```
-
-![](/_reports/figure/ggplot-examples-2.png)<!-- -->
-
-<img src="/img/icons/r-packages/thumbs/dplyr.png" title="dplyr logo" alt="dplyr logo" style="display: block; margin: auto;" />
+<img src="/img/icons/r-packages/thumbs/dplyr.png" title="ggplot2 logo" alt="ggplot2 logo" width="50%" style="display: block; margin: auto;" />
 
 ### [dplyr](https://dplyr.tidyverse.org/) (wrangling)
 
@@ -171,3 +137,12 @@ you will be well-equiped to approach and tackle most data analysis
 tasks. Once you become a more advanced user and start to feel that you
 lack in functionality, the other tidyverse packages will be rather easy
 to learn swiftly.
+
+## Wrap-up
+
+All of these packages add-up in terms of functionality and are designed
+and meant to be used together! I highly recommend to read/scan through
+the documentation and make a bookmark in an R/tidyverse folder or
+something similar. This way, you’ll be one click away from help in case
+you get stuck while trying to get one or more of these functions to work
+in your own projects.
