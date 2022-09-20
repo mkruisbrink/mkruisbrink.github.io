@@ -10,8 +10,8 @@ main:
     url: /about/   
 #  - title: "Experience"
 #    url: /experience/
-  - title: "Resources"
-    url: /resources/    
+#  - title: "Resources"
+#    url: /resources/    
 #  - title: "Sitemap"
 #    url: /sitemap/
   - title: "Dashboard"
