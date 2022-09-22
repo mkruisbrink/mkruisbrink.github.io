@@ -116,24 +116,33 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:max@cryptocommunity.nl"
-    - label: "R Resources"
-      icon: "fab fa-r-project"
-      url: "https://www.maxplaining.com/resources/"
+    - label: "Discord"
+      icon: "fab fa-discord"
+      url: "https://discord.gg/GVXC5UMpFj"   
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
+      icon: "fab fa-linkedin-in"
       url: "https://www.linkedin.com/in/mkruisbrink/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mkruisbrink"
+    - label: "Resources"
+      icon: "fab fa-r-project"
+      url: "https://www.maxplaining.com/resources/"
+
 
 
 # Site Footer
 footer:
   links:
+    - label: "Discord"
+      icon: "fab fa-fw fa-discord"
+      url: "https://discord.gg/GVXC5UMpFj" 
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin-in"
+      url: "https://www.linkedin.com/in/mkruisbrink/" 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mkruisbrink"
-    
 
 
 # Reading Files
