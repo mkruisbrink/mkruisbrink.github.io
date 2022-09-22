@@ -1,27 +1,112 @@
 ---
-title: "WPFusion"
+title: "WP Fusion"
 excerpt: "Connect your WorPress business with all other tools you use on a daily basis. This is superglue for WordPress."
 header:
   overlay_color: "#fe8045" # brand colour
   teaser: img/stack/20220804_wpfusion.PNG
   actions:
-    - label: "Visit WPFusion"
+    - label: "Visit WP Fusion"
       url: "https://wpfusion.com" #referral link
 sidebar:
     nav: "stack"
-categories:
-  - aciform
 ---
 
+## WP Fusion Breakdown
+
+WordPress is the most commonly used website builder across the internet. One of the reasons why it is such a great program to use for this purpose is that there are hundreds of plugins and third party apps that you can use to enhance your digital presence. From email promotion to lead magnets, there are plugins and tools for almost every feature. 
+
 >
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque nisi, imperdiet nec elementum faucibus, faucibus a lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vitae finibus nisi. Morbi enim leo, lobortis nec massa non, mattis gravida nisl. Quisque erat ipsum, bibendum eu posuere ac, rutrum ac nunc. Nunc at massa vel lacus gravida accumsan. Nam orci ante, vulputate eget diam ut, sollicitudin sagittis odio.
+This is the reaseon why I opted to make the main websites for Cryptocommunity with WordPress ([Cryptocommunity](https://cryptocommunity.nl) & [Member Area](https://leden.cryptocommunity.nl)). 
 
-## Coming Soon
+However, when you are using so many plugins to add different features to your site, keeping track of each one can become quite difficult.
 
-Aenean fermentum vitae sapien vitae lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet purus in interdum feugiat. Ut ultricies lorem vel tempus semper. Proin condimentum congue metus, sed vulputate enim sagittis nec. Fusce vestibulum tortor elit, vel scelerisque eros consequat at. Donec mollis rhoncus consequat. Mauris justo elit, iaculis id nibh a, aliquet interdum nunc. Curabitur accumsan magna rhoncus, tempor leo nec, tincidunt eros. Nulla vehicula tempor ligula, eu interdum nulla egestas sit amet.
+Fortunately, there is a tool that you can use to bring all of your other tools together in one place! These programs integrate your site with your CRM and let you use a singular platform to control all of your site functions. My website management experience was completely transformed when I learned about WP Fusion. 
 
-Donec in felis luctus urna lacinia ullamcorper eget at urna. Sed aliquet elit arcu, ac fringilla metus vestibulum nec. Aliquam vel justo vel diam efficitur pharetra vel at ipsum. Curabitur blandit dui varius, sodales metus et, consectetur odio. Phasellus purus arcu, luctus vitae hendrerit quis, venenatis id enim. Praesent malesuada pharetra cursus. Mauris aliquam, libero maximus faucibus aliquam, purus dui sollicitudin ex, non finibus leo urna rutrum dui. Suspendisse nec arcu a ligula venenatis interdum et ut urna. Nunc rutrum mollis purus, at finibus ligula faucibus in. Vivamus ut purus id risus rutrum euismod et eu mi. Aliquam erat volutpat. Proin elementum purus diam, in suscipit lacus pulvinar at. Aliquam quis tortor rhoncus, tempus mauris in, hendrerit ex. Integer eget justo luctus urna dictum malesuada. Maecenas est nulla, eleifend eget vestibulum sit amet, pharetra eget elit. Maecenas congue cursus dignissim.
+## What is WP Fusion?
 
-Nam condimentum ornare turpis, ut volutpat elit tincidunt vel. Sed enim lacus, suscipit nec elit vitae, elementum venenatis erat. Proin pharetra, mi ac commodo lacinia, nisl eros blandit mauris, sit amet condimentum enim tellus ac dui. In hac habitasse platea dictumst. Pellentesque imperdiet a leo eleifend vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce erat ante, interdum nec efficitur nec, tristique nec tellus. Ut quis leo et ligula lacinia accumsan et ac mi. Nunc mattis, arcu quis aliquet tincidunt, nunc augue varius diam, et posuere dui lacus quis tellus. Fusce pellentesque tellus quam, sit amet aliquet nibh placerat sodales. Vestibulum nec turpis dolor. Nullam volutpat, mi a vulputate dapibus, odio justo facilisis odio, id feugiat ligula tortor eget ex. Morbi vehicula rhoncus massa, et ultricies nisl elementum et.
+WP Fusion is a platform that integrates your WordPress website with your CRM and marketing automation program very tightly. You can then use tags to change website features. You do not need to have any coding experience or knowledge to make the tool work. EP Fusion lets you collect engagement data on the website level as well which is great for strategy development and modification in the future. These are some of the best features that WP Fusion brings to the table:
 
-Ut quis enim ligula. Aenean non ex non nisl auctor convallis nec a magna. Quisque gravida venenatis velit ut commodo. Aliquam efficitur interdum pellentesque. Praesent vitae felis aliquam justo vulputate blandit. Aliquam vitae turpis non sem hendrerit auctor in a nibh. Integer id ipsum at arcu malesuada rhoncus. Cras malesuada quis est consectetur finibus. Proin tempus gravida massa sed cursus.
+### Easy Installation
+
+The plugin takes only a few clicks and a couple of minutes to install once you have made the purchase. The platform itself is extremely visual and intuitive. I did not need any extra help to set it up. In case you do run into issues, the customer support at WP Fusion is some of the best as well.
+
+### Integrations Galore
+
+WP Fusion is able to completely integrate WordPress and over 100 different plugins and CRMs, including ActiveCampaign which is what I use for my websites. Other plugins it is compatible with include BuddyBoss, CartFlows, Elementor, and WooCommerce- just a few big names in a very long list. You do not need the help of a developer to set up these integrations or to maintain them. All of your content can be managed with tags.
+
+### Automation 
+
+Using the automation features, you can build targeted engagement campaigns to increase customer engagement and lead conversion. WP Fusion automation supports email, text messages, and a variety of other marketing channels.
+
+### Tracking Engagement
+
+The tags in your CRM are applied based on how a user interacts with your website. This way, you can successfully track customer engagement and customise your subsequent approach based on this data. You can set up complex automation workflows as well. 
+
+### Synchronisation 
+
+The integration between your website and the CRM is extremely tight. All user data is collected and synchronised to fill in the missing pieces and keep all accounts synced up between sites.
+
+## WP Fusion Pricing
+
+WP Fusion is available at three different pricing tiers based on your requirements:
+
+### Personal 
+
+The Personal plan costs $247 per year. It is able to support only one website. However, you do get access to unlimited tagging and synchronisation, over 102 different plugins, as well as support for over 50 different CRMs among other basic features. 
+
+### Plus 
+
+The Plus tier costs $347 a year and adds a host of exclusive features. While this tier also supports one website, you get access to 6 exclusive Pro add ons to enhance marketing automation:
+
+*	Abandoned cart tracking
+*	Enhanced ecommerce
+*	Media tools addon
+*	Login redirects addon
+*	Zapier addon
+*	Event tracking addon
+
+### Professional 
+
+The professional tier also offers the same exclusive add ons and features as the Plus tier. The difference between the two is that the Professional plan supports an unlimited number of websites. It also costs $540 per year.
+
+### WP Fusion Lite
+
+For those who are not ready to make a monetary commitment yet, WP Fusion also has a Lite version which is completely free to use and can be downloaded as a plugin at wordpress.org. It supports synchronisation with most well-known CRMs and marketing automation systems.
+
+### Lifetime Pricing
+
+If you do not want to make annual payments, you have the option to make a lifetime purchase for the plugin. A single site will cost you $999, while a pack of 3 sites will cost you $1999.
+
+## Alternatives to WP Fusion
+
+Following are a few alternative options that work similarly to WP Fusion:
+
+### FlowMattic
+
+FlowMattic is a plugin that can be used to automate workflows on WordPress websites. It connects all the different plugins and third party applications you are using and synchronises them similar to how WP Fusion works. While you get unlimited tasks and workflows with FlowMattic, there are definitely fewer integrations available which is why many prefer to use WP Fusion. Additionally, while it lets you add custom triggers, there is a lack of multi triggers.
+
+### AutomatorWP 
+
+AutomatorWP is another automation plugin that helps you connect your WordPress tools. It is free of cost and does not require any coding knowledge or experience to use. It is pretty simple compared to WP Fusion and FlowMattic, but it gets the basic job done. You can create automated workflows and add triggers. It offers limited integrations with some of the most popular WordPress tools and programs.
+
+## Why Should You Use WP Fusion?
+
+When it comes to synchronisation plugins for WordPress websites, there really isn't a better option than WP Fusion for you to choose- it is pretty unanimously considered to be the standard. It's full of features that are well worth the cost and is extremely simple to understand and use. Even the free version of the program serves its purpose very well.
+
+### Pros 
+
+*	Incredibly easy to set up and use. You only need a few clicks to integrate and automate your tools.
+*	A host of CRM and plugin integrations are available.
+*	Endless potential for personalization, especially when it comes to automation of workflows.
+*	Behaviour tracking data and analytics allow you to focus on improving engagement and conversion rates.
+*	Customer support is top notch- super nice staff that is readily available in case you are facing any issues.
+
+### Cons 
+
+●	The plans may feel a bit pricey considering there are free options available with the basic synchronisation features.
+●	WP Fusion offers a great degree of integrations but there is a possibility that a tool you are using is not supported.
+
+## How I Use WP Fusion
+
+> 
+Coming soon

@@ -27,12 +27,15 @@ WildMail has features built for all stages of a customer journey. It takes care 
 While hundreds of service providers claim to be the "best" email marketing platforms, only a handful deliver on their promises. I now happily use WildMail (switched from ActiveCampaign) for all my email marketing needs. Brimming with several high-quality additional features that ActiveCampaign doesn't offer such as completely free courses (Relationship Funnels) and their improved analytics dashboard (WildMetrics). Everything they do reflects that they care about their customers and want to build relationships with them. This, combined with the outstanding customer service, made me migrate to this Europe-based ActiveCampaign reseller. 
 
 ### WildMetrics
+
 Personally I found the analytics provided by ActiveCampaign lacking and frustrating. This is exactly where WildMetrics comes in. It is your custom dashboard showing you exactly how your funnels are performing. They even help you with the set-up via a free call if you need assitance. 
 
 ### Relationship Funnels
+
 WildMetrics also uses BuddyBoss to host their own learning environment to customers. Here they offer free courses about building a relation with your audience, how you can optimize your funnels and about writing effective copy. You'll not receive something like this elsewhere.
 
 ### Personalized email marketing
+
 The platform offers effective and personalized email marketing that allows you to build a direct relationship with your customer. Through targeted campaigns and list segmentation, WildMail ensures that every lead gets a personalized experience (if you set it up properly), giving them precisely what they are looking for at the right time. You can design (and send!) newsletters and promotional campaigns to engage the audience at exactly the right time. 
 
 WildMail allows you to further segment your audience into buckets based on gender, location, preferences, interests and much more via certain custom fields that you can set up. These custom fields are particulary powerfull as they provide you with limitless possibilities in terms of customization and automation! The sky is the limit! 
@@ -40,19 +43,20 @@ WildMail allows you to further segment your audience into buckets based on gende
 ### Powerful marketing automation
 It is no secret that handling marketing campaigns can seem daunting (and slightly boring). Personally I found it quite a hassle to configure and maintain proper funnels. Until I found WildMail I used to outsource work to third parties but now I'm fully automated and besides the configuration and actually thinking about your funnels and automations, the platform takes care of my everything without my personal involvement. 
 
->
-I like to build my own custom automations and I’ll include some templates at the end of this article.
-
 ###	CRM
+
 WildMail also offers customer relationship management that administers interactions with the audience, allowing you to improve the business-customer experience. It keeps the contact-data organized and derives key insights from the trends to identify bottlenecks and problematic areas. Hence, giving you the perfect opportunity to revamp your marketing strategies to fit the user needs. 
 
 ###	Messaging and live chat
+
 Offering a personalized experience to the customers develops a relationship of trust, allowing them to believe you’re easily accessible. This trust improves brand loyalty and customer satisfaction scores. WildMail has a great live chat feature that can answer queries and help the audience understand your product better. You would be able to deploy their chat bot on your website and anyone who leaves a message will be automatically added to your CRM, the message recorded, and you’ll be notified of a new lead. Normally I would use yet another third-party tool for this functionality.
 
 ### Qualified leads 
+
 Lastly, WildMail follows an "automation-first" approach for sales engagement. It analyses customer data to develop marketing strategies, sending out alerts at times that would yield the most result. Through lead scoring, site tracking, and pipeline automation, the platform provides innovative and precise email marketing strategies for promoting sales and generating revenue. You would set up a point system and track visits to certain (sales) pages and act according to automated rules that trigger when contacts are highly engaged with your content or visited your sales page x-times. 
 
 ## WildMail pricing
+
 WildMail provides three payment plans that you can select according to your requirements. You can also customize them according to the number of contacts and choose whether you want to be billed annually or monthly. For 10,000 contacts, the plans range from €112/month to €250/month for Lite and Professional, respectivelyFor small and personal businesses, I recommend the Lite version to start out with. If your business is just starting (up to 1000 contacts) you'll pay €22/month for the Lite plan.
 
 ## Alternatives to WildMail
@@ -70,6 +74,7 @@ Apart from WildMail, there are several other email marketing tools that you can 
 | Relationship Funnels, their own 15 bonus courses.course about email marketing                     |	NA |
 
 ## Why should you use WildMail?
+
 Overall, WildMail is a great tool to integrate with your business. The tool ensures that your leads can convert into customers through its advanced features and email marketing strategies that you can build and automate yourself. WildMail comes packed with several stand-out features that will free up a lot of your time, enables hyper-personalization if you want it, has the potential to drive up your profits while helping you improve your business model via automation at the same time. I love WildMail and couldn’t do without them at this time. 
 
 
