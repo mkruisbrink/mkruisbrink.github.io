@@ -117,7 +117,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:max@cryptocommunity.nl"
     - label: "R Resources"
-      icon: "fa-solid fa-link"
+      icon: "fab fa-r-project"
       url: "https://www.maxplaining.com/resources/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
