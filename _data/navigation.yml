@@ -28,7 +28,7 @@ stack:
         url: /stack/wildmail/
       - title: "BuddyBoss"
         url: /stack/buddyboss/
-      - title: "WPFusion"
+      - title: "WP Fusion"
         url: /stack/wpfusion/
       - title: "RightMessage"
         url: /stack/rightmessage/
@@ -36,5 +36,7 @@ stack:
         url: /stack/timercampaign/
       - title: "Bonjoro"
         url: /stack/bonjoro/
-      - title: "GitHub Pages"
-        #url: /stack/github-pages/
+      - title: "Learndash"
+        url: /stack/learndash/
+      # - title: "GitHub Pages"
+      #   url: /stack/github-pages/
