@@ -108,7 +108,7 @@ author:
   avatar           : "/img/20220920_max-avatar-bio-1664x1664.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I like to **build** *quality stuff* with *long-term vision*."
   location         : "Rotterdam, the Netherlands"
-  email            : # "max@cryptocommunity.nl"
+  email            : # "max@maxplaining.com"
   links:
     - label: "Cryptocommunity"
       icon: "fas fa-fw fa-globe"
