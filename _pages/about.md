@@ -10,7 +10,9 @@ header:
 ---
 
 >
-After spending a few years traveling, working, gaming and trying to get clear what I actually wanted to do with my life, I decided to study civil engineering. After working in the industry for a short time, I quickly realised that I much preferred other things in life and went to pursue those. 
+"[An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits]((https://www.16personalities.com/intj-personality)). These thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one. Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas." 
+
+I was amazed at how accurate this was and so were my friends and family. This sounds exactly like me and resonates with what I've been doing ever since I left high-school, finding my own path, making my own decisions, realizing my own mistakes and almost never regretting any of it.
 
 <figure class="align-center">
   <img src="/img/20220920_max-portrait-1664x1109.jpg" alt="Portrait Max 2021">
@@ -19,7 +21,7 @@ After spending a few years traveling, working, gaming and trying to get clear wh
 
 ## Experience
 
-After graduation, I've been working as an engineer at various well-known reputable international construction/offshore/dredging companies. In addition to that I started my own company while on an internship in Costa Rica at the time. If you [take a look at my resume](/assets/docs/CV_mpkruisbrink.pdf) you can see exactly what I've been up to over the past years. I do need to update that file...
+After obtaining my civil engineering degree, I've been working as an engineer at various well-known reputable international construction/offshore/dredging companies. In addition to that I started my own company while on an internship in Costa Rica at the time. If you [visit my LinkedIn profile](https://www.linkedin.com/in/mkruisbrink/), you can see exactly what I've been up to over the past years. 
 
 >
 | **Degree** | Civil Engineering - Harbour, Coast & Dredging |
