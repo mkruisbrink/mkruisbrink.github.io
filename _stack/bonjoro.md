@@ -6,7 +6,7 @@ header:
   teaser: img/stack/20220804_bonjoro.PNG
   actions:
     - label: "Visit Bonjoro"
-      url: "https://www.bonjoro.com/" #referral link
+      url: "https://www.bonjoro.com/?ref=maxkruisbrink" #referral link
 sidebar:
     nav: "stack"
 ---
@@ -16,6 +16,9 @@ sidebar:
 Your digital marketing strategy is one of the most critical aspects of managing your business in the modern world. The internet and associated technologies allow you to access and engage new markets. Email marketing is one of the most commonly used methods of developing outreach and finding new leads for your business. However, the typical approach to email advertising is quickly becoming rather stale and ineffective. It doesn't matter how many emails you send out if the recipients are deleting them before they get to the second line!
 
 In fact, this has become the reality for most online content. Over time, people’s expectations of the content they consume online have changed. You need to be able to engage your leads within the first few seconds of them arriving at your landing page. Visual and audio aids are a great way to grab a person’s attention. Personalizing such media significantly increases the chances of you retaining them! That is where tools like Bonjoro come in.
+
+>
+*As all stack products are a core part of my business, this article contains affiliate links*
 
 ## What is Bonjoro?
 

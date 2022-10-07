@@ -6,7 +6,7 @@ header:
   teaser: img/stack/20220804_timercampaign.PNG
   actions:
     - label: "Visit TimerCampaign"
-      url: "https://timercampaign.com" #referral link
+      url: "https://timercampaign.com/a/99a8a2aeebf2a500833a/" #referral link
 sidebar:
     nav: "stack"
 categories:

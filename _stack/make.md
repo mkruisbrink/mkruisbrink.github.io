@@ -6,7 +6,7 @@ header:
   teaser: img/stack/20220805_make-integromat.PNG
   actions:
     - label: "Visit Make"
-      url: "https://www.make.com/en" #referral link
+      url: "https://www.make.com/en/register?pc=maxplaining" #referral link
 sidebar:
     nav: "stack"
 ---
