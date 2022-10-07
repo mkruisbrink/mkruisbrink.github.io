@@ -7,11 +7,7 @@ header:
   overlay_image: /img/posts/01-exchanges/nomics-api.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
 category: 
-- Guides
-tags:
 - R
-- RStudio
-- Windows
 ---
 
 ## Base R installation (Windows)
