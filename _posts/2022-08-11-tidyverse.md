@@ -7,11 +7,7 @@ header:
   overlay_image: /img/20220808_supernova-midjourney.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
 category: 
-- R Packages
-tags:
 - R
-- RStudio
-- tidyverse
 ---
 
 ## What is the tidyverse?

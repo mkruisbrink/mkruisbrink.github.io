@@ -16,8 +16,10 @@ main:
 #    url: /sitemap/
   - title: "Dashboard"
     url: "https://www.maxplaining.com/flexdashboard/"
+    target: "_blank"
   - title: "Tracker"
     url: "https://www.maxplaining.com/demo-portfolio-tracker/"
+    target: "_blank"
 
 
 # documentation
