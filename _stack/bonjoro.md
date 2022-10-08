@@ -6,7 +6,7 @@ header:
   teaser: img/stack/20220804_bonjoro.PNG
   actions:
     - label: "Visit Bonjoro"
-      url: "https://www.bonjoro.com/" #referral link
+      url: "https://www.bonjoro.com/?ref=maxkruisbrink" #referral link
 sidebar:
     nav: "stack"
 ---
@@ -17,15 +17,18 @@ Your digital marketing strategy is one of the most critical aspects of managing 
 
 In fact, this has become the reality for most online content. Over time, people’s expectations of the content they consume online have changed. You need to be able to engage your leads within the first few seconds of them arriving at your landing page. Visual and audio aids are a great way to grab a person’s attention. Personalizing such media significantly increases the chances of you retaining them! That is where tools like Bonjoro come in.
 
+>
+*As all stack products are a core part of my business, this article contains affiliate links*
+
 ## What is Bonjoro?
 
 Bonjoro is a platform designed to enhance customer engagement and help businesses convert leads into clients. The main attraction point of Bonjoro is the customization it offers. It integrates with existing email marketing platforms and allows brands to send engaging videos to their customers to reel them in and make them stay. It is a great way to build a very customer-focused brand which, in my opinion, is the best approach to take when it comes to developing a business or entrepreneurship in the contemporary industry. 
 
 Here is an overview of some of the most pertinent features Bonjoro brings to the table:
 
-### Video Hosting and Messaging
+### Personalized Video Messaging & Hosting
 
-Of course, being a video hosting and sharing platform, this is Bonjoro’s main feature. But it truly is the best of its kind in the market right now. You can record videos on your desktop quickly with just a single click. Or you can upload your own pre-recorded videos to create your message. 
+Of course, being a video messaging platform, this is Bonjoro’s main feature and I love them for it. But it truly is the best of its kind in the market right now. You can record videos from your mobile device or from your desktop quickly with just a single click. Or you can upload your own pre-recorded videos to create your message and send them to specific leads at crucial points in their customer journey. Your customers can respond directly and this is what drives engagement through the roof. 
 
 ### Templates and Translations
 
