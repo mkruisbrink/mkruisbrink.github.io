@@ -45,7 +45,6 @@ I __love__ the buddyboss course design. It's great and provides you with tons of
 ## BuddyBoss pricing
 Prices start at approximately $230 on an annual basis (1 site) for the full deal. In turn you'll receive the BuddyBoss Platform Pro including the beautifull BuddyBoss Theme. If you only want the functionality of the platform itself, it is a little cheaper. You can [check the current BuddyBoss pricing](https://www.buddyboss.com/pricing/).
 
-
 >
 They also offer the BuddyBoss App (your website turned into a mobile application!). This is rather expensive but you will have your own mobile app that clients can download.
 
@@ -55,7 +54,6 @@ If you are looking for a product that offers similar functionality but isn't Bud
   * **Mighty Networks** is another SaaS platform that is focused on allowing users to build online communities. It is a very innovative product that lets you create courses, monetize services, host virtual events, and perform detailed community analytics. As opposed to relying on integrations, Might Networks prefers to have users utilise native features.
 
   * **Kajabi** is another program dedicated to designing websites for building as well as marketing online courses. It is a good option if you are more focused on the marketing aspect as Kajabi’s toolset for this purpose is quite remarkable. You get to work with a lot of emails, landing pages, and other features that will help you sell. If you want more widespread features, this product may feel a bit too expensive for the native features it offers. 
-
 
 ## Why should you use BuddyBoss?
 

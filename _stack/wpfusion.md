@@ -2,11 +2,11 @@
 title: "WP Fusion"
 excerpt: "Connect your WorPress business with all other tools you use on a daily basis. This is superglue for WordPress."
 header:
-  overlay_color: "#fe8045" # brand colour
+  overlay_color: "#E55B10" # brand colour
   teaser: img/stack/20220804_wpfusion.PNG
   actions:
     - label: "Visit WP Fusion"
-      url: "https://wpfusion.com" #referral link
+      url: "https://wpfusion.com/ref/404/" #referral link
 sidebar:
     nav: "stack"
 ---
@@ -14,17 +14,27 @@ sidebar:
 ## WP Fusion Breakdown
 
 WordPress is the most commonly used website builder across the internet. One of the reasons why it is such a great program to use for this purpose is that there are hundreds of plugins and third party apps that you can use to enhance your digital presence. From email promotion to lead magnets, there are plugins and tools for almost every feature. 
-
->
-This is the reaseon why I opted to make the main websites for Cryptocommunity with WordPress ([Cryptocommunity](https://cryptocommunity.nl) & [Member Area](https://leden.cryptocommunity.nl)). 
-
 However, when you are using so many plugins to add different features to your site, keeping track of each one can become quite difficult.
 
 Fortunately, there is a tool that you can use to bring all of your other tools together in one place! These programs integrate your site with your CRM and let you use a singular platform to control all of your site functions. My website management experience was completely transformed when I learned about WP Fusion. 
 
+<figure class="center-style">
+    <img src="/img/stack/wpfusion/WPFusion_cover-image-1060x465.jpg" alt="WP Fusion banner">
+</figure>
+
+>
+*As all stack products are a core part of my business, this article contains affiliate links*
+
 ## What is WP Fusion?
 
-WP Fusion is a platform that integrates your WordPress website with your CRM and marketing automation program very tightly. You can then use tags to change website features. You do not need to have any coding experience or knowledge to make the tool work. EP Fusion lets you collect engagement data on the website level as well which is great for strategy development and modification in the future. These are some of the best features that WP Fusion brings to the table:
+WP Fusion is a platform that integrates your WordPress website with your CRM and marketing automation program very tightly. You can then use tags to change website features. You do not need to have any coding experience or knowledge to make the tool work. EP Fusion lets you collect engagement data on the website level as well which is great for strategy development and modification in the future. 
+
+<figure class="centered">
+    <img src="/img/stack/wpfusion/logo-top-white-svg-1.svg" alt="WP Fusion logo">
+</figure>
+
+
+These are some of the best features that WP Fusion brings to the table:
 
 ### Easy Installation
 

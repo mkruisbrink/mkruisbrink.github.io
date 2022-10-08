@@ -17,9 +17,6 @@ With so many options at their disposal, catching leads and retaining customers i
 
 This is also called onsite retargeting. By presenting the right person with the right option at the right time, you increase the chances of them actually responding to your CTA. Telling an existing subscriber to subscribe to your content every time they visit your page will not bring you any benefit. Once I realized this, I started looking into tools that could help me personalize the opt-in forms and pop-ups for specific customers and ultimately settled on RightMessage. 
 
->
-*As all stack products are a core part of my business, this article contains affiliate links*
-
 Here is an insight on how useful I have found RightMessage to be for my site:
 
 ## What is RightMessage?
@@ -78,7 +75,7 @@ Linkgage is a tool that allows you to create links or landing pages which lead b
 
 ## Why Should You Use RightMessage?
 
-I have been able to [build a very personalized opt-in experience for my website visitors with the help of RightMessage](https://rightmessage.com/?fp_ref=max56). It's full of features without making the interface too cluttered and it integrates very well with most of the other tools I like to use for my websites. Here are a few pros and cons you may want to consider when thinking about using RightMessage:
+I have been able to [build a very personalized sales experience for my website visitors with the help of RightMessage](https://rightmessage.com/use-case/personalized-salespages/?fp_ref=max56). Truly, the tool is packed to the brimm and overflowing with features without making the interface too cluttered and it integrates very well with most of the other tools I like to use for my websites by using webhooks. Here are a few pros and cons you may want to consider when thinking about using RightMessage:
 
 ### Pros 
 
