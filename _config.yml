@@ -293,6 +293,7 @@ defaults:
       share: true
       related: true
       toc: true
+      toc_sticky: true
       toc_label: Table of Contents
 
   # _pages
@@ -311,6 +312,7 @@ defaults:
       #author_profile: true
       share: true
       toc: true
+      toc_sticky: true
       toc_label: Table of Contents
     sidebar:
       nav: "docs"
