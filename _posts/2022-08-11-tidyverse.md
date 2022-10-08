@@ -1,6 +1,6 @@
 ---
 #layout: post
-title: An introduction to the Tidyverse
+title: An Introduction to the Tidyverse
 subtitle: Getting started with R and RStudio
 excerpt: "In this guide I'm going to walk you through on how to install base R, an open-source software environment used mainly for statistical computing and graphics."
 header:

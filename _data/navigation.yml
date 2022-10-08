@@ -14,12 +14,12 @@ main:
 #    url: /resources/    
 #  - title: "Sitemap"
 #    url: /sitemap/
-  - title: "Dashboard"
-    url: "https://www.maxplaining.com/flexdashboard/"
-    target: "_blank"
-  - title: "Tracker"
-    url: "https://www.maxplaining.com/demo-portfolio-tracker/"
-    target: "_blank"
+#  - title: "Dashboard"
+#    url: "https://www.maxplaining.com/flexdashboard/"
+#    target: "_blank"
+#  - title: "Tracker"
+#    url: "https://www.maxplaining.com/demo-portfolio-tracker/"
+#    target: "_blank"
 
 
 # documentation
@@ -27,7 +27,7 @@ stack:
   - title: Stack
     children:
       - title: "WildMail (ActiveCampaign)"
-        url: /stack/wildmail/
+        url: /stack/activecampaign/
       - title: "BuddyBoss"
         url: /stack/buddyboss/
       - title: "WP Fusion"
