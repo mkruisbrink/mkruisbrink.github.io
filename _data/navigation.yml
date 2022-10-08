@@ -38,5 +38,9 @@ stack:
         url: /stack/bonjoro/
       - title: "Learndash"
         url: /stack/learndash/
+      - title: "Elementor"
+        url: /stack/elementor/
+      - title: "Make (Integromat)"
+        url: /stack/make/
       # - title: "GitHub Pages"
       #   url: /stack/github-pages/
