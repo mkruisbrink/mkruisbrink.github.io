@@ -26,7 +26,7 @@ If you want a dedicated *Graphical User Interface* (GUI) specifically designed f
 * Navigate to the [official R website](https://www.r-project.org/) and at the very top you will see multiple links that will take you to the official *RStudio Comprehensive R Archive Network* (CRAN) mirror list. 
 
 <figure class="centered">
-    <a href="/img/posts/2022-08-08-R-installation/Step0.PNG" title="Download R for Windows" alt="Download R for Windows">
+    <a title="Download R for Windows" alt="Download R for Windows">
     <img src="/img/posts/2022-08-08-R-installation/Step0.PNG"></a>
 </figure>
 
@@ -36,21 +36,21 @@ You can also go to the [CRAN mirror list](https://cran.r-project.org/mirrors.htm
 * Select **Download R for Windows** which is the third option from the top.
 
 <figure class="centered">
-    <a href="/img/posts/2022-08-08-R-installation/step2.PNG" title="Download R for Windows" alt="Download R for Windows">
-    <img src="/img/posts/2022-08-08-R-installation/step2.PNG"></a>
+    <a title="Download R for Windows" alt="Download R for Windows">
+    <img src="/img/posts/2022-08-08-R-installation/Step2.PNG"></a>
 </figure>
 
 * Select the first option **base** from the list.
 
 <figure class="centered">
-    <a href="/img/posts/2022-08-08-R-installation/Step4.PNG" title="R base" alt="R base">
+    <a title="R base" alt="R base">
     <img src="/img/posts/2022-08-08-R-installation/Step4.PNG"></a>
 </figure>
 
 * Select the **Download R X.X.X for Windows** option (right now the version number is 4.2.1). Either run the program directly or remember the download location on your local machine to run the installer.
 
 <figure class="centered">
-    <a href="/img/posts/2022-08-08-R-installation/Step5.PNG" title="R base" alt="R base">
+    <a title="R base" alt="R base">
     <img src="/img/posts/2022-08-08-R-installation/Step5.PNG"></a>
 </figure>
 
@@ -66,14 +66,14 @@ You can also go to the [CRAN mirror list](https://cran.r-project.org/mirrors.htm
 * Select your preferred download location for R. In this example I used a custom directory (I like to refrain from installing too much stuff on my C drive). Click **Next**. 
 
 <figure class="centered">
-    <a href="/img/posts/2022-08-08-R-installation/Step8.PNG" title="R base" alt="R base">
+    <a title="R base" alt="R base">
     <img src="/img/posts/2022-08-08-R-installation/Step8.PNG"></a>
 </figure>
 
 * Select the components you wish to install. In my case i select 64-bit since I have a 64-bit system (32-bit will be another option for you if you run such a build). Message translations are not required. Click **Next**.
 
 <figure class="centered">
-    <a href="/img/posts/2022-08-08-R-installation/Step9.PNG" title="R base" alt="R base">
+    <a title="R base" alt="R base">
     <img src="/img/posts/2022-08-08-R-installation/Step9.PNG"></a>
 </figure>
 
