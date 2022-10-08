@@ -48,7 +48,7 @@ The magnificent automations that you can build with ActiveCampaign are the bread
 
 You can literally go crazy with automations. The sky is the limit. But beware, when you try to automate too much, things could get complex rather quickly. And after you have implemented your systems and people are going through the pipelines, going back is a lot harder to do! Try to map out and discuss your funnels beforehand, similar to how you would design and sketch a website layout before actually making the website. It will save you time and provide you with the required focus.
 
-I've totally automated most of my business workflows, fuzing ActiveCampaign with all other required tools with something like WP Fusion. [Here you will find a detailed article that breaks down what WP Fusion is](https://www.maxplaining.com/stack/wpfusion/).
+I've totally automated most of my business workflows, fuzing ActiveCampaign with all other required tools with something like WP Fusion. [Here you will find a detailed article that breaks down what WP Fusion is]({{ site.baseurl }}{% link _stack/wpfusion.md %}).
 
 <figure class="align-center">
     <img src="/img/stack/wildmail/20220923-wildmail-automations.jpg" alt="ActiveCampaign Automations">
