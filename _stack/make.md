@@ -3,7 +3,7 @@ title: "Make"
 excerpt: "Build workflows and automation to your heart's extent. A visual automation studio with near-endless capacity."
 header:
   overlay_color: "#f0f" #Make primary colour
-  teaser: img/stack/20220805_make-integromat.PNG
+  teaser: img/stack/make/20221008_make.jpg
   actions:
     - label: "Visit Make"
       url: "https://www.make.com/en/register?pc=maxplaining" #referral link

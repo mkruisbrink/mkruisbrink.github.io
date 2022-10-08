@@ -3,10 +3,10 @@ title: "BuddyBoss"
 excerpt: "Host your entire community with BuddyBoss, a straight up gorgeous community and e-learning platform."
 header:
   overlay_color: "#e86d2a" #BuddyBoss primary colour
-  teaser: img/stack/20220805_buddyboss.PNG
+  teaser: img/stack/buddyboss/20221008_buddyboss.jpg
   actions:
     - label: "Visit BuddyBoss"
-      url: "https://buddyboss.com" #referral link
+      url: "https://buddyboss.com" #referral link 
 sidebar:
     nav: "stack"
 ---
