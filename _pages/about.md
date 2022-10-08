@@ -10,7 +10,7 @@ header:
 ---
 
 >
-"[An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits]((https://www.16personalities.com/intj-personality)). These thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one. Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas." 
+"[An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits](https://www.16personalities.com/intj-personality). These thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one. Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas." 
 
 I was amazed at how accurate this was and so were my friends and family. This sounds exactly like me and resonates with what I've been doing ever since I left high-school, finding my own path, making my own decisions, realizing my own mistakes and almost never regretting any of it.
 
@@ -25,7 +25,7 @@ After obtaining my civil engineering degree, I've been working as an engineer at
 
 >
 | **Degree** | Civil Engineering - Harbour, Coast & Dredging |
-| **Certifications** | [Visit this page](https://mkruisbrink.github.io/certifications) to view my certifications | 
+| **Certifications** | You can [visit this page to view my certifications]({{ site.baseurl }}{% link _pages/certifications.md %}) | 
 | **Languages** | Dutch, English, Spanish |
 | **Skills** | Cryptocurrency, blockchain, programming, automation, development |
 | **Personal Traits** | Perfectionist, enthusiastic, strategic, pro-active, flexible, result-orientated |
