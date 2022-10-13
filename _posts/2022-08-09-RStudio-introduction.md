@@ -2,7 +2,7 @@
 #layout: post
 title: An Introduction to RStudio
 subtitle: Getting started with R and RStudio
-excerpt: "In this guide I'm going to show you how to get familiar with the very basics of RStudio itself as a complete beginner."
+excerpt: "Introduction to familiarize you with the very basics of RStudio itself as a complete beginner."
 header:
   overlay_image: /img/posts/2022-08-09-RStudio-introduction/R-project-demo-1.PNG
   overlay_filter: rgba(0, 0, 0, 0.8)
@@ -39,12 +39,10 @@ RStudio can be learned by anyone. It's layout (default) is made up out of four d
 When you open up RStudio you immediately see four distinctive panes. All of which will be discussed here.
 
 <figure class="img-center">
-    <a title="R Project Demo" alt="R Project Demo">
-    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-demo-1.PNG"></a>
+    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-demo-1.PNG" title="R Project Demo" alt="R Project Demo">
 </figure>
 
 You can zoom in on every quadrant by using the following hotkeys:
-
 
 | **Where**       | **What**            | **Hotkey Command**     |
 |---              |----                 |                      --|
@@ -60,27 +58,24 @@ You can return to the original viewport via `<SHIFT> + <CTRL> + 0`.
 
 The top-left pane is where you will find the *Script Editor* and view your data(tables). The script editor is where you write your commands (code). These commands form a script and are provided to the R *Console* (bottom-left) as input. The *Script Editor* is an advanced text-editor which is designed for coding specifically. 
 
-<figure class="centered">
-    <a title="R Script Editor Pane" alt="R Script Editor Pane">
-    <img src="/img/posts/2022-08-09-RStudio-introduction/pane1-script-editor.PNG"></a>
+<figure class="img-center">
+    <img src="/img/posts/2022-08-09-RStudio-introduction/pane1-script-editor.PNG" title="R Script Editor Pane" alt="R Script Editor Pane">
 </figure>
 
 ### Console & Terminal
 
 The bottom-left pane is where you will find the R *Console*. The *Console* is a viewport into **R** itself. RStudio takes your selected input (the code) when you click *Run* ![Run](/img/icons/r-studio/run-script-rstudio.png) and submits it to R. Then... R does its magic and **outputs** to the *Console*. You can use the Console as a simple calculator or to run commands that you don't want to include in your script. You will also find the terminal window in this pane, which you can use for navigation and other tasks (learning to use terminal will make your life easier).
 
-<figure class="centered">
-    <a title="R Console Pane" alt="R Console Pane">
-    <img src="/img/posts/2022-08-09-RStudio-introduction/pane2-console.PNG"></a>
+<figure class="img-center">
+    <img src="/img/posts/2022-08-09-RStudio-introduction/pane2-console.PNG" title="R Console Pane" alt="R Console Pane">
 </figure>
 
 ### Environment & History
 
-The top-right pane is where you will find the R *Environment*. The *Environment* is where RStudio stores all the inputs as objects. This can be data tables, lists, numbers etc. You can double-click on many of these objects to view them in your *Script Editor* (usefull for tables and data frames). In the *History* tab you will find all of the input you have provided to the R *Console*. In this case we see a dataframw called `starwars`, containing 87 observations of 14 different variables.
+The top-right pane is where you will find the R *Environment*. The *Environment* is where RStudio stores all the inputs as objects. This can be data tables, lists, numbers etc. You can double-click on many of these objects to view them in your *Script Editor* (usefull for tables and data frames). In the *History* tab you will find all of the input you have provided to the R *Console*. In this case we see a dataframe called `starwars`, containing 87 observations of 14 different variables.
 
-<figure class="centered">
-    <a title="R Environment Pane" alt="R Environment Pane">
-    <img src="/img/posts/2022-08-09-RStudio-introduction/pane3-environment.PNG"></a>
+<figure class="img-center">
+    <img src="/img/posts/2022-08-09-RStudio-introduction/pane3-environment.PNG" title="R Environment Pane" alt="R Environment Pane">
 </figure>
 
 >
@@ -90,9 +85,8 @@ The top-right pane is where you will find the R *Environment*. The *Environment*
 
 The bottom-right pane is made up out of at least five tabs – Files, Plots, Packages, Help, and Viewer. 
 
-<figure class="centered">
-    <a title="R Explorer Pane" alt="R Explorer Pane">
-    <img src="/img/posts/2022-08-09-RStudio-introduction/pane4-explorer.PNG"></a>
+<figure class="img-center">
+    <img src="/img/posts/2022-08-09-RStudio-introduction/pane4-explorer.PNG" title="R Explorer Pane" alt="R Explorer Pane">
 </figure>
 
 1. The Files tab will show your current directory and allows you to quickly see your working files and folders. These are what make up your R project.
@@ -103,6 +97,7 @@ The bottom-right pane is made up out of at least five tabs – Files, Plots, Pac
     * Type a `?` before any object 
 
         ```R
+        # obtain helpful information about an object
         ?starwars
         ?data()
         ?library
@@ -138,37 +133,33 @@ My advice is to create a new R *Project* to experiment and tryout new things as 
 * The New Project Wizard opens
 
 <figure class="centered">
-    <a title="R Project" alt="R Project">
-    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-1.PNG"></a>
+    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-1.PNG" title="R Project" alt="R Project">
 </figure>
 
 * If you already have a folder with some R scripts you can associate your Project with this directory. Select **Existing Directory** and provide the location of your folder containing R Scripts.
 
 <figure class="centered">
-    <a title="R Project Existing Directory" alt="R Project Existing Directory">
-    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-5-existing-directory.PNG"></a>
+    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-5-existing-directory.PNG" title="R Project Existing Directory" alt="R Project Existing Directory">
 </figure>
 
 * Otherwise, select **New Directory**, click on **New Project** and in the next window provide both the name and location of your new directory as seen in below screenshots. You can uncheck the checkboxes for `git` and `renv` for this introduction. Check **Open in a new session** and click **Create Project**. 
 
 
 <figure class="half">
-    <a href="/img/posts/2022-08-09-RStudio-introduction/R-project-2.PNG"><img src="/img/posts/2022-08-09-RStudio-introduction/R-project-2.PNG"></a>
-    <a href="/img/posts/2022-08-09-RStudio-introduction/R-project-3.PNG"><img src="/img/posts/2022-08-09-RStudio-introduction/R-project-3.PNG"></a>
+    <a href="/img/posts/2022-08-09-RStudio-introduction/R-project-2.PNG"><img src="/img/posts/2022-08-09-RStudio-introduction/R-project-2.PNG" alt="Project type"></a>
+    <a href="/img/posts/2022-08-09-RStudio-introduction/R-project-3.PNG"><img src="/img/posts/2022-08-09-RStudio-introduction/R-project-3.PNG" alt="Project name"></a>
 </figure>
 
 * Cool! Now you have created your first R *Project*! You'll see your personal `Test.Rproj` file in the *File* explorer tab on the bottom right.
 
 <figure class="img-center">
-    <a title="New R Project" alt="New R Project">
-    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-4.PNG"></a>
+    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-4.PNG" title="New R Project" alt="New R Project">
 </figure>
 
 If you navigate to your project directory with the file explorer you'll see the exact same thing, and you can start your R project by clicking on the `demo.Rproj` file. It will load your project with all relevant scripts and data and will know exactly in what location your project related files exist.
 
 <figure class="centered">
-    <a title="New R Project" alt="New R Project">
-    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-file-explorer.PNG"></a>
+    <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-file-explorer.PNG" title="New R Project" alt="New R Project">
 </figure>
 
 
@@ -247,7 +238,7 @@ starwars %>% ggplot(aes(species, fill = gender)) +
 
 The result looks like this:
 
-<figure class="centered">
+<figure class="img-center">
     <a title="R Project Demo" alt="R Project Demo">
     <img src="/img/posts/2022-08-09-RStudio-introduction/R-project-demo-1.PNG"></a>
 </figure>
