@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 date: 2022-08-01T03:02:20+00:00
-excerpt: "Get to know a little about me."
+excerpt: "Get to know a little about me, my life and what I'm up to."
 header:
   overlay_image: /img/20220811_workstation-max.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -12,12 +12,17 @@ header:
 >
 "[An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits](https://www.16personalities.com/intj-personality). These thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one. Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas." 
 
-I was amazed at how accurate this was and so were my friends and family. This sounds exactly like me and resonates with what I've been doing ever since I left high-school, finding my own path, making my own decisions, realizing my own mistakes and almost never regretting any of it.
-
 <figure class="align-center">
   <img src="/img/20220920_max-portrait-1664x1109.jpg" alt="Portrait Max 2021">
   <figcaption><i>Somewhere in 2021...</i></figcaption>
 </figure>
+
+## Maxplaining
+
+>
+*To Maxplain; verb, informal. To explain something to someone in a way that suggests that they don’t know; used especially when a Max explains something, or anything at all.*
+
+This term was born when I was caught *explaining* things to people (especially my girlfriend) that were quite obvious... It must be because I'm slightly perfectionistic and even if people (in general) do a good job, I still find room to comment on something. Either super helpful or a slightly annoying, depending on the situation!
 
 ## Experience
 
@@ -31,10 +36,9 @@ After obtaining my civil engineering degree, I've been working as an engineer at
 | **Personal Traits** | Perfectionist, enthusiastic, strategic, pro-active, flexible, result-orientated |
 
 
-
 ## Home 
 
-I currently live in the vibrant city of Rotterdam with my girlfriend. Rotterdam is a sprawling port-city and the views are absolutely amazing.
+I currently live in the vibrant city of Rotterdam with my girlfriend. Rotterdam is a sprawling port-city and the views are absolutely amazing. Rotterdam was bombed in WWII and the historical center was largely destroyed. It is an upcoming city with an intriguing mix of old and new architecture and the river Maas basically cuts the city in half, which creates a lot of room for recreation on watersides and a spacious feeling in general.
 
 <figure class="align-center">
   <img src="/img/pages/about/20220804_euromast-rotterdam.jpg" alt="The Port of Rotterdam as seen from the Euromast">
