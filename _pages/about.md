@@ -47,7 +47,7 @@ I currently live in the vibrant city of Rotterdam with my girlfriend. Rotterdam 
 </figure>
 
 <figure class="align-center">
-  {% picture jpt-webp /assets/images/pages/about/20220804_max-jade-beach-costa-rica.jpg --alt Jade and me on the beach in Costa Rica %}
+  {% picture jpt-webp 20220804_max-jade-beach-costa-rica.jpg --alt Jade and me on the beach in Costa Rica %}
   <figcaption><i>Romance at the beach in Costa Rica.</i></figcaption>
 </figure>
 
