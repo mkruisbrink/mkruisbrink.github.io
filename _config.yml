@@ -117,16 +117,16 @@ author:
     #  icon: "fas fa-fw fa-envelope-square"
     #  url: "mailto:max@cryptocommunity.nl"
     - label: "Discord"
-      icon: "fab fa-discord"
+      icon: "fab fa-fw fa-discord"
       url: "https://discord.gg/GVXC5UMpFj"   
     - label: "LinkedIn"
-      icon: "fab fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/mkruisbrink/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mkruisbrink"
     - label: "Resources"
-      icon: "fab fa-r-project"
+      icon: "fab fa-fw fa-r-project"
       url: "https://www.maxplaining.com/resources/"
 
 
@@ -138,7 +138,7 @@ footer:
       icon: "fab fa-fw fa-discord"
       url: "https://discord.gg/GVXC5UMpFj" 
     - label: "LinkedIn"
-      icon: "fab fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/mkruisbrink/" 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -277,6 +277,9 @@ collections:
   stack:
     output: true
     permalink: /:collection/:path/
+  dashboards:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -310,6 +313,20 @@ defaults:
   - scope:
       path: ""
       type: stack
+    values:
+      layout: single
+      #author_profile: true
+      share: true
+      toc: true
+      toc_sticky: true
+      toc_label: Table of Contents
+    sidebar:
+      nav: "docs"
+
+  # _dashboards
+  - scope:
+      path: ""
+      type: dashboards
     values:
       layout: single
       #author_profile: true
