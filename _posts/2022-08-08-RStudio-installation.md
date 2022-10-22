@@ -119,7 +119,4 @@ At this point you can start experimenting with some of the datasets that come wi
 
 * Select the Terminal tab. Make sure the initial directory is set to "Project directory" and you can set your preferred terminal here. 
 
->
-If you dont have [Git](https://git-scm.com/downloads) installed yet, I highly recommend installing this. Git is software for version control and with git you'll also get access to Git Bash terminal emulater. I much prefer using Git Bash over the standard Windows Command Prompt. Besides, you're going to want to use git later anyway. SThis is beyond the scope of this guide though. 
-
 * For basic users that are just beginning with R and RStudio or programming in general, no other options are required for now. Press **OK**.
