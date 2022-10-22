@@ -1,12 +1,12 @@
 ---
-title: "Midjourney"
-excerpt: "Create stunning AI-generated art based on prompts. Beware, practice is required."
+title: "SimpleAnalytics"
+excerpt: "Truly simple tool to use if you care about the data privacy of your visitors and want to comply with GDPR automatically."
 header:
-  overlay_color: "#f0f" #Make primary colour
-  teaser: assets/images/stack/midjourney/20221008_midjourney.jpg
+  overlay_color: "#b93545" # brand colour
+  teaser: assets/images/stack/simpleanalytics/20221022_simpleanalytics.png
   actions:
-    - label: "Visit Midjourney"
-      url: "https://www.midjourney.com/home/" 
+    - label: "Visit SimpleAnalytics"
+      url: "https://simpleanalytics.com/?referral=cryptocommunity" #referral link
 sidebar:
     nav: "stack"
 ---
