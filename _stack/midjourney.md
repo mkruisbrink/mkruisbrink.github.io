@@ -3,7 +3,7 @@ title: "Midjourney"
 excerpt: "Create stunning AI-generated art based on prompts. Beware, practice is required."
 header:
   overlay_color: "#f0f" #Make primary colour
-  teaser: img/stack/midjourney/20221008_midjourney.jpg
+  teaser: assets/images/stack/midjourney/20221008_midjourney.jpg
   actions:
     - label: "Visit Make"
       url: "https://www.make.com/en" #referral link

@@ -4,7 +4,7 @@ title: An Introduction to the Tidyverse
 subtitle: The most essential packages for R to work the tidy way
 excerpt: "The tidyverse is a collection of R packages that work together in the same way and provide a more intuitive way to perform the most common tasks."
 header:
-  overlay_image: /img/20220808_supernova-midjourney.jpg
+  overlay_image: /assets/images/20220808_supernova-midjourney.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
 category: 
 - R
@@ -30,7 +30,7 @@ and easy to read and understand. The tidyverse offers a more elegant way
 to approach the most common data science problems and is widely used
 today.
 
-<img src="/img/icons/r-packages/thumbs/tidyverse.png" title="tidyverse logo" alt="tidyverse logo" width="50%" style="display: block; margin: auto;" />
+<img src="/assets/icons/r-packages/thumbs/tidyverse.png" title="tidyverse logo" alt="tidyverse logo" width="50%" style="display: block; margin: auto;" />
 
 You can install the tidyverse via **`install.packages("tidyverse")`**
 and you only have to install it once. Check the prompt for the resulting
@@ -67,7 +67,7 @@ The core tidyverse includes the packages that you’re likely to use in
 everyday data analyses. As of tidyverse 1.3.0, the following packages
 are included in the core tidyverse:
 
-<img src="/img/icons/r-packages/thumbs/ggplot2.png" title="ggplot2 logo" alt="ggplot2 logo" width="50%" style="display: block; margin: auto;" />
+<img src="/assets/icons/r-packages/thumbs/ggplot2.png" title="ggplot2 logo" alt="ggplot2 logo" width="50%" style="display: block; margin: auto;" />
 
 ### [ggplot2](https://ggplot2.tidyverse.org/) (visualization)
 
@@ -77,7 +77,7 @@ how to map variables to aesthetics, what kind of geometry to use (lines,
 points, bars etc.), and it takes care of the details. [Go to
 docs…](https://ggplot2.tidyverse.org/)
 
-<img src="/img/icons/r-packages/thumbs/dplyr.png" title="ggplot2 logo" alt="ggplot2 logo" width="50%" style="display: block; margin: auto;" />
+<img src="/assets/icons/r-packages/thumbs/dplyr.png" title="ggplot2 logo" alt="ggplot2 logo" width="50%" style="display: block; margin: auto;" />
 
 ### [dplyr](https://dplyr.tidyverse.org/) (wrangling)
 
@@ -85,7 +85,7 @@ docs…](https://ggplot2.tidyverse.org/)
 set of verbs that solve the most common data manipulation challenges.
 [Go to docs…](https://dplyr.tidyverse.org/)
 
-<img src="/img/icons/r-packages/thumbs/tidyr.png" title="tidyr logo" alt="tidyr logo" width="50%" style="display: block; margin: auto;" />
+<img src="/assets/icons/r-packages/thumbs/tidyr.png" title="tidyr logo" alt="tidyr logo" width="50%" style="display: block; margin: auto;" />
 
 ### [tidyr](https://tidyr.tidyverse.org/) (tidying)
 
@@ -94,7 +94,7 @@ data is data with a consistent form: in brief, every variable goes in a
 column, and every column is a variable. [Go to
 docs…](https://tidyr.tidyverse.org/)
 
-<img src="/img/icons/r-packages/thumbs/readr.png" title="readr logo" alt="readr logo" width="50%" style="display: block; margin: auto;" />
+<img src="/assets/icons/r-packages/thumbs/readr.png" title="readr logo" alt="readr logo" width="50%" style="display: block; margin: auto;" />
 
 ### [readr](https://readr.tidyverse.org/) (read & import)
 
@@ -103,7 +103,7 @@ csv, tsv, and fwf). It is designed to flexibly parse many types of data
 found in the wild, while still cleanly failing when data unexpectedly
 changes. [Go to docs…](https://readr.tidyverse.org/)
 
-<img src="/img/icons/r-packages/thumbs/purrr.png" title="purrr logo" alt="purrr logo" width="50%" style="display: block; margin: auto;" />
+<img src="/assets/icons/r-packages/thumbs/purrr.png" title="purrr logo" alt="purrr logo" width="50%" style="display: block; margin: auto;" />
 
 ### [purrr](https://purrr.tidyverse.org/) (mapping)
 
@@ -113,7 +113,7 @@ vectors. Once you master the basic concepts, purrr allows you to replace
 many for loops with code that is easier to write and more expressive.
 [Go to docs…](https://purrr.tidyverse.org/)
 
-<img src="/img/icons/r-packages/thumbs/tibble.png" title="tibble logo" alt="tibble logo" width="50%" style="display: block; margin: auto;" />
+<img src="/assets/icons/r-packages/thumbs/tibble.png" title="tibble logo" alt="tibble logo" width="50%" style="display: block; margin: auto;" />
 
 ### [tibble](https://tibble.tidyverse.org/) (enhanced data frames)
 
@@ -123,7 +123,7 @@ are data.frames that are lazy and surly: they do less and complain more
 forcing you to confront problems earlier, typically leading to cleaner,
 more expressive code. [Go to docs…](https://tibble.tidyverse.org/)
 
-<img src="/img/icons/r-packages/thumbs/stringr.png" title="stringr logo" alt="stringr logo" width="50%" style="display: block; margin: auto;" />
+<img src="/assets/icons/r-packages/thumbs/stringr.png" title="stringr logo" alt="stringr logo" width="50%" style="display: block; margin: auto;" />
 
 ### [stringr](https://stringr.tidyverse.org/) (strings)
 
@@ -133,7 +133,7 @@ uses the ICU C library to provide fast, correct implementations of
 common string manipulations. [Go to
 docs…](https://stringr.tidyverse.org/)
 
-<img src="/img/icons/r-packages/thumbs/forcats.png" title="forcats logo" alt="forcats logo" width="50%" style="display: block; margin: auto;" />
+<img src="/assets/icons/r-packages/thumbs/forcats.png" title="forcats logo" alt="forcats logo" width="50%" style="display: block; margin: auto;" />
 
 ### [forcats](https://forcats.tidyverse.org/) (factors)
 

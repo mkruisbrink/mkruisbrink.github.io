@@ -25,7 +25,7 @@ url                      : "https://maxplaining.com"
 baseurl                  : # "/maxplaining" # the subpath of your site, e.g. "/blog"
 repository               : "mkruisbrink/mkruisbrink.github.io" #GitHub username/repo-name e.g. 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : /img/20220920_maxplaining-logo-88x88.jpg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : /assets/images/20220920_maxplaining-logo-88x88.jpg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Maxplaining" # overrides the website title displayed in the masthead, use " " for no title
 #breadcrumbs             : false # true, false (default)
 words_per_minute         : 200
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Max Kruisbrink"
-  avatar           : "/img/20220920_max-avatar-bio-1664x1664.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/20220920_max-avatar-bio-1664x1664.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I like to **build** *quality stuff* with *long-term vision*."
   location         : "Rotterdam, the Netherlands"
   email            : "max@maxplaining.com"
@@ -282,6 +282,13 @@ collections:
     permalink: /:collection/:path/
 
 
+# Jekyll Picture Tag
+picture:
+  source: "assets/images/_fullsize"
+  output: "assets/images/generated"
+  suppress_warnings: true
+  ignore_missing_images: true
+
 # Defaults
 
 defaults:
@@ -336,4 +343,3 @@ defaults:
       toc_label: Table of Contents
     sidebar:
       nav: "docs"
-

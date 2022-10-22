@@ -3,7 +3,7 @@ title: "Elementor"
 excerpt: "Build beautifull websites with this drag-and-drop page builder. Zero coding knowledge required!"
 header:
   overlay_color: "#fe8045" # brand colour
-  teaser: img/stack/elementor/20221008_elementor.jpg
+  teaser: assets/images/stack/elementor/20221008_elementor.jpg
   actions:
     - label: "Visit Elementor"
       url: "https://elementor.com" #referral link

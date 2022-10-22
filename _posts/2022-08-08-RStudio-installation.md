@@ -4,7 +4,7 @@ title: RStudio Installation & Configuration (Windows)
 subtitle: Getting started with R and RStudio
 excerpt: "Walkthrough on how to install and configure your RStudio environment as a complete beginner."
 header:
-  overlay_image: /img/20220811_workstation-max.jpg
+  overlay_image: /assets/images/20220811_workstation-max.jpg
   overlay_filter: rgba(0, 0, 0, 0.6)
 category: 
 - R
@@ -39,7 +39,7 @@ RStudio can be learned by anyone. It's layout (default) is made up out of four d
 * Navigate to the [official Rstudio website](https://www.rstudio.com/products/rstudio/download/) and scroll down to the big download button as shown below. 
 
 <figure class="centered">
-    <img src="/img/posts/2022-08-08-RStudio-installation/download-RStudio-installer.PNG" alt="Download RStudio for Windows">
+    <img src="/assets/images/posts/2022-08-08-RStudio-installation/download-RStudio-installer.PNG" alt="Download RStudio for Windows">
 </figure>
 
 **NOTE:** *RStudio requires a 64-bit operating system. If you are on a 32 bit system, you can use an [older version of RStudio](https://www.rstudio.com/products/rstudio/older-versions/).*
@@ -56,13 +56,13 @@ With this you verify the *content* of your downloaded installer file. Checking t
     * If even **1 letter or number** changes anywhere in the downloaded installer file, you have downloaded a corrupt installer and the sha256sum output will not match. In fact, it will be totally different.
 
 <figure class="align-center">
-    <a href="/img/posts/2022-08-08-RStudio-installation/RStudio-SHA256-check-2.PNG" title="Obtaining SHA256sum" >
-    <img src="/img/posts/2022-08-08-RStudio-installation/RStudio-SHA256-check-2.PNG" alt="Obtaining SHA256sum"></a>
+    <a href="/assets/images/posts/2022-08-08-RStudio-installation/RStudio-SHA256-check-2.PNG" title="Obtaining SHA256sum" >
+    <img src="/assets/images/posts/2022-08-08-RStudio-installation/RStudio-SHA256-check-2.PNG" alt="Obtaining SHA256sum"></a>
 </figure>
 
 <figure class="align-center">
-    <a href="/img/posts/2022-08-08-RStudio-installation/RStudio-SHA256-check-1.PNG" title="Checking SHA256">
-    <img src="/img/posts/2022-08-08-RStudio-installation/RStudio-SHA256-check-1.PNG" alt="Checking SHA256"></a>
+    <a href="/assets/images/posts/2022-08-08-RStudio-installation/RStudio-SHA256-check-1.PNG" title="Checking SHA256">
+    <img src="/assets/images/posts/2022-08-08-RStudio-installation/RStudio-SHA256-check-1.PNG" alt="Checking SHA256"></a>
 </figure>
 
 ## Install RStudio
@@ -72,27 +72,27 @@ With this you verify the *content* of your downloaded installer file. Checking t
 * Select your destination folder and click **Next**.
 
 <figure class="centered">
-    <img src="/img/posts/2022-08-08-RStudio-installation/destination-folder.PNG" title="Destination folder" alt="Destination folder">
+    <img src="/assets/images/posts/2022-08-08-RStudio-installation/destination-folder.PNG" title="Destination folder" alt="Destination folder">
 </figure>
 
 * Decide if you want shortcuts. I don't like shortcuts and I would add RStudio via the search function (Windows key + Q) and pin it to the taskbar.
 
 <figure class="centered">
-    <img src="/img/posts/2022-08-08-RStudio-installation/menu-folders.PNG" title="Menu folders" alt="menu folders">
+    <img src="/assets/images/posts/2022-08-08-RStudio-installation/menu-folders.PNG" title="Menu folders" alt="menu folders">
 </figure>
 
 * Installation will begin and afterwards you can click **Finish**
 
 <figure class="half">
-    <a href="/img/posts/2022-08-08-RStudio-installation/installation.PNG"><img src="/img/posts/2022-08-08-RStudio-installation/installation.PNG" alt="Installation of R"></a>
-    <a href="/img/posts/2022-08-08-RStudio-installation/installatoin-complete.PNG"><img src="/img/posts/2022-08-08-RStudio-installation/installatoin-complete.PNG" alt="Installation finished"></a>
+    <a href="/assets/images/posts/2022-08-08-RStudio-installation/installation.PNG"><img src="/assets/images/posts/2022-08-08-RStudio-installation/installation.PNG" alt="Installation of R"></a>
+    <a href="/assets/images/posts/2022-08-08-RStudio-installation/installatoin-complete.PNG"><img src="/assets/images/posts/2022-08-08-RStudio-installation/installatoin-complete.PNG" alt="Installation finished"></a>
 </figure>
 
 * Congratulations, you have succesfully installed **RStudio**!
 
 
 <figure class="align-center">
-    <img src="/img/posts/2022-08-08-RStudio-installation/RStudio.PNG" title="RStudio startup screen" alt="RStudio startup screen">
+    <img src="/assets/images/posts/2022-08-08-RStudio-installation/RStudio.PNG" title="RStudio startup screen" alt="RStudio startup screen">
 </figure>
 
 * You now have access to base R and RStudio to work with base R. You can think of base R as the foundation layer with which you can perform certian compuations. The R community has added **vasts** amounts of functionality in the form of so-called *packages* that you can install at will and that will add to the base R functionality.
@@ -108,7 +108,7 @@ At this point you can start experimenting with some of the datasets that come wi
   * You can either leave the other selections at their defaults but I strongly urge you to deselect "Restore .RData into workspace at startup" and make sure "Save workspace to .RData on exit:" is set to "Never." This will force you to always save your work and check if you've saved correctly. In short, it will make sure you develop good habits right from the start!
 
 <figure class="centered">
-    <img src="/img/posts/2022-08-08-RStudio-installation/configuration1.PNG" title="RStudio startup screen" alt="RStudio startup screen"></a>
+    <img src="/assets/images/posts/2022-08-08-RStudio-installation/configuration1.PNG" title="RStudio startup screen" alt="RStudio startup screen"></a>
 </figure>
 
 * Select the Code tab. In addition to the default selections, I would personally also check "Highlight selected line," "Show margin," and "Show syntax highlighting in console input.".

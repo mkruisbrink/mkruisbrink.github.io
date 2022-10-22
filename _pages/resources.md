@@ -4,7 +4,7 @@ permalink: /resources/
 date: 2022-08-01T03:02:20+00:00
 excerpt: "A collection of usefull resources related to R & RStudio to propagate learning."
 header:
-  overlay_image: /img/20220808_spiraling-staircase-to-heaven.jpg
+  overlay_image: /assets/images/20220808_spiraling-staircase-to-heaven.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "[Credit: **Midjourney**](https://www.midjourney.com/home/)"
 ---

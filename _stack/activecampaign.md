@@ -3,7 +3,7 @@ title: "ActiveCampaign (WildMail)"
 excerpt: "Full-fledged marketing automation tool with insane custimization abilities."
 header:
   overlay_color: "#35b615" #WildMail primary colour
-  teaser: img/stack/wildmail/20221008_wildmail.jpg
+  teaser: assets/images/stack/wildmail/20221008_wildmail.jpg
   actions:
     - label: "Visit WildMail"
       url: "https://wildaudience.com/wildmail/?via=max" #referral link
@@ -28,7 +28,7 @@ WildMail *__is__* ActiveCampaign but with **amazing extras**. ActiveCampaign its
 
 
 <figure class="align-center">
-    <img src="/img/stack/wildmail/20220923-activecampaign-features.JPG" alt="ActiveCampaign Features">
+    <img src="/assets/images/stack/wildmail/20220923-activecampaign-features.JPG" alt="ActiveCampaign Features">
     <figcaption><i>ActiveCampaign Features</i></figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ You can literally go crazy with automations. The sky is the limit. But beware, w
 I've totally automated most of my business workflows, fuzing ActiveCampaign with all other required tools with something like WP Fusion. [Here you will find a detailed article that breaks down what WP Fusion is]({{ site.baseurl }}{% link _stack/wpfusion.md %}).
 
 <figure class="align-center">
-    <img src="/img/stack/wildmail/20220923-wildmail-automations.jpg" alt="ActiveCampaign Automations">
+    <img src="/assets/images/stack/wildmail/20220923-wildmail-automations.jpg" alt="ActiveCampaign Automations">
     <figcaption><i>Automation Builder</i></figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ ActiveCampaign also offers customer relationship management that administers int
 Offering a personalized experience to the customers develops a relationship of trust, allowing them to believe you’re easily accessible. This trust improves brand loyalty and customer satisfaction scores. ActiveCampaign itself has a great live chat feature called *Conversations* that can answer queries and help the audience understand your product better. You would be able to deploy their chat bot on your website and anyone who leaves a message will be automatically added to your CRM, the message recorded, and you’ll be notified of a new lead. Normally I would use yet another third-party tool for this functionality.
 
 <figure class="align-center">
-    <img src="/img/stack/wildmail/20220922-wildmail-conversations.jpg" alt="ActiveCampaign/WildMail Conversations Chatbot Functionality">
+    <img src="/assets/images/stack/wildmail/20220922-wildmail-conversations.jpg" alt="ActiveCampaign/WildMail Conversations Chatbot Functionality">
     <figcaption><i>Conversations backend, bye bye additional software.</i></figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ Personally, I found the analytics provided by ActiveCampaign lacking and frustra
 You sync your account, implement your customer segments, define your funnels via tags or automations and view convertions and events such as new subscribers, email opens and other interactions in real-time. I'm sure they will help you with the set-up and configuration via a free call if you need assitance. 
 
 <figure class="align-center">
-    <img src="/img/stack/wildmail/20220922-wildmetrics-dashboard.jpg" alt="WildMetrics Dashboard by WildAudience">
+    <img src="/assets/images/stack/wildmail/20220922-wildmetrics-dashboard.jpg" alt="WildMetrics Dashboard by WildAudience">
     <figcaption><i>WildMetrics Dashboard</i></figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ I love this product/feature and it is exactly delivering on where ActiveCampaign
 WildAudience (the company behind WildMail and WildMetrics) uses BuddyBoss to host their own learning environment (just like me with Cryptocommunity). In case you are feeling overwhelmed with all the options, this is where they teach you all the basics, from outlining the strategies, requirements and funnels themselves, to actual implementation. Here, they also offer a free course about building a relation with your audience, how you can optimize your funnels and about writing effective copy. You'll not receive something like this elsewhere. Adding tons of additional value with a dedicated focus on their customers.
 
 <figure class="align-center">
-    <img src="/img/stack/wildmail/20220922-relationshipfunnel-courses.jpg" alt="Relationship Funnel Courses Dashboard">
+    <img src="/assets/images/stack/wildmail/20220922-relationshipfunnel-courses.jpg" alt="Relationship Funnel Courses Dashboard">
     <figcaption><i>WildAudience Course Dashboard</i></figcaption>
 </figure>
 
