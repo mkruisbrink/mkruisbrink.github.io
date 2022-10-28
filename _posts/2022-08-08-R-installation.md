@@ -20,7 +20,7 @@ In this guide I'm going to show you how to install R (base) for Windows. By inst
 R is an open-source software environment for statistical computing and graphics that runs on Windows, Mac OS, and many UNIX platforms. With the base installation of R you are able to interact with the R language through the *Command Line Interface* (CLI). 
 
 >
-If you want a dedicated *Graphical User Interface* (GUI) specifically designed for R you can't miss RStudio, which is an *Integrated Developer Environment* (IDE). I highly recommend using RStudio to work with R. You can use [this guide for the installation of RStudio]({% post_url 2022-08-08-rstudio-installation %}).
+If you want a dedicated *Graphical User Interface* (GUI) specifically designed for R you can't miss RStudio, which is an *Integrated Developer Environment* (IDE). I highly recommend using RStudio to work with R. You can use [this guide for the installation of RStudio]({% link _posts/2022-08-08-rstudio-installation.md %}).
 
 ## Download R
 
@@ -88,5 +88,5 @@ If you are learning how to use the command line interface (CLI), you can also in
 
 ### Continue with the RStudio installation (Windows)
 
-Now that you have base R installed, it is time [to install the integrated development environment (IDE) called RStudio]({% post_url 2022-08-08-rstudio-installation %}). R and RStudio go hand-in-hand and RStudio is software specifically designed to work with the R computing language and makes working in R a breeze. 
+Now that you have base R installed, it is time [to install the integrated development environment (IDE) called RStudio]({% link _posts/2022-08-08-rstudio-installation.md %}). R and RStudio go hand-in-hand and RStudio is software specifically designed to work with the R computing language and makes working in R a breeze. 
 
