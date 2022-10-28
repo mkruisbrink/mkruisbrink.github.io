@@ -2,7 +2,6 @@
 #layout: post
 title: RStudio Installation & Configuration (Windows)
 subtitle: Getting started with R and RStudio
-timezone: Europe/Amsterdam
 excerpt: "Walkthrough on how to install and configure your RStudio environment as a complete beginner."
 header:
   overlay_image: /assets/images/20220811_workstation-max.jpg
@@ -22,7 +21,7 @@ We're going to cover:
 * Configuration and setting up RStudio
 
 >
-**Note:** As a prerequisite, you need R itself before you can use RStudio. Installing R (the software environment and language itself that enables you to perform statistical computing and make insanely beautiful graphics) can be done by following [this guide for base R installation]({% link _posts/2022-08-08-r-installation.md %})
+**Note:** As a prerequisite, you need R itself before you can use RStudio. Installing R (the software environment and language itself that enables you to perform statistical computing and make insanely beautiful graphics) can be done by following [this guide for base R installation]({% post_url 2022-08-08-r-installation %})
 
 ## What is RStudio?
 RStudio is an open-source software project and computer program that allows you to interact with the R computing language that you've previously installed on your system. RStudio provides you with a Graphical User Interface (GUI) that serves as a *front-end* which literally lies on top of R. RStudio is thus an **IDE** specifically for R. 
