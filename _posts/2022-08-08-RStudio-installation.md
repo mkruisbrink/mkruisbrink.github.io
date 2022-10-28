@@ -2,6 +2,7 @@
 #layout: post
 title: RStudio Installation & Configuration (Windows)
 subtitle: Getting started with R and RStudio
+timezone: Europe/Amsterdam
 excerpt: "Walkthrough on how to install and configure your RStudio environment as a complete beginner."
 header:
   overlay_image: /assets/images/20220811_workstation-max.jpg

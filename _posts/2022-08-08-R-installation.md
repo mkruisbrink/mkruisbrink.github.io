@@ -2,6 +2,7 @@
 #layout: post
 title: Base R Installation (Windows)
 subtitle: Getting started with R and RStudio
+timezone: Europe/Amsterdam
 excerpt: "Walkthrough on how to install base R, an open-source software environment used mainly for statistical computing and graphics."
 header:
   overlay_image: /assets/images/20220811_workstation-max.jpg
