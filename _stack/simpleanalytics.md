@@ -4,15 +4,19 @@ excerpt: "Truly simple tool to use if you care about the data privacy of your vi
 header:
   overlay_color: "#b93545" # brand colour
   teaser: assets/images/stack/simpleanalytics/20221022_simpleanalytics.png
-  actions:
-    - label: "Visit SimpleAnalytics"
-      url: "https://simpleanalytics.com/?referral=cryptocommunity" #referral link
+  # actions:
+  #  - label: "Visit SimpleAnalytics"
+  #    url: "https://simpleanalytics.com/?referral=cryptocommunity" #referral link
 sidebar:
     nav: "stack"
 ---
 
 >
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque nisi, imperdiet nec elementum faucibus, faucibus a lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vitae finibus nisi. Morbi enim leo, lobortis nec massa non, mattis gravida nisl. Quisque erat ipsum, bibendum eu posuere ac, rutrum ac nunc. Nunc at massa vel lacus gravida accumsan. Nam orci ante, vulputate eget diam ut, sollicitudin sagittis odio.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque nisi, imperdiet nec elementum faucibus, faucibus a lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+
+[Visit SimpleAnalytics](https://simpleanalytics.com/?referral=cryptocommunity){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
+
+Mauris vitae finibus nisi. Morbi enim leo, lobortis nec massa non, mattis gravida nisl. Quisque erat ipsum, bibendum eu posuere ac, rutrum ac nunc. Nunc at massa vel lacus gravida accumsan. Nam orci ante, vulputate eget diam ut, sollicitudin sagittis odio.
 
 ## Coming Soon
 

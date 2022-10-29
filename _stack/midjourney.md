@@ -4,15 +4,19 @@ excerpt: "Create stunning AI-generated art based on prompts. Beware, practice is
 header:
   overlay_color: "#f0f" #Make primary colour
   teaser: assets/images/stack/midjourney/20221008_midjourney.jpg
-  actions:
-    - label: "Visit Midjourney"
-      url: "https://www.midjourney.com/home/" 
+  # actions:
+  #  - label: "Visit Midjourney"
+  #    url: "https://www.midjourney.com/home/" 
 sidebar:
     nav: "stack"
 ---
 
 >
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque nisi, imperdiet nec elementum faucibus, faucibus a lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vitae finibus nisi. Morbi enim leo, lobortis nec massa non, mattis gravida nisl. Quisque erat ipsum, bibendum eu posuere ac, rutrum ac nunc. Nunc at massa vel lacus gravida accumsan. Nam orci ante, vulputate eget diam ut, sollicitudin sagittis odio.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi neque nisi, imperdiet nec elementum faucibus, faucibus a lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+
+[Visit Midjourney](https://www.midjourney.com/home/){: .btn .btn--success}{:target="_blank"}
+
+Mauris vitae finibus nisi. Morbi enim leo, lobortis nec massa non, mattis gravida nisl. Quisque erat ipsum, bibendum eu posuere ac, rutrum ac nunc. Nunc at massa vel lacus gravida accumsan. Nam orci ante, vulputate eget diam ut, sollicitudin sagittis odio.
 
 ## Coming Soon
 

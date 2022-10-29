@@ -4,9 +4,9 @@ excerpt: "Host your entire community with BuddyBoss, a straight up gorgeous comm
 header:
   overlay_color: "#e86d2a" #BuddyBoss primary colour
   teaser: assets/images/stack/buddyboss/20221008_buddyboss.jpg
-  actions:
-    - label: "Visit BuddyBoss"
-      url: "https://buddyboss.com" #referral link 
+  # actions:
+  #  - label: "Visit BuddyBoss"
+  #    url: "https://buddyboss.com" #referral link 
 sidebar:
     nav: "stack"
 ---
@@ -14,6 +14,9 @@ sidebar:
 ## BuddyBoss Breakdown
 
 WordPress has made the process of creating and maintaining intuitive websites very easy. There is a reason why over 455 million websites on the internet are made using this site building tool! When it came to designing my own website, I also opted for WordPress. The process was fairly simple, and I was able to create exactly what I wanted very quickly without really needing to perform a lot of coding which can prove to be tricky in most cases. 
+
+[Visit BuddyBoss](https://buddyboss.com){: .btn .btn--success}{:target="_blank"}
+
 
 The great thing about WordPress is that there are hundreds and thousands of plugins and programs that you can use in association to add features to your web applications. In fact, I would argue that there is practically no feature that you could not add using plugins and programs. I have and continue to use a number of different products to add new sections and aspects to my website. One of these is BuddyBoss. Here is how I have been using BuddyBoss for my business and why it may be worth it for you to give it a try as well:
 
@@ -43,7 +46,7 @@ I __love__ the buddyboss course design. It's great and provides you with tons of
 * And a lot more...
 
 ## BuddyBoss pricing
-Prices start at approximately $230 on an annual basis (1 site) for the full deal. In turn you'll receive the BuddyBoss Platform Pro including the beautifull BuddyBoss Theme. If you only want the functionality of the platform itself, it is a little cheaper. You can [check the current BuddyBoss pricing](https://www.buddyboss.com/pricing/).
+Prices start at approximately $230 on an annual basis (1 site) for the full deal. In turn you'll receive the BuddyBoss Platform Pro including the beautifull BuddyBoss Theme. If you only want the functionality of the platform itself, it is a little cheaper. You can [check the current BuddyBoss pricing](https://www.buddyboss.com/pricing/){:target="_blank"}.
 
 >
 They also offer the BuddyBoss App (your website turned into a mobile application!). This is rather expensive but you will have your own mobile app that clients can download.

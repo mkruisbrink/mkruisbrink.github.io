@@ -4,20 +4,20 @@ excerpt: "Create an immensely personalized and polished opt-in experience for yo
 header:
   overlay_color: "#fe8045" # brand colour
   teaser: assets/images/stack/rightmessage/20221008_rightmessage.jpg
-  actions:
-    - label: "Visit RightMessage"
-      url: "https://rightmessage.com?fp_ref=max56" #referral link
+  # actions:
+  #  - label: "Visit RightMessage"
+  #    url: "https://rightmessage.com?fp_ref=max56" #referral link
 sidebar:
     nav: "stack"
 ---
 
 ## RightMessage Breakdown
 
-With so many options at their disposal, catching leads and retaining customers is becoming more and more difficult. Personalization is the key to make yourself stand out in a mass of similar looking and similar working websites. Online tools like [RightMessage](https://rightmessage.com/?fp_ref=max56) combine customization with the powerful Call to Action to create an opt-in experience that is highly tailored for each specific visitor. This means that different users receive different CTAs based on how they have previously interacted with your website or content. This targeted approach enables you to move visitors along your sales funnel more efficiently.
+With so many options at their disposal, catching leads and retaining customers is becoming more and more difficult. Personalization is the key to make yourself stand out in a mass of similar looking and similar working websites. [Personalized web-experience tools such as RightMessage](https://rightmessage.com/?fp_ref=max56){:target="_blank"}{:rel="sponsored"} combine customization with the powerful Call to Action to create an opt-in experience that is highly tailored for each specific visitor. This means that different users receive different CTAs based on how they have previously interacted with your website or content. This targeted approach enables you to move visitors along your sales funnel more efficiently.
+
+[Visit RightMessage](https://rightmessage.com?fp_ref=max56){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
 
 This is also called onsite retargeting. By presenting the right person with the right option at the right time, you increase the chances of them actually responding to your CTA. Telling an existing subscriber to subscribe to your content every time they visit your page will not bring you any benefit. Once I realized this, I started looking into tools that could help me personalize the opt-in forms and pop-ups for specific customers and ultimately settled on RightMessage. 
-
-Here is an insight on how useful I have found RightMessage to be for my site:
 
 ## What is RightMessage?
 
@@ -33,7 +33,7 @@ RightMessage works with most websites, including those made with WordPress (whic
 
 ### Funnel Building
 
-RightMessage has a very nice, visual funnel builder, similar to the one you would see for automation inside a tool such as [ActiveCampaign](https://maxplaining.com/stack/wildmail/). The platform lets you determine the visitor’s journey and ultimate destination through the CTA message. The CTA builder allows you to go into a lot of detail when it comes to customized questions and potential responses from your page visitors. The flowchart type style of the builder makes it easy to visualize the customer’s journey. 
+RightMessage has a very nice, visual funnel builder, similar to the one you would see for automation inside a tool such as [ActiveCampaign](https://maxplaining.com/stack/wildmail/){:target="_blank"}{:rel="sponsored"}. The platform lets you determine the visitor’s journey and ultimate destination through the CTA message. The CTA builder allows you to go into a lot of detail when it comes to customized questions and potential responses from your page visitors. The flowchart type style of the builder makes it easy to visualize the customer’s journey. 
 
 ### Widgets 
 
@@ -75,7 +75,7 @@ Linkgage is a tool that allows you to create links or landing pages which lead b
 
 ## Why Should You Use RightMessage?
 
-I have been able to [build a very personalized sales experience for my website visitors with the help of RightMessage](https://rightmessage.com/use-case/personalized-salespages/?fp_ref=max56). Truly, the tool is packed to the brimm and overflowing with features without making the interface too cluttered and it integrates very well with most of the other tools I like to use for my websites by using webhooks. Here are a few pros and cons you may want to consider when thinking about using RightMessage:
+I have been able to [build a very personalized sales experience for my website visitors with the help of RightMessage](https://rightmessage.com/use-case/personalized-salespages/?fp_ref=max56){:target="_blank"}{:rel="sponsored"}. Truly, the tool is packed to the brimm and overflowing with features without making the interface too cluttered and it integrates very well with most of the other tools I like to use for my websites by using webhooks. Here are a few pros and cons you may want to consider when thinking about using RightMessage:
 
 ### Pros 
 

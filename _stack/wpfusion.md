@@ -4,9 +4,9 @@ excerpt: "Connect your WorPress business with all other tools you use on a daily
 header:
   overlay_color: "#E55B10" # brand colour
   teaser: assets/images/stack/wpfusion/20221008_wpfusion.jpg
-  actions:
-    - label: "Visit WP Fusion"
-      url: "https://wpfusion.com/ref/404/" #referral link
+  # actions:
+  #  - label: "Visit WP Fusion"
+  #    url: "https://wpfusion.com/ref/404/" #referral link
 sidebar:
     nav: "stack"
 ---
@@ -15,6 +15,9 @@ sidebar:
 
 WordPress is the most commonly used website builder across the internet. One of the reasons why it is such a great program to use for this purpose is that there are hundreds of plugins and third party apps that you can use to enhance your digital presence. From email promotion to lead magnets, there are plugins and tools for almost every feature. 
 However, when you are using so many plugins to add different features to your site, keeping track of each one can become quite difficult.
+
+[Visit WP Fusion](https://wpfusion.com/ref/404/){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
+
 
 Fortunately, there is a tool that you can use to bring all of your other tools together in one place! These programs integrate your site with your CRM and let you use a singular platform to control all of your site functions. My website management experience was completely transformed when I learned about WP Fusion. 
 

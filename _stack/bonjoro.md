@@ -1,12 +1,15 @@
 ---
 title: "Bonjoro"
-excerpt: "Send your clients and leads hyper-personalized messages, tailored for their needs at exactly the right time!"
+excerpt: "Say hello to this cuddyly bear. Send your clients and leads hyper-personalized messages, tailored for their needs at exactly the right time!"
 header:
-  overlay_color: "#FFD002" # brand colour
+  overlay_image: /assets/images/stack/bonjoro/20221029_Brink_a_super_friendly_big_cuddly_brown_bear_with_white_round_e_821a13f3-dab4-4ac7-a4dc-bc1eb6cf4ef4_optimised.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  #overlay_filter: rgba(255, 208, 2, 0.9)
+  caption: "[Credit: Max Kruisbrink @**Midjourney**](https://www.midjourney.com/home/)"
   teaser: assets/images/stack/bonjoro/20221008_bonjoro.jpg
-  actions:
-    - label: "Visit Bonjoro"
-      url: "https://www.bonjoro.com/?ref=maxkruisbrink" #referral link
+  # actions:
+  #  - label: "Visit Bonjoro"
+  #    url: "https://www.bonjoro.com/?ref=maxkruisbrink" #referral link
 sidebar:
     nav: "stack"
 ---
@@ -14,6 +17,8 @@ sidebar:
 ## Bonjoro Breakdown
 
 Your digital marketing strategy is one of the most critical aspects of managing your business in the modern world. The internet and associated technologies allow you to access and engage new markets. Email marketing is one of the most commonly used methods of developing outreach and finding new leads for your business. However, the typical approach to email advertising is quickly becoming rather stale and ineffective. It doesn't matter how many emails you send out if the recipients are deleting them before they get to the second line!
+
+[Visit Bonjoro](https://www.bonjoro.com/?ref=maxkruisbrink){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
 
 In fact, this has become the reality for most online content. Over time, people’s expectations of the content they consume online have changed. You need to be able to engage your leads within the first few seconds of them arriving at your landing page. Visual and audio aids are a great way to grab a person’s attention. Personalizing such media significantly increases the chances of you retaining them! That is where tools like Bonjoro come in.
 

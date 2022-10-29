@@ -44,5 +44,9 @@ stack:
         url: /stack/elementor/
       - title: "Make (Integromat)"
         url: /stack/make/
+      - title: "SimpleAnalytics"
+        url: /stack/simpleanalytics/
+      - title: "Midjourney"
+        url: /stack/midjourney/
       # - title: "GitHub Pages"
       #   url: /stack/github-pages/
