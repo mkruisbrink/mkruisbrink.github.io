@@ -1,6 +1,6 @@
 ---
 title: "Bonjoro"
-excerpt: "Say hello to this cuddyly bear. Send your clients and leads hyper-personalized messages, tailored for their needs at exactly the right time!"
+excerpt: "Say hello to this cuddly bear. Send your clients and leads hyper-personalized messages, tailored for their needs at exactly the right time!"
 header:
   overlay_image: /assets/images/stack/bonjoro/20221029_Brink_a_super_friendly_big_cuddly_brown_bear_with_white_round_e_821a13f3-dab4-4ac7-a4dc-bc1eb6cf4ef4_optimised.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -39,13 +39,23 @@ Of course, being a video messaging platform, this is Bonjoro’s main feature an
 
 The program has plenty of pre-made templates that you can use if you don't have the time to make your own. They are very professional and well-designed which is why I have used them on occasion as well. Additionally, Bonjoro has really great language support. You can translate your video content in over 20 different languages on the spot. If your desired language is not on the list, you can send in a request for it to be added in 24 hours!
 
+<figure class="centered">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/templates.webp" alt="Create different templates">
+    <figcaption><i>Bonjoro templates</i></figcaption>
+</figure>
+
 ### Communication Management
 
 Bonjoro is great for team-based work environments which are very common in medium and large-scale businesses. You can set up team inboxes with select individuals to encourage communication and coordination within teams.
 
+<figure class="centered">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/workspaces.webp" alt="Create different workspaces">
+    <figcaption><i>Bonjoro workspaces</i></figcaption>
+</figure>
+
 ### Interactive Medium
 
-Another thing I love about Bonjoro is that it is interactive- it actually allows the customers to answer back to you. So it is less like a brand sending a marketing email to a potential customer and more like a brand representative talking to and helping out a customer with their issues and queries. This makes a huge difference in how the user perceives and interacts with your brand and services.
+Another thing I love about Bonjoro is that it is interactive- it actually allows the customers to reply to your Bonjoro. So it is less like a brand sending a marketing email to a potential customer and more like a brand representative talking to and helping out a customer with their issues and queries. This makes a huge difference in how the user perceives and interacts with your brand and services.
 
 ### Easy Setup
 
@@ -57,9 +67,10 @@ The platform comes with built-in sales and marketing analytics along with a host
 
 ## Bonjoro Pricing
 
-Bonjoro offers both free and paid versions of its platform. If you are a small startup, I recommend starting out with the free plan. You get up to 50 videos per month with unlimited text testimonials with one publishable. 
+Bonjoro offers both free and paid versions of its platform. If you are a small startup, I would recommend to start with the Bonjoro free plan. You get up to 50 videos per month with unlimited text testimonials with one publishable. 
 
-On the other hand, if you are a growing brand looking to capture customers with customized messages and videos, the paid plans are definitely worth looking into. Bonjoro has pretty simple pricing plans and I have found them to be quite reasonable considering how useful the program actually is:
+On the other hand, if you are a growing brand looking to capture customers with customized messages and videos, the paid plans are definitely worth looking into. [Bonjoro has pretty simple pricing plans](https://www.bonjoro.com/pricing){:target="_blank"}{:rel="sponsored"} and I have found them to be quite reasonable considering how useful the program actually is:
+
 
 ### Starter Plan
 
@@ -109,6 +120,15 @@ All in all, Bonjoro has become a critical staple when it comes to building engag
 
 ## How I Use Bonjoro
 
-> 
-Coming soon
+Bonjoro is all about standing out to your audience and starting a conversation with your leads at the right time. I use it to personally send a welcome message to all new leads that opt-in to any of my leadmagnets on the top of the funnel. Whenever someone subscribes to my mailing list, a Bonjoro task is automatically created for me and I get send a push notification on my mobile device. After they opt in, they get redirected to a special thank you page where a Rightmessage survey is embedded. On this page, I ask a few questions relating to their goals, objectives, struggles and a few other topics. This segments my audience and when the Bonjoro notification appears on my mobile device, the segmented data on that particular lead is already [saved to custom fields in my CRM, WildMail](https://wildaudience.com/wildmail/?via=max){:target="_blank"}{:rel="sponsored"} (an ActiveCampaign reseller).
+
+Sending them a personalized welcome message where I mention their goals and the fact that we can assist them in overcoming those specfic struggles in a certain way. I try to do this in the few hours after they opt in since we're still sort of top of mind. 
+
+Another way to use it is to personally thank clients who purchase your product or membership and make them feel welcome and appreciated. We welcome them again and invite them to the first live session that we have coming up (we do those every month). Again, it's the human touch that we're going after. We are trying to build relationships with our customers as we're a membership/community platform.
+
+You could also automate your pitches or promotions via WildMail, implement a Bonjoro task whenever people are at a certain stage in your pitch funnel, and send them a personalized video message where you blow them away with your efforts. Don't worry, you can pre-record that pitch so you don't have to record a pitch for everyone. All of this is automated and you'll get notified almost instantly. 
+
+There are literally tons of ways you can deploy a tool like Bonjoro to establish loyalty and trust in the relationship between your customers and your company and brand. Your engagement and response rate will increase dramatically and the people who actually open and watch your messages are bound to love them. They'll appreciate the personal attention they receive.
+
+I hope you catch my drift at this point. This is some next-level brand building sh*t that provides you with immense power to connect with your audience. [You can start with Bonjoro for free](https://www.bonjoro.com/?ref=maxkruisbrink){:target="_blank"}{:rel="sponsored"} to deduce how you can implement this tool into your own business.
 

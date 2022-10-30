@@ -151,9 +151,6 @@ Overall, [WildMail is a great tool to integrate with your business](https://wild
 
 ## How I use WildMail
 
->
-I will add a movie outlining these points at a later stage
-
 WildMail handles nearly everything you can imagine. Here are some of the things I use WildMail for which are a core part of my business:
 
 *   Lead information obtained from other tools such as TimerCampaign and RightMessage are stored in custom fields for use in personalization.
