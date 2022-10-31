@@ -3,17 +3,21 @@ title: "Make"
 excerpt: "Build workflows and automation to your heart's extent. A visual automation studio with near-endless capacity."
 header:
   overlay_color: "#f0f" #Make primary colour
-  teaser: img/stack/make/20221008_make.jpg
-  actions:
-    - label: "Visit Make"
-      url: "https://www.make.com/en/register?pc=maxplaining" #referral link
+  teaser: assets/images/stack/make/20221008_make.jpg
+  # actions:
+  #  - label: "Visit Make"
+  #    url: "https://www.make.com/en/register?pc=maxplaining" #referral link
 sidebar:
     nav: "stack"
 ---
 
 ## Make Breakdown
 
-Automation is no longer just a buzzword- it is quickly becoming a must for businesses that want to maintain their competitive nature within the industry. Thankfully, automation is becoming more accessible for businesses of all sizes thanks to productivity applications like Make. These tools allow users to create interlinked functions with chained commands for execution instantly or at a later time. This allows for tasks to become more streamlined with skilled personnel freed up for more important work.
+Automation is no longer just a buzzword- it is quickly becoming a must for businesses that want to maintain their competitive nature within the industry. Thankfully, automation is becoming more accessible for businesses of all sizes thanks to productivity applications like Make. 
+
+[Visit Make](https://www.make.com/en/register?pc=maxplaining){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
+
+These tools allow users to create interlinked functions with chained commands for execution instantly or at a later time. This allows for tasks to become more streamlined with skilled personnel freed up for more important work.
 
 >
 *As all stack products are a core part of my business, this article contains affiliate links*

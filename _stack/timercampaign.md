@@ -3,11 +3,11 @@ title: "TimerCampaign"
 excerpt: "Create urgency in your business via original and authenthic deadlines that expire exactly at the right time."
 header:
   overlay_color: "#fe8045" # brand colour
-  teaser: img/stack/timercampaign/20221008_timercampaign.jpg
+  teaser: assets/images/stack/timercampaign/20221008_timercampaign.jpg
   # alt: "banner image for timercampaign"
-  actions:
-    - label: "Visit TimerCampaign"
-      url: "https://timercampaign.com/a/99a8a2aeebf2a500833a/" #referral link
+  # actions:
+  #  - label: "Visit TimerCampaign"
+  #    url: "https://timercampaign.com/a/99a8a2aeebf2a500833a/" #referral link
 sidebar:
     nav: "stack"
 ---
@@ -15,6 +15,9 @@ sidebar:
 ## TimerCampaign Breakdown
 
 Digital marketing has become a necessity in the modern business industry. However, as competition rises and customer expectations evolve, companies have to go above and beyond to modify their approach in order to retain visitors’ attention and convert leads into actual sales. Most websites use features like pop-ups, personalized video and audio content, and opt-in forms to make the consumer experience as unique as possible. 
+
+[Visit TimerCampaign](https://timercampaign.com/a/99a8a2aeebf2a500833a/){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
+
 
 One of the most effective ways of ensuring a high conversion rate is by using urgency to your advantage. Limited-time offers encourage visitors to respond positively to your calls to action. Whether it's merchandise for sale, a webinar, an event, or a simple sign-up list, adding a deadline creates a much greater impact which will translate into higher conversion. You can ramp up that impact ten-fold by adding an actual timer next to your offer that is a physical representation of the limited nature of the CTA. You can use simple tools like TimerCampaign to create and add countdowns to your web pages as I do for my website from time to time.
 

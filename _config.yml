@@ -12,7 +12,7 @@
 
 #theme                   : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "neon", "dirt", "default", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "neon", "dirt", "dark", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -25,7 +25,7 @@ url                      : "https://maxplaining.com"
 baseurl                  : # "/maxplaining" # the subpath of your site, e.g. "/blog"
 repository               : "mkruisbrink/mkruisbrink.github.io" #GitHub username/repo-name e.g. 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : /img/20220920_maxplaining-logo-88x88.jpg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : /assets/images/20220920_maxplaining-logo-88x88.jpg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Maxplaining" # overrides the website title displayed in the masthead, use " " for no title
 #breadcrumbs             : false # true, false (default)
 words_per_minute         : 200
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Max Kruisbrink"
-  avatar           : "/img/20220920_max-avatar-bio-1664x1664.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/20220920_max-avatar-bio-1664x1664.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I like to **build** *quality stuff* with *long-term vision*."
   location         : "Rotterdam, the Netherlands"
   email            : "max@maxplaining.com"
@@ -117,16 +117,16 @@ author:
     #  icon: "fas fa-fw fa-envelope-square"
     #  url: "mailto:max@cryptocommunity.nl"
     - label: "Discord"
-      icon: "fab fa-discord"
+      icon: "fab fa-fw fa-discord"
       url: "https://discord.gg/GVXC5UMpFj"   
     - label: "LinkedIn"
-      icon: "fab fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/mkruisbrink/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mkruisbrink"
     - label: "Resources"
-      icon: "fab fa-r-project"
+      icon: "fab fa-fw fa-r-project"
       url: "https://www.maxplaining.com/resources/"
 
 
@@ -138,7 +138,7 @@ footer:
       icon: "fab fa-fw fa-discord"
       url: "https://discord.gg/GVXC5UMpFj" 
     - label: "LinkedIn"
-      icon: "fab fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/mkruisbrink/" 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -277,7 +277,17 @@ collections:
   stack:
     output: true
     permalink: /:collection/:path/
+  dashboards:
+    output: true
+    permalink: /:collection/:path/
 
+
+# Jekyll Picture Tag
+picture:
+  source: "assets/images/_fullsize"
+  output: "assets/images/generated"
+  suppress_warnings: true
+  ignore_missing_images: true
 
 # Defaults
 
@@ -320,3 +330,16 @@ defaults:
     sidebar:
       nav: "docs"
 
+  # _dashboards
+  - scope:
+      path: ""
+      type: dashboards
+    values:
+      layout: single
+      #author_profile: true
+      share: true
+      toc: true
+      toc_sticky: true
+      toc_label: Table of Contents
+    sidebar:
+      nav: "docs"

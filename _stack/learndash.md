@@ -3,10 +3,10 @@ title: "LearnDash"
 excerpt: "Create and manage engaging courses. Stimulate learning for your students!"
 header:
   overlay_color: "#fe8045" # brand colour
-  teaser: img/stack/learndash/20221008_learndash.jpg
-  actions:
-    - label: "Visit RightMessage"
-      url: "https://learndash.com" #referral link
+  teaser: assets/images/stack/learndash/20221008_learndash.jpg
+  # actions:
+  #  - label: "Visit RightMessage"
+  #    url: "https://learndash.com" #referral link
 sidebar:
     nav: "stack"
 ---
@@ -15,6 +15,8 @@ sidebar:
 ## LearnDash Breakdown 
 
 The online sphere has not only opened up a whole new world for business and marketing but also presents a unique opportunity for remote learning. The role of the internet in education was made even more prominent over the course of the COVID pandemic, with most institutions turning to online resources to deliver lessons and test students.
+
+[Visit LearnDash](https://learndash.com/){: .btn .btn--success}{:target="_blank"}
 
 However, e-learning platforms existed far before the pandemic even came into the picture. These tools allow educators to develop digital products comprising relevant lessons for an individual to learn a particular subject. New aides like LearnDash take things a step further and add elements such as online quizzes and community spaces to make content even more engaging.
 

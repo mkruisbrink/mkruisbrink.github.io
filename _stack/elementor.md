@@ -3,10 +3,10 @@ title: "Elementor"
 excerpt: "Build beautifull websites with this drag-and-drop page builder. Zero coding knowledge required!"
 header:
   overlay_color: "#fe8045" # brand colour
-  teaser: img/stack/elementor/20221008_elementor.jpg
-  actions:
-    - label: "Visit Elementor"
-      url: "https://elementor.com" #referral link
+  teaser: assets/images/stack/elementor/20221008_elementor.jpg
+  # actions:
+  #  - label: "Visit Elementor"
+  #    url: "https://elementor.com" #referral link
 sidebar:
     nav: "stack"
 ---
@@ -14,6 +14,8 @@ sidebar:
 ## Elementor Breakdown
 
 While you can build a basic but complete website using WordPress, it may leave something to desire when it comes to design. Not to mention, you need to have a basic level of web-building knowledge to be able to use WordPress effectively. The alternative and much better option for you is to use a plugin that makes the job much easier and more facilitative.
+
+[Visit Elementor](https://elementor.com){: .btn .btn--success}{:target="_blank"}
 
 That is where tools like Elementor come in. WordPress lets you integrate with website builders that give you access to a whole host of additional features to further spruce up the design and aesthetics of your website. These are typically pretty easy to use, employing a drag and drop style editor to allow you to make edits as quickly and easily as possible. Let me run you through why I chose Elementor as my website builder and how I have used it so far:
 

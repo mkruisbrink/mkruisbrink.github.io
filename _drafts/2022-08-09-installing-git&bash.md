@@ -4,7 +4,7 @@ title: Git(Bash) Installation (Windows)
 subtitle: Setting up your Git and GitBash environment
 excerpt: "In this guide I'm going to walk you through on how to install base Git (and GitBash). R is an open-source software environment used a lot for statistical computing and graphics."
 header:
-  overlay_image: /img/posts/01-exchanges/nomics-api.jpg
+  overlay_image: /assets/images/posts/01-exchanges/nomics-api.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
 category: 
 - Guides

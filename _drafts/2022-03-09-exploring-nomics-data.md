@@ -4,7 +4,7 @@ title: Centralized vs. Decentralized Exchanges
 subtitle: Exploring the Nomics API
 excerpt: "How many cryptocurrency exchanges are there? How many of these are centralized or decentralized? What does this imply in relation to the transparancy of the volumes in cryptocurrency? Let's find out."
 header:
-  overlay_image: /img/posts/01-exchanges/nomics-api.jpg
+  overlay_image: /assets/images/posts/01-exchanges/nomics-api.jpg
   overlay_filter: rgba(0, 0, 0, 0.3)
 category: 
 - Data Science
@@ -294,7 +294,7 @@ exchanges_ticker_clean %>%
   guides(fill = guide_legend(title = "Transparency Grade"))
 ```
 
-![](/img/posts/01-exchanges/exchange-types.png)<!-- -->
+![](/assets/images/posts/01-exchanges/exchange-types.png)<!-- -->
 
 Here we do the same thing, but the other way around. We plot the
 different transparency grades on the x-axis, and the count on the
@@ -316,7 +316,7 @@ exchanges_ticker_clean %>%
   guides(fill = guide_legend(title = "Type"))
 ```
 
-![](/img/posts/01-exchanges/exchange-transparency.png)<!-- -->
+![](/assets/images/posts/01-exchanges/exchange-transparency.png)<!-- -->
 
 ## Conclusion
 
