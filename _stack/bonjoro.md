@@ -39,7 +39,7 @@ Of course, being a video messaging platform, this is Bonjoro’s main feature an
 
 The program has plenty of pre-made templates that you can use if you don't have the time to make your own. They are very professional and well-designed which is why I have used them on occasion as well. Additionally, Bonjoro has really great language support. You can translate your video content in over 20 different languages on the spot. If your desired language is not on the list, you can send in a request for it to be added in 24 hours!
 
-<figure class="centered">
+<figure class="align-center">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/templates.webp" alt="Create different templates">
     <figcaption><i>Bonjoro templates</i></figcaption>
 </figure>
@@ -48,7 +48,7 @@ The program has plenty of pre-made templates that you can use if you don't have 
 
 Bonjoro is great for team-based work environments which are very common in medium and large-scale businesses. You can set up team inboxes with select individuals to encourage communication and coordination within teams.
 
-<figure class="centered">
+<figure class="align-center-medium">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/workspaces.webp" alt="Create different workspaces">
     <figcaption><i>Bonjoro workspaces</i></figcaption>
 </figure>
@@ -125,6 +125,8 @@ Bonjoro is all about standing out to your audience and starting a conversation w
 Sending them a personalized welcome message where I mention their goals and the fact that we can assist them in overcoming those specfic struggles in a certain way. I try to do this in the few hours after they opt in since we're still sort of top of mind. 
 
 Another way to use it is to personally thank clients who purchase your product or membership and make them feel welcome and appreciated. We welcome them again and invite them to the first live session that we have coming up (we do those every month). Again, it's the human touch that we're going after. We are trying to build relationships with our customers as we're a membership/community platform.
+
+[Try Bonjoro for FREE](https://www.bonjoro.com/?ref=maxkruisbrink){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
 
 You could also automate your pitches or promotions via WildMail, implement a Bonjoro task whenever people are at a certain stage in your pitch funnel, and send them a personalized video message where you blow them away with your efforts. Don't worry, you can pre-record that pitch so you don't have to record a pitch for everyone. All of this is automated and you'll get notified almost instantly. 
 

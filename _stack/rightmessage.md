@@ -1,8 +1,10 @@
 ---
 title: "RightMessage"
-excerpt: "Create an immensely personalized and polished opt-in experience for your customers!"
+excerpt: "Create an immensely personalized and polished opt-in experience for your customers and use that data in your other business tools."
 header:
-  overlay_color: "#fe8045" # brand colour
+  overlay_image: /assets/images/stack/rightmessage/CTA-funnel-1.JPG
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  #overlay_color: "#fe8045" # brand colour
   teaser: assets/images/stack/rightmessage/20221008_rightmessage.jpg
   # actions:
   #  - label: "Visit RightMessage"
@@ -17,7 +19,12 @@ With so many options at their disposal, catching leads and retaining customers i
 
 [Visit RightMessage](https://rightmessage.com?fp_ref=max56){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
 
-This is also called onsite retargeting. By presenting the right person with the right option at the right time, you increase the chances of them actually responding to your CTA. Telling an existing subscriber to subscribe to your content every time they visit your page will not bring you any benefit. Once I realized this, I started looking into tools that could help me personalize the opt-in forms and pop-ups for specific customers and ultimately settled on RightMessage. 
+This is also called onsite retargeting. By presenting the right person with the right option at the right time, you increase the chances of them actually responding to your CTA. Telling an existing subscriber to subscribe to your content every time they visit your page will not bring you any benefit. Once I realized this, I started looking into tools that could help me personalize the opt-in forms and pop-ups for specific customers and ultimately settled on RightMessage.
+
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/dashboard-small.JPG" alt="Rightmessage Dashboard">
+    <figcaption><i>RightMessage dashboard on login.</i></figcaption>
+</figure>
 
 ## What is RightMessage?
 
@@ -35,31 +42,77 @@ RightMessage works with most websites, including those made with WordPress (whic
 
 RightMessage has a very nice, visual funnel builder, similar to the one you would see for automation inside a tool such as [ActiveCampaign](https://maxplaining.com/stack/wildmail/){:target="_blank"}{:rel="sponsored"}. The platform lets you determine the visitor’s journey and ultimate destination through the CTA message. The CTA builder allows you to go into a lot of detail when it comes to customized questions and potential responses from your page visitors. The flowchart type style of the builder makes it easy to visualize the customer’s journey. 
 
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/CTA-funnel.JPG" alt="A simple survey funnel">
+    <figcaption><i>RightMessage CTA funnel constructed as a survey (responses synced to custom fields in CRM).</i></figcaption>
+</figure>
+
+### Offers
+
+You create offers that can contain text fields, multiple choice questions (segmentation) and are meant to collect information from visitors. These offers are placed inside different responsive widgets that you can place anywhere on your domain.
+
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/offers.JPG" alt="Rightmessage offers">
+    <figcaption><i>Create different types of offers to convert visitors into leads.</i></figcaption>
+</figure>
+
+
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/create-offers.JPG" alt="Rightmessage offer design">
+    <figcaption><i>Design your offers how you want them!</i></figcaption>
+</figure>
+
 ### Widgets 
 
-RightMessage lets you pick between two different widget styles. You can either select a floating bar or a slide-in style widget for your CTA. I personally appreciate the fact that it keeps things simple. You can customize the color, choose which pages it triggers on, and even select when it appears after the page loads. 
+RightMessage lets you pick between a few different widget styles (bar, toaster, embedded, popup or full-screen takeover) for your CTA funnels. I personally appreciate the fact that it keeps things simple. You can customize the color, choose which pages it triggers on, and even select when it appears after the page loads. 
+
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/create-widget.JPG" alt="Rightmessage widgets">
+    <figcaption><i>Create different widgets for lead magnets, opt-ins or surveys. You choose.</i></figcaption>
+</figure>
 
 ### Numerous Integrations
 
-RightMessage integrates with most other programs which is super convenient. You can hook it up with your email marketing software to make sure existing subscribers are not getting messages to sign up for your email list. RightMessage can integrate with ActiveCampaign, Drip, Hubspot, ConvertKit, and Infusionsoft among other programs.
+RightMessage integrates with most other marketing tools which is super convenient. You can hook it up with your email marketing software to make sure existing subscribers are not getting messages to sign up for your email list. RightMessage can integrate with ActiveCampaign, Drip, Hubspot, ConvertKit, and Infusionsoft among other programs.
 
-### ROI Reports
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/integrations.JPG" alt="Rightmessage integrations">
+    <figcaption><i>Integrations offered by RightMessage</i></figcaption>
+</figure>
 
-The associated analytics with RightMessage is another great feature as it allows you to immediately observe the impact your changes are making on your ROI. You get a complete breakdown of your leads’ responses as well as the conversion rates so you can change your approach in the future.
+### Segmentation
+
+You will collect a whole world of information from visitors. These visitors want you to help them. You may use this data to hyper-personalize your content all over your domain.
+
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/segmentation-sync-activecampaign.JPG" alt="Rightmessage segmentation">
+    <figcaption><i>You can synchronize data from segmentation and questions to your CRM.</i></figcaption>
+</figure>
+
+### Insights
+
+The insight into the performance of your offers and widgets is another great feature as it allows you to immediately observe the impact your changes are making on traffic and customers. You get a complete breakdown of your leads’ responses as well as the conversion rates of your widgets so you can change your approach in the future.
 
 ## RightMessage Pricing
 
-RightMessage offers two different pricing plans based on how much personalization you want for your website:
+[RightMessage offers two different pricing plans](https://rightmessage.com/pricing/?fp_ref=max56){:target="_blank"}{:rel="sponsored"} based on how much personalization you want for your website. I've not had the pleasure to implement full website personalization but I feel I have barely scratched the surface with their CTA plan so far.
+
+
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/pricing.JPG" alt="Rightmessage pricing">
+    <figcaption><i>Choose between the FREE trial and two paid plans.</i></figcaption>
+</figure>
+
 
 ### CTA Plan
 
-The CTA plan allows you to perform personalized lead generation for up to 10,000 visitors per month to begin with. You can scale up the plan based on how many visitors you expect on your site, all the way up to an unlimited amount. The base plan will cost you $79 a month. This would include personalized, embedded CTAs, forms and popups, visitor surveys, and associated analytics among other features. You do not, however, get to personalize the content on your site under this plan. This is currently the plan that I'm using and it is more than enough for me (for now).
+The CTA plan allows you to perform personalized lead generation for up to 10,000 visitors per month to begin with. You can scale up the plan based on how many visitors you expect on your site, all the way up to an unlimited amount. The base plan will cost you $79 a month. This would include personalized, embedded CTAs, forms and popups, visitor surveys, and associated analytics among other features. You do not, however, get to personalize the content on your site under this plan. This is currently the plan that I'm using and it is more than enough for me.
 
 ### Personalize Plan
 
-The Personalize Plan gives you much more potential for customization in regards to the content on your website. You can change headlines, add images, and customize landing pages all to your liking. This is in addition to all of the other features you would get with the CTA Plan. This will cost you $179 per month minimum. The price will scale up based on how many visitors you are expecting.
+The Personalize Plan gives you much more potential for customization in regards to the content on your website. You can change headlines, add images, and customize landing pages all to your liking. This is in addition to all of the other features you would get with the CTA Plan. This will cost you a whopping $179 per month minimum. The price will scale up based on how many visitors you are expecting.
 
-Either of the plans are associated with an initial 14-day free trial, so you can get an idea of how the program works.
+Either of the plans are associated with an [initial 14-day free trial](https://app.rightmessage.com/register?plan=f-cta?fp_ref=max56){:target="_blank"}{:rel="sponsored"} , so you can get an idea of how the program works.
 
 ## Alternatives to RightMessage
 
@@ -94,6 +147,19 @@ I have been able to [build a very personalized sales experience for my website v
 
 ## How I Use RightMessage
 
->
-Coming soon
+RightMessage covers the whole top of my funnels. I use it mainly to:
+
+* Place notification bars or pop-up surveys or lead magnets on my website.
+* Fill these so called widgets with certain offers that I've set up.
+* People interact with my content and respond (opt-in) to one of the offers inside widgets.
+* They get redirected to a special thank you page, where they are presented with a survey.
+* The survey is meant to segment my audience based on certain things that are usefull for me to know:
+  * Goals
+  * Interests
+  * Needs
+  * Wants
+  * Obstacles
+* RightMessage then sends this data to my CRM (ActiveCampaign/WildMail) for use in extended automations.
+* I can also use the information in webhooks to trigger events in Make.
+
 
