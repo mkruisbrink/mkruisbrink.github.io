@@ -1,0 +1,22 @@
+img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+figure {
+    border: 1px;
+    border-color: black;
+}
+
+/* image align center medium size */
+
+.align-center-medium {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.align-center-button {
+    justify-content: center;
+    align-items: center;
+}

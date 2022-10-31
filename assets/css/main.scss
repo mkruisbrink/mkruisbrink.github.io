@@ -7,6 +7,7 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+@import "maxplaining"; // custom overrides I'm trying to figure out how CSS works
 
 
 html {
@@ -28,3 +29,4 @@ html {
       font-size: 18px; // change to whatever
     }
   }
+
