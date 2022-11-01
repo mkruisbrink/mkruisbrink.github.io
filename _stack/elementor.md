@@ -103,5 +103,21 @@ Easy to use, filled to the brim with useful features, and worth its price, it is
 
 ## How I Use Elementor
 
->
-Coming soon!
+Prior to [my first company](http://www.cryptomanuals.com/) I had not done any webdevelopment nor did I know how to code. I built both sites in WordPress at first, using Elementor as a no-code page builder. 
+
+Even using Elementor, you will come across loads of different (technical) options that force you to learn more as you develop your skills.
+
+In Elementor I'm doing the following:
+
+* Designing optimal templates (blocks) to use all over the websites for brand consistency.
+* Design templates for specific elements on the site. This can be full pages or small widgets.
+* Design theme based styling to achieve consistancy as I'm using Elementor Hello theme (a blank slate).
+* Design dedicated landing pages for different offerings.
+* Design dynamic pop-ups to appear on your website.
+* Implement custom code snippets for other tools with greater ease.
+* Caption forms and automatically sync and create new contacts in my CRM.
+* Apply content protection through the [WP Fusion integration]({{ site.baseurl }}{% link _stack/wpfusion.md %}) based on tags.
+
+If you don't know how to make websites, designing your first website with Elementor is fairly easy. Especially since you can use one of their website templates where you can basically drop in your personal content. If you want to go all out you can start from scratch.
+
+[Visit Elementor](https://elementor.com){: .btn .btn--success}{:target="_blank"}

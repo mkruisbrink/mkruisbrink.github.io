@@ -80,9 +80,11 @@ As is with everything, there are some aspects of the product that can be improve
 *	BuddyBoss offers some options in regard to font styles and colours etc. but it may feel lacking to more experienced web designers. The lack of customization can be a put-off for some people.
 
 ## How I use BuddyBoss
+
 I have used BuddyBoss to add a lot of little features to my website. Mainly, however, I have been using it to manage an extension of my main website. With the help of this plugin, I was able to create a new, associated website that is dedicated as a member-only area. While the main website, cryptocommunity.nl, has all of the relevant information and links, the members-only website, leden.cryptocommunity.nl, allows users to log in with their credentials directly and access special content. 
 
 BuddyBoss allowed me to make the members-only area a lot more interesting and interactive than it would have been otherwise. It offers a lot of customizability when it comes to making profiles for members which makes the platform feel extremely personalised. It also forms a great system to connect individuals and form social groups. You can organise groups, add and remove users, and monitor activity to get the most out of these little online communities. I was also able to connect BuddyBoss to other plugins like WPFusion, LearnDash and ActiveCampaign to really create a very cohesive and strong membership sphere for my dedicated users.
 
 Thanks for reading and have fun trying out BuddyBoss!
 
+[Visit BuddyBoss](https://buddyboss.com){: .btn .btn--success}{:target="_blank"}
