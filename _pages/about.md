@@ -2,17 +2,17 @@
 title: "About"
 permalink: /about/
 date: 2022-08-01T03:02:20+00:00
-excerpt: "Get to know a little about me and what I'm up to."
+excerpt: "I like to build a relationship with my audience based on trust. Get to know a little about me, my passions, goals, struggels, interests and what I'm up to in general."
 header:
-  overlay_image: /assets/images/20220811_workstation-max.jpg
+  overlay_image: /assets/images/about-home-office-optimised.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: "Credit: **Max Kruisbrink**"
+  caption: "[Credit: Brink @ **Midjourney**](https://www.midjourney.com/home/)"
 ---
 
 ## Maxplaining
 
 >
-*To Maxplain; verb, informal. To explain something to someone in a way that suggests that they don’t know; used especially when a Max explains something, or anything at all.*
+To Maxplain; *verb*, informal. To explain something to someone in a way that suggests that they don't know; used especially when a Max explains something, or anything at all. Either super helpfull, or slightly annoying.
 
 This term was born when I was caught *explaining* things to people (especially my girlfriend) that were quite obvious... It must be because I'm slightly perfectionistic and even if people (in general) do a good job, I still find room to comment on something. Either super helpful or a slightly annoying, depending on the situation!
 
@@ -24,10 +24,11 @@ This term was born when I was caught *explaining* things to people (especially m
   <figcaption><i>Somewhere in 2021...</i></figcaption>
 </figure>
 
-
 ## Experience
 
-After obtaining my civil engineering degree, I've been working as an engineer at various well-known reputable international construction/offshore/dredging companies. In addition to that I started my own company while on an internship in Costa Rica at the time. If you [visit my LinkedIn profile](https://www.linkedin.com/in/mkruisbrink/), you can see exactly what I've been up to over the past years. 
+After obtaining my civil engineering degree, I've been working as an engineer at various reputable international construction/offshore/dredging companies. In addition to that I initiated [Cryptomanuals, a learning platform for cryptocurrencies](https://www.cryptomanuals.com/) while on an internship in Costa Rica.
+
+In the Netherlands we currently run [Cryptocommunity, a community platform for crypto enthousiasts](https://cryptocommunity.nl/). If you [visit my LinkedIn profile](https://www.linkedin.com/in/mkruisbrink/), you can see exactly what I've been up to over the past years. 
 
 >
 | **Degree** | Civil Engineering - Harbour, Coast & Dredging |
@@ -56,6 +57,15 @@ My girlfriend and I have two **very** cute Snowshoe cats, both adopted. They tal
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about/20220804_floki-bowie.jpg" alt="Bowie & Floki ">
   <figcaption><i>Los gatos: Bowie & Floki.</i></figcaption>
+</figure>
+
+## Workstation
+
+My set-up looks something like this, though I've moved my office and some proper cable management went down in the process.
+
+<figure class="half">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about/20220811_workstation-max-broad.jpg" alt="My personal workstation">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about/20220811_workstation-max.jpg" alt="Laptop showing Matrix visuals">
 </figure>
 
 ## Travelling
