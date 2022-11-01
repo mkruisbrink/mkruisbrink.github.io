@@ -88,6 +88,9 @@ Each successive plan increases the limits on the features you are offered- more 
 
 Bonjoro also supports team-based plans. For example, you can get a Company plan for $399 per month that supports 50 team members with unlimited features. 
 
+>
+[You can start with Bonjoro for free](https://www.bonjoro.com/?ref=maxkruisbrink){:target="_blank"}{:rel="sponsored"} to deduce how you can implement this tool into your own business.
+
 ## Alternatives to Bonjoro
 
 If you would prefer to use an alternative, here are a few good options that are similar to Bonjoro:
@@ -126,11 +129,10 @@ Sending them a personalized welcome message where I mention their goals and the 
 
 Another way to use it is to personally thank clients who purchase your product or membership and make them feel welcome and appreciated. We welcome them again and invite them to the first live session that we have coming up (we do those every month). Again, it's the human touch that we're going after. We are trying to build relationships with our customers as we're a membership/community platform.
 
-[Try Bonjoro for FREE](https://www.bonjoro.com/?ref=maxkruisbrink){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
-
 You could also automate your pitches or promotions via WildMail, implement a Bonjoro task whenever people are at a certain stage in your pitch funnel, and send them a personalized video message where you blow them away with your efforts. Don't worry, you can pre-record that pitch so you don't have to record a pitch for everyone. All of this is automated and you'll get notified almost instantly. 
 
 There are literally tons of ways you can deploy a tool like Bonjoro to establish loyalty and trust in the relationship between your customers and your company and brand. Your engagement and response rate will increase dramatically and the people who actually open and watch your messages are bound to love them. They'll appreciate the personal attention they receive.
 
-I hope you catch my drift at this point. This is some next-level brand building sh*t that provides you with immense power to connect with your audience. [You can start with Bonjoro for free](https://www.bonjoro.com/?ref=maxkruisbrink){:target="_blank"}{:rel="sponsored"} to deduce how you can implement this tool into your own business.
+I hope you catch my drift at this point. This is some next-level brand building sh*t that provides you with immense power to connect with your audience. Send your visitors a personalized video message and let me know how they respond!
 
+[Try Bonjoro for FREE](https://www.bonjoro.com/?ref=maxkruisbrink){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}

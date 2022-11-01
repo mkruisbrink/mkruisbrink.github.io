@@ -5,7 +5,7 @@ header:
   overlay_image: /assets/images/stack/rightmessage/CTA-funnel-1.JPG
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   #overlay_color: "#fe8045" # brand colour
-  teaser: assets/images/stack/rightmessage/20221008_rightmessage.jpg
+  teaser: assets/images/stack/rightmessage/website.jpg
   # actions:
   #  - label: "Visit RightMessage"
   #    url: "https://rightmessage.com?fp_ref=max56" #referral link
@@ -36,16 +36,31 @@ Following are some of the best features and benefits you get to enjoy with Right
 
 ### Compatibility
 
-RightMessage works with most websites, including those made with WordPress (which is what I use). It is also compatible with websites made using Squarespace, ClickFunnels, Shopify, and LeadPages. Al lyou need to do is add the RightMessage script to your template or use it with Google Tag Manager.
+RightMessage works pretty much on all websites, including those made with WordPress (which is what I use for my business). It is compatible with websites made using Squarespace, Instapage, ClickFunnels, Shopify, and LeadPages. All you need to do is add the RightMessage script to your template or use it with Google Tag Manager. [Read the documentation about setting-up your RightMessage configuration here](https://rightmessage.com/docs/setting-up?fp_ref=max56){:target="_blank"}{:rel="sponsored"}.
+
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/snippet.JPG" alt="RightMessage code snippet">
+    <figcaption><i>This script can run on <b>any</b> website, build on <b>any</b> platform/technology.</i></figcaption>
+</figure>
 
 ### Funnel Building
 
-RightMessage has a very nice, visual funnel builder, similar to the one you would see for automation inside a tool such as [ActiveCampaign](https://maxplaining.com/stack/wildmail/){:target="_blank"}{:rel="sponsored"}. The platform lets you determine the visitor’s journey and ultimate destination through the CTA message. The CTA builder allows you to go into a lot of detail when it comes to customized questions and potential responses from your page visitors. The flowchart type style of the builder makes it easy to visualize the customer’s journey. 
+RightMessage has a very nice, visual funnel builder, similar to the one you would see for automation inside [a CRM/ESP tool such as ActiveCampaign](https://maxplaining.com/stack/wildmail/). The platform lets you determine the visitor’s journey and ultimate destination through the CTA message. The CTA builder allows you to go into a lot of detail when it comes to customized questions and potential responses from your page visitors. The flowchart type style of the builder makes it easy to visualize the customer’s journey. 
 
 <figure class="align-center-medium">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/CTA-funnel.JPG" alt="A simple survey funnel">
-    <figcaption><i>RightMessage CTA funnel constructed as a survey (responses synced to custom fields in CRM).</i></figcaption>
+    <figcaption><i>RightMessage CTA funnel constructed as a survey with responses synced to custom fields in CRM.</i></figcaption>
 </figure>
+
+#### Templates
+
+Have a look at RightMessage's [template recipies page](https://rightmessage.com/recipes?fp_ref=max56){:target="_blank"}{:rel="sponsored"} for some special sauce and inspiration how you could use this for your business.
+
+<figure class="align-center-medium">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/recipies.JPG" alt="template page with recipies">
+    <figcaption><i>RightMessage templates to start building your customer journeys.</i></figcaption>
+</figure>
+
 
 ### Offers
 
@@ -112,7 +127,7 @@ The CTA plan allows you to perform personalized lead generation for up to 10,000
 
 The Personalize Plan gives you much more potential for customization in regards to the content on your website. You can change headlines, add images, and customize landing pages all to your liking. This is in addition to all of the other features you would get with the CTA Plan. This will cost you a whopping $179 per month minimum. The price will scale up based on how many visitors you are expecting.
 
-Either of the plans are associated with an [initial 14-day free trial](https://app.rightmessage.com/register?plan=f-cta?fp_ref=max56){:target="_blank"}{:rel="sponsored"} , so you can get an idea of how the program works.
+Either of the plans are associated with an [initial 14-day free trial](https://app.rightmessage.com/register?plan=f-cta?fp_ref=max56){:target="_blank"}{:rel="sponsored"}, so you can get an idea of how the program works.
 
 ## Alternatives to RightMessage
 
@@ -132,24 +147,25 @@ I have been able to [build a very personalized sales experience for my website v
 
 ### Pros 
 
-*	Very easy to install and set up.
+*	Intuitive and very easy to install and set up.
 *	Plenty of integrations are available, including to some of the most used emails service providers and CRMs.
 *	The funnel and workflow creator is very intuitive and comprehensive. The interface itself is extremely visual despite the numerous tools and features which makes it pretty straightforward to understand.
-*	You get to enjoy an amazing degree of personalization- you can modify images, videos, and tonnes of other elements.
-*	Segmentation of visitor data makes surveying and analytics an absolute breeze.
+*	You get to enjoy an amazing degree of personalization - you can modify images, videos, and lots of other elements.
+*	Segmentation of visitor data makes surveying and following up on analytics an absolute breeze.
 
 ### Cons 
 
-*	RightMessage is unable to integrate with certain email marketing databases, such as Mailchimp and Campaign Monitor, and certain marketing automation platforms.
-*	The style templates are not very extensive, although I found them to be sufficient for what I required. 
+*	RightMessage is unable to integrate with certain email marketing databases - such as Mailchimp and Campaign Monitor - and certain marketing automation platforms.
+*	The style templates are not very extensive, although I find them to be sufficient for what I require. 
 *	The options for opt-in forms are relatively limited. 
-*	If you are a smaller business with little requirements, it may be more worthwhile to invest in a cheaper solution with fewer features. 
+*	Rather expensive starter plan. If you are a smaller business with little requirements, it may be more worthwhile to invest in a cheaper solution with fewer features. 
 
 ## How I Use RightMessage
 
-RightMessage covers the whole top of my funnels. I use it mainly to:
+RightMessage covers the whole top of all my funnels. I use it mainly to:
 
 * Place notification bars or pop-up surveys or lead magnets on my website.
+* Present visitors with personalized sales pages.
 * Fill these so called widgets with certain offers that I've set up.
 * People interact with my content and respond (opt-in) to one of the offers inside widgets.
 * They get redirected to a special thank you page, where they are presented with a survey.
@@ -162,4 +178,6 @@ RightMessage covers the whole top of my funnels. I use it mainly to:
 * RightMessage then sends this data to my CRM (ActiveCampaign/WildMail) for use in extended automations.
 * I can also use the information in webhooks to trigger events in Make.
 
+First impressions last. The first encouter with visitors is where you have to *wow* them. Seriously, try this tool for two weeks and let me know your thoughts.
 
+[Try RightMessage for FREE for 14 days](https://rightmessage.com/pricing?fp_ref=max56){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}

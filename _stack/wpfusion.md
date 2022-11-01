@@ -2,8 +2,10 @@
 title: "WP Fusion"
 excerpt: "Connect your WorPress business with all other tools you use on a daily basis. This is superglue for WordPress."
 header:
+  overlay_image: /assets/images/stack/wpfusion/website.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   overlay_color: "#E55B10" # brand colour
-  teaser: assets/images/stack/wpfusion/20221008_wpfusion.jpg
+  teaser: assets/images/stack/wpfusion/wpfusion.jpg
   # actions:
   #  - label: "Visit WP Fusion"
   #    url: "https://wpfusion.com/ref/404/" #referral link
@@ -31,11 +33,6 @@ Fortunately, there is a tool that you can use to bring all of your other tools t
 ## What is WP Fusion?
 
 WP Fusion is a platform that integrates your WordPress website with your CRM and marketing automation program very tightly. You can then use tags to change website features. You do not need to have any coding experience or knowledge to make the tool work. EP Fusion lets you collect engagement data on the website level as well which is great for strategy development and modification in the future. 
-
-<figure class="centered">
-    <img src="/assets/images/stack/wpfusion/logo-top-white-svg-1.svg" alt="WP Fusion logo">
-</figure>
-
 
 These are some of the best features that WP Fusion brings to the table:
 
@@ -121,5 +118,21 @@ When it comes to synchronisation plugins for WordPress websites, there really is
 
 ## How I Use WP Fusion
 
-> 
-Coming soon
+WP Fusion connects my membership site to other applications that I use. You will be able to connect your different tools together in their respecive menus. After a succesfull configuration, you will most likely find new menu items in the settings where you are able to set-up the integration to your 
+
+You can do *a lot* with WP Fusion but for now I use it mainly to:
+
+1. Sync all contacts in our CRM (WildMail) to our membership site. This includes all relevant segmentation data.
+2. Provide content protection based on contact tags. This makes it into a membership site.
+3. Integrate with BuddyBoss (our membership platform).
+4. Integrate with LearnDash (our online course provider).
+5. Connect with Ecommerce tools such as WooCommerce.
+6. Connect with Elementor to provide content protection on a page level (hide certain elements based on tags).
+6. Automatically create new contacts in CRM when forms are submitted.
+7. Connect with our Events Calendar tool to automatically update people of events or send date-based reminders.
+8. Connect with GamiPress (gamification) to award members with prizes or badges based on progression and trigger relevant automations from the CRM.
+
+Read the [WP Fusion documentation on all the pro integrations](https://wpfusion.com/documentation/#integrations/ref/404/){:target="_blank"}{:rel="sponsored"} to find the tools you use at this moment and find out for yourself how powerfull this tool really is.
+
+[Try WP Fusion Lite for free](https://wpfusion.com/free-download/ref/404/){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
+

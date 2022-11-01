@@ -166,11 +166,12 @@ There are tons of other possibilities, so get out there and go see for yourself!
 
 I literally want to automate everything but it all takes quite some effort to set-up and manage, especially if you are by yourself. However, there are over 125 carefully curated and tested templates that you can use. This potentially saves you a lot of time since you might not want to spend hours designing something from scratch while you have options that work for you straight out of the box! 
 
-[Try WildMail & ActiveCampaign for FREE for 14 days!](https://app.wildmail.io/trial?via=max){:target="_blank"}{:rel="sponsored"}
-
+>
+You'll also receive access to Relationship Funnels and WildMetrics with the free trial!
 
 Got questions or would like some assistance? Feel free to send me a message! Thanks for reading and have fun trying out WildMail!
 
+[Try WildMail for FREE for 14 days!](https://app.wildmail.io/trial?via=max){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
 
 
 
