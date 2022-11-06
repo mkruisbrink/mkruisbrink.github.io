@@ -4,7 +4,7 @@ excerpt: "Build workflows and automatie differents part of your business to your
 header:
   overlay_image: /assets/images/stack/make/scenarios.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  teaser: assets/images/stack/make/website.jpg
+  teaser: assets/images/stack/make/make-homepage.jpg
   # overlay_color: "#f0f" #Make primary colour
   # actions:
   #  - label: "Visit Make"
