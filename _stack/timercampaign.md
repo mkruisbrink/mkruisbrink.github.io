@@ -4,8 +4,8 @@ excerpt: "Create urgency in your business via original and authenthic deadlines 
 header:
   overlay_image: /assets/images/stack/timercampaign/dashboard.JPG
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  # overlay_color: "#fe8045" # brand colour
   teaser: assets/images/stack/timercampaign/website.jpg
+  # overlay_color: "#fe8045" # brand colour
   # alt: "banner image for timercampaign"
   # actions:
   #  - label: "Visit TimerCampaign"
