@@ -4,10 +4,9 @@ title: An Introduction to the Tidyverse
 subtitle: The most essential packages for R to work the tidy way
 excerpt: "The tidyverse is a collection of R packages that work together in the same way and provide a more intuitive way to perform the most common tasks."
 header:
-  overlay_image: /assets/images/20220808_supernova-midjourney.jpg
-  overlay_filter: rgba(0, 0, 0, 0.3)
+  overlay_image: /assets/images/midjourney-optimised/supernova-midjourney-optimised.jpg
 category: 
-- R
+- R(Studio)
 ---
 
 ## What is the tidyverse?

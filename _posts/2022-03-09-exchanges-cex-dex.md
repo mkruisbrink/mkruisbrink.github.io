@@ -5,7 +5,7 @@ date: 2022-11-6 14:40:45
 subtitle: Exploring the Nomics API
 excerpt: "How many cryptocurrency exchanges are there? How many of these are centralized or decentralized? What does this imply in relation to the transparancy of the volumes in cryptocurrency? Let's find out."
 header:
-  overlay_image: /assets/images/posts/01-exchanges/nomics-api.jpg
+  overlay_image: /assets/rmd/transparancy-exchange-types-1.png
   overlay_filter: rgba(0, 0, 0, 0.3)
 category: 
 - Visualization
