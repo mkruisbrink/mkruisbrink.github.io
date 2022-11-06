@@ -2,7 +2,7 @@
 title: "Make"
 excerpt: "Build workflows and automatie differents part of your business to your heart's extent. A visual 'no-code' builder to integrate the tools you use in your business with near-endless capacity."
 header:
-  overlay_image: /assets/images/stack/make/scenarios.JPG
+  overlay_image: /assets/images/stack/make/scenarios.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   #overlay_color: "#f0f" #Make primary colour
   teaser: assets/images/stack/make/website.jpg
