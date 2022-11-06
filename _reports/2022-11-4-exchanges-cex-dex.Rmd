@@ -8,9 +8,10 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-library(knitr)
-knitr::opts_chunk$set(echo = TRUE)
 
+library(knitr)
+
+knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 
 # define knitr paths
@@ -51,21 +52,22 @@ I am assuming you have R and RStudio installed and know the basics of how to use
 We are going to load some libraries that we need. These provide added functionality.
 Open up your R Project or opena new R script and type in the following:
 
-``` r
-#install.packages("package_name") 
+```{r package setup}
+# install.packages("package_name") 
 
-#working with API data
+# working with API data
 library(httr)
 library(jsonlite)
 
-#data visualization
+# data visualization
 library(ggplot2)
 library(ggthemes) #bonus for ggplot
+library(pilot)
 
-#data manipulation & wrangling
+# data manipulation & wrangling
 library(tidyverse)
 
-#html widgets
+# html widgets
 library(htmlwidgets)
 library(readr)
 ```
@@ -85,39 +87,34 @@ as a query parameter in every request you make. For example:
 Each endpoint is basically a URL. The URL in the code snippet below is
 part of the ‘exchanges’ endpoint and returns some exchange-related data.
 
-``` r
-baseurl <- "https://api.nomics.com/v1/exchanges/ticker?key=your-key-here"
+``` {r set API key, include=FALSE}
+
+# set a system variable and give it a name (best practice)
+# Sys.setenv(Nomics_API = "YOUR_API_KEY_HERE")
+
+# call the system variable in the current script
+API_key <- Sys.getenv("Nomics_API")
+```
+
+``` {r set base-url}
+
+# pasting the base url and API variable
+baseurl <- paste0("https://api.nomics.com/v1/exchanges/ticker?key=",
+                  API_key)
 ```
 
 You will need to obtain data from this URL and convert it into something
 readable. Let’s first store the output in a data frame and have a look.
 
-``` r
+```{r res}
+
+# convert object from JSON
 exchanges_ticker <- fromJSON(baseurl)
 
+# peekaboo
 glimpse(exchanges_ticker)
 ```
 
-    ## Rows: 100
-    ## Columns: 18
-    ## $ id                 <chr> "binance", "ftx", "cryptomkt", "gdax", "uniswapv3",~
-    ## $ name               <chr> "Binance", "FTX", "CryptoMarket", "Coinbase Exchang~
-    ## $ logo_url           <chr> "https://s3.us-east-2.amazonaws.com/nomics-api/stat~
-    ## $ transparency_grade <chr> "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "~
-    ## $ coverage_type      <chr> "trades", "trades", "trades", "trades", "trades", "~
-    ## $ order_books        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU~
-    ## $ first_trade        <chr> "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20~
-    ## $ first_candle       <chr> "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20~
-    ## $ first_order_book   <chr> "2018-08-29T00:00:00Z", "2019-10-15T00:00:00Z", "20~
-    ## $ num_pairs          <chr> "2201", "1969", "159", "493", "3741", "325", "2641"~
-    ## $ num_pairs_unmapped <chr> "9", "99", "5", "16", "2332", "486", "68", "4", "96~
-    ## $ last_updated       <chr> "2022-03-09T19:45:48.546Z", "2022-03-09T19:45:50.58~
-    ## $ fiat_currencies    <list> <"AUD", "BRL", "EUR", "GBP", "NGN", "RUB", "TRY", ~
-    ## $ rank               <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", ~
-    ## $ weight             <chr> "1.0000", "0.8284", "0.5390", "0.8984", "0.8257", "~
-    ## $ centralized        <lgl> TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TR~
-    ## $ decentralized      <lgl> FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FAL~
-    ## $ `1d`               <df[,12]> <data.frame[26 x 12]>
 
 Note that there are only 100 rows. In this case there are several pages
 of data for exchanges and we would want to get all pages in the same
@@ -125,17 +122,19 @@ object. The URL changes slightly per page so we will make a for loop. We
 will make an empty list and store each iteration of the loop inside that
 list. Then we construct the data frame from the list.
 
-``` r
-#for loop to get more pages for exchanges ticker - store all pages in a list first
+```{r create ticker df}
+# create a for loop and store all pages in a list
 pages <- list()
 
-  for(i in 0:4){
+# there are currently 6 pages (https://nomics.com/exchanges/6)
+# you could webscrape untill the last page automatically
+  for(i in 0:6){
     mydata <- fromJSON(paste0(baseurl, "&page=", i))
     message("Retrieving page ", i)
     pages[[i+1]] <- mydata
   }
 
-#combine all pages into one df
+# combine all pages into one df
 exchanges_ticker <- rbind_pages(pages)
 ```
 
@@ -145,30 +144,9 @@ exchanges_ticker <- rbind_pages(pages)
 
 Let’s have a look at the data frame we just created.
 
-``` r
+```{r explore}
 glimpse(exchanges_ticker)
 ```
-
-    ## Rows: 500
-    ## Columns: 18
-    ## $ id                 <chr> "binance", "ftx", "cryptomkt", "gdax", "uniswapv3",~
-    ## $ name               <chr> "Binance", "FTX", "CryptoMarket", "Coinbase Exchang~
-    ## $ logo_url           <chr> "https://s3.us-east-2.amazonaws.com/nomics-api/stat~
-    ## $ transparency_grade <chr> "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "~
-    ## $ coverage_type      <chr> "trades", "trades", "trades", "trades", "trades", "~
-    ## $ order_books        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU~
-    ## $ first_trade        <chr> "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20~
-    ## $ first_candle       <chr> "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20~
-    ## $ first_order_book   <chr> "2018-08-29T00:00:00Z", "2019-10-15T00:00:00Z", "20~
-    ## $ num_pairs          <chr> "2201", "1969", "159", "493", "3741", "325", "2641"~
-    ## $ num_pairs_unmapped <chr> "9", "99", "5", "16", "2332", "486", "68", "4", "96~
-    ## $ last_updated       <chr> "2022-03-09T19:41:35.092Z", "2022-03-09T19:41:46.02~
-    ## $ fiat_currencies    <list> <"AUD", "BRL", "EUR", "GBP", "NGN", "RUB", "TRY", ~
-    ## $ rank               <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", ~
-    ## $ weight             <chr> "1.0000", "0.8284", "0.5390", "0.8984", "0.8257", "~
-    ## $ centralized        <lgl> TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TR~
-    ## $ decentralized      <lgl> FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FAL~
-    ## $ `1d`               <df[,12]> <data.frame[26 x 12]>
 
 Note that there are a lot of character and some logical variables. There
 is also a list and a data frame nested inside the return. We will have
@@ -182,44 +160,9 @@ single column and a categorical variable.
 Also, If we want to order by transparency grade later, we need to
 reorder the variable. Have a look at how this is being sorted.
 
-``` r
+```{r sort}
 sort(exchanges_ticker$transparency)
 ```
-
-    ##   [1] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ##  [16] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ##  [31] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ##  [46] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ##  [61] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ##  [76] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ##  [91] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ## [106] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ## [121] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ## [136] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ## [151] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ## [166] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ## [181] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ## [196] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ## [211] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A-" "A-"
-    ## [226] "A-" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+"
-    ## [241] "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+"
-    ## [256] "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "B"  "B"  "B"  "B"  "B" 
-    ## [271] "B"  "B"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [286] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [301] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [316] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [331] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [346] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [361] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [376] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [391] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [406] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [421] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [436] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [451] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [466] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [481] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [496] "D"  "D"  "D"  "D"  "D"
 
 Since it is a character variable it will default to sorting
 alphabetically (hence the better score (A+) will not be ranked on top).
@@ -232,8 +175,8 @@ We will manually have to reorder this variable.
 We redefine the ‘cleaned’ data frame itself as a new variable so we keep
 the original data frame intact in case we need to go back.
 
-``` r
-#mutate data
+```{r}
+# mutate data
 exchanges_ticker_clean <- exchanges_ticker %>% 
   mutate(transparency_grade = factor(transparency_grade, 
                                      levels = c("A+","A","A-","B","C","D")),
@@ -245,33 +188,12 @@ exchanges_ticker_clean <- exchanges_ticker %>%
          last_updated = as.Date(last_updated),
          rank = as.integer(rank),
          weight = as.numeric(weight),
-         type = if_else(centralized == TRUE, "centralized", "decentralized")
+         type = if_else(centralized == TRUE, "Centralized", "Decentralized")
          )
 
 glimpse(exchanges_ticker_clean)
 ```
 
-    ## Rows: 500
-    ## Columns: 19
-    ## $ id                 <chr> "binance", "ftx", "cryptomkt", "gdax", "uniswapv3",~
-    ## $ name               <chr> "Binance", "FTX", "CryptoMarket", "Coinbase Exchang~
-    ## $ logo_url           <chr> "https://s3.us-east-2.amazonaws.com/nomics-api/stat~
-    ## $ transparency_grade <fct> A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, ~
-    ## $ coverage_type      <chr> "trades", "trades", "trades", "trades", "trades", "~
-    ## $ order_books        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU~
-    ## $ first_trade        <date> 2017-07-13, 2019-03-05, 2013-12-27, 2014-12-01, 20~
-    ## $ first_candle       <date> 2017-07-13, 2019-03-05, 2013-12-27, 2014-12-01, 20~
-    ## $ first_order_book   <date> 2018-08-29, 2019-10-15, 2021-12-01, 2018-09-11, 20~
-    ## $ num_pairs          <int> 2201, 1969, 159, 493, 3741, 325, 2641, 480, 1398, 5~
-    ## $ num_pairs_unmapped <int> 9, 99, 5, 16, 2332, 486, 68, 4, 96, 221, 0, 790720,~
-    ## $ last_updated       <date> 2022-03-09, 2022-03-09, 2022-03-09, 2022-03-09, 20~
-    ## $ fiat_currencies    <list> <"AUD", "BRL", "EUR", "GBP", "NGN", "RUB", "TRY", ~
-    ## $ rank               <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ~
-    ## $ weight             <dbl> 1.0000, 0.8284, 0.5390, 0.8984, 0.8257, 0.7486, 0.7~
-    ## $ centralized        <lgl> TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TR~
-    ## $ decentralized      <lgl> FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FAL~
-    ## $ `1d`               <df[,12]> <data.frame[26 x 12]>
-    ## $ type               <chr> "centralized", "centralized", "centralized", "c~
 
 Note that this already looks a lot better and we are getting close to
 being able to work with this output.
@@ -285,8 +207,8 @@ counts of the two different types of exchanges (centralized and
 decentralized). Then we fill the bars based on the transparency grade to
 see where most of the transparent volume originates from.
 
-``` r
-#plot types of exchanges
+```{r types-of-exchanges}
+# plot types of exchanges
 exchanges_ticker_clean %>%  
   ggplot(aes(type, fill=transparency_grade)) + 
   geom_bar(color = "black",
@@ -295,7 +217,7 @@ exchanges_ticker_clean %>%
        subtitle = "Source: Nomics API",
        x = "Exchange Type",
        y = "Number of Exchanges") +
-  theme_fivethirtyeight() +
+  theme_pilot() +
   theme(axis.title = element_text(),
         legend.text =  element_text(size=10)) + 
   scale_fill_brewer(palette = 9) +
@@ -307,8 +229,8 @@ Here we do the same thing, but the other way around. We plot the
 different transparency grades on the x-axis, and the count on the
 y-axis. The fill resembles the type of exchange.
 
-``` r
-#plot exchange types
+```{r transparancy-exchange-types}
+# plot exchange types
 exchanges_ticker_clean %>% 
   ggplot(aes(transparency_grade, fill=type)) + 
   geom_bar(color = "black",
@@ -317,14 +239,13 @@ exchanges_ticker_clean %>%
        subtitle = "Source: Nomics API",
        x = "Transparancy Grade",
        y = "Number of Exchanges") +
-  theme_fivethirtyeight() +
+  theme_pilot() +
   theme(axis.title = element_text(),
         legend.text =  element_text(size=10)) +
   guides(fill = guide_legend(title = "Type"))
 ```
 
 
-## Conclusion
+## Results
 
-It would appear that most of the transparent volume originates from the
-decentralized exchanges.
+From these two rather simple plots, it would appear that most of the transparent volumes (grade A+ and A) originate from the decentralized exchanges. In addition, most of the low transparent volumes are originating from centralized exchanges.
