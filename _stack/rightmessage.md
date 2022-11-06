@@ -4,7 +4,7 @@ excerpt: "Create an immensely personalized and polished opt-in experience for yo
 header:
   overlay_image: /assets/images/stack/rightmessage/CTA-funnel-1.JPG
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  teaser: assets/images/stack/rightmessage/website.jpg
+  teaser: assets/images/stack/rightmessage/rightmessage-homepage.jpg
   # overlay_color: "#fe8045" # brand colour
   # actions:
   #  - label: "Visit RightMessage"
