@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/20220811_workstation-max.jpg
   overlay_filter: rgba(0, 0, 0, 0.6)
 category: 
-- R
+- R(Studio)
 ---
  
 ## RStudio installation & configuration (Windows)

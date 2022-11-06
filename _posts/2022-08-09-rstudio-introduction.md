@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/posts/2022-08-09-RStudio-introduction/R-project-demo-1.PNG
   overlay_filter: rgba(0, 0, 0, 0.8)
 category: 
-- R
+- R(Studio)
 ---
 
 ## Introduction

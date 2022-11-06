@@ -1,20 +1,28 @@
 ---
-#layout: post
-title: Centralized vs. Decentralized Exchanges
-subtitle: Exploring the Nomics API
-excerpt: "How many cryptocurrency exchanges are there? How many of these are centralized or decentralized? What does this imply in relation to the transparancy of the volumes in cryptocurrency? Let's find out."
-header:
-  overlay_image: /assets/images/posts/01-exchanges/nomics-api.jpg
-  overlay_filter: rgba(0, 0, 0, 0.3)
-category: 
-- Data Science
-tags:
-- R
-- RStudio
-- Nomics
-- API
+title: "tidyverse-introduction"
+author: "Max Kruisbrink"
+date: "`r Sys.Date()`"
+output: 
+  md_document:
+    variant: gfm
 ---
-  
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+# define knitr paths
+base.dir <- "~/Developer/mkruisbrink.github.io/"
+base.url <- "/"
+fig.path <- "assets/rmd/"
+
+# set knitr parameters
+opts_knit$set(base.dir = base.dir, base.url = base.url)
+opts_chunk$set(fig.path = fig.path) 
+```
+
 ## Introduction
 
 In this article we're going to import cryptocurrency related data via the API provided by [Nomics.com](https://www.nomics.com) into RStudio. 
@@ -34,9 +42,9 @@ In this article we're going to import cryptocurrency related data via the API pr
 
 I am assuming you have R and RStudio installed and know the basics of how to use RStudio. If not, follow:
 
-1. [My guide for base R installation]({% post_url 2022-08-08-installing-base-R %})
-2. [My guide for RStudio installation]({% post_url 2022-08-08-installing-RStudio %})
-3. [My guide for an RStudio introduction]({% post_url 2022-08-08-introduction-RStudio %}) 
+1. [My guide for base R installation]({% post_url 2022-08-08-r-installation %})
+2. [My guide for RStudio installation]({% post_url 2022-08-08-rstudio-installation %})
+3. [My guide for an RStudio introduction]({% post_url 2022-08-09-rstudio-introduction %}) 
 
 ## Step 1: Install & Load Packages
 
@@ -294,7 +302,6 @@ exchanges_ticker_clean %>%
   guides(fill = guide_legend(title = "Transparency Grade"))
 ```
 
-![](/assets/images/posts/01-exchanges/exchange-types.png)<!-- -->
 
 Here we do the same thing, but the other way around. We plot the
 different transparency grades on the x-axis, and the count on the
@@ -316,7 +323,6 @@ exchanges_ticker_clean %>%
   guides(fill = guide_legend(title = "Type"))
 ```
 
-![](/assets/images/posts/01-exchanges/exchange-transparency.png)<!-- -->
 
 ## Conclusion
 
