@@ -5,7 +5,7 @@ header:
   overlay_image: /assets/images/stack/bonjoro/20221029_Brink_a_super_friendly_big_cuddly_brown_bear_with_white_round_e_821a13f3-dab4-4ac7-a4dc-bc1eb6cf4ef4_optimised.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   # overlay_color: rgba(255, 208, 2, 0.9)
-  caption: "[Credit: Max Kruisbrink @**Midjourney**](https://www.midjourney.com/home/)"
+  caption: "[Credit: Maxplaining @**Midjourney**](https://www.midjourney.com/home/)"
   teaser: assets/images/stack/bonjoro/20221008_bonjoro.jpg
   # actions:
   #  - label: "Visit Bonjoro"
