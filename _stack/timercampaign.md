@@ -2,8 +2,6 @@
 title: "TimerCampaign"
 excerpt: "Create urgency in your business via original and authenthic deadlines that expire exactly at the right time."
 header:
-  overlay_image: /assets/images/stack/timercampaign/dashboard.JPG
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   teaser: assets/images/stack/timercampaign/timercampaign-homepage.jpg
   # overlay_color: "#fe8045" # brand colour
   # alt: "banner image for timercampaign"
