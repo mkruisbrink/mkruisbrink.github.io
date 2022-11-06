@@ -5,8 +5,6 @@ date: 2022-08-01T03:02:20+00:00
 excerpt: "A collection of usefull resources related to R & RStudio to propagate learning."
 header:
   overlay_image: /assets/images/pages/resources-bookshelf-optimised.jpg
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: "[Credit: Brink @ **Midjourney**](https://www.midjourney.com/home/)"
 ---
 
 ## Courses

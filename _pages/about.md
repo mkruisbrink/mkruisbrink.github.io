@@ -1,12 +1,9 @@
 ---
 title: "About"
 permalink: /about/
-date: 2022-08-01T03:02:20+00:00
 excerpt: "I like to build a relationship with my audience based on trust. Get to know a little about me, my passions, goals, struggels, interests and what I'm up to in general."
 header:
   overlay_image: /assets/images/pages/about-home-office-optimised.jpg
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: "[Credit: Brink @ **Midjourney**](https://www.midjourney.com/home/)"
 ---
 
 ## Maxplaining
