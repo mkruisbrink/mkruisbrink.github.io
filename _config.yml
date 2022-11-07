@@ -305,9 +305,9 @@ defaults:
       type: posts
     values:
       layout: single
-      #header:
-      #  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-      #  caption: "[Credit: Maxplaining @ **Midjourney**](https://www.midjourney.com/home/)"
+      header:
+        overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+        caption: "[Credit: Maxplaining @ **Midjourney**](https://www.midjourney.com/home/)"
       author_profile: true
       read_time: true
       comments: # true
