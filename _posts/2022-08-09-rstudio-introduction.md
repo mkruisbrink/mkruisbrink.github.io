@@ -4,8 +4,7 @@ title: An Introduction to RStudio
 subtitle: Getting started with R and RStudio
 excerpt: "Introduction to familiarize you with the very basics of RStudio itself as a complete beginner."
 header:
-  overlay_image: /assets/images/posts/2022-08-09-RStudio-introduction/R-project-demo-1.PNG
-  overlay_filter: rgba(0, 0, 0, 0.8)
+  overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
 category: 
 - R(Studio)
 ---
