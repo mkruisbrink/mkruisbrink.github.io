@@ -3,10 +3,9 @@
 title: Centralized vs. Decentralized Exchanges
 date: 2022-11-6 14:40:45
 subtitle: Exploring the Nomics API
-excerpt: "How many cryptocurrency exchanges are there? How many of these are centralized or decentralized? What does this imply in relation to the transparancy of the volumes in cryptocurrency? Let's find out."
+excerpt: "How many cryptocurrency exchanges are there? Comparing transparant volumes for centralised and decentralized cryptocurrency exchanges."
 header:
-  overlay_image: /assets/rmd/transparancy-exchange-types-1.png
-  overlay_filter: rgba(0, 0, 0, 0.3)
+  overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
 category: 
 - Visualization
 tags:
@@ -15,6 +14,8 @@ tags:
 - Nomics
 ---
   
+How many cryptocurrency exchanges are there? How many of these are centralized or decentralized? How do the transparant volumes compare?
+
 ## Introduction
 
 In this article we’re going to import cryptocurrency related data via

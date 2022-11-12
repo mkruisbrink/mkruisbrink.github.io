@@ -126,9 +126,9 @@ list. Then we construct the data frame from the list.
 # create a for loop and store all pages in a list
 pages <- list()
 
-# there are currently 6 pages (https://nomics.com/exchanges/6)
+# there are currently 9 pages (https://nomics.com/exchanges/9)
 # you could webscrape untill the last page automatically
-  for(i in 0:6){
+  for(i in 0:9){
     mydata <- fromJSON(paste0(baseurl, "&page=", i))
     message("Retrieving page ", i)
     pages[[i+1]] <- mydata
@@ -158,7 +158,7 @@ single column and a categorical variable.
 ------------------------------------------------------------------------
 
 Also, If we want to order by transparency grade later, we need to
-reorder the variable. Have a look at how this is being sorted.
+reorder this variable. Have a look at how this is being sorted.
 
 ```{r sort}
 sort(exchanges_ticker$transparency)
@@ -168,16 +168,25 @@ Since it is a character variable it will default to sorting
 alphabetically (hence the better score (A+) will not be ranked on top).
 We will manually have to reorder this variable.
 
+We also note that there's a nested data frame inside (1d metrics) and we need to unnest this to get tidy data.
+
+```{r}
+df <- exchanges_ticker %>% unnest(`1d`)
+```
+
+
 ------------------------------------------------------------------------
 
 ## Step 4: Clean the data
 
-We redefine the ‘cleaned’ data frame itself as a new variable so we keep
+We redefine the ‘manipulated’ data frame (`df`) itself as a new variable so we keep
 the original data frame intact in case we need to go back.
 
 ```{r}
-# mutate data
-exchanges_ticker_clean <- exchanges_ticker %>% 
+
+# clean and mutate the data frame
+
+df <- df %>%
   mutate(transparency_grade = factor(transparency_grade, 
                                      levels = c("A+","A","A-","B","C","D")),
          first_trade = as.Date(first_trade),
@@ -188,10 +197,24 @@ exchanges_ticker_clean <- exchanges_ticker %>%
          last_updated = as.Date(last_updated),
          rank = as.integer(rank),
          weight = as.numeric(weight),
-         type = if_else(centralized == TRUE, "Centralized", "Decentralized")
+         type = if_else(centralized == TRUE, "Centralized", "Decentralized"),
+         volume = as.numeric(volume),
+         volume_change = as.numeric(volume_change),
+         volume_change_pct = as.numeric(volume_change_pct),
+         trades = as.numeric(trades), 
+         trades_change = as.numeric(trades_change),
+         trades_change_pct = as.numeric(trades_change_pct),
+         spot_volume= as.numeric(spot_volume),
+         spot_volume_change = as.numeric(spot_volume_change),
+         spot_volume_change_pct = as.numeric(spot_volume_change_pct),
+         derivative_volume = as.numeric(derivative_volume),
+         derivative_volume_change = as.numeric(derivative_volume_change),
+         derivative_volume_change_pct = as.numeric(derivative_volume_change_pct)
          )
 
-glimpse(exchanges_ticker_clean)
+glimpse(df)
+
+df$type <- as_factor(df$type)
 ```
 
 
@@ -202,14 +225,30 @@ being able to work with this output.
 
 ## Step 5: Select, manipulate and plot
 
-Here we filter our cleaned data into a ggplot. We want to visualize the
+
+
+
+Here we filter our cleaned data into graphics.
+
+### Trades on CEX versus DEX
+
+```{r}
+df %>% 
+  ggplot(aes(trades, fill = type)) +
+  geom_histogram(position = "stack",
+                 bins = 10)
+```
+
+### CEX versus DEX
+
+We want to visualize the
 counts of the two different types of exchanges (centralized and
 decentralized). Then we fill the bars based on the transparency grade to
 see where most of the transparent volume originates from.
 
 ```{r types-of-exchanges}
 # plot types of exchanges
-exchanges_ticker_clean %>%  
+df %>%  
   ggplot(aes(type, fill=transparency_grade)) + 
   geom_bar(color = "black",
            position = "stack") +
@@ -231,13 +270,13 @@ y-axis. The fill resembles the type of exchange.
 
 ```{r transparancy-exchange-types}
 # plot exchange types
-exchanges_ticker_clean %>% 
+df %>% 
   ggplot(aes(transparency_grade, fill=type)) + 
   geom_bar(color = "black",
            position = "stack") +
-  labs(title = "Transparancy Grade by Exchange Type",
+  labs(title = "Transparency Grade by Exchange Type",
        subtitle = "Source: Nomics API",
-       x = "Transparancy Grade",
+       x = "Transparency Grade",
        y = "Number of Exchanges") +
   theme_pilot() +
   theme(axis.title = element_text(),

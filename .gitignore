@@ -31,12 +31,14 @@ _test
 
 #R
 R
+_reports
+.Rdata
 .Rproj.user
 .Rhistory
  mkruisbrink.github.io.Rproj
- _reports
+ 
 
 
 # Files and folders
 snippets.txt
-/assets/images/originals
+/assets/images/midjourney-originals
