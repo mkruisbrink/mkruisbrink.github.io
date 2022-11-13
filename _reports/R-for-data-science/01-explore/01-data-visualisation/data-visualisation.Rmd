@@ -11,13 +11,13 @@ output:
 
 library(knitr)
 
-setwd("D:/Max Kruisbrink/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation")
+setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation")
 
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 
 # define knitr paths
-base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
+base.dir <- "~/Developer/mkruisbrink.github.io/"
 base.url <- "/"
 fig.path <- "assets/plots/"
 
@@ -30,21 +30,17 @@ opts_chunk$set(fig.path = fig.path)
 
 ## The basics of data visualisation
 
-We start with the fun part, to visualise the data. This is the biggest pay-off and provides the most motivation to keep going and improve. We're going to need to load the `tidyverse`.
+We start with the fun part, visualizing data. This is considered to be the biggest
+pay-off and provided me with loads of motivation to keep learning more and more, and to be able to produce better looking graphs as a result.
+
+To start of, we’re going to need to load only the `tidyverse`.
 
 ```{r, warning=FALSE}
 library(tidyverse)
 ```
-Note that the tidyverse loads **eight** packages and lists their current version number. If you don't see the message above you have to install the package first.
-
-
-```{r, warning=FALSE}
-install.packages("tidyverse")
-library(tidyverse)
-```
+Note that the tidyverse loads **eight** packages and lists their current version number. If you don't see the message above you have to install the package first (`install.packages("tidyverse"`).
 
 You also see conflicts: some functions are provided in two packages. You could specify which exact function from a package you would like to use by using `package::function()` like so `ggplot2::ggplot()`.
-
 
 Now let's load up a data set about fuel usage for different types of cars (`mpg`) which comes with the `tidyverse`.
 
@@ -69,14 +65,15 @@ The `class` variable of the `mpg` data set classifies cars into groups such as c
 
 You can also map the colors aesthetic to the `class` variable. Here we will use the `tidyverse` way and make use of the pipe operator (` %>%`). The pipe tells whatever is on the right side, to take everything on the left side, and use it as input for the **first** argument on the right side. Your code becomes shorter and more intuitive to read.
 
-```{r color-class}
+```{r displ-hwy-color-class}
 # using the pipe operator the tidyverse way
 mpg %>%  # take mpg and use it for the first argument on the right side
   ggplot(., aes(displ, hwy, color = class)) +  
   geom_point()
 ```
 
-The '.' stands for the location of the first argument and is where `mpg` gets piped into. There is no need to type this and you can omit this too. I just wanted to show you where the data is piped into.
+>
+The dot character in `ggplot(., aes(displ, hwy, color = class))` represents the location of the first argument and is where `mpg` gets piped into. You can omit this as it is **always** the first argument after a `%>%`.
 
 ## Mapping variables to aesthetics
 
@@ -88,7 +85,7 @@ Besides the X and Y axis there are several other **aesthethics** you can map var
 
 We can also map the `class` to the shape aesthetic:
 
-```{r}
+```{r displ-hwy-shape-class}
 mpg %>% 
   ggplot(aes(displ, hwy, shape = class)) +
   geom_point()
@@ -99,7 +96,7 @@ Note the warning: shapes are more difficult to compare than colors. Unless expli
 
 For instance, if we mapp the `class` variable to the alpha aesthetic - controlling the transparency of the points - the results are not as clear.
 
-```{r}
+```{r displ-hwy-alpha-class}
 mpg %>% 
   ggplot(aes(displ, hwy, alpha = class)) +
   geom_point()
@@ -112,7 +109,7 @@ Color and shape are better suited to display categorical variables while size an
 
 You can also manually set specific aesthetics for a geom. You do this **inside** of the `geom_point()` function.
 
-```{r}
+```{r displ-hwy-size-cyl-color-red}
 mpg %>% 
   ggplot(aes(displ, hwy, size = cyl)) +
   geom_point(color = "red")
@@ -122,7 +119,7 @@ mpg %>%
 
 When dealing with categorical variables, *facets* are quite useful and display their own subset of data. You can use `facet_wrap()` to facet your plot with a single variable. The first argument that goes into `facet_wrap()` is a discrete variable and is prefixed with the `~` character. 
 
-```{r}
+```{r displ-hwy-facet-wrap}
 mpg %>% 
   ggplot(aes(displ, hwy)) +  # plot displacement versus highway miles per gallon
   geom_point() +  # add point geometry
@@ -131,8 +128,7 @@ mpg %>%
 
 If you want to plot against two discrete variables, you can use `facet_grid()`. You use two variable names, separated by a `~`.
 
-```{r}
-
+```{r displ-hwy-facet-grid}
 mpg %>% 
   ggplot(aes(displ, hwy)) +  # plot displacement versus highway miles per gallon
   geom_point() +  # add point geometry
@@ -144,7 +140,7 @@ mpg %>%
 Up untill now we have only used the `geom_point()` geom to plot and show data. There are other options that you can use.
 Instead of `geom_point()` you might use `geom_smooth()`, which creates a smoothed line chart.
 
-```{r, message=FALSE}
+```{r displ-hwy-geom-smooth, message=FALSE}
 mpg %>% 
   ggplot(aes(displ, hwy)) +
   geom_smooth()
@@ -155,7 +151,7 @@ Both visualizations represent the same variables on the x and y axis and are bas
 However, instead of using the shape aesthetic, you can use the *linetype* aesthetic to draw a different line for the unique variable that you map to linetype.
 
 
-```{r, message=FALSE}
+```{r displ-hwy-linetype, message=FALSE}
 mpg %>% 
   ggplot(aes(displ, hwy)) + 
   geom_smooth(aes(linetype = drv))
@@ -165,7 +161,7 @@ In this plot we see the lines associated with their `drv` values, which stands f
 
 But where are the original points? To make it more clear, you can simply add the points by adding another geom. Everything you define in the first `aes()` function inside `ggplot()` is applied on **all** geoms. In the case below we color both the line and the points by their `drv` value and we define specific linetypes for the `geom_smooth()` component.
 
-```{r}
+```{r displ-hwy-more-geoms}
 mpg %>% 
   ggplot(aes(displ, hwy, color = drv)) + 
   geom_smooth(aes(linetype = drv)) +
@@ -174,12 +170,71 @@ mpg %>%
 
 You can add multiple geoms to a plot to make absolutely insane graphs. There are over 40 geoms in ggplot2 and if you use [additional extensions to the tidyverse](https://exts.ggplot2.tidyverse.org/gallery/){:target="_blank"} you get even more. Take a look at the [ggplot2 cheatsheet](https://r4ds.had.co.nz/data-visualisation.html#geometric-objects){:target="_blank"} and if you want to learn more about a specific geom, use `?geom_smooth`.
 
+Unlike `geom_point()`, which maps an observation (a single row of data) to a single point, geoms such as `geom_smooth()` map a whole set of observations (multiple rows of data) to a single object (a line chart).
 
+```{r displ-hwy-group-drv, warning=FALSE, message=FALSE}
+# mapping a variable to a group doesn't add any aesthetic properties like color or size to the plot
+mpg %>% 
+  ggplot() +
+  geom_smooth(aes(displ, hwy, group = drv))
+```
+
+```{r displ-hwy-color-drv, warning=FALSE, message=FALSE}
+# mapping a variable to an aesthetic like color obviously does
+mpg %>% 
+  ggplot() +
+  geom_smooth(aes(displ, hwy, color = drv),
+              show.legend = FALSE
+  )
+```
+
+### Multiple geoms
+
+Simply add more geoms to the plot when you want to add more geometric elements. You may choose to map your variables inside the different geoms or in `ggplot2`. You may see some duplicate code if you decide to map inside the geom functions.
+
+```{r more-geoms-1, message=FALSE, fig.show='hide'}
+# duplicate mapping
+mpg %>% 
+  ggplot() +
+  geom_point(aes(displ, hwy)) +
+  geom_smooth(aes(displ, hwy))
+```
+
+These mappings are overruled if you explicitly specify another mapping inside the geom functions. Mapping variables to aesthetics inside the `ggplot()` function are seen as **global** mappings and apply to all geoms. 
+
+```{r more-geoms-2, message=FALSE}
+mpg %>% 
+  ggplot(aes(displ, hwy)) +  # global mappings
+  geom_point() +  # empty mapping
+  geom_smooth()   # empty mapping
+```
+
+You can add a specific mapping to a single geom only. In this case we map color to the `class` variable.
+
+```{r}
+# adding color mapping to geom_point only
+mpg %>%
+  ggplot(aes(displ, hwy)) +
+  geom_point(aes(color = class)) +
+  geom_smooth()
+```
 
 ## Statistical transformations
 
+>
+Coming soon
+
 ## Position adjustments
+
+>
+Coming soon
 
 ## Coordinate systems
 
+>
+Coming soon
+
 ## The layered grammar of graphics
+
+>
+Coming soon

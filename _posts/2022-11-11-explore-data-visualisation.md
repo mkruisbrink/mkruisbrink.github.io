@@ -8,34 +8,31 @@ header:
 category: 
 - Exploration
 ---
-
 ## The basics of data visualisation
 
-We start with the fun part, to visualise the data. This is the biggest
-pay-off and provides the most motivation to keep going and improve.
-We’re going to need to load the `tidyverse`.
+We start with the fun part, visualizing data. This is considered to be
+the biggest pay-off and provided me with loads of motivation to keep
+learning more and more, and to be able to produce better looking graphs
+as a result.
+
+To start of, we’re going to need to load only the `tidyverse`.
 
 ``` r
 library(tidyverse)
 ```
 
-    ## -- Attaching packages --------------------------------------- tidyverse 1.3.2 --
-    ## v ggplot2 3.3.6     v purrr   0.3.4
-    ## v tibble  3.1.8     v dplyr   1.0.9
-    ## v tidyr   1.2.0     v stringr 1.4.0
-    ## v readr   2.1.2     v forcats 0.5.1
-    ## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-    ## x dplyr::filter() masks stats::filter()
-    ## x dplyr::lag()    masks stats::lag()
+    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+    ## ✔ ggplot2 3.4.0      ✔ purrr   0.3.5 
+    ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
+    ## ✔ tidyr   1.2.1      ✔ stringr 1.4.1 
+    ## ✔ readr   2.1.3      ✔ forcats 0.5.2 
+    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
 
 Note that the tidyverse loads **eight** packages and lists their current
 version number. If you don’t see the message above you have to install
-the package first.
-
-``` r
-install.packages("tidyverse")
-library(tidyverse)
-```
+the package first (`install.packages("tidyverse"`).
 
 You also see conflicts: some functions are provided in two packages. You
 could specify which exact function from a package you would like to use
@@ -48,21 +45,20 @@ cars (`mpg`) which comes with the `tidyverse`.
 mpg
 ```
 
-    ## # A tibble: 234 x 11
+    ## # A tibble: 234 × 11
     ##    manufacturer model      displ  year   cyl trans drv     cty   hwy fl    class
     ##    <chr>        <chr>      <dbl> <int> <int> <chr> <chr> <int> <int> <chr> <chr>
-    ##  1 audi         a4           1.8  1999     4 auto~ f        18    29 p     comp~
-    ##  2 audi         a4           1.8  1999     4 manu~ f        21    29 p     comp~
-    ##  3 audi         a4           2    2008     4 manu~ f        20    31 p     comp~
-    ##  4 audi         a4           2    2008     4 auto~ f        21    30 p     comp~
-    ##  5 audi         a4           2.8  1999     6 auto~ f        16    26 p     comp~
-    ##  6 audi         a4           2.8  1999     6 manu~ f        18    26 p     comp~
-    ##  7 audi         a4           3.1  2008     6 auto~ f        18    27 p     comp~
-    ##  8 audi         a4 quattro   1.8  1999     4 manu~ 4        18    26 p     comp~
-    ##  9 audi         a4 quattro   1.8  1999     4 auto~ 4        16    25 p     comp~
-    ## 10 audi         a4 quattro   2    2008     4 manu~ 4        20    28 p     comp~
-    ## # ... with 224 more rows
-    ## # i Use `print(n = ...)` to see more rows
+    ##  1 audi         a4           1.8  1999     4 auto… f        18    29 p     comp…
+    ##  2 audi         a4           1.8  1999     4 manu… f        21    29 p     comp…
+    ##  3 audi         a4           2    2008     4 manu… f        20    31 p     comp…
+    ##  4 audi         a4           2    2008     4 auto… f        21    30 p     comp…
+    ##  5 audi         a4           2.8  1999     6 auto… f        16    26 p     comp…
+    ##  6 audi         a4           2.8  1999     6 manu… f        18    26 p     comp…
+    ##  7 audi         a4           3.1  2008     6 auto… f        18    27 p     comp…
+    ##  8 audi         a4 quattro   1.8  1999     4 manu… 4        18    26 p     comp…
+    ##  9 audi         a4 quattro   1.8  1999     4 auto… 4        16    25 p     comp…
+    ## 10 audi         a4 quattro   2    2008     4 manu… 4        20    28 p     comp…
+    ## # … with 224 more rows
 
 The `mpg` data set has 11 columns containing variables and 234 rows
 containing observations.
@@ -100,11 +96,12 @@ mpg %>%  # take mpg and use it for the first argument on the right side
   geom_point()
 ```
 
-![](/assets/plots/color-class-1.png)<!-- -->
+![](/assets/plots/displ-hwy-color-class-1.png)<!-- -->
 
-The ‘.’ stands for the location of the first argument and is where `mpg`
-gets piped into. There is no need to type this and you can omit this
-too. I just wanted to show you where the data is piped into.
+> The dot character in `ggplot(., aes(displ, hwy, color = class))`
+> represents the location of the first argument and is where `mpg` gets
+> piped into. You can omit this as it is **always** the first argument
+> after a `%>%`.
 
 ## Mapping variables to aesthetics
 
@@ -127,9 +124,9 @@ mpg %>%
     ## more than 6 becomes difficult to discriminate; you have 7. Consider
     ## specifying shapes manually if you must have them.
 
-    ## Warning: Removed 62 rows containing missing values (geom_point).
+    ## Warning: Removed 62 rows containing missing values (`geom_point()`).
 
-![](/assets/plots/unnamed-chunk-4-1.png)<!-- -->
+![](/assets/plots/displ-hwy-shape-class-1.png)<!-- -->
 
 > Note the warning: shapes are more difficult to compare than colors.
 > Unless explicitly specified, 6 shapes are included in the base plot.
@@ -148,7 +145,7 @@ mpg %>%
 
     ## Warning: Using alpha for a discrete variable is not advised.
 
-![](/assets/plots/unnamed-chunk-5-1.png)<!-- -->
+![](/assets/plots/displ-hwy-alpha-class-1.png)<!-- -->
 
 The `class` variable is discrete and the alpha aesthetic is not best
 suited to highlight this.
@@ -165,7 +162,7 @@ mpg %>%
   geom_point(color = "red")
 ```
 
-![](/assets/plots/unnamed-chunk-6-1.png)<!-- -->
+![](/assets/plots/displ-hwy-size-cyl-color-red-1.png)<!-- -->
 
 ## Facets
 
@@ -182,7 +179,7 @@ mpg %>%
   facet_wrap(~ class, nrow = 2)  # facet by class and use only 2 rows for the data
 ```
 
-![](/assets/plots/unnamed-chunk-7-1.png)<!-- -->
+![](/assets/plots/displ-hwy-facet-wrap-1.png)<!-- -->
 
 If you want to plot against two discrete variables, you can use
 `facet_grid()`. You use two variable names, separated by a `~`.
@@ -194,7 +191,7 @@ mpg %>%
   facet_grid(drv ~ cyl)  # facet by drive and cylinders on x and y axes
 ```
 
-![](/assets/plots/unnamed-chunk-8-1.png)<!-- -->
+![](/assets/plots/displ-hwy-facet-grid-1.png)<!-- -->
 
 ## Geometric objects
 
@@ -209,15 +206,14 @@ mpg %>%
   geom_smooth()
 ```
 
-    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+![](/assets/plots/displ-hwy-geom-smooth-1.png)<!-- -->
 
-![](/assets/plots/unnamed-chunk-9-1.png)<!-- --> Both visualizations
-represent the same variables on the x and y axis and are based on the
-same dataset. With `ggplot()`, you can use different **geoms** to
-visualize your data. Every geom object takes a `mapping` argument but
-not every aesthetic will work with every geom. You may decide the shape
-of a point by using `geom_point(shape = 5)` but you can’t set the shape
-of a line like that.
+Both visualizations represent the same variables on the x and y axis and
+are based on the same dataset. With `ggplot()`, you can use different
+**geoms** to visualize your data. Every geom object takes a `mapping`
+argument but not every aesthetic will work with every geom. You may
+decide the shape of a point by using `geom_point(shape = 5)` but you
+can’t set the shape of a line like that.
 
 However, instead of using the shape aesthetic, you can use the
 *linetype* aesthetic to draw a different line for the unique variable
@@ -229,9 +225,7 @@ mpg %>%
   geom_smooth(aes(linetype = drv))
 ```
 
-    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
-
-![](/assets/plots/unnamed-chunk-10-1.png)<!-- -->
+![](/assets/plots/displ-hwy-linetype-1.png)<!-- -->
 
 In this plot we see the lines associated with their `drv` values, which
 stands for a car’s drivetrain (the group of components that deliver
@@ -252,21 +246,98 @@ mpg %>%
   geom_point()
 ```
 
-    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+    ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 
-![](/assets/plots/unnamed-chunk-11-1.png)<!-- -->
+![](/assets/plots/displ-hwy-more-geoms-1.png)<!-- -->
 
 You can add multiple geoms to a plot to make absolutely insane graphs.
 There are over 40 geoms in ggplot2 and if you use [additional extensions
-to the tidyverse](https://exts.ggplot2.tidyverse.org/gallery/) you get
-even more. Take a look at the [ggplot2
-cheatsheet](https://r4ds.had.co.nz/data-visualisation.html#geometric-objects)
+to the
+tidyverse](https://exts.ggplot2.tidyverse.org/gallery/){:target=“\_blank”}
+you get even more. Take a look at the [ggplot2
+cheatsheet](https://r4ds.had.co.nz/data-visualisation.html#geometric-objects){:target=“\_blank”}
 and if you want to learn more about a specific geom, use `?geom_smooth`.
+
+Unlike `geom_point()`, which maps an observation (a single row of data)
+to a single point, geoms such as `geom_smooth()` map a whole set of
+observations (multiple rows of data) to a single object (a line chart).
+
+``` r
+# mapping a variable to a group doesn't add any aesthetic properties like color or size to the plot
+mpg %>% 
+  ggplot() +
+  geom_smooth(aes(displ, hwy, group = drv))
+```
+
+![](/assets/plots/displ-hwy-group-drv-1.png)<!-- -->
+
+``` r
+# mapping a variable to an aesthetic like color obviously does
+mpg %>% 
+  ggplot() +
+  geom_smooth(aes(displ, hwy, color = drv),
+              show.legend = FALSE
+  )
+```
+
+![](/assets/plots/displ-hwy-color-drv-1.png)<!-- -->
+
+### Multiple geoms
+
+Simply add more geoms to the plot when you want to add more geometric
+elements. You may choose to map your variables inside the different
+geoms or in `ggplot2`. You may see some duplicate code if you decide to
+map inside the geom functions.
+
+``` r
+# duplicate mapping
+mpg %>% 
+  ggplot() +
+  geom_point(aes(displ, hwy)) +
+  geom_smooth(aes(displ, hwy))
+```
+
+These mappings are overruled if you explicitly specify another mapping
+inside the geom functions. Mapping variables to aesthetics inside the
+`ggplot()` function are seen as **global** mappings and apply to all
+geoms.
+
+``` r
+mpg %>% 
+  ggplot(aes(displ, hwy)) +  # global mappings
+  geom_point() +  # empty mapping
+  geom_smooth()   # empty mapping
+```
+
+![](/assets/plots/more-geoms-2-1.png)<!-- -->
+
+You can add a specific mapping to a single geom only. In this case we
+map color to the `class` variable.
+
+``` r
+# adding color mapping to geom_point only
+mpg %>%
+  ggplot(aes(displ, hwy)) +
+  geom_point(aes(color = class)) +
+  geom_smooth()
+```
+
+    ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+
+![](/assets/plots/unnamed-chunk-3-1.png)<!-- -->
 
 ## Statistical transformations
 
+> Coming soon
+
 ## Position adjustments
+
+> Coming soon
 
 ## Coordinate systems
 
+> Coming soon
+
 ## The layered grammar of graphics
+
+> Coming soon
