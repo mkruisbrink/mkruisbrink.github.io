@@ -1,0 +1,67 @@
+---
+title: "My coding conventions in R"
+date: "`r Sys.Date()`"
+output: 
+  md_document:
+    variant: gfm
+---
+
+
+```{r setup, include=FALSE}
+
+library(knitr)
+
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+# define knitr paths
+base.dir <- "~/Developer/mkruisbrink.github.io/"
+base.url <- "/"
+fig.path <- "assets/rmd/"
+
+# set knitr parameters
+opts_knit$set(base.dir = base.dir, base.url = base.url)
+opts_chunk$set(fig.path = fig.path)
+
+```
+
+# General conventions
+
+Some of the general conventions I use. Everyone eventually has their own style but there is a broadly accepted general consensus. Implementing conventions from the get-go will drastically increase the cleanliness of your code and make it a lot more accessible and readable for others.
+
+1. Functions are in a code font and followed by parentheses, like `sum()`, or `mean()`.
+2. Other R objects (like data or function arguments) are in a code font, without parentheses, like `flights` or `x`.
+3. To specify from which package objects and/or packages comes from, we’ll use the package name followed by two colons, like `dplyr::mutate()`, or
+`nycflights13::flights`. This is also valid R code.
+
+# How to name your files
+
+## Files
+
+Good file names obviously end in `.R` and are meaningfull or specific. If date is an issue, you could add the date as a prefix.
+
+Good file names:
+
+* `historic-market-price.R`
+* `20220621_historic-market-price.R`
+
+Bad file names:
+
+* `2248237download.R`
+* `fro_dl24(1).R`
+
+## Identifiers
+
+I learned this the hard way. My R Environment would constantly be cluttered with all kinds of variables for different stages in the analysis.
+
+Never use underscores (_) or hyphens (-) in identifiers. Use lowercase for your variables and seperate words by using the dot (.) character.
+
+* `price.timestamp` or `date.range`.
+
+For functions, use initial capital letters (MyFunction).
+
+* `CreateTable` or `ScrapePage`.
+
+Potential constants are prefixed with the letter `k`.
+
+* `kLightSpeed` or `kGravity`.

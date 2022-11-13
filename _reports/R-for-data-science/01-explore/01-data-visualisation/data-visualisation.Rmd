@@ -1,0 +1,185 @@
+---
+title: "My coding conventions in R"
+date: "`r Sys.Date()`"
+output: 
+  md_document:
+    variant: gfm
+---
+
+
+```{r setup, include=FALSE}
+
+library(knitr)
+
+setwd("D:/Max Kruisbrink/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation")
+
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+# define knitr paths
+base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
+base.url <- "/"
+fig.path <- "assets/plots/"
+
+# set knitr parameters
+opts_knit$set(base.dir = base.dir, base.url = base.url)
+opts_chunk$set(fig.path = fig.path) 
+```
+
+
+
+## The basics of data visualisation
+
+We start with the fun part, to visualise the data. This is the biggest pay-off and provides the most motivation to keep going and improve. We're going to need to load the `tidyverse`.
+
+```{r, warning=FALSE}
+library(tidyverse)
+```
+Note that the tidyverse loads **eight** packages and lists their current version number. If you don't see the message above you have to install the package first.
+
+
+```{r, warning=FALSE}
+install.packages("tidyverse")
+library(tidyverse)
+```
+
+You also see conflicts: some functions are provided in two packages. You could specify which exact function from a package you would like to use by using `package::function()` like so `ggplot2::ggplot()`.
+
+
+Now let's load up a data set about fuel usage for different types of cars (`mpg`) which comes with the `tidyverse`.
+
+```{r}
+mpg
+```
+
+The `mpg` data set has `r ncol(mpg)` columns containing variables and `r nrow(mpg)` rows containing observations.
+
+Now we create our first plot. Engine displacement (`displ`) versus highway miles per gallon (`hwy`).
+
+We can map aesthetics to variables via the `ggplot` package. You can do this explicitly with base R.
+
+```{r displ-hwy}
+# explicitly telling ggplot what to use
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy))
+
+```
+
+The `class` variable of the `mpg` data set classifies cars into groups such as compact, midsize, and SUV. If the outlying points are hybrids, they should be classified as compact cars or, perhaps, subcompact cars (keep in mind that this data was collected before hybrid trucks and SUVs became popular).
+
+You can also map the colors aesthetic to the `class` variable. Here we will use the `tidyverse` way and make use of the pipe operator (` %>%`). The pipe tells whatever is on the right side, to take everything on the left side, and use it as input for the **first** argument on the right side. Your code becomes shorter and more intuitive to read.
+
+```{r color-class}
+# using the pipe operator the tidyverse way
+mpg %>%  # take mpg and use it for the first argument on the right side
+  ggplot(., aes(displ, hwy, color = class)) +  
+  geom_point()
+```
+
+The '.' stands for the location of the first argument and is where `mpg` gets piped into. There is no need to type this and you can omit this too. I just wanted to show you where the data is piped into.
+
+## Mapping variables to aesthetics
+
+Besides the X and Y axis there are several other **aesthethics** you can map variables to.
+
+* color
+* shape 
+* alpha; transparency
+
+We can also map the `class` to the shape aesthetic:
+
+```{r}
+mpg %>% 
+  ggplot(aes(displ, hwy, shape = class)) +
+  geom_point()
+```
+
+>
+Note the warning: shapes are more difficult to compare than colors. Unless explicitly specified, 6 shapes are included in the base plot. In this case we have 7 unique values for the `class` variable and the SUV class has no shape assigned.
+
+For instance, if we mapp the `class` variable to the alpha aesthetic - controlling the transparency of the points - the results are not as clear.
+
+```{r}
+mpg %>% 
+  ggplot(aes(displ, hwy, alpha = class)) +
+  geom_point()
+
+```
+
+The `class` variable is discrete and the alpha aesthetic is not best suited to highlight this.
+
+Color and shape are better suited to display categorical variables while size and alpha are better used for continuous variables. 
+
+You can also manually set specific aesthetics for a geom. You do this **inside** of the `geom_point()` function.
+
+```{r}
+mpg %>% 
+  ggplot(aes(displ, hwy, size = cyl)) +
+  geom_point(color = "red")
+```
+
+## Facets
+
+When dealing with categorical variables, *facets* are quite useful and display their own subset of data. You can use `facet_wrap()` to facet your plot with a single variable. The first argument that goes into `facet_wrap()` is a discrete variable and is prefixed with the `~` character. 
+
+```{r}
+mpg %>% 
+  ggplot(aes(displ, hwy)) +  # plot displacement versus highway miles per gallon
+  geom_point() +  # add point geometry
+  facet_wrap(~ class, nrow = 2)  # facet by class and use only 2 rows for the data
+```
+
+If you want to plot against two discrete variables, you can use `facet_grid()`. You use two variable names, separated by a `~`.
+
+```{r}
+
+mpg %>% 
+  ggplot(aes(displ, hwy)) +  # plot displacement versus highway miles per gallon
+  geom_point() +  # add point geometry
+  facet_grid(drv ~ cyl)  # facet by drive and cylinders on x and y axes
+```
+
+## Geometric objects
+
+Up untill now we have only used the `geom_point()` geom to plot and show data. There are other options that you can use.
+Instead of `geom_point()` you might use `geom_smooth()`, which creates a smoothed line chart.
+
+```{r, message=FALSE}
+mpg %>% 
+  ggplot(aes(displ, hwy)) +
+  geom_smooth()
+```
+
+Both visualizations represent the same variables on the x and y axis and are based on the same dataset. With `ggplot()`, you can use different **geoms** to visualize your data. Every geom object takes a `mapping` argument but not every aesthetic will work with every geom. You may decide the shape of a point by using `geom_point(shape = 5)` but you can't set the shape of a line like that.
+
+However, instead of using the shape aesthetic, you can use the *linetype* aesthetic to draw a different line for the unique variable that you map to linetype.
+
+
+```{r, message=FALSE}
+mpg %>% 
+  ggplot(aes(displ, hwy)) + 
+  geom_smooth(aes(linetype = drv))
+```
+
+In this plot we see the lines associated with their `drv` values, which stands for a car's drivetrain (the group of components that deliver mechanical power from the prime mover to the driven components). We see a line for 4-wheel drive, front-wheel drive and rear-wheel drive.
+
+But where are the original points? To make it more clear, you can simply add the points by adding another geom. Everything you define in the first `aes()` function inside `ggplot()` is applied on **all** geoms. In the case below we color both the line and the points by their `drv` value and we define specific linetypes for the `geom_smooth()` component.
+
+```{r}
+mpg %>% 
+  ggplot(aes(displ, hwy, color = drv)) + 
+  geom_smooth(aes(linetype = drv)) +
+  geom_point()
+```
+
+You can add multiple geoms to a plot to make absolutely insane graphs. There are over 40 geoms in ggplot2 and if you use [additional extensions to the tidyverse](https://exts.ggplot2.tidyverse.org/gallery/){:target="_blank"} you get even more. Take a look at the [ggplot2 cheatsheet](https://r4ds.had.co.nz/data-visualisation.html#geometric-objects){:target="_blank"} and if you want to learn more about a specific geom, use `?geom_smooth`.
+
+
+
+## Statistical transformations
+
+## Position adjustments
+
+## Coordinate systems
+
+## The layered grammar of graphics

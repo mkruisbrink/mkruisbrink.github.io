@@ -1,21 +1,14 @@
 ---
 #layout: post
 title: Centralized vs. Decentralized Exchanges
-date: 2022-11-6 14:40:45
 subtitle: Exploring the Nomics API
 excerpt: "How many cryptocurrency exchanges are there? Comparing transparant volumes for centralised and decentralized cryptocurrency exchanges."
 header:
   overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
 category: 
 - Visualization
-tags:
-- Cryptocurrency
-- Exchanges
-- Nomics
 ---
   
-How many cryptocurrency exchanges are there? How many of these are centralized or decentralized? How do the transparant volumes compare?
-
 ## Introduction
 
 In this article we’re going to import cryptocurrency related data via
@@ -66,15 +59,15 @@ library(pilot)
 library(tidyverse)
 ```
 
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
-    ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
-    ## ✔ tidyr   1.2.1      ✔ stringr 1.4.1 
-    ## ✔ readr   2.1.3      ✔ forcats 0.5.2 
-    ## ✔ purrr   0.3.5      
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter()  masks stats::filter()
-    ## ✖ purrr::flatten() masks jsonlite::flatten()
-    ## ✖ dplyr::lag()     masks stats::lag()
+    ## -- Attaching packages --------------------------------------- tidyverse 1.3.2 --
+    ## v tibble  3.1.8     v dplyr   1.0.9
+    ## v tidyr   1.2.0     v stringr 1.4.0
+    ## v readr   2.1.2     v forcats 0.5.1
+    ## v purrr   0.3.4     
+    ## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+    ## x dplyr::filter()  masks stats::filter()
+    ## x purrr::flatten() masks jsonlite::flatten()
+    ## x dplyr::lag()     masks stats::lag()
 
 ``` r
 # html widgets
@@ -116,23 +109,23 @@ glimpse(exchanges_ticker)
 
     ## Rows: 100
     ## Columns: 18
-    ## $ id                 <chr> "binance", "ftx", "fuzionx", "gdax", "lbank", "cryp…
-    ## $ name               <chr> "Binance", "FTX", "FuzionX", "Coinbase Exchange", "…
-    ## $ logo_url           <chr> "https://s3.us-east-2.amazonaws.com/nomics-api/stat…
-    ## $ transparency_grade <chr> "A", "A", "A+", "A", "A", "A", "A", "A", "A", "A", …
-    ## $ coverage_type      <chr> "trades", "trades", "trades", "trades", "trades", "…
-    ## $ order_books        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU…
-    ## $ first_trade        <chr> "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20…
-    ## $ first_candle       <chr> "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20…
-    ## $ first_order_book   <chr> "2018-08-29T00:00:00Z", "2019-10-15T00:00:00Z", "20…
-    ## $ num_pairs          <chr> "2471", "2305", "148", "632", "1754", "167", "3021"…
-    ## $ num_pairs_unmapped <chr> "1", "173", "11", "6", "252", "9", "99", "3793", "7…
-    ## $ last_updated       <chr> "2022-11-06T20:55:03.738Z", "2022-11-06T20:55:02.76…
-    ## $ fiat_currencies    <list> <"AUD", "BRL", "EUR", "GBP", "NGN", "PLN", "RUB", …
-    ## $ rank               <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", …
-    ## $ weight             <chr> "1.0000", "0.8212", "0.1398", "0.8524", "0.6878", "…
-    ## $ centralized        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, TR…
-    ## $ decentralized      <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TR…
+    ## $ id                 <chr> "binance", "fuzionx", "lbank", "cryptomkt", "gdax",~
+    ## $ name               <chr> "Binance", "FuzionX", "Lbank", "CryptoMarket", "Coi~
+    ## $ logo_url           <chr> "https://s3.us-east-2.amazonaws.com/nomics-api/stat~
+    ## $ transparency_grade <chr> "A", "A+", "A", "A", "A", "A", "A", "A", "A", "A", ~
+    ## $ coverage_type      <chr> "trades", "trades", "trades", "trades", "trades", "~
+    ## $ order_books        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FAL~
+    ## $ first_trade        <chr> "2017-07-13T00:00:00Z", "2018-11-15T00:00:00Z", "20~
+    ## $ first_candle       <chr> "2017-07-13T00:00:00Z", "2018-11-15T00:00:00Z", "20~
+    ## $ first_order_book   <chr> "2018-08-29T00:00:00Z", "2022-08-03T00:00:00Z", "20~
+    ## $ num_pairs          <chr> "2474", "148", "1763", "167", "634", "5285", "3035"~
+    ## $ num_pairs_unmapped <chr> "1", "11", "254", "9", "6", "3830", "86", "19", "28~
+    ## $ last_updated       <chr> "2022-11-13T11:22:57.558Z", "2022-11-13T11:22:49.54~
+    ## $ fiat_currencies    <list> <"AUD", "BRL", "EUR", "GBP", "NGN", "PLN", "RUB", ~
+    ## $ rank               <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", ~
+    ## $ weight             <chr> "1.0000", "0.1284", "0.7107", "0.5173", "0.8595", "~
+    ## $ centralized        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE, FA~
+    ## $ decentralized      <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FAL~
     ## $ `1d`               <df[,12]> <data.frame[26 x 12]>
 
 Note that there are only 100 rows. In this case there are several pages
@@ -145,9 +138,9 @@ list. Then we construct the data frame from the list.
 # create a for loop and store all pages in a list
 pages <- list()
 
-# there are currently 6 pages (https://nomics.com/exchanges/6)
+# there are currently 9 pages (https://nomics.com/exchanges/9)
 # you could webscrape untill the last page automatically
-  for(i in 0:6){
+  for(i in 0:9){
     mydata <- fromJSON(paste0(baseurl, "&page=", i))
     message("Retrieving page ", i)
     pages[[i+1]] <- mydata
@@ -168,6 +161,12 @@ pages <- list()
 
     ## Retrieving page 6
 
+    ## Retrieving page 7
+
+    ## Retrieving page 8
+
+    ## Retrieving page 9
+
 ``` r
 # combine all pages into one df
 exchanges_ticker <- rbind_pages(pages)
@@ -183,25 +182,25 @@ Let’s have a look at the data frame we just created.
 glimpse(exchanges_ticker)
 ```
 
-    ## Rows: 700
+    ## Rows: 956
     ## Columns: 18
-    ## $ id                 <chr> "binance", "ftx", "fuzionx", "gdax", "lbank", "cryp…
-    ## $ name               <chr> "Binance", "FTX", "FuzionX", "Coinbase Exchange", "…
-    ## $ logo_url           <chr> "https://s3.us-east-2.amazonaws.com/nomics-api/stat…
-    ## $ transparency_grade <chr> "A", "A", "A+", "A", "A", "A", "A", "A", "A", "A", …
-    ## $ coverage_type      <chr> "trades", "trades", "trades", "trades", "trades", "…
-    ## $ order_books        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU…
-    ## $ first_trade        <chr> "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20…
-    ## $ first_candle       <chr> "2017-07-13T00:00:00Z", "2019-03-05T00:00:00Z", "20…
-    ## $ first_order_book   <chr> "2018-08-29T00:00:00Z", "2019-10-15T00:00:00Z", "20…
-    ## $ num_pairs          <chr> "2471", "2305", "148", "632", "1754", "167", "3021"…
-    ## $ num_pairs_unmapped <chr> "1", "173", "11", "6", "252", "9", "99", "3793", "7…
-    ## $ last_updated       <chr> "2022-11-06T20:55:03.738Z", "2022-11-06T20:55:02.76…
-    ## $ fiat_currencies    <list> <"AUD", "BRL", "EUR", "GBP", "NGN", "PLN", "RUB", …
-    ## $ rank               <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", …
-    ## $ weight             <chr> "1.0000", "0.8212", "0.1398", "0.8524", "0.6878", "…
-    ## $ centralized        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, TR…
-    ## $ decentralized      <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TR…
+    ## $ id                 <chr> "binance", "fuzionx", "lbank", "cryptomkt", "gdax",~
+    ## $ name               <chr> "Binance", "FuzionX", "Lbank", "CryptoMarket", "Coi~
+    ## $ logo_url           <chr> "https://s3.us-east-2.amazonaws.com/nomics-api/stat~
+    ## $ transparency_grade <chr> "A", "A+", "A", "A", "A", "A", "A", "A", "A", "A", ~
+    ## $ coverage_type      <chr> "trades", "trades", "trades", "trades", "trades", "~
+    ## $ order_books        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FAL~
+    ## $ first_trade        <chr> "2017-07-13T00:00:00Z", "2018-11-15T00:00:00Z", "20~
+    ## $ first_candle       <chr> "2017-07-13T00:00:00Z", "2018-11-15T00:00:00Z", "20~
+    ## $ first_order_book   <chr> "2018-08-29T00:00:00Z", "2022-08-03T00:00:00Z", "20~
+    ## $ num_pairs          <chr> "2474", "148", "1763", "167", "634", "5285", "3035"~
+    ## $ num_pairs_unmapped <chr> "1", "11", "254", "9", "6", "3830", "86", "19", "28~
+    ## $ last_updated       <chr> "2022-11-13T11:22:57.558Z", "2022-11-13T11:22:49.54~
+    ## $ fiat_currencies    <list> <"AUD", "BRL", "EUR", "GBP", "NGN", "PLN", "RUB", ~
+    ## $ rank               <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", ~
+    ## $ weight             <chr> "1.0000", "0.1284", "0.7107", "0.5173", "0.8595", "~
+    ## $ centralized        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE, FA~
+    ## $ decentralized      <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, FAL~
     ## $ `1d`               <df[,12]> <data.frame[26 x 12]>
 
 Note that there are a lot of character and some logical variables. There
@@ -214,15 +213,15 @@ single column and a categorical variable.
 ------------------------------------------------------------------------
 
 Also, If we want to order by transparency grade later, we need to
-reorder the variable. Have a look at how this is being sorted.
+reorder this variable. Have a look at how this is being sorted.
 
 ``` r
 sort(exchanges_ticker$transparency)
 ```
 
-    ##   [1] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ##  [16] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ##  [31] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+    ##   [1] "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?" 
+    ##  [16] "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?" 
+    ##  [31] "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "?"  "A"  "A" 
     ##  [46] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
     ##  [61] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
     ##  [76] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
@@ -248,40 +247,65 @@ sort(exchanges_ticker$transparency)
     ## [376] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
     ## [391] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
     ## [406] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
-    ## [421] "A"  "A"  "A"  "A"  "A"  "A"  "A-" "A-" "A-" "A+" "A+" "A+" "A+" "A+" "A+"
-    ## [436] "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+"
-    ## [451] "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+"
-    ## [466] "A+" "A+" "A+" "A+" "A+" "B"  "B"  "B"  "B"  "B"  "B"  "B"  "C"  "C"  "C" 
-    ## [481] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [496] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [511] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+    ## [421] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+    ## [436] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+    ## [451] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A" 
+    ## [466] "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A"  "A-" "A-" "A-" "A+" "A+" "A+" "A+"
+    ## [481] "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+"
+    ## [496] "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+"
+    ## [511] "A+" "A+" "A+" "A+" "A+" "A+" "A+" "A+" "B"  "B"  "B"  "B"  "B"  "B"  "B" 
     ## [526] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
     ## [541] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
     ## [556] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
     ## [571] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
     ## [586] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
-    ## [601] "C"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [616] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [631] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [646] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [601] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+    ## [616] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+    ## [631] "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C"  "C" 
+    ## [646] "C"  "C"  "C"  "C"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
     ## [661] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
     ## [676] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
-    ## [691] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"
+    ## [691] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [706] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [721] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [736] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [751] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [766] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [781] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [796] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [811] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [826] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [841] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [856] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [871] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [886] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [901] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [916] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [931] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D" 
+    ## [946] "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"  "D"
 
 Since it is a character variable it will default to sorting
 alphabetically (hence the better score (A+) will not be ranked on top).
 We will manually have to reorder this variable.
 
+We also note that there’s a nested data frame inside (1d metrics) and we
+need to unnest this to get tidy data.
+
+``` r
+df <- exchanges_ticker %>% unnest(`1d`)
+```
+
 ------------------------------------------------------------------------
 
 ## Step 4: Clean the data
 
-We redefine the ‘cleaned’ data frame itself as a new variable so we keep
-the original data frame intact in case we need to go back.
+We redefine the ‘manipulated’ data frame (`df`) itself as a new variable
+so we keep the original data frame intact in case we need to go back.
 
 ``` r
-# mutate data
-exchanges_ticker_clean <- exchanges_ticker %>% 
+# clean and mutate the data frame
+
+df <- df %>%
   mutate(transparency_grade = factor(transparency_grade, 
                                      levels = c("A+","A","A-","B","C","D")),
          first_trade = as.Date(first_trade),
@@ -292,33 +316,60 @@ exchanges_ticker_clean <- exchanges_ticker %>%
          last_updated = as.Date(last_updated),
          rank = as.integer(rank),
          weight = as.numeric(weight),
-         type = if_else(centralized == TRUE, "Centralized", "Decentralized")
+         type = if_else(centralized == TRUE, "Centralized", "Decentralized"),
+         volume = as.numeric(volume),
+         volume_change = as.numeric(volume_change),
+         volume_change_pct = as.numeric(volume_change_pct),
+         trades = as.numeric(trades), 
+         trades_change = as.numeric(trades_change),
+         trades_change_pct = as.numeric(trades_change_pct),
+         spot_volume= as.numeric(spot_volume),
+         spot_volume_change = as.numeric(spot_volume_change),
+         spot_volume_change_pct = as.numeric(spot_volume_change_pct),
+         derivative_volume = as.numeric(derivative_volume),
+         derivative_volume_change = as.numeric(derivative_volume_change),
+         derivative_volume_change_pct = as.numeric(derivative_volume_change_pct)
          )
 
-glimpse(exchanges_ticker_clean)
+glimpse(df)
 ```
 
-    ## Rows: 700
-    ## Columns: 19
-    ## $ id                 <chr> "binance", "ftx", "fuzionx", "gdax", "lbank", "cryp…
-    ## $ name               <chr> "Binance", "FTX", "FuzionX", "Coinbase Exchange", "…
-    ## $ logo_url           <chr> "https://s3.us-east-2.amazonaws.com/nomics-api/stat…
-    ## $ transparency_grade <fct> A, A, A+, A, A, A, A, A, A, A, A, A, A, A, A, A, A,…
-    ## $ coverage_type      <chr> "trades", "trades", "trades", "trades", "trades", "…
-    ## $ order_books        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRU…
-    ## $ first_trade        <date> 2017-07-13, 2019-03-05, 2018-11-15, 2014-12-01, 20…
-    ## $ first_candle       <date> 2017-07-13, 2019-03-05, 2018-11-15, 2014-12-01, 20…
-    ## $ first_order_book   <date> 2018-08-29, 2019-10-15, 2022-08-03, 2018-09-11, 20…
-    ## $ num_pairs          <int> 2471, 2305, 148, 632, 1754, 167, 3021, 5233, 389, 6…
-    ## $ num_pairs_unmapped <int> 1, 173, 11, 6, 252, 9, 99, 3793, 769, 19, 1123806, …
-    ## $ last_updated       <date> 2022-11-06, 2022-11-06, 2022-11-06, 2022-11-06, 20…
-    ## $ fiat_currencies    <list> <"AUD", "BRL", "EUR", "GBP", "NGN", "PLN", "RUB", …
-    ## $ rank               <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, …
-    ## $ weight             <dbl> 1.0000, 0.8212, 0.1398, 0.8524, 0.6878, 0.4995, 0.7…
-    ## $ centralized        <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, TR…
-    ## $ decentralized      <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TR…
-    ## $ `1d`               <df[,12]> <data.frame[26 x 12]>
-    ## $ type               <chr> "Centralized", "Centralized", "Centralized", "C…
+    ## Rows: 956
+    ## Columns: 30
+    ## $ id                           <chr> "binance", "fuzionx", "lbank", "cryptomkt~
+    ## $ name                         <chr> "Binance", "FuzionX", "Lbank", "CryptoMar~
+    ## $ logo_url                     <chr> "https://s3.us-east-2.amazonaws.com/nomic~
+    ## $ transparency_grade           <fct> A, A+, A, A, A, A, A, A, A, A, A, A, A, A~
+    ## $ coverage_type                <chr> "trades", "trades", "trades", "trades", "~
+    ## $ order_books                  <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,~
+    ## $ first_trade                  <date> 2017-07-13, 2018-11-15, 2017-09-29, 2013~
+    ## $ first_candle                 <date> 2017-07-13, 2018-11-15, 2017-09-29, 2013~
+    ## $ first_order_book             <date> 2018-08-29, 2022-08-03, 2019-06-04, 2021~
+    ## $ num_pairs                    <int> 2474, 148, 1763, 167, 634, 5285, 3035, 66~
+    ## $ num_pairs_unmapped           <int> 1, 11, 254, 9, 6, 3830, 86, 19, 282, 799,~
+    ## $ last_updated                 <date> 2022-11-13, 2022-11-13, 2022-11-13, 2022~
+    ## $ fiat_currencies              <list> <"AUD", "BRL", "EUR", "GBP", "NGN", "PLN~
+    ## $ rank                         <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13~
+    ## $ weight                       <dbl> 1.0000, 0.1284, 0.7107, 0.5173, 0.8595, 0~
+    ## $ centralized                  <lgl> TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, TRUE~
+    ## $ decentralized                <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, ~
+    ## $ volume                       <dbl> 32612960280, 2792632761, 1541726475, 1460~
+    ## $ volume_change                <dbl> -36645878772, -3000087337, -90220278, -18~
+    ## $ volume_change_pct            <dbl> -0.5291, -0.5179, -0.0553, -0.5532, -0.57~
+    ## $ trades                       <dbl> 36751809, 791880, 3289641, 548349, 255508~
+    ## $ trades_change                <dbl> -29455334, -40005, -470777, -40160, -2068~
+    ## $ trades_change_pct            <dbl> -0.4449, -0.0481, -0.1252, -0.0682, -0.44~
+    ## $ spot_volume                  <dbl> 9261203384, 2792632761, 1541726475, 14606~
+    ## $ spot_volume_change           <dbl> -9674567511, -3000087337, -90220278, -180~
+    ## $ spot_volume_change_pct       <dbl> -0.5109, -0.5179, -0.0553, -0.5532, -0.57~
+    ## $ derivative_volume            <dbl> 23351756896, NA, NA, NA, NA, NA, NA, NA, ~
+    ## $ derivative_volume_change     <dbl> -26971311261, NA, NA, NA, NA, NA, NA, NA,~
+    ## $ derivative_volume_change_pct <dbl> -0.5360, NA, NA, NA, NA, NA, NA, NA, NA, ~
+    ## $ type                         <chr> "Centralized", "Centralized", "Centralize~
+
+``` r
+df$type <- as_factor(df$type)
+```
 
 Note that this already looks a lot better and we are getting close to
 being able to work with this output.
@@ -327,14 +378,19 @@ being able to work with this output.
 
 ## Step 5: Select, manipulate and plot
 
-Here we filter our cleaned data into a ggplot. We want to visualize the
-counts of the two different types of exchanges (centralized and
-decentralized). Then we fill the bars based on the transparency grade to
-see where most of the transparent volume originates from.
+Here we pipe (`%>%`) our cleaned data into the `ggplot()` function to
+obtain graphics.
+
+### CEX versus DEX
+
+We want to visualize the counts of the two different types of exchanges
+(centralized and decentralized). Then we fill the bars based on the
+transparency grade to see where most of the transparent volume
+originates from.
 
 ``` r
 # plot types of exchanges
-exchanges_ticker_clean %>%  
+df %>%
   ggplot(aes(type, fill=transparency_grade)) + 
   geom_bar(color = "black",
            position = "stack") +
@@ -349,7 +405,7 @@ exchanges_ticker_clean %>%
   guides(fill = guide_legend(title = "Transparency Grade"))
 ```
 
-![](/assets/rmd/types-of-exchanges-1.png)<!-- -->
+![](/assets/plots/types-of-exchanges-1.png)<!-- -->
 
 Here we do the same thing, but the other way around. We plot the
 different transparency grades on the x-axis, and the count on the
@@ -357,13 +413,13 @@ y-axis. The fill resembles the type of exchange.
 
 ``` r
 # plot exchange types
-exchanges_ticker_clean %>% 
+df %>% 
   ggplot(aes(transparency_grade, fill=type)) + 
   geom_bar(color = "black",
            position = "stack") +
-  labs(title = "Transparancy Grade by Exchange Type",
+  labs(title = "Transparency Grade by Exchange Type",
        subtitle = "Source: Nomics API",
-       x = "Transparancy Grade",
+       x = "Transparency Grade",
        y = "Number of Exchanges") +
   theme_pilot() +
   theme(axis.title = element_text(),
@@ -371,11 +427,11 @@ exchanges_ticker_clean %>%
   guides(fill = guide_legend(title = "Type"))
 ```
 
-![](/assets/rmd/transparancy-exchange-types-1.png)<!-- -->
+![](/assets/plots/transparancy-exchange-types-1.png)<!-- -->
 
 ## Results
 
 From these two rather simple plots, it would appear that most of the
-transparent volumes (grade A+ and A) originate from the decentralized
+transparent volumes (grade A+ and A) originate from decentralized
 exchanges. In addition, most of the low transparent volumes are
 originating from centralized exchanges.

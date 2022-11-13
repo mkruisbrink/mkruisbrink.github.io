@@ -15,9 +15,9 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 
 # define knitr paths
-base.dir <- "~/Developer/mkruisbrink.github.io/"
+base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
 base.url <- "/"
-fig.path <- "assets/rmd/"
+fig.path <- "assets/plots/"
 
 # set knitr parameters
 opts_knit$set(base.dir = base.dir, base.url = base.url)
@@ -52,7 +52,7 @@ I am assuming you have R and RStudio installed and know the basics of how to use
 We are going to load some libraries that we need. These provide added functionality.
 Open up your R Project or opena new R script and type in the following:
 
-```{r package setup}
+```{r package setup, warning=FALSE}
 # install.packages("package_name") 
 
 # working with API data
@@ -228,16 +228,7 @@ being able to work with this output.
 
 
 
-Here we filter our cleaned data into graphics.
-
-### Trades on CEX versus DEX
-
-```{r}
-df %>% 
-  ggplot(aes(trades, fill = type)) +
-  geom_histogram(position = "stack",
-                 bins = 10)
-```
+Here we pipe (`%>%`) our cleaned data into the `ggplot()` function to obtain graphics.
 
 ### CEX versus DEX
 
@@ -248,7 +239,7 @@ see where most of the transparent volume originates from.
 
 ```{r types-of-exchanges}
 # plot types of exchanges
-df %>%  
+df %>%
   ggplot(aes(type, fill=transparency_grade)) + 
   geom_bar(color = "black",
            position = "stack") +
@@ -287,4 +278,4 @@ df %>%
 
 ## Results
 
-From these two rather simple plots, it would appear that most of the transparent volumes (grade A+ and A) originate from the decentralized exchanges. In addition, most of the low transparent volumes are originating from centralized exchanges.
+From these two rather simple plots, it would appear that most of the transparent volumes (grade A+ and A) originate from decentralized exchanges. In addition, most of the low transparent volumes are originating from centralized exchanges.

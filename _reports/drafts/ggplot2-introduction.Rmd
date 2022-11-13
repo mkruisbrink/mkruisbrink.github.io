@@ -1,0 +1,62 @@
+---
+title: "ggplot2 introduction"
+author: "Max Kruisbrink"
+date: "`r Sys.Date()`"
+output: 
+  md_document:
+    variant: gfm
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+# define knitr paths
+base.dir <- "~/Developer/mkruisbrink.github.io/"
+base.url <- "/"
+fig.path <- "img/rmd/"
+
+# set knitr parameters
+opts_knit$set(base.dir = base.dir, base.url = base.url)
+opts_chunk$set(fig.path = fig.path) 
+```
+
+## The tidyverse
+
+I wrote [a simple introductory to the tidyverse]({% post_url 2022-08-11-tidyverse-introduction %}) of which `ggplot2` is a core part.
+The tidyverse is a package in R that is - in itself - a collection of individual R packages that all work closely together in the same way (they speak thesame kind of language, if you will). Data import & export, manipulation, exploration and visualization becomes simpler and more elegant by using new and additional syntax which is more intuitive to and readable for us humans.
+
+### Set-up
+
+You can install the tidyverse via **`install.packages("tidyverse")`** and you only have to install it once. Lets load the tidyverse and the data we're going to use.
+
+```{r install and load, warning=FALSE}
+
+# installs the package if required
+#install.packages("tidyverse")
+
+# loads the tidyverse
+library(tidyverse)
+
+```
+
+### Example data
+
+```{r loading data, warning=FALSE}
+
+# using the starwars dataset
+data <- starwars
+
+# for the sake of this introduction we will drop all missing values for now
+data <- drop_na(data)
+
+```
+
+## ggplot2
+
+```{r}
+
+```
+

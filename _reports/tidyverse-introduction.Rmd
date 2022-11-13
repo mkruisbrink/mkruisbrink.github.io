@@ -16,7 +16,7 @@ knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 # define knitr paths
 base.dir <- "~/Developer/mkruisbrink.github.io/"
 base.url <- "/"
-fig.path <- "assets/rmd/"
+fig.path <- "assets/plots/"
 
 # set knitr parameters
 opts_knit$set(base.dir = base.dir, base.url = base.url)
