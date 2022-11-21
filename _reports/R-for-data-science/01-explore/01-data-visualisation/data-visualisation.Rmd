@@ -26,12 +26,15 @@ opts_knit$set(base.dir = base.dir, base.url = base.url)
 opts_chunk$set(fig.path = fig.path) 
 ```
 
-
+>
+These long form articles are part of a series in which I go through the book 'R for Data Science' and document my learnings and understanding of concepts in R in my own way.
 
 ## The basics of data visualisation
 
-We start with the fun part, visualizing data. This is considered to be the biggest
-pay-off and provided me with loads of motivation to keep learning more and more, and to be able to produce better looking graphs as a result.
+We start with the fun part, exploring and visualizing data. This is considered by many to be
+the biggest pay-off when it comes to learning R and provided me with loads of motivation to keep
+learning more and more, and to be able to produce better looking graphs
+as a result.
 
 To start of, we’re going to need to load only the `tidyverse`.
 
@@ -221,8 +224,73 @@ mpg %>%
 
 ## Statistical transformations
 
->
-Coming soon
+So far, we have looked at functions that plot the data *as-is* and do not perform any mutations or statistical transformations on the data itself, such as creating new variables. In this section we're going to look at bar charts with `geom_bar()`.
+
+We are using the `diamonds` data set which comes with ggplot2. It contains `r ncol(diamonds)` variables for `r nrow(diamonds)` observations of diamonds.
+
+```{r}
+diamonds
+```
+
+A bar chart takes a specific variable and performs a `count()` of all the unique observations in that variable. In this case, cut ratings ranging from fair to ideal.
+
+```{r}
+diamonds %>% 
+  ggplot(aes(cut)) +
+  geom_bar()
+```
+
+Here are some examples of how different geoms transform the data prior to creating the plot:
+
+* bar charts, histograms, and frequency polygons bin your data and then plot bin counts, the number of points that fall in each bin.
+* smoothers fit a model to your data and then plot predictions from the model.
+* boxplots compute a robust summary of the distribution and then display a specially formatted box.
+
+The transformations are performed under the hood in the so-called 'stat' functions. You can inspect the stat function of a specific geom by typing `?geom_bar`. You see that `stat = 'count'`. Every geom has their own stat function:
+
+* `?geom_point` : `stat = 'identity'`
+* `?geom_boxplot` : `stat = 'boxplot'`
+* `?geom_smooth` : `stat = 'smooth'`
+* `?geom_bar` : `stat = 'count'`
+
+Usually you can use geoms (`geom_bar()`) and stats (`stat_count()`) interchangeably. In some cases you might want to use a specific geom but use another stat function or use a stat function instead of a geom.
+
+Here we use `geom_bar()` and a stat function to map proportions to the y-axis:
+
+```{r}
+diamonds %>% 
+  ggplot() +
+  geom_bar(aes(cut, after_stat(prop), group = 1))
+```
+
+Here we use `stat_count()` to get the same results:
+
+```{r}
+diamonds %>% 
+  ggplot() +
+  stat_count(aes(cut, after_stat(prop), group = 1))
+```
+
+You can use other stats for a succinct summary of the data too, such as stat_summary
+
+```{r}
+diamonds %>% 
+  ggplot(aes(cut, depth)) + 
+  stat_summary(mapping = aes(cut, depth),
+               fun.max = max,
+               fun.min = min,
+               fun = median) 
+```
+
+Note that this comes close to what `geom_boxplot()` (a statistical summary) actually looks like. You can work around the default functionality provided by all the geoms when you start using stats for additional customization. Geoms very often prove sufficient for your everyday needs.
+
+
+```{r}
+diamonds %>% 
+  ggplot(aes(cut, depth)) +
+  geom_boxplot()
+```
+
 
 ## Position adjustments
 
