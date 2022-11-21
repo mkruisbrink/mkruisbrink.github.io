@@ -12,20 +12,20 @@ output:
 library(knitr)
 
 # macOS
-# setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation")
+setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation")
 
 # Windows
-setwd("D:/Max Kruisbrink/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/")
+# setwd("D:/Max Kruisbrink/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/")
 
 
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 
 # define knitr paths for macOS
-#base.dir <- "~/Developer/mkruisbrink.github.io/"
+base.dir <- "~/Developer/mkruisbrink.github.io/"
 
 # define knitr paths for Windows
-base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
+#base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
 
 base.url <- "/"
 fig.path <- "assets/plots/"
@@ -60,11 +60,11 @@ Now let's load up a data set about fuel usage for different types of cars (`mpg`
 mpg
 ```
 
-The `mpg` data set has `r ncol(mpg)` columns containing variables and `r nrow(mpg)` rows containing observations.
+The `mpg` data set has `r ncol(mpg)` columns containing variables and `r nrow(mpg)` rows containing observations. Now we create our first plot. 
 
-Now we create our first plot. Engine displacement (`displ`) versus highway miles per gallon (`hwy`).
+## Mapping variables to the X and Y axis
 
-We can map aesthetics to variables via the `ggplot` package. You can do this explicitly with base R.
+Engine displacement (`displ`) versus highway miles per gallon (`hwy`). We can map aesthetics to variables via the `ggplot` package. You can do this explicitly like so:
 
 ```{r displ-hwy}
 # explicitly telling ggplot what to use
@@ -74,6 +74,7 @@ ggplot(data = mpg) +
 ```
 
 The `class` variable of the `mpg` data set classifies cars into groups such as compact, midsize, and SUV. If the outlying points are hybrids, they should be classified as compact cars or, perhaps, subcompact cars (keep in mind that this data was collected before hybrid trucks and SUVs became popular).
+
 
 You can also map the colors aesthetic to the `class` variable. Here we will use the `tidyverse` way and make use of the pipe operator (` %>%`). The pipe tells whatever is on the right side, to take everything on the left side, and use it as input for the **first** argument on the right side. Your code becomes shorter and more intuitive to read.
 
@@ -89,11 +90,13 @@ The dot character in `ggplot(., aes(displ, hwy, color = class))` represents the 
 
 ## Mapping variables to aesthetics
 
-Besides the X and Y axis there are several other **aesthethics** you can map variables to.
+Besides the X and Y axis (which are also aesthetics) there are several other **aesthetics** you can map variables to.
 
 * color
 * shape 
 * alpha; transparency
+
+### Shape
 
 We can also map the `class` to the shape aesthetic:
 
@@ -106,7 +109,9 @@ mpg %>%
 >
 Note the warning: shapes are more difficult to compare than colors. Unless explicitly specified, 6 shapes are included in the base plot. In this case we have 7 unique values for the `class` variable and the SUV class has no shape assigned.
 
-For instance, if we mapp the `class` variable to the alpha aesthetic - controlling the transparency of the points - the results are not as clear.
+### Alpha
+
+For instance, if we map the `class` variable to the alpha aesthetic - controlling the transparency of the points - the results are not as clear.
 
 ```{r displ-hwy-alpha-class}
 mpg %>% 
@@ -149,7 +154,7 @@ mpg %>%
 
 ## Geometric objects
 
-Up untill now we have only used the `geom_point()` geom to plot and show data. There are other options that you can use.
+Up until now we have only used the `geom_point()` geom to plot and show data. There are other options that you can use.
 Instead of `geom_point()` you might use `geom_smooth()`, which creates a smoothed line chart.
 
 ```{r displ-hwy-geom-smooth, message=FALSE}
@@ -233,7 +238,7 @@ mpg %>%
 
 You can also show a subset of the data for different layers (geoms). In this next plot, the smooth line represents a subset of the `class` variable. We only show the `geom_smooth()` for the suv class. You can remove the shaded area representing the standard error (se) by adding `se = FALSE` to the geom.
 
-```{r}
+```{r subset-data-geom}
 mpg %>% ggplot(aes(displ,hwy)) +
   geom_point(aes(color = class)) +
   geom_smooth(data = filter(mpg, class == "suv"), se = FALSE, show.legend = FALSE)
@@ -241,7 +246,7 @@ mpg %>% ggplot(aes(displ,hwy)) +
 
 > Note that inside the `geom_smooth()` function, an explicit call to `data = filter(mpg, class == "suv")` is required as you are *adding* layers and no longer piping the data with `%>%`.
 
-```{r}
+```{r geom-smooth}
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) + 
   geom_point() + 
   geom_smooth(se = FALSE)
@@ -254,13 +259,13 @@ So far, we have looked at functions that plot the data *as-is* and do not perfor
 
 We are using the `diamonds` data set which comes with ggplot2. It contains `r ncol(diamonds)` variables for `r nrow(diamonds)` observations of diamonds.
 
-```{r}
+```{r diamonds-data-set}
 diamonds
 ```
 
 A bar chart takes a specific variable and performs a `count()` of all the unique observations in that variable. In this case, cut ratings ranging from fair to ideal.
 
-```{r}
+```{r geom-bar-stat-count}
 diamonds %>% 
   ggplot(aes(cut)) +
   geom_bar()
@@ -283,7 +288,7 @@ Usually you can use geoms such as `geom_bar()` and their respective transformati
 
 Here we use `geom_bar()` and a stat function to map proportions to the y-axis. If you leave `group = 1` out all proportions will be equal to 1 or 100%. The bar geom will count all rows or observations with a specific cut, totalling 100% for each level. You override this behaviour by adding a dummy group such as `group = "whatever"`. Then the correct proportions over *all* observations will be used.
 
-```{r}
+```{r geom-bar-after-stat-prop}
 diamonds %>% 
   ggplot() +
   geom_bar(aes(cut, after_stat(prop), group = "whatever"))
@@ -291,7 +296,7 @@ diamonds %>%
 
 Here we use `stat_count()` to get the same results:
 
-```{r}
+```{r stat-count}
 diamonds %>% 
   ggplot() +
   stat_count(aes(cut, after_stat(prop), group = 1))
@@ -299,7 +304,7 @@ diamonds %>%
 
 You can use other stats for a succinct summary of the data too, such as stat_summary
 
-```{r}
+```{r stat-summary}
 diamonds %>% 
   ggplot(aes(cut, depth)) + 
   stat_summary(mapping = aes(cut, depth),
@@ -311,7 +316,7 @@ diamonds %>%
 Note that this comes close to what `geom_boxplot()` (a statistical summary) actually looks like. You can work around the default functionality provided by all the geoms when you start using stats for additional customization. I must say, geoms very often prove sufficient for your everyday needs (so far, they have for me).
 
 
-```{r}
+```{r stat-summary-geom-boxplot}
 diamonds %>% 
   ggplot(aes(cut, depth)) +
   geom_boxplot()
@@ -390,7 +395,7 @@ diamonds %>%
 
 There is another type of position adjustment that is quite handy. Not for bar charts but for scatter plots. In the first plot that we made, many of the individual points were overlapping. We note 234 observations. If you would count the individual points you wouldn't arrive at this number. This problem is called *overplotting* and it is caused by rounding so the points appear on the grid used by ggplot.
 
-```{r}
+```{r geom-point-overplotting}
 nrow(mpg)  #count rows in mpg dataset
 
 mpg %>% 
@@ -404,16 +409,71 @@ You can avoid this grid by using `position = "jitter"` which adds random noise t
 mpg %>% 
   ggplot(aes(displ, hwy)) +
   geom_point(position = "jitter")  # or use geom_jitter() instead
- 
 ```
-
 
 ## Coordinate systems
 
-Another aspect of building graphs is the coordinate system.
+Another aspect of building graphs is the coordinate system. The standard coordinate system used is the [Cartesian system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system). In the Cartesian system, the X and Y axis act independently to determine the location of the data (go along the X axis, then up along the Y axis).
+
+```{r cartesian-coordinates}
+include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian-coordinate-system.svg/1920px-Cartesian-coordinate-system.svg.png")
+```
+
+
+There are a few other coordinate systems that might be useful on the rare occasion:
+
+* `coord_flip()`: swaps the X and Y coordinates, very usefull for data with a lot of groups and labels (specifically longer labels)!
+
+```{r boxplot-coord-flip}
+mpg %>% 
+  ggplot(aes(manufacturer, hwy)) + 
+  geom_boxplot()
+
+mpg %>% 
+  ggplot(aes(manufacturer, hwy)) +
+  geom_boxplot() +
+  coord_flip()
+```
+
+>
+Note that you can also achieve the same result by flipping the X and Y aesthetic! I didn't realize this until quite recently.
+
+```{r coord-flip-x-y, eval=FALSE}
+mpg %>% 
+  ggplot(aes(y = class, x = hwy)) +  # instead of aes(x = hwy, y = class)
+  geom_boxplot()
+```
+
+* `coord_polar()`: uses polar coordinates in which each point on a plane is determined by a distance from a reference point and an angle from a reference direction. The polar coordinate system is probably most often used to make pie charts.
+
+```{r polar-coordinates-wikipedia}
+include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Examples_of_Polar_Coordinates.svg/1920px-Examples_of_Polar_Coordinates.svg.png")
+```
+
+
+```{r coord-flip-vs-coord-polar}
+chart <- diamonds %>% 
+  ggplot(aes(cut, fill = cut)) + 
+  geom_bar()
+
+chart + coord_flip()
+chart + coord_polar()
+```
 
 
 
+* `coord_quickmap()` is used when plotting spatial data such as maps to set the correct aspect ratios. You can clearly see the difference in the plots of France below.
+
+```{r coord-quickmap}
+map <- map_data("france")
+
+ggplot(map, aes(long, lat, group = group)) +
+  geom_polygon(fill = "white", color = "black")
+
+ggplot(map, aes(long, lat, group = group)) +
+  geom_polygon(fill = "white", color = "black") +
+  coord_quickmap()
+```
 
 ## The layered grammar of graphics
 
