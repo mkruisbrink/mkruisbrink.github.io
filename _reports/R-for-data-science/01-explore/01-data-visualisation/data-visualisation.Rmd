@@ -1,5 +1,5 @@
 ---
-title: "My coding conventions in R"
+title: "Data visualisation"
 date: "`r Sys.Date()`"
 output: 
   md_document:
@@ -238,6 +238,7 @@ mpg %>% ggplot(aes(displ,hwy)) +
   geom_point(aes(color = class)) +
   geom_smooth(data = filter(mpg, class == "suv"), se = FALSE, show.legend = FALSE)
 ```
+
 > Note that inside the `geom_smooth()` function, an explicit call to `data = filter(mpg, class == "suv")` is required as you are *adding* layers and no longer piping the data with `%>%`.
 
 ```{r}
@@ -245,9 +246,6 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) +
   geom_point() + 
   geom_smooth(se = FALSE)
 ```
-
-
-
 
 
 ## Statistical transformations
@@ -281,14 +279,14 @@ The transformations are performed under the hood in the so-called 'stat' functio
 * `?geom_smooth` : `stat = 'smooth'`
 * `?geom_bar` : `stat = 'count'`
 
-Usually you can use geoms (`geom_bar()`) and stats (`stat_count()`) interchangeably. In some cases you might want to use a specific geom but use another stat function or use a stat function instead of a geom.
+Usually you can use geoms such as `geom_bar()` and their respective transformation `stat_count()` interchangeably. In some cases you might want to use a specific geom but use another stat function or use a stat function instead of a geom.
 
-Here we use `geom_bar()` and a stat function to map proportions to the y-axis:
+Here we use `geom_bar()` and a stat function to map proportions to the y-axis. If you leave `group = 1` out all proportions will be equal to 1 or 100%. The bar geom will count all rows or observations with a specific cut, totalling 100% for each level. You override this behaviour by adding a dummy group such as `group = "whatever"`. Then the correct proportions over *all* observations will be used.
 
 ```{r}
 diamonds %>% 
   ggplot() +
-  geom_bar(aes(cut, after_stat(prop), group = 1))
+  geom_bar(aes(cut, after_stat(prop), group = "whatever"))
 ```
 
 Here we use `stat_count()` to get the same results:
@@ -310,7 +308,7 @@ diamonds %>%
                fun = median) 
 ```
 
-Note that this comes close to what `geom_boxplot()` (a statistical summary) actually looks like. You can work around the default functionality provided by all the geoms when you start using stats for additional customization. Geoms very often prove sufficient for your everyday needs.
+Note that this comes close to what `geom_boxplot()` (a statistical summary) actually looks like. You can work around the default functionality provided by all the geoms when you start using stats for additional customization. I must say, geoms very often prove sufficient for your everyday needs (so far, they have for me).
 
 
 ```{r}
@@ -319,18 +317,123 @@ diamonds %>%
   geom_boxplot()
 ```
 
+The boxplot reveals important information regarding the distribution of your data, such as:
+
+* the median value
+* the upper and lower quartile (Q1 and Q3) range
+* the interquartile range (difference between Q1 and Q3)
+* minimum and maximum values
+* outliers
+
 
 ## Position adjustments
 
->
-Coming soon
+When it comes to bar charts there is another tweak you can perform in order to change how the bar chart is displayed. You can fill with a color and map the color to a variable.
+
+```{r position-adjustments-fill}
+diamonds %>% 
+  ggplot() +
+  geom_bar(aes(cut, fill = cut))  # fill the bars with color based on the different cuts
+```
+There are a few noteworthy position adjustments for bar charts:
+
+* `"stack"`
+* `"identity"`
+* `"fil"`
+* `"dodge"`
+
+### Stack
+
+You can add another variable by mapping fill to something else then `cut`, let's say `clarity`. Now we add mapping (fill) for every subset of clarity for the different cuts available. The default position for `geom_bar()` is `"stack"`.
+
+```{r position-stack}
+diamonds %>% 
+  ggplot() +
+  geom_bar(aes(cut, fill = clarity),  # add mapping (fill) for every subset of clarity in available cuts
+           position = "stack")  # this is the default position for geom_bar() but it needs another variable in order to fill!
+```
+
+The way these bars are stacked is performed automatically by the *position adjustment* which is specified by the `position` argument inside `geom_bar()`, the default position is `"stack"`. It stacks the counts for all subsets of `cuts` and fills by `clarity.`
+
+
+### Identity
+
+The `"identity"` position shows the data exactly where it would lie in the graph itself. It is not useful for bar charts and is the default position for 2d geoms like `geom_point()`. For bar charts, the `"identity"` position causes the segments to overlap because it counts all different subsets and plots the colored bars over each other.
+
+```{r position-identity}
+diamonds %>% 
+  ggplot(aes(cut, fill = clarity)) + 
+  geom_bar(alpha = 1/5, position = "identity")
+```
+
+### Fill
+
+The `"fill"` position works just like the `"stack"` position but makes all the different bars equal height. This makes it easier to compare the proportions between groups.
+
+```{r position-fill}
+diamonds %>% 
+  ggplot() +
+  geom_bar(aes(cut, fill = clarity), position = "fill")
+```
+
+### Dodge
+
+The `"dodge"` position places all objects side by side which makes it easier to compare the values per group.
+
+```{r position-dodge}
+diamonds %>% 
+  ggplot() +
+  geom_bar(aes(cut, fill = clarity), position = "dodge")
+```
+
+### Jitter
+
+There is another type of position adjustment that is quite handy. Not for bar charts but for scatter plots. In the first plot that we made, many of the individual points were overlapping. We note 234 observations. If you would count the individual points you wouldn't arrive at this number. This problem is called *overplotting* and it is caused by rounding so the points appear on the grid used by ggplot.
+
+```{r}
+nrow(mpg)  #count rows in mpg dataset
+
+mpg %>% 
+  ggplot(aes(displ, hwy)) +
+  geom_point()
+```
+
+You can avoid this grid by using `position = "jitter"` which adds random noise to all the points. There is even a shorthand for this position specifically, `geom_jitter()`. Note the randomness applied to all points in both graphs. Take care with this position adjustment at small scales as it makes your graph less accurate. It can be quite revealing on larger scales and with lots of data to work with.
+
+```{r position-jitter}
+mpg %>% 
+  ggplot(aes(displ, hwy)) +
+  geom_point(position = "jitter")  # or use geom_jitter() instead
+ 
+```
+
 
 ## Coordinate systems
 
->
-Coming soon
+Another aspect of building graphs is the coordinate system.
+
+
+
 
 ## The layered grammar of graphics
 
->
-Coming soon
+We've demonstrated that you *build* graphics using different layers. This way of visualizing data has been dubbed **the grammar of graphics**. Ultimately, the template for this is (the tidyverse way):
+
+> Remember, most often the default stat or position will work for you. There are cases where you want to overwrite or customize your graph and this knowledge will proof essential to manipulate your graph to your liking.
+
+```{r layered-grammar-graphics-template}
+
+diamonds %>%  # specify the data you wish to use and pipe it in
+  ggplot(aes()) +  # call the ggplot function and set global mapping if required
+  geom_bar(  # use a specific geom for your plot
+     mapping = aes(cut, fill = cut),  # set specific aesthetic mapping for the geom
+     stat = "count",  # specify the stat used by the geom
+     position = "stack"  # specify the position adjustments for the geom
+  ) +
+  coord_flip() +  # specify another coordinate system
+  facet_wrap(~clarity, nrow = 4, ncol = 2)  # faceting by clarity in four rows and 2 columns
+  
+
+```
+
+
