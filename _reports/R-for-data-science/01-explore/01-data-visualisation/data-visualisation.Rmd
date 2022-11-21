@@ -11,13 +11,22 @@ output:
 
 library(knitr)
 
-setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation")
+# macOS
+# setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation")
+
+# Windows
+setwd("D:/Max Kruisbrink/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/")
+
 
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 
-# define knitr paths
-base.dir <- "~/Developer/mkruisbrink.github.io/"
+# define knitr paths for macOS
+#base.dir <- "~/Developer/mkruisbrink.github.io/"
+
+# define knitr paths for Windows
+base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
+
 base.url <- "/"
 fig.path <- "assets/plots/"
 
@@ -171,7 +180,7 @@ mpg %>%
   geom_point()
 ```
 
-You can add multiple geoms to a plot to make absolutely insane graphs. There are over 40 geoms in ggplot2 and if you use [additional extensions to the tidyverse](https://exts.ggplot2.tidyverse.org/gallery/){:target="_blank"} you get even more. Take a look at the [ggplot2 cheatsheet](https://r4ds.had.co.nz/data-visualisation.html#geometric-objects){:target="_blank"} and if you want to learn more about a specific geom, use `?geom_smooth`.
+You can add multiple geoms to a plot to make absolutely insane graphs. There are over 40 geoms in ggplot2 and if you use [additional extensions to the tidyverse](https://exts.ggplot2.tidyverse.org/gallery/) you get even more. Take a look at the [ggplot2 cheatsheet](https://r4ds.had.co.nz/data-visualisation.html#geometric-objects) and if you want to learn more about a specific geom, use `?geom_smooth`.
 
 Unlike `geom_point()`, which maps an observation (a single row of data) to a single point, geoms such as `geom_smooth()` map a whole set of observations (multiple rows of data) to a single object (a line chart).
 
@@ -214,13 +223,32 @@ mpg %>%
 
 You can add a specific mapping to a single geom only. In this case we map color to the `class` variable.
 
-```{r}
+```{r specific-mapping-single-geom}
 # adding color mapping to geom_point only
 mpg %>%
   ggplot(aes(displ, hwy)) +
   geom_point(aes(color = class)) +
   geom_smooth()
 ```
+
+You can also show a subset of the data for different layers (geoms). In this next plot, the smooth line represents a subset of the `class` variable. We only show the `geom_smooth()` for the suv class. You can remove the shaded area representing the standard error (se) by adding `se = FALSE` to the geom.
+
+```{r}
+mpg %>% ggplot(aes(displ,hwy)) +
+  geom_point(aes(color = class)) +
+  geom_smooth(data = filter(mpg, class == "suv"), se = FALSE, show.legend = FALSE)
+```
+> Note that inside the `geom_smooth()` function, an explicit call to `data = filter(mpg, class == "suv")` is required as you are *adding* layers and no longer piping the data with `%>%`.
+
+```{r}
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) + 
+  geom_point() + 
+  geom_smooth(se = FALSE)
+```
+
+
+
+
 
 ## Statistical transformations
 
