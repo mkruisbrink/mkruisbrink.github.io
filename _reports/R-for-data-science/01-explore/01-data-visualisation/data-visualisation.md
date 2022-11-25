@@ -1,14 +1,3 @@
----
-#layout: post
-title: The basics of data visualisation in R
-subtitle: The best part of any analysis is when you can dive in an visualise the data
-excerpt: "These are the basics of visualizing data in R, using only the tidyverse functionality."
-header:
-  overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
-category: 
-- Exploration
----
-
 > These long form articles are part of a series in which I go through
 > the book ‘R for Data Science’ and document my learnings and
 > understanding of concepts in R in my own way.
@@ -623,6 +612,12 @@ the Cartesian system, the X and Y axis act independently to determine
 the location of the data (go along the X axis, then up along the Y
 axis).
 
+``` r
+include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian-coordinate-system.svg/1920px-Cartesian-coordinate-system.svg.png")
+```
+
+![](/https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian-coordinate-system.svg/1920px-Cartesian-coordinate-system.svg.png)<!-- -->
+
 There are a few other coordinate systems that might be useful on the
 rare occasion:
 
@@ -659,6 +654,12 @@ mpg %>%
   is determined by a distance from a reference point and an angle from a
   reference direction. The polar coordinate system is probably most
   often used to make pie charts.
+
+``` r
+include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Examples_of_Polar_Coordinates.svg/1920px-Examples_of_Polar_Coordinates.svg.png")
+```
+
+![](/https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Examples_of_Polar_Coordinates.svg/1920px-Examples_of_Polar_Coordinates.svg.png)<!-- -->
 
 ``` r
 chart <- diamonds %>% 
@@ -703,6 +704,11 @@ We’ve demonstrated that you *build* graphics using different layers.
 This way of visualizing data has been dubbed **the grammar of
 graphics**. Ultimately, the template for this is (the tidyverse way):
 
+> Remember, most often the default stat or position will work for you.
+> There are cases where you want to overwrite or customize your graph
+> and this knowledge will proof essential to manipulate your graph to
+> your liking.
+
 ``` r
 diamonds %>%  # specify the data you wish to use and pipe it in
   ggplot(aes()) +  # call the ggplot function and set global mapping if required
@@ -714,9 +720,5 @@ diamonds %>%  # specify the data you wish to use and pipe it in
   coord_flip() +  # specify another coordinate system
   facet_wrap(~clarity, nrow = 4, ncol = 2)  # faceting by clarity in four rows and 2 columns
 ```
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/layered-grammar-graphics-template-1.png)<!-- -->
 
-Remember, most often the default stat or position will work for you.
-There are cases where you want to overwrite or customize your graph and
-this knowledge will proof essential to manipulate your graph to your
-liking.
+![](/_reports/R-for-data-science/01-explore/01-data-visualisation/layered-grammar-graphics-template-1.png)<!-- -->

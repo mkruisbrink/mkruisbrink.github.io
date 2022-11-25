@@ -12,7 +12,7 @@ output:
 library(knitr)
 
 # macOS
-setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation")
+setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation/")
 
 # Windows
 # setwd("D:/Max Kruisbrink/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/")
@@ -28,7 +28,7 @@ base.dir <- "~/Developer/mkruisbrink.github.io/"
 #base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
 
 base.url <- "/"
-fig.path <- "assets/plots/"
+fig.path <- "_reports/R-for-data-science/01-explore/01-data-visualisation/"
 
 # set knitr parameters
 opts_knit$set(base.dir = base.dir, base.url = base.url)
@@ -415,11 +415,6 @@ mpg %>%
 
 Another aspect of building graphs is the coordinate system. The standard coordinate system used is the [Cartesian system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system). In the Cartesian system, the X and Y axis act independently to determine the location of the data (go along the X axis, then up along the Y axis).
 
-```{r cartesian-coordinates}
-include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian-coordinate-system.svg/1920px-Cartesian-coordinate-system.svg.png")
-```
-
-
 There are a few other coordinate systems that might be useful on the rare occasion:
 
 * `coord_flip()`: swaps the X and Y coordinates, very usefull for data with a lot of groups and labels (specifically longer labels)!
@@ -446,10 +441,6 @@ mpg %>%
 
 * `coord_polar()`: uses polar coordinates in which each point on a plane is determined by a distance from a reference point and an angle from a reference direction. The polar coordinate system is probably most often used to make pie charts.
 
-```{r polar-coordinates-wikipedia}
-include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Examples_of_Polar_Coordinates.svg/1920px-Examples_of_Polar_Coordinates.svg.png")
-```
-
 
 ```{r coord-flip-vs-coord-polar}
 chart <- diamonds %>% 
@@ -459,8 +450,6 @@ chart <- diamonds %>%
 chart + coord_flip()
 chart + coord_polar()
 ```
-
-
 
 * `coord_quickmap()` is used when plotting spatial data such as maps to set the correct aspect ratios. You can clearly see the difference in the plots of France below.
 
@@ -479,8 +468,6 @@ ggplot(map, aes(long, lat, group = group)) +
 
 We've demonstrated that you *build* graphics using different layers. This way of visualizing data has been dubbed **the grammar of graphics**. Ultimately, the template for this is (the tidyverse way):
 
-> Remember, most often the default stat or position will work for you. There are cases where you want to overwrite or customize your graph and this knowledge will proof essential to manipulate your graph to your liking.
-
 ```{r layered-grammar-graphics-template}
 
 diamonds %>%  # specify the data you wish to use and pipe it in
@@ -495,5 +482,9 @@ diamonds %>%  # specify the data you wish to use and pipe it in
   
 
 ```
+
+Remember, most often the default stat or position will work for you. There are cases where you want to overwrite or customize your graph and this knowledge will proof essential to manipulate your graph to your liking.
+
+
 
 
