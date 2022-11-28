@@ -28,7 +28,7 @@ knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
 
 base.url <- "/"
-fig.path <- "_reports/R-for-data-science/01-explore/01-data-visualisation/"
+fig.path <- "assets/reports/R-for-data-science/01-explore/01-data-visualisation/"
 
 # set knitr parameters
 opts_knit$set(base.dir = base.dir, base.url = base.url)
