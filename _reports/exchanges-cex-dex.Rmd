@@ -8,16 +8,26 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-
 library(knitr)
+
+# macOS
+# setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation/")
+
+# Windows
+setwd("D:/Max Kruisbrink/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/")
+
 
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 
-# define knitr paths
+# define knitr paths for macOS
+#base.dir <- "~/Developer/mkruisbrink.github.io/"
+
+# define knitr paths for Windows
 base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
+
 base.url <- "/"
-fig.path <- "assets/plots/"
+fig.path <- "assets/reports/plots/"
 
 # set knitr parameters
 opts_knit$set(base.dir = base.dir, base.url = base.url)
