@@ -34,8 +34,9 @@ R
 .Rdata
 .Rproj.user
 .Rhistory
-/_reports/*.md
- 
+_reports/*.md
+_reports/R-for-data-science/01-explore/01-data-visualisation/data-visualisation.md
+
 
 
 # Files and folders
