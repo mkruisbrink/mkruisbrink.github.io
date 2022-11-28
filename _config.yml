@@ -310,7 +310,7 @@ defaults:
         caption: "[Credit: Maxplaining @ **Midjourney**](https://www.midjourney.com/home/)"
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
       toc: true
