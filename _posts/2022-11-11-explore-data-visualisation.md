@@ -26,14 +26,14 @@ To start of, we’re going to need to load only the `tidyverse`.
 library(tidyverse)
 ```
 
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
-    ## ✔ ggplot2 3.4.0      ✔ purrr   0.3.5 
-    ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
-    ## ✔ tidyr   1.2.1      ✔ stringr 1.4.1 
-    ## ✔ readr   2.1.3      ✔ forcats 0.5.2 
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
+    ## -- Attaching packages --------------------------------------- tidyverse 1.3.2 --
+    ## v ggplot2 3.3.6     v purrr   0.3.4
+    ## v tibble  3.1.8     v dplyr   1.0.9
+    ## v tidyr   1.2.0     v stringr 1.4.0
+    ## v readr   2.1.2     v forcats 0.5.1
+    ## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+    ## x dplyr::filter() masks stats::filter()
+    ## x dplyr::lag()    masks stats::lag()
 
 Note that the tidyverse loads **eight** packages and lists their current
 version number. If you don’t see the message above you have to install
@@ -50,20 +50,21 @@ cars (`mpg`) which comes with the `tidyverse`.
 mpg
 ```
 
-    ## # A tibble: 234 × 11
+    ## # A tibble: 234 x 11
     ##    manufacturer model      displ  year   cyl trans drv     cty   hwy fl    class
     ##    <chr>        <chr>      <dbl> <int> <int> <chr> <chr> <int> <int> <chr> <chr>
-    ##  1 audi         a4           1.8  1999     4 auto… f        18    29 p     comp…
-    ##  2 audi         a4           1.8  1999     4 manu… f        21    29 p     comp…
-    ##  3 audi         a4           2    2008     4 manu… f        20    31 p     comp…
-    ##  4 audi         a4           2    2008     4 auto… f        21    30 p     comp…
-    ##  5 audi         a4           2.8  1999     6 auto… f        16    26 p     comp…
-    ##  6 audi         a4           2.8  1999     6 manu… f        18    26 p     comp…
-    ##  7 audi         a4           3.1  2008     6 auto… f        18    27 p     comp…
-    ##  8 audi         a4 quattro   1.8  1999     4 manu… 4        18    26 p     comp…
-    ##  9 audi         a4 quattro   1.8  1999     4 auto… 4        16    25 p     comp…
-    ## 10 audi         a4 quattro   2    2008     4 manu… 4        20    28 p     comp…
-    ## # … with 224 more rows
+    ##  1 audi         a4           1.8  1999     4 auto~ f        18    29 p     comp~
+    ##  2 audi         a4           1.8  1999     4 manu~ f        21    29 p     comp~
+    ##  3 audi         a4           2    2008     4 manu~ f        20    31 p     comp~
+    ##  4 audi         a4           2    2008     4 auto~ f        21    30 p     comp~
+    ##  5 audi         a4           2.8  1999     6 auto~ f        16    26 p     comp~
+    ##  6 audi         a4           2.8  1999     6 manu~ f        18    26 p     comp~
+    ##  7 audi         a4           3.1  2008     6 auto~ f        18    27 p     comp~
+    ##  8 audi         a4 quattro   1.8  1999     4 manu~ 4        18    26 p     comp~
+    ##  9 audi         a4 quattro   1.8  1999     4 auto~ 4        16    25 p     comp~
+    ## 10 audi         a4 quattro   2    2008     4 manu~ 4        20    28 p     comp~
+    ## # ... with 224 more rows
+    ## # i Use `print(n = ...)` to see more rows
 
 The `mpg` data set has 11 columns containing variables and 234 rows
 containing observations. Now we create our first plot.
@@ -131,7 +132,7 @@ mpg %>%
     ## more than 6 becomes difficult to discriminate; you have 7. Consider
     ## specifying shapes manually if you must have them.
 
-    ## Warning: Removed 62 rows containing missing values (`geom_point()`).
+    ## Warning: Removed 62 rows containing missing values (geom_point).
 
 ![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-shape-class-1.png)<!-- -->
 
@@ -255,7 +256,7 @@ mpg %>%
   geom_point()
 ```
 
-    ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
 ![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-more-geoms-1.png)<!-- -->
 
@@ -330,7 +331,7 @@ mpg %>%
   geom_smooth()
 ```
 
-    ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
 ![](/_reports/R-for-data-science/01-explore/01-data-visualisation/specific-mapping-single-geom-1.png)<!-- -->
 
@@ -346,7 +347,7 @@ mpg %>% ggplot(aes(displ,hwy)) +
   geom_smooth(data = filter(mpg, class == "suv"), se = FALSE, show.legend = FALSE)
 ```
 
-    ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
 ![](/_reports/R-for-data-science/01-explore/01-data-visualisation/subset-data-geom-1.png)<!-- -->
 
@@ -360,7 +361,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) +
   geom_smooth(se = FALSE)
 ```
 
-    ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
 ![](/_reports/R-for-data-science/01-explore/01-data-visualisation/geom-smooth-1.png)<!-- -->
 
@@ -378,7 +379,7 @@ contains 10 variables for 53940 observations of diamonds.
 diamonds
 ```
 
-    ## # A tibble: 53,940 × 10
+    ## # A tibble: 53,940 x 10
     ##    carat cut       color clarity depth table price     x     y     z
     ##    <dbl> <ord>     <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl> <dbl>
     ##  1  0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
@@ -391,7 +392,8 @@ diamonds
     ##  8  0.26 Very Good H     SI1      61.9    55   337  4.07  4.11  2.53
     ##  9  0.22 Fair      E     VS2      65.1    61   337  3.87  3.78  2.49
     ## 10  0.23 Very Good H     VS1      59.4    61   338  4     4.05  2.39
-    ## # … with 53,930 more rows
+    ## # ... with 53,930 more rows
+    ## # i Use `print(n = ...)` to see more rows
 
 A bar chart takes a specific variable and performs a `count()` of all
 the unique observations in that variable. In this case, cut ratings
@@ -681,6 +683,7 @@ chart + coord_polar()
   the plots of France below.
 
 ``` r
+#library("maps")
 map <- map_data("france")
 
 ggplot(map, aes(long, lat, group = group)) +
@@ -714,6 +717,7 @@ diamonds %>%  # specify the data you wish to use and pipe it in
   coord_flip() +  # specify another coordinate system
   facet_wrap(~clarity, nrow = 4, ncol = 2)  # faceting by clarity in four rows and 2 columns
 ```
+
 ![](/_reports/R-for-data-science/01-explore/01-data-visualisation/layered-grammar-graphics-template-1.png)<!-- -->
 
 Remember, most often the default stat or position will work for you.

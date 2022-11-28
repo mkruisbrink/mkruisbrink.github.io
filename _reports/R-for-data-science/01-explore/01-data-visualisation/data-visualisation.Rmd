@@ -12,20 +12,20 @@ output:
 library(knitr)
 
 # macOS
-setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation/")
+# setwd("~/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/01-data-visualisation/")
 
 # Windows
-# setwd("D:/Max Kruisbrink/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/")
+setwd("D:/Max Kruisbrink/Developer/mkruisbrink.github.io/_reports/R-for-data-science/01-explore/")
 
 
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 
 # define knitr paths for macOS
-base.dir <- "~/Developer/mkruisbrink.github.io/"
+#base.dir <- "~/Developer/mkruisbrink.github.io/"
 
 # define knitr paths for Windows
-#base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
+base.dir <- "D:/Max Kruisbrink/Developer/mkruisbrink.github.io/"
 
 base.url <- "/"
 fig.path <- "_reports/R-for-data-science/01-explore/01-data-visualisation/"
@@ -454,6 +454,7 @@ chart + coord_polar()
 * `coord_quickmap()` is used when plotting spatial data such as maps to set the correct aspect ratios. You can clearly see the difference in the plots of France below.
 
 ```{r coord-quickmap}
+#library("maps")
 map <- map_data("france")
 
 ggplot(map, aes(long, lat, group = group)) +
