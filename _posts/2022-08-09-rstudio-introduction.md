@@ -1,12 +1,10 @@
 ---
-#layout: post
-title: An Introduction to RStudio
-subtitle: Getting started with R and RStudio
-excerpt: "Introduction to familiarize you with the very basics of RStudio itself as a complete beginner."
+title: "An Introduction to RStudio"
+excerpt: "Introduction to familiarize you with the very basics of RStudio itself as a complete beginner"
 header:
   overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
 category: 
-- R(Studio)
+  - R(Studio)
 ---
 
 ## Introduction

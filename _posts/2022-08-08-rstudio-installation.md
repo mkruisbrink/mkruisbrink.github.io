@@ -1,12 +1,10 @@
 ---
-#layout: post
-title: RStudio Installation & Configuration (Windows)
-subtitle: Getting started with R and RStudio
-excerpt: "Walkthrough on how to install and configure your RStudio environment as a complete beginner."
+title: "RStudio Installation & Configuration (Windows)"
+excerpt: "Walkthrough on how to install and configure your RStudio environment as a complete beginner"
 header:
   overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
 category: 
-- R(Studio)
+  - R(Studio)
 ---
  
 ## RStudio installation & configuration (Windows)

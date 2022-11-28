@@ -1,12 +1,10 @@
 ---
-#layout: post
-title: Centralized vs. Decentralized Exchanges
-subtitle: Exploring the Nomics API
-excerpt: "How many cryptocurrency exchanges are there? Comparing transparant volumes for centralised and decentralized cryptocurrency exchanges."
+title: "Centralized vs. Decentralized Exchanges"
+excerpt: "How many cryptocurrency exchanges are there? Comparing transparant volumes for centralised and decentralized cryptocurrency exchanges"
 header:
   overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
 category: 
-- Visualization
+  - Visualization
 ---
   
 ## Introduction

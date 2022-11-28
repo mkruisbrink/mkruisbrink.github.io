@@ -1,12 +1,10 @@
 ---
-#layout: post
-title: The basics of data visualisation in R
-subtitle: The best part of any analysis is when you can dive in an visualise the data
-excerpt: "These are the basics of visualizing data in R, using only the tidyverse functionality."
+title: "The basics of data visualisation in R"
+excerpt: "These are the basics of visualizing data in R, using only the tidyverse functionality"
 header:
   overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
 category: 
-- Exploration
+  - Exploration
 ---
 
 > These long form articles are part of a series in which I go through
@@ -81,7 +79,7 @@ ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy))
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-1.png)<!-- -->
 
 The `class` variable of the `mpg` data set classifies cars into groups
 such as compact, midsize, and SUV. If the outlying points are hybrids,
@@ -102,7 +100,7 @@ mpg %>%  # take mpg and use it for the first argument on the right side
   geom_point()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-color-class-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-color-class-1.png)<!-- -->
 
 > The dot character in `ggplot(., aes(displ, hwy, color = class))`
 > represents the location of the first argument and is where `mpg` gets
@@ -134,7 +132,7 @@ mpg %>%
 
     ## Warning: Removed 62 rows containing missing values (geom_point).
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-shape-class-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-shape-class-1.png)<!-- -->
 
 > Note the warning: shapes are more difficult to compare than colors.
 > Unless explicitly specified, 6 shapes are included in the base plot.
@@ -155,7 +153,7 @@ mpg %>%
 
     ## Warning: Using alpha for a discrete variable is not advised.
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-alpha-class-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-alpha-class-1.png)<!-- -->
 
 The `class` variable is discrete and the alpha aesthetic is not best
 suited to highlight this.
@@ -172,7 +170,7 @@ mpg %>%
   geom_point(color = "red")
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-size-cyl-color-red-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-size-cyl-color-red-1.png)<!-- -->
 
 ## Facets
 
@@ -189,7 +187,7 @@ mpg %>%
   facet_wrap(~ class, nrow = 2)  # facet by class and use only 2 rows for the data
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-facet-wrap-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-facet-wrap-1.png)<!-- -->
 
 If you want to plot against two discrete variables, you can use
 `facet_grid()`. You use two variable names, separated by a `~`.
@@ -201,7 +199,7 @@ mpg %>%
   facet_grid(drv ~ cyl)  # facet by drive and cylinders on x and y axes
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-facet-grid-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-facet-grid-1.png)<!-- -->
 
 ## Geometric objects
 
@@ -216,7 +214,7 @@ mpg %>%
   geom_smooth()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-geom-smooth-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-geom-smooth-1.png)<!-- -->
 
 Both visualizations represent the same variables on the x and y axis and
 are based on the same dataset. With `ggplot()`, you can use different
@@ -235,7 +233,7 @@ mpg %>%
   geom_smooth(aes(linetype = drv))
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-linetype-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-linetype-1.png)<!-- -->
 
 In this plot we see the lines associated with their `drv` values, which
 stands for a car’s drivetrain (the group of components that deliver
@@ -258,7 +256,7 @@ mpg %>%
 
     ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-more-geoms-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-more-geoms-1.png)<!-- -->
 
 You can add multiple geoms to a plot to make absolutely insane graphs.
 There are over 40 geoms in ggplot2 and if you use [additional extensions
@@ -278,7 +276,7 @@ mpg %>%
   geom_smooth(aes(displ, hwy, group = drv))
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-group-drv-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-group-drv-1.png)<!-- -->
 
 ``` r
 # mapping a variable to an aesthetic like color obviously does
@@ -289,7 +287,7 @@ mpg %>%
   )
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-color-drv-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/displ-hwy-color-drv-1.png)<!-- -->
 
 ### Multiple geoms
 
@@ -318,7 +316,7 @@ mpg %>%
   geom_smooth()   # empty mapping
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/more-geoms-2-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/more-geoms-2-1.png)<!-- -->
 
 You can add a specific mapping to a single geom only. In this case we
 map color to the `class` variable.
@@ -333,7 +331,7 @@ mpg %>%
 
     ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/specific-mapping-single-geom-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/specific-mapping-single-geom-1.png)<!-- -->
 
 You can also show a subset of the data for different layers (geoms). In
 this next plot, the smooth line represents a subset of the `class`
@@ -349,7 +347,7 @@ mpg %>% ggplot(aes(displ,hwy)) +
 
     ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/subset-data-geom-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/subset-data-geom-1.png)<!-- -->
 
 > Note that inside the `geom_smooth()` function, an explicit call to
 > `data = filter(mpg, class == "suv")` is required as you are *adding*
@@ -363,7 +361,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy, color = drv)) +
 
     ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/geom-smooth-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/geom-smooth-1.png)<!-- -->
 
 ## Statistical transformations
 
@@ -405,7 +403,7 @@ diamonds %>%
   geom_bar()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/geom-bar-stat-count-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/geom-bar-stat-count-1.png)<!-- -->
 
 Here are some examples of how different geoms transform the data prior
 to creating the plot:
@@ -445,7 +443,7 @@ diamonds %>%
   geom_bar(aes(cut, after_stat(prop), group = "whatever"))
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/geom-bar-after-stat-prop-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/geom-bar-after-stat-prop-1.png)<!-- -->
 
 Here we use `stat_count()` to get the same results:
 
@@ -455,7 +453,7 @@ diamonds %>%
   stat_count(aes(cut, after_stat(prop), group = 1))
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/stat-count-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/stat-count-1.png)<!-- -->
 
 You can use other stats for a succinct summary of the data too, such as
 stat_summary
@@ -469,7 +467,7 @@ diamonds %>%
                fun = median) 
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/stat-summary-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/stat-summary-1.png)<!-- -->
 
 Note that this comes close to what `geom_boxplot()` (a statistical
 summary) actually looks like. You can work around the default
@@ -483,7 +481,7 @@ diamonds %>%
   geom_boxplot()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/stat-summary-geom-boxplot-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/stat-summary-geom-boxplot-1.png)<!-- -->
 
 The boxplot reveals important information regarding the distribution of
 your data, such as:
@@ -506,7 +504,7 @@ diamonds %>%
   geom_bar(aes(cut, fill = cut))  # fill the bars with color based on the different cuts
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/position-adjustments-fill-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/position-adjustments-fill-1.png)<!-- -->
 There are a few noteworthy position adjustments for bar charts:
 
 - `"stack"`
@@ -528,7 +526,7 @@ diamonds %>%
            position = "stack")  # this is the default position for geom_bar() but it needs another variable in order to fill!
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/position-stack-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/position-stack-1.png)<!-- -->
 
 The way these bars are stacked is performed automatically by the
 *position adjustment* which is specified by the `position` argument
@@ -549,7 +547,7 @@ diamonds %>%
   geom_bar(alpha = 1/5, position = "identity")
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/position-identity-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/position-identity-1.png)<!-- -->
 
 ### Fill
 
@@ -563,7 +561,7 @@ diamonds %>%
   geom_bar(aes(cut, fill = clarity), position = "fill")
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/position-fill-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/position-fill-1.png)<!-- -->
 
 ### Dodge
 
@@ -576,7 +574,7 @@ diamonds %>%
   geom_bar(aes(cut, fill = clarity), position = "dodge")
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/position-dodge-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/position-dodge-1.png)<!-- -->
 
 ### Jitter
 
@@ -599,7 +597,7 @@ mpg %>%
   geom_point()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/geom-point-overplotting-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/geom-point-overplotting-1.png)<!-- -->
 
 You can avoid this grid by using `position = "jitter"` which adds random
 noise to all the points. There is even a shorthand for this position
@@ -614,7 +612,7 @@ mpg %>%
   geom_point(position = "jitter")  # or use geom_jitter() instead
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/position-jitter-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/position-jitter-1.png)<!-- -->
 
 ## Coordinate systems
 
@@ -637,7 +635,7 @@ mpg %>%
   geom_boxplot()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/boxplot-coord-flip-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/boxplot-coord-flip-1.png)<!-- -->
 
 ``` r
 mpg %>% 
@@ -646,7 +644,7 @@ mpg %>%
   coord_flip()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/boxplot-coord-flip-2.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/boxplot-coord-flip-2.png)<!-- -->
 
 > Note that you can also achieve the same result by flipping the X and Y
 > aesthetic! I didn’t realize this until quite recently.
@@ -670,13 +668,13 @@ chart <- diamonds %>%
 chart + coord_flip()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/coord-flip-vs-coord-polar-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/coord-flip-vs-coord-polar-1.png)<!-- -->
 
 ``` r
 chart + coord_polar()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/coord-flip-vs-coord-polar-2.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/coord-flip-vs-coord-polar-2.png)<!-- -->
 
 - `coord_quickmap()` is used when plotting spatial data such as maps to
   set the correct aspect ratios. You can clearly see the difference in
@@ -690,7 +688,7 @@ ggplot(map, aes(long, lat, group = group)) +
   geom_polygon(fill = "white", color = "black")
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/coord-quickmap-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/coord-quickmap-1.png)<!-- -->
 
 ``` r
 ggplot(map, aes(long, lat, group = group)) +
@@ -698,7 +696,7 @@ ggplot(map, aes(long, lat, group = group)) +
   coord_quickmap()
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/coord-quickmap-2.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/coord-quickmap-2.png)<!-- -->
 
 ## The layered grammar of graphics
 
@@ -718,7 +716,7 @@ diamonds %>%  # specify the data you wish to use and pipe it in
   facet_wrap(~clarity, nrow = 4, ncol = 2)  # faceting by clarity in four rows and 2 columns
 ```
 
-![](/_reports/R-for-data-science/01-explore/01-data-visualisation/layered-grammar-graphics-template-1.png)<!-- -->
+![](/assets/reports/R-for-data-science/01-explore/01-data-visualisation/layered-grammar-graphics-template-1.png)<!-- -->
 
 Remember, most often the default stat or position will work for you.
 There are cases where you want to overwrite or customize your graph and
