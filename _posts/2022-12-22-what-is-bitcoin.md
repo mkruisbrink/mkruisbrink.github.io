@@ -3,7 +3,7 @@ title: "What is Bitcoin?"
 excerpt: "Bitcoin is a decentralized digital currency that allows for peer-to-peer transactions without the need for a central authority. It operates on the blockchain and uses cryptographic techniques to secure transactions. The value of Bitcoin is determined by supply and demand, and it has a limited supply. It has advantages such as decentralization and low fees, but also has disadvantages such as volatility and limited acceptance."
 header:
   overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
-category: 
+categories: 
   - Cryptocurrency
 tags:
   - Bitcoin

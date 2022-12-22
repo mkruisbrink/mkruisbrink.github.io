@@ -3,8 +3,10 @@ title: "An Introduction to the Tidyverse"
 excerpt: "The tidyverse is a collection of R packages that work together in the same way and provide a more intuitive way to perform the most common tasks"
 header:
   overlay_image: /assets/images/midjourney-optimised/supernova-midjourney-optimised.jpg
-category: 
-  - R(Studio)
+categories: 
+  - Data Science
+tags:
+  - Tidyverse
 ---
 
 ## What is the tidyverse?

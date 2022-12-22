@@ -3,7 +3,7 @@ title: "Centralized vs. Decentralized Exchanges"
 excerpt: "How many cryptocurrency exchanges are there? Comparing transparant volumes for centralised and decentralized cryptocurrency exchanges"
 header:
   overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
-category: 
+categories: 
   - Cryptocurrency
 tags:
   - Visualisation

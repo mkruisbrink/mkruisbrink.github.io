@@ -3,8 +3,11 @@ title: "Base R Installation (Windows)"
 excerpt: "Walkthrough on how to install base R, an open-source software environment used mainly for statistical computing and graphics"
 header:
   overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
-category: 
-  - R(Studio)
+categories: 
+  - Data Science
+tags:
+  - R
+  - RStudio
 ---
 
 ## Base R installation (Windows)
