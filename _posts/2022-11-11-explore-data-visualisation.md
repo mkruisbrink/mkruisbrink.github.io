@@ -1,11 +1,12 @@
 ---
-title: "Base R Installation (Windows)"
-excerpt: "Walkthrough on how to install base R, an open-source software environment used mainly for statistical computing and graphics"
+title: "The Basics of Data Visualisation"
+excerpt: "A full walkthrough of the most simple, straightforward and rewarding visualisation techniques using the tidyverse functionality in RStudio"
 header:
   overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
 categories: 
   - Data Science
-tags: 
+tags:
+  - R for Data Science
   - Visualisation
   - Exploration
 ---
