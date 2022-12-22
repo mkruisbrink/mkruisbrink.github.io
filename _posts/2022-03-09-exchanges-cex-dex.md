@@ -4,7 +4,10 @@ excerpt: "How many cryptocurrency exchanges are there? Comparing transparant vol
 header:
   overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
 category: 
-  - Visualization
+  - Cryptocurrency
+tags:
+  - Visualisation
+  - Rstudio
 ---
   
 ## Introduction

@@ -4,7 +4,9 @@ excerpt: "Introduction to familiarize you with the very basics of RStudio itself
 header:
   overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
 category: 
-  - R(Studio)
+  - Data Science
+tags:
+  - RStudio
 ---
 
 ## Introduction

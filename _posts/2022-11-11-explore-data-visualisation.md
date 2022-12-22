@@ -1,10 +1,13 @@
 ---
-title: "The basics of data visualisation in R"
-excerpt: "These are the basics of visualizing data in R, using only the tidyverse functionality"
+title: "Base R Installation (Windows)"
+excerpt: "Walkthrough on how to install base R, an open-source software environment used mainly for statistical computing and graphics"
 header:
-  overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
+  overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
 category: 
-  - Exploration
+  - Data Science
+tags: 
+ - Visualisation
+ - Exploration
 ---
 
 > These long form articles are part of a series in which I go through
