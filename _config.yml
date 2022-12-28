@@ -216,7 +216,8 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
+permalink: pretty
 # permalink: /:categories/:title/
 # permalink: date
 # paginate: 5 # amount of posts to show
