@@ -2,6 +2,18 @@ img {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.icon {
+    box-shadow: none;
+}
+
+.icon-center-small {
+    box-shadow: none;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .sidebar img{
     box-shadow:none;
 }
