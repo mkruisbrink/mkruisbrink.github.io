@@ -15,7 +15,7 @@ Bitcoin is a decentralized digital currency that allows for peer-to-peer transac
 
 The idea for Bitcoin was outlined in a whitepaper published by Satoshi Nakamoto in 2008. In the whitepaper, Satoshi proposed a system for electronic transactions that would eliminate the need for intermediaries, such as banks.
 
-## How Does Bitcoin Work?
+## How does Bitcoin work?
 
 Bitcoin operates on a decentralized network called the blockchain. The blockchain is a distributed ledger that records all Bitcoin transactions. It is a decentralized system, meaning that it is not controlled by any single entity. Instead, it is maintained by a network of users who work together to validate and record transactions.
 
@@ -23,7 +23,7 @@ Each transaction on the blockchain is recorded in a block, and each block is lin
 
 Users of the Bitcoin network are identified by a public address, which is a string of numbers and letters. These addresses are used to send and receive Bitcoins. Transactions are secured through the use of cryptographic techniques, which ensure that they cannot be counterfeited or altered.
 
-## The Birth of Bitcoin
+## The birth of Bitcoin
 
 The financial crisis of 2008, which resulted in the collapse of major banks and financial institutions, played a significant role in the development of Bitcoin. The crisis highlighted the need for a decentralized financial system that was not subject to the same vulnerabilities as traditional financial institutions.
 
@@ -31,7 +31,7 @@ Satoshi Nakamoto recognized this need and proposed a solution in the form of Bit
 
 The first Bitcoin transaction took place in 2009, when a programmer named Laszlo Hanyecz paid 10,000 Bitcoins for two pizzas. At the time, the value of Bitcoins was relatively low, and the pizzas only cost a few dollars. Today, the value of those 10,000 Bitcoins is worth millions of dollars.
 
-## How is the Value of Bitcoin Determined?
+## How is the value of Bitcoin determined?
 
 The value of Bitcoin is determined by supply and demand. As more people start using Bitcoin and the demand for it increases, the value of Bitcoin goes up. Conversely, if the demand for Bitcoin decreases, the value will also decrease.
 
