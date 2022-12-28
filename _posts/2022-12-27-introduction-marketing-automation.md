@@ -10,6 +10,7 @@ tags:
   - ChatGPT
 ---
 
+
 ## Introduction to marketing automation
 
 Marketing automation refers to the use of software and technology to automate repetitive tasks and processes in marketing. This includes everything from email marketing and social media management to lead generation and customer segmentation. The goal of marketing automation is to increase efficiency, reduce the workload of marketing professionals, and ultimately improve the bottom line of a business.
