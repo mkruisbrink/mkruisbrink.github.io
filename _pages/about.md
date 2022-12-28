@@ -1,39 +1,19 @@
 ---
 title: "About"
 permalink: /about/
-excerpt: "I like to build a relationship with my audience based on trust. Get to know a little about me, my passions, goals, struggels, interests and what I'm up to in general."
+excerpt: "I believe that building a relationship with my audience based on trust is important, and I hope that by getting to know a little about me, my passions, goals, struggles, and interests, you will feel more connected to my content and journey. Thank you for visiting my about page and for taking the time to get to know me!"
 header:
   overlay_image: /assets/images/pages/about-home-office-optimised.jpg
 ---
 
 ## Maxplaining
 
->
-To Maxplain; *verb*, informal. To explain something to someone in a way that suggests that they don't know; used especially when a Max explains something, or anything at all. Either super helpfull, or slightly annoying.
-
-This term was born when I was caught *explaining* things to people (especially my girlfriend) that were quite obvious... It must be because I'm slightly perfectionistic and even if people (in general) do a good job, I still find room to comment on something. Either super helpful or a slightly annoying, depending on the situation!
-
->
-"[An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits](https://www.16personalities.com/intj-personality). These thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one. Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas." 
+To Maxplain; *verb*, informal. To enthusiastically explain something as if the listener has been eagerly waiting for the answer their whole life. This term was coined by the legendary Max, who loves nothing more than sharing his knowledge with others. Whether it's the inner workings of a car engine or the proper way to fold a fitted sheet, Max is always ready and willing to lend a helping hand (and a lengthy explanation). So don't be shy, ask Max anything! Just be prepared for a detailed response. 😉
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about/20220920_max-portrait-1664x1109.jpg" alt="Portrait Max 2021">
   <figcaption><i>Somewhere in 2021...</i></figcaption>
 </figure>
-
-## Experience
-
-After obtaining my civil engineering degree, I've been working as an engineer at various reputable international construction/offshore/dredging companies. In addition to that I initiated [Cryptomanuals, a learning platform for cryptocurrencies](https://www.cryptomanuals.com/) while on an internship in Costa Rica.
-
-In the Netherlands we currently run [Cryptocommunity, a community platform for crypto enthousiasts](https://cryptocommunity.nl/). If you [visit my LinkedIn profile](https://www.linkedin.com/in/mkruisbrink/), you can see exactly what I've been up to over the past years. 
-
->
-| **Degree** | Civil Engineering - Harbour, Coast & Dredging |
-| **Certifications** | You can [visit this page to view my certifications]({{ site.baseurl }}{% link _pages/certifications.md %}) | 
-| **Languages** | Dutch, English, Spanish |
-| **Skills** | Cryptocurrency, blockchain, programming, automation, development |
-| **Personal Traits** | Perfectionist, enthusiastic, strategic, pro-active, flexible, result-orientated |
-
 
 ## Home 
 
@@ -48,6 +28,9 @@ I currently live in the vibrant city of Rotterdam with my girlfriend. Rotterdam 
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about/20220804_max-jade-beach-costa-rica.jpg " alt="Us on the beach in Costa Rica">
   <figcaption><i>Romance at the beach in Costa Rica.</i></figcaption>
 </figure>
+
+>
+"[An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits](https://www.16personalities.com/intj-personality). These thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one. Architects, independent to the core, want to shake off other people’s expectations and pursue their own ideas." 
 
 My girlfriend and I have two **very** cute Snowshoe cats, both adopted. They talk *a lot*!
 
@@ -64,6 +47,19 @@ My set-up looks something like this, though I've moved my office and some proper
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about/20220811_workstation-max-broad.jpg" alt="My personal workstation">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/about/20220811_workstation-max.jpg" alt="Laptop showing Matrix visuals">
 </figure>
+
+## Experience
+
+After obtaining my civil engineering degree, I've been working as an engineer at various reputable international construction/offshore/dredging companies. In addition to that I initiated [Cryptomanuals, a learning platform for cryptocurrencies](https://www.cryptomanuals.com/) while on an internship in Costa Rica.
+
+In the Netherlands we currently run [Cryptocommunity, a community platform for crypto enthousiasts](https://cryptocommunity.nl/). If you [visit my LinkedIn profile](https://www.linkedin.com/in/mkruisbrink/), you can see exactly what I've been up to over the past years. 
+
+>
+| **Degree** | Civil Engineering - Harbour, Coast & Dredging |
+| **Certifications** | You can [visit this page to view my certifications]({{ site.baseurl }}{% link _pages/certifications.md %}) | 
+| **Languages** | Dutch, English, Spanish |
+| **Skills** | Cryptocurrency, blockchain, programming, automation, development |
+| **Personal Traits** | Perfectionist, enthusiastic, strategic, pro-active, flexible, result-orientated |
 
 ## Travelling
 
