@@ -317,6 +317,8 @@ defaults:
       toc: true
       toc_sticky: true
       toc_label: Table of Contents
+      show_date: true
+
 
   # _pages
   - scope:
