@@ -8,6 +8,7 @@ header:
 
 ## Maxplaining
 
+>
 To Maxplain; *verb*, informal. To enthusiastically explain something as if the listener has been eagerly waiting for the answer their whole life. This term was coined by the legendary Max, who loves nothing more than sharing his knowledge with others. Whether it's the inner workings of a car engine or the proper way to fold a fitted sheet, Max is always ready and willing to lend a helping hand (and a lengthy explanation). So don't be shy, ask Max anything! Just be prepared for a detailed response. 😉
 
 <figure class="align-center">
