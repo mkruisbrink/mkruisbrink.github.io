@@ -39,7 +39,7 @@ how to use RStudio. If not, follow:
 3.  [My guide for an RStudio
     introduction](%7B%%20post_url%202022-08-09-rstudio-introduction%20%%7D)
 
-## Step 1: Install & Load Packages
+## Step 1: install & load packages
 
 We are going to load some libraries that we need. These provide added
 functionality. Open up your R Project or opena new R script and type in
@@ -77,7 +77,7 @@ library(htmlwidgets)
 library(readr)
 ```
 
-## Step 2: Initiate Nomics API & Gather Results
+## Step 2: initiate nomics API & gather results
 
 Now we need to get our hands on some data. In this case the data is
 obtained via the [Nomics
@@ -176,7 +176,7 @@ exchanges_ticker <- rbind_pages(pages)
 
 ------------------------------------------------------------------------
 
-## Step 3: Explore the data
+## Step 3: explore the data
 
 Let’s have a look at the data frame we just created.
 
@@ -300,7 +300,7 @@ df <- exchanges_ticker %>% unnest(`1d`)
 
 ------------------------------------------------------------------------
 
-## Step 4: Clean the data
+## Step 4: clean the data
 
 We redefine the ‘manipulated’ data frame (`df`) itself as a new variable
 so we keep the original data frame intact in case we need to go back.
@@ -379,7 +379,7 @@ being able to work with this output.
 
 ------------------------------------------------------------------------
 
-## Step 5: Select, manipulate and plot
+## Step 5: select, manipulate and plot
 
 Here we pipe (`%>%`) our cleaned data into the `ggplot()` function to
 obtain graphics.

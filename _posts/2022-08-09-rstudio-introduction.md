@@ -33,7 +33,7 @@ For me it is most important that my work is reproducable. With R & RStudio I can
 RStudio can be learned by anyone. It's layout (default) is made up out of four different panels and rather intuitive. On the top left we have a source code editor packed with features (including syntax highlighting). On the top right we got the environment pane, which tells you what information you have currently stored in R in various objects. On the bottom left you will have the R console or terminal respectively. And on the bottom right you will find the explorer, help window, plot window and much more. Note that you can tweak your panel layout with ease.
 
 
-## RStudio Layout
+## RStudio layout
 
 When you open up RStudio you immediately see four distinctive panes. All of which will be discussed here.
 
@@ -53,7 +53,7 @@ You can zoom in on every quadrant by using the following hotkeys:
 
 You can return to the original viewport via `<SHIFT> + <CTRL> + 0`.
 
-### Script Editor & Data Viewport
+### Script editor & data viewport
 
 The top-left pane is where you will find the *Script Editor* and view your data(tables). The script editor is where you write your commands (code). These commands form a script and are provided to the R *Console* (bottom-left) as input. The *Script Editor* is an advanced text-editor which is designed for coding specifically. 
 
@@ -61,7 +61,7 @@ The top-left pane is where you will find the *Script Editor* and view your data(
     <img src="/assets/images/posts/2022-08-09-RStudio-introduction/pane1-script-editor.webp" title="R Script Editor Pane" alt="R Script Editor Pane">
 </figure>
 
-### Console & Terminal
+### Console & terminal
 
 The bottom-left pane is where you will find the R *Console*. The *Console* is a viewport into **R** itself. RStudio takes your selected input (the code) when you click *Run* ![Run](/assets/icons/r-studio/run-script-rstudio.png){: .icon} and submits it to R. Then... R does its magic and **outputs** to the *Console*. You can use the Console as a simple calculator or to run commands that you don't want to include in your script. You will also find the terminal window in this pane, which you can use for navigation and other tasks (learning to use terminal will make your life easier).
 
@@ -69,7 +69,7 @@ The bottom-left pane is where you will find the R *Console*. The *Console* is a 
     <img src="/assets/images/posts/2022-08-09-RStudio-introduction/pane2-console.webp" title="R Console Pane" alt="R Console Pane">
 </figure>
 
-### Environment & History
+### Environment & history
 
 The top-right pane is where you will find the R *Environment*. The *Environment* is where RStudio stores all the inputs as objects. This can be data tables, lists, numbers etc. You can double-click on many of these objects to view them in your *Script Editor* (usefull for tables and data frames). In the *History* tab you will find all of the input you have provided to the R *Console*. In this case we see a dataframe called `starwars`, containing 87 observations of 14 different variables.
 
@@ -80,7 +80,7 @@ The top-right pane is where you will find the R *Environment*. The *Environment*
 >
 **Note:** You might also see *Connections*, *Git* and *Tutorial*, which are out of the scope of this introduction. Git is important but will be dealt with another time.
 
-### Files, Plots, Packages, Help, Viewer & Presentation
+### Files, plots, packages, help, viewer & presentation
 
 The bottom-right pane is made up out of at least five tabs – Files, Plots, Packages, Help, and Viewer. 
 
@@ -123,7 +123,7 @@ To create your first R script there are a few options:
 >
 **Note:** Instead of a new R Script, create a new R *Project* ![New R Project](/assets/icons/r-studio/new-project-rstudio.png){: .icon}. You can think of an R project as a collection of files stored in a folder/directory that are all related. Information about the project is stored in a special `demo.Rproj` file. When you open your R Project, R magically starts in the correct folder and knows where to look for your scripts and data. You have everything you need in one place. 
 
-### Creating your first R Project
+### Creating your first R project
 
 My advice is to create a new R *Project* to experiment and tryout new things as you learn about R. You will have all your *experiments* (scripts) in one place and you are implementing best-practices right from the start by working with R Projects. So let's create that new Project. 
 
@@ -164,11 +164,11 @@ If you navigate to your project directory with the file explorer you'll see the 
 
 If you haven't already, open up your new project and create a new script if you did not do so earlier.
 
-### Save your Scripts!
+### Save your scripts!
 
 I usually create a script and immediately save it afterwards with the *Save* ![Save](/assets/icons/r-studio/save-rstudio.png){: .icon} command or `<CTRL> + <S>` hotkeys. This might sound obvious but when you're working in a new script it will be an *untitled.R* script living only in your *Script Editor* and your work is **not** saved to your local machine into your project directory before you save the file. 
 
-### Installing R Packages
+### Installing R packages
 
 R comes prepacked with a lot of functionality but the good thing about R is that it is open source and the global community has added **tons** of packages that you can install to expand the vocabulary that you can deploy.
 
@@ -247,7 +247,7 @@ As you can see, with just a few lines of code we were able to create a rather go
 Goodluck and have fun learning R and RStudio!
 
 
-## BONUS: R Coding 101 with Greg Martin
+## BONUS: R coding 101 with Greg Martin
 
 This guy deserves a medal, be sure to checkout his YouTube page.
 

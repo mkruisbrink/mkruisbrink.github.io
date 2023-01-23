@@ -43,7 +43,7 @@ RStudio can be learned by anyone. It's layout (default) is made up out of four d
 
 **NOTE:** *RStudio requires a 64-bit operating system. If you are on a 32 bit system, you can use an [older version of RStudio](https://www.rstudio.com/products/rstudio/older-versions/).*
 
-### Optional: Check SHA256 checksum 
+### Optional: check SHA256 checksum 
 
 >
 With this you verify the *content* of your downloaded installer file. Checking this is considered best practice and specifically usefull if you run in to problems during installation. With this you are sure that your file is not somehow corrupted or tampered with.
