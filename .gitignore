@@ -46,3 +46,6 @@ snippets.txt
 _drafts
 
 .gitignore
+
+# Rbenv?
+.ruby-version
