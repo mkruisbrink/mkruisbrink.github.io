@@ -42,3 +42,7 @@ _reports/R-for-data-science/01-explore/01-data-visualisation/data-visualisation.
 # Files and folders
 snippets.txt
 /assets/images/midjourney-originals
+/assets/images/midjourney-optimised/*.png
+_drafts
+
+.gitignore
