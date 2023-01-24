@@ -44,8 +44,8 @@ You can build and generate evergreen deadlines for your visitors. All you need t
 Embed timer elements and dynamic text into your emails or promotion landing pages and add some basic styling to further create authenticity.
 
 <figure class="half">
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/email-timer.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/email-timer.jpg" alt="email timer element"></a>
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/website-timer.jpg"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/website-timer.jpg" alt="website timer element"></a>
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/email-timer.jpg" alt="email timer element"></a>
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/website-timer.jpg" alt="website timer element"></a>
 </figure>
 
 <figure class="align-center-medium">

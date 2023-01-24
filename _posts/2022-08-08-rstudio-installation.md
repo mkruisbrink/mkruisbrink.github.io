@@ -4,7 +4,7 @@ excerpt: "Walkthrough on how to install and configure your RStudio environment a
 header:
   overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
 categories: 
-  - Data Science
+  - Data-Science
 tags:
   - RStudio
 ---

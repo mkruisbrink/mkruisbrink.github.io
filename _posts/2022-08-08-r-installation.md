@@ -4,7 +4,7 @@ excerpt: "Walkthrough on how to install base R, an open-source software environm
 header:
   overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
 categories: 
-  - Data Science
+  - Data-Science
 tags:
   - R
   - RStudio

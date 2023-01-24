@@ -4,7 +4,7 @@ excerpt: "How many cryptocurrency exchanges are there? Comparing transparant vol
 header:
   overlay_image: /assets/images/midjourney-optimised/big-computer-screen-financial-dashoard-optimised.jpg
 categories: 
-  - Data Science
+  - Data-Science
 tags:
   - Cryptocurrency
   - Visualisation
@@ -32,12 +32,9 @@ the API provided by [Nomics.com](https://www.nomics.com) into RStudio.
 I am assuming you have R and RStudio installed and know the basics of
 how to use RStudio. If not, follow:
 
-1.  [My guide for base R
-    installation](%7B%%20post_url%202022-08-08-r-installation%20%%7D)
-2.  [My guide for RStudio
-    installation](%7B%%20post_url%202022-08-08-rstudio-installation%20%%7D)
-3.  [My guide for an RStudio
-    introduction](%7B%%20post_url%202022-08-09-rstudio-introduction%20%%7D)
+1.  [My guide for base R installation]({% post_url 2022-08-08-r-installation %})
+2.  [My guide for RStudio installation]({% post_url 2022-08-08-rstudio-installation %})
+3.  [My guide for an RStudio introduction]({% post_url 2022-08-09-rstudio-introduction %})
 
 ## Step 1: install & load packages
 
@@ -87,7 +84,7 @@ account. A good place to start is the [API
 documentation](https://nomics.com/docs/). Here you will see the
 obtainable data, categorized by endpoints. You must include your API Key
 as a query parameter in every request you make. For example:
-<https://api.nomics.com/v1/markets?key=your-key-here>.
+'https://api.nomics.com/v1/markets?key=**your-key-here**'.
 
 Each endpoint is basically a URL. The URL in the code snippet below is
 part of the ‘exchanges’ endpoint and returns some exchange-related data.

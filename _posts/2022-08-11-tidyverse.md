@@ -4,7 +4,7 @@ excerpt: "The tidyverse is a collection of R packages that work together in the 
 header:
   overlay_image: /assets/images/midjourney-optimised/supernova-midjourney-optimised.jpg
 categories: 
-  - Data Science
+  - Data-Science
 tags:
   - Tidyverse
 ---
