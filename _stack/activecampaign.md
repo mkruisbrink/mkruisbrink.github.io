@@ -30,7 +30,7 @@ WildMail *__is__* ActiveCampaign but with **amazing extras**. ActiveCampaign its
 
 
 <figure class="align-center">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/wildmail/20220923-activecampaign-features.JPG" alt="ActiveCampaign Features">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/wildmail/20220923-activecampaign-features.jpg" alt="ActiveCampaign Features">
     <figcaption><i>ActiveCampaign Features</i></figcaption>
 </figure>
 

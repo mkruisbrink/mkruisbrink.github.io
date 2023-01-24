@@ -20,7 +20,7 @@ With so many options at their disposal, catching leads and retaining customers i
 This is also called onsite retargeting. By presenting the right person with the right option at the right time, you increase the chances of them actually responding to your CTA. Telling an existing subscriber to subscribe to your content every time they visit your page will not bring you any benefit. Once I realized this, I started looking into tools that could help me personalize the opt-in forms and pop-ups for specific customers and ultimately settled on RightMessage.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/dashboard-small.JPG" alt="Rightmessage Dashboard">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/dashboard-small.jpg" alt="Rightmessage Dashboard">
     <figcaption><i>RightMessage dashboard on login.</i></figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ Following are some of the best features and benefits you get to enjoy with Right
 RightMessage works pretty much on all websites, including those made with WordPress (which is what I use for my business). It is compatible with websites made using Squarespace, Instapage, ClickFunnels, Shopify, and LeadPages. All you need to do is add the RightMessage script to your template or use it with Google Tag Manager. [Read the documentation about setting-up your RightMessage configuration here](https://rightmessage.com/docs/setting-up?fp_ref=max56){:target="_blank"}{:rel="sponsored"}.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/snippet.JPG" alt="RightMessage code snippet">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/snippet.jpg" alt="RightMessage code snippet">
     <figcaption><i>This script can run on <b>any</b> website, build on <b>any</b> platform/technology.</i></figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ RightMessage works pretty much on all websites, including those made with WordPr
 RightMessage has a very nice, visual funnel builder, similar to the one you would see for automation inside [a CRM/ESP tool such as ActiveCampaign](https://maxplaining.com/stack/wildmail/). The platform lets you determine the visitor’s journey and ultimate destination through the CTA message. The CTA builder allows you to go into a lot of detail when it comes to customized questions and potential responses from your page visitors. The flowchart type style of the builder makes it easy to visualize the customer’s journey. 
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/CTA-funnel.JPG" alt="A simple survey funnel">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/CTA-funnel.jpg" alt="A simple survey funnel">
     <figcaption><i>RightMessage CTA funnel constructed as a survey with responses synced to custom fields in CRM.</i></figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ RightMessage has a very nice, visual funnel builder, similar to the one you woul
 Have a look at RightMessage's [template recipies page](https://rightmessage.com/recipes?fp_ref=max56){:target="_blank"}{:rel="sponsored"} for some special sauce and inspiration how you could use this for your business.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/recipies.JPG" alt="template page with recipies">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/recipies.jpg" alt="template page with recipies">
     <figcaption><i>RightMessage templates to start building your customer journeys.</i></figcaption>
 </figure>
 
@@ -65,13 +65,13 @@ Have a look at RightMessage's [template recipies page](https://rightmessage.com/
 You create offers that can contain text fields, multiple choice questions (segmentation) and are meant to collect information from visitors. These offers are placed inside different responsive widgets that you can place anywhere on your domain.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/offers.JPG" alt="Rightmessage offers">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/offers.jpg" alt="Rightmessage offers">
     <figcaption><i>Create different types of offers to convert visitors into leads.</i></figcaption>
 </figure>
 
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/create-offers.JPG" alt="Rightmessage offer design">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/create-offers.jpg" alt="Rightmessage offer design">
     <figcaption><i>Design your offers how you want them!</i></figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ You create offers that can contain text fields, multiple choice questions (segme
 RightMessage lets you pick between a few different widget styles (bar, toaster, embedded, popup or full-screen takeover) for your CTA funnels. I personally appreciate the fact that it keeps things simple. You can customize the color, choose which pages it triggers on, and even select when it appears after the page loads. 
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/create-widget.JPG" alt="Rightmessage widgets">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/create-widget.jpg" alt="Rightmessage widgets">
     <figcaption><i>Create different widgets for lead magnets, opt-ins or surveys. You choose.</i></figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ RightMessage lets you pick between a few different widget styles (bar, toaster, 
 RightMessage integrates with most other marketing tools which is super convenient. You can hook it up with your email marketing software to make sure existing subscribers are not getting messages to sign up for your email list. RightMessage can integrate with ActiveCampaign, Drip, Hubspot, ConvertKit, and Infusionsoft among other programs.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/integrations.JPG" alt="Rightmessage integrations">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/integrations.jpg" alt="Rightmessage integrations">
     <figcaption><i>Integrations offered by RightMessage</i></figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ RightMessage integrates with most other marketing tools which is super convenien
 You will collect a whole world of information from visitors. These visitors want you to help them. You may use this data to hyper-personalize your content all over your domain.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/segmentation-sync-activecampaign.JPG" alt="Rightmessage segmentation">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/segmentation-sync-activecampaign.jpg" alt="Rightmessage segmentation">
     <figcaption><i>You can synchronize data from segmentation and questions to your CRM.</i></figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ The insight into the performance of your offers and widgets is another great fea
 
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/pricing.JPG" alt="Rightmessage pricing">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/pricing.jpg" alt="Rightmessage pricing">
     <figcaption><i>Choose between the FREE trial and two paid plans.</i></figcaption>
 </figure>
 

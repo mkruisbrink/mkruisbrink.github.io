@@ -22,7 +22,7 @@ Digital marketing has become a necessity in the modern business industry. Howeve
 One of the most effective ways of ensuring a high conversion rate is by using urgency to your advantage. Limited-time offers encourage visitors to respond positively to your calls to action. Whether it's merchandise for sale, a webinar, an event, or a simple sign-up list, adding a deadline creates a much greater impact which will translate into higher conversion. You can ramp up that impact ten-fold by adding an actual timer next to your offer that is a physical representation of the limited nature of the CTA. You can use simple tools like TimerCampaign to create and add countdowns to your web pages as I do for my website from time to time.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/dashboard.JPG" alt="TimerCampaign main dashboard">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/dashboard.jpg" alt="TimerCampaign main dashboard">
     <figcaption><i>TimerCampaign main dashboard</i></figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ Embed timer elements and dynamic text into your emails or promotion landing page
 </figure>
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/dynamic-text.JPG" alt="Dynamic text elements to embed">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/dynamic-text.jpg" alt="Dynamic text elements to embed">
     <figcaption><i>Embed your deadline on a specific landing page with dynamic text.</i></figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ The builder is very simple to navigate and pretty much has one-click solutions t
 
 
 <figure class="align-center">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/campaigns.JPG" alt="TimerCampaign campaign overview">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/campaigns.jpg" alt="TimerCampaign campaign overview">
     <figcaption><i>Campaign overview</i></figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ The builder is very simple to navigate and pretty much has one-click solutions t
 With a single subscription, you can generate as many countdowns, add as many milestones, and use as many dynamic texts as you would like.
 
 <figure class="align-center">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/new-campaign.JPG" alt="TimerCampaign campaign creation">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/timercampaign/new-campaign.jpg" alt="TimerCampaign campaign creation">
     <figcaption><i>Create new campaigns with ease</i></figcaption>
 </figure>
 

@@ -16,7 +16,7 @@ sidebar:
 Automation is no longer just a buzzword- it is quickly becoming a must for businesses that want to maintain their competitive nature within the industry. Thankfully, automation is becoming more accessible for businesses of all sizes thanks to productivity applications like Make. 
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/dashboard.JPG" alt="Make main dashboard">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/dashboard.jpg" alt="Make main dashboard">
     <figcaption><i>Make main dashboard</i></figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ Make, formerly known as Integromat, is an automation studio that allows you to b
 The workflow builder works on a simple drag-and-drop mechanism and the unique graphics make building fun and intuitive.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/scenarios.JPG" alt="Build extensive 'cross-application' automations">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/scenarios.jpg" alt="Build extensive 'cross-application' automations">
     <figcaption><i>Build extensive 'cross-application' automations</i></figcaption>
 </figure>
 
@@ -45,12 +45,12 @@ You do not need to know even a bit of coding to be able to build and execute you
 Make allows you to integrate all of your individual tools and processes using a single platform. Connect and authorize your favorite applications and start using them in Make to automate processes and integrate them with other tools.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/new-scenario.JPG" alt="Create a workflow scenario">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/new-scenario.jpg" alt="Create a workflow scenario">
     <figcaption><i>Create new scenario-based workflows with LOTS of integrations</i></figcaption>
 </figure>
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/webhooks.JPG" alt="Receive data via webhooks">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/webhooks.jpg" alt="Receive data via webhooks">
     <figcaption><i>Connect and receive data in Make via webhooks from a score of other applications</i></figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ Make allows you to integrate all of your individual tools and processes using a 
 Store data in data stores to use in other scenarios as you need it. I'm using this to add new YouTube videos and push them to different socials, after which I change the `published` status.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/data-stores.JPG" alt="Save data in data stores">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/data-stores.jpg" alt="Save data in data stores">
     <figcaption><i>Save your data in internal data stores to re-use them in scenarios</i></figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Automating workflows allows you to drive in good quality leads and reroute them 
 Make supports over a thousand different online platforms and applications, including but not limited to Gmail, Google Drive, Mailchimp, Shopify, Twitter, ActiveCampaign, and, of course, WordPress.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/templates.JPG" alt="Different templates to choose from">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/templates.jpg" alt="Different templates to choose from">
     <figcaption><i>Choose any of the templates to started with your favorite application</i></figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ You can choose how many Ops/month you want but the default is set to 10,000 Ops 
 - Monthly Plan: costs $10.59 per month.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/pricing.JPG" alt="Different pricing options">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/pricing.jpg" alt="Different pricing options">
     <figcaption><i>Choose any of the tiers or get started right away on the free plan!</i></figcaption>
 </figure>
 
@@ -150,7 +150,7 @@ The most important scenarios I'm using Make for at this moment are:
 You can do SO MUCH MORE, have a look at the [Make template gallery](https://www.make.com/en/templates?pc=maxplaining){:target="_blank"}{:rel="sponsored"} and look for applications you use daily. Scroll through the templates to see if there is anything you recognize doing on a rather frequent basis. If you can think it, you can probably automate it.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/social-media-scheduler.JPG" alt="Social media scheduler">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/make/social-media-scheduler.jpg" alt="Social media scheduler">
     <figcaption><i>I write content for socials in a Notion database and set parameters. This scenario automatically pushes the content to different social channels.</i></figcaption>
 </figure>
 

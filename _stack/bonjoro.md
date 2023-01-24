@@ -38,7 +38,7 @@ Here is an overview of some of the most pertinent features Bonjoro brings to the
 Of course, being a video messaging platform, this is Bonjoro’s main feature and I love them for it. But it truly is the best of its kind in the market right now. You can record videos from your mobile device or from your desktop quickly with just a single click. These video messages are can be sent to specific leads at crucial points in their customer journey. Your customers can respond directly and this is what drives engagement through the roof.
 
 <figure class="align-center">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_video-messaging-optimized.JPG" alt="Send personalized video messages">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_video-messaging-optimized.jpg" alt="Send personalized video messages">
     <figcaption><i>Replies to your video messages, how cool!</i></figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ Of course, being a video messaging platform, this is Bonjoro’s main feature an
 You may also pre-record certain videos (at the cost of further personalization) to be automatically sent to your audience as they pass through your marketing machine.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_recordings.JPG" alt="Create pre-recorded videos">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_recordings.jpg" alt="Create pre-recorded videos">
     <figcaption><i>Easy section to host your pre-recorded videos</i></figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ You may also pre-record certain videos (at the cost of further personalization) 
 The program has plenty of pre-made templates that you can use if you don't have the time to make your own. They are very professional and well-designed which is why I have used them on occasion as well. Additionally, Bonjoro has really great language support. You can translate your video content in over 20 different languages on the spot. If your desired language is not on the list, you can send in a request for it to be added in 24 hours!
 
 <figure class="align-center">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_templates.JPG" alt="Create different templates">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_templates.jpg" alt="Create different templates">
     <figcaption><i>Bonjoro templates</i></figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ The program has plenty of pre-made templates that you can use if you don't have 
 Bonjoro allows you to collect text and video testimonials from your audience and create beautifull embeddable elements for your website. You are building a relationship based on trust and authenticity and people are generally very exited about this personal touch they are receiving. Ask for a review and thou shall recieve.
 
 <figure class="align-center">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/testimonials-wall-of-love.JPG" alt="Testimonial wall">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/testimonials-wall-of-love.jpg" alt="Testimonial wall">
     <figcaption><i>Embed a beautifull testimonial wall on your site!</i></figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ Bonjoro allows you to collect text and video testimonials from your audience and
 You can connect Bonjoro to your other tools using their native integrations to the most common requirements. You can also set up workflows that automatically create Bonjoro tasks for you once events happen in the pipeline. This can be a sale, a lead entering a promotion, a sign-up for a leadmagnet, anything you want!
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_integrations.JPG" alt="Bonjoro integrations">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_integrations.jpg" alt="Bonjoro integrations">
     <figcaption><i>Native Bonjoro integrations</i></figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ You can connect Bonjoro to your other tools using their native integrations to t
 Bonjoro is great for team-based work environments which are very common in medium and large-scale businesses. You can set up team inboxes with select individuals to encourage communication and coordination within teams.
 
 <figure class="align-center-medium">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_workspaces.JPG" alt="Create different workspaces">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/bonjoro/20220923_workspaces.jpg" alt="Create different workspaces">
     <figcaption><i>Bonjoro workspaces</i></figcaption>
 </figure>
 
