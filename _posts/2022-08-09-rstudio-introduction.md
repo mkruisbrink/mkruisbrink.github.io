@@ -215,8 +215,7 @@ starwars_df <- starwars
 Your RStudio window should look something like this:
 
 <figure class="img-center">
-    <a title="R Project Demo" alt="R Project Demo">
-    <img src="/assets/images/posts/2022-08-09-RStudio-introduction/R-project-demo.webp"></a>
+    <img src="/assets/images/posts/2022-08-09-RStudio-introduction/R-project-demo.webp" title="R Project Demo" alt="R Project Demo">
 </figure>
 
 ### Visualizing data in RStudio
@@ -238,8 +237,10 @@ starwars %>% ggplot(aes(species, fill = gender)) +
 The result looks like this:
 
 <figure class="img-center">
-    <a title="R Project Demo" alt="R Project Demo">
-    <img src="/assets/images/posts/2022-08-09-RStudio-introduction/R-project-demo-1.webp"></a>
+    <img src="/assets/images/posts/2022-08-09-RStudio-introduction/R-project-demo-1.webp"
+    title="R Project Demo"
+    alt="R Project Demo">
+></a>
 </figure>
 
 As you can see, with just a few lines of code we were able to create a rather goodlooking graphic (but we barely scratched the surface). At this point you can import data into RStudio and play around with it.
