@@ -2,7 +2,7 @@
 title: "Benefits and Dangers of ChatGPT: OpenAI's Conversational Language Model"
 excerpt: "ChatGPT is a powerful artificial intelligence tool that can generate human-like text in real-time. It has many potential benefits, including the ability to provide quick and accurate responses, adaptability, efficiency, and improved accuracy and consistency. However, it also raises concerns about spreading misinformation, automating harmful tasks, accountability, and discrimination."
 header:
-  overlay_image: /assets/images/midjourney-optimised/AI-chat-robot-optimised.webp
+  overlay_image: /assets/images/midjourney-optimised/ai-chat-robot-optimised.webp
 category: 
 - Automation
 tags:
