@@ -3,7 +3,7 @@ title: "ActiveCampaign (WildMail)"
 excerpt: "Full-fledged marketing automation tool with insane custimization abilities."
 header:
   overlay_color: "#35b615" #WildMail primary colour
-  teaser: assets/images/stack/wildmail/20221008_wildmail.jpg
+  teaser: assets/images/stack/wildmail/20221008-wildmail.jpg
   # actions:
   #  - label: "Visit WildMail"
   #    url: "https://wildaudience.com/wildmail/?via=max" #referral link
