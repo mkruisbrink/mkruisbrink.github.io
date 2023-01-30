@@ -2,7 +2,7 @@
 title: "Benefits and Dangers of ChatGPT: OpenAI's Conversational Language Model"
 excerpt: "ChatGPT is a powerful artificial intelligence tool that can generate human-like text in real-time. It has many potential benefits, including the ability to provide quick and accurate responses, adaptability, efficiency, and improved accuracy and consistency. However, it also raises concerns about spreading misinformation, automating harmful tasks, accountability, and discrimination."
 header:
-  overlay_image: /assets/images/midjourney-optimised/ai-chat-robot-optimised.webp
+  overlay_image: /assets/images/midjourney-optimised/ai-two-robots-chatting-optimised.jpg
 category: 
 - Automation
 tags:
@@ -52,6 +52,6 @@ Another way to mitigate the dangers of ChatGPT is to be transparent about its us
 
 Ultimately, the benefits and dangers of using ChatGPT will depend on how it is implemented and used. With careful consideration and appropriate safeguards in place, ChatGPT has the potential to be a valuable tool for a wide range of applications. However, it is important to be mindful of the ethical and safety concerns that it raises and to take steps to mitigate any potential risks.
 
-I personally use ChatGPT to help me create or define content outlines, define or obtain (textual) structures, provide clear definitions, write short add texts or provide summaries and excerpts to (my own) content. I find ChatGPT to be an invaluable tool for providing quick content without requiring extensive research and effort. However, it is also important to remember to use creative and critical thinking when creating content, and to ensure that the content produced is unique, authentic, and of high quality.
+I personally use ChatGPT to help me create or define content outlines, define or obtain (textual) structures, provide clear definitions, write short add texts or provide summaries and excerpts to (my own) content. I find ChatGPT to be an invaluable tool for providing quick content without requiring extensive research and effort. However, it is also important to remember to use and apply creative and critical thinking (at all times!) when creating content, and to ensure that the content produced is unique, authentic, and of high quality.
 
 ChatGPT has the potential to provide benefits to a variety of users by providing quick, automated content without requiring in-depth research and human effort. It is important to recognize the potential pitfalls associated with ChatGPT, such as increased risk of plagiarism and a strong potential for decreased mental capacity for being original and authentic (you basically become spoiled and addicted). Ultimately, ChatGPT is a tool that should be used with extreme caution and with an understanding of the consequences of its use, as it is inherently neutral but the effects might be quite devastating in the long run. 
