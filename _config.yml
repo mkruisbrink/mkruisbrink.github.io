@@ -110,6 +110,9 @@ author:
   location         : "Rotterdam, the Netherlands"
   email            : "max@maxplaining.com"
   links:
+    - label: "About"
+      icon: "fas fa-fw fa-user"
+      url: "https://maxplaining.com/about/"
     - label: "Cryptocommunity"
       icon: "fas fa-fw fa-globe"
       url: "https://cryptocommunity.nl"
