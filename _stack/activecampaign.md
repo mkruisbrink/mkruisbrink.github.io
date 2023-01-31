@@ -1,7 +1,5 @@
 ---
 title: "ActiveCampaign (WildMail)"
-redirect_from:
-  - /stack/wildmail/
 excerpt: "Full-fledged marketing automation tool with insane custimization abilities."
 header:
   overlay_color: "#35b615" #WildMail primary colour

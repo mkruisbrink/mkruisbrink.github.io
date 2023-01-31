@@ -43,7 +43,7 @@ RightMessage works pretty much on all websites, including those made with WordPr
 
 ### Funnel Building
 
-RightMessage has a very nice, visual funnel builder, similar to the one you would see for automation inside [a CRM/ESP tool such as ActiveCampaign](https://maxplaining.com/stack/wildmail/). The platform lets you determine the visitor’s journey and ultimate destination through the CTA message. The CTA builder allows you to go into a lot of detail when it comes to customized questions and potential responses from your page visitors. The flowchart type style of the builder makes it easy to visualize the customer’s journey. 
+RightMessage has a very nice, visual funnel builder, similar to the one you would see for automation inside [a CRM/ESP tool such as ActiveCampaign](https://maxplaining.com/stack/activecampaign/). The platform lets you determine the visitor’s journey and ultimate destination through the CTA message. The CTA builder allows you to go into a lot of detail when it comes to customized questions and potential responses from your page visitors. The flowchart type style of the builder makes it easy to visualize the customer’s journey. 
 
 <figure class="align-center-medium">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/stack/rightmessage/cta-funnel.jpg" alt="A simple survey funnel">
