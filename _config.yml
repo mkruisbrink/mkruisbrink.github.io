@@ -229,7 +229,7 @@ timezone: Europe/Amsterdam # https://en.wikipedia.org/wiki/List_of_tz_database_t
 
 
 # Plugins (previously gems:)
-url: "https://maxplaining.com"
+url: "https://www.maxplaining.com"
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
