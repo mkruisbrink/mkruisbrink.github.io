@@ -1,6 +1,6 @@
 ---
-title: "Bonjoro"
-excerpt: "With Bonjoro you can send your audience, clients and leads hyper-personalized messages at specific moments in their customer journey, tailored for their needs at exactly the right time! Say hello to this cuddly bear."
+title: "Bonjoro: Personalised Video Messaging"
+excerpt: "Deliver hyper-personalized messages to your audience, clients, and leads with Bonjoro. Connect with them at critical moments of their customer journey, tailored to their specific needs. Meet our cuddly bear and see how Bonjoro can help you today!"
 header:
   # overlay_color: rgba(255, 208, 2, 0.9)
   caption: "[Credit: Maxplaining @**Midjourney**](https://www.midjourney.com/home/)"

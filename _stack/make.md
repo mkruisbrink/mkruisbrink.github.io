@@ -1,6 +1,6 @@
 ---
-title: "Make"
-excerpt: "Build workflows and automatie differents part of your business to your heart's extent. A visual 'no-code' builder to integrate the tools you use in your business with near-endless capacity."
+title: "Make: No Coding Automated Workflows"
+excerpt: "Create custom workflows and automate various parts of your business to your heart's content with a visual, no-code builder. Seamlessly integrate the tools you use for your business with virtually limitless capacity. Explore this powerful automation solution today!"
 header:
   teaser: assets/images/stack/make/make-homepage.jpg
   # overlay_color: "#f0f" #Make primary colour
