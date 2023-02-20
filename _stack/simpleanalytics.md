@@ -1,5 +1,5 @@
 ---
-title: "SimpleAnalytics"
+title: "SimpleAnalytics: Simple & Privacy Focused Analytics"
 excerpt: "Truly simple tool to use if you care about the data privacy of your visitors and want to comply with GDPR automatically."
 header:
   overlay_color: "#b93545" # brand colour

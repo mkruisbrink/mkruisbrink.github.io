@@ -1,5 +1,5 @@
 ---
-title: "TimerCampaign"
+title: "TimerCampaign: Create Authentic Deadline Funnels"
 excerpt: "Create urgency in your business via original and authenthic deadlines that expire exactly at the right time."
 header:
   teaser: assets/images/stack/timercampaign/timercampaign-homepage.jpg

@@ -1,5 +1,5 @@
 ---
-title: "BuddyBoss"
+title: "BuddyBoss: Your Gorgeous Community Platform"
 excerpt: "Host your entire community with BuddyBoss, a straight up gorgeous community and e-learning platform."
 header:
   overlay_color: "#e86d2a" #BuddyBoss primary colour

@@ -1,5 +1,5 @@
 ---
-title: "Midjourney"
+title: "Midjourney: AI Tool Image Generation"
 excerpt: "Create stunning AI-generated art based on prompts. Personalize your content with your own, consistant style. Beware, iteration is required and practice makes perfect."
 header:
   overlay_image: /assets/images/midjourney-optimised/robot-atelier-generating-art-optimised.jpg

@@ -1,5 +1,5 @@
 ---
-title: "ActiveCampaign (WildMail)"
+title: "ActiveCampaign (WildMail): Insane Email Marketing Automation"
 excerpt: "Full-fledged marketing automation tool with insane custimization abilities."
 header:
   overlay_color: "#35b615" #WildMail primary colour

@@ -1,5 +1,5 @@
 ---
-title: "RightMessage"
+title: "RightMessage: Create Personalized Opt-in Funnels"
 excerpt: "Create an immensely personalized and polished opt-in experience for your customers and use that data in your other business tools."
 header:
   teaser: assets/images/stack/rightmessage/rightmessage-homepage.jpg

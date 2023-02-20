@@ -1,5 +1,5 @@
 ---
-title: "WP Fusion"
+title: "WP Fusion: The Ultimate WordPress Integration Plugin"
 excerpt: "Connect your WorPress business with all other tools you use on a daily basis. This is superglue for WordPress."
 header:
   overlay_color: "#E55B10" # brand colour
