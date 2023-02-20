@@ -20,7 +20,7 @@ title                    : "Maxplaining"
 title_separator          : "-"
 subtitle                 : "Just explaining things" # site tagline that appears below site title in masthead
 name                     : "Max Kruisbrink"
-description              : "Personal blog site about cryptocurrencies, data exploration, visualization & automation."
+description              : "Personal blog site about automation, data science & programming tricks"
 url                      : "https://maxplaining.com"
 baseurl                  : # "/maxplaining" # the subpath of your site, e.g. "/blog"
 repository               : "mkruisbrink/mkruisbrink.github.io" #GitHub username/repo-name e.g. 
