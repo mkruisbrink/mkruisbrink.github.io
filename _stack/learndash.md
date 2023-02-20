@@ -1,6 +1,6 @@
 ---
 title: "LearnDash: Create Top Notch Online Courses"
-excerpt: "Create and manage engaging courses. Stimulate learning for your students!"
+excerpt: "Create and manage engaging courses. Implement gamification and award certificates. Stimulate e-learning for students on your own website!"
 header:
   overlay_color: "#fe8045" # brand colour
   teaser: assets/images/stack/learndash/20221008_learndash.jpg
