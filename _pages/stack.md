@@ -1,11 +1,11 @@
 ---
-title: Stack
+title: "Stack: Tools I Work With"
 layout: collection
 permalink: /stack/
 collection: stack
 entries_layout: grid
 classes: wide
-excerpt: "Here are the tools that have helped me run my online business smoothly and efficiently. I've been able to automate various processes, including lead generation, lead collection, and personalized email campaigns. I can even send personalized video messages to really impress my customers. These tools have been essential in helping me succeed online."
+excerpt: "Discover the tools that have streamlined my online business, automating lead generation, collection, personalized email campaigns and personalized video messages for that special sauce. See how these essential tools can help you succeed online!"
 header:
   overlay_image: /assets/images/pages/stack-map-optimised.jpg
 ---

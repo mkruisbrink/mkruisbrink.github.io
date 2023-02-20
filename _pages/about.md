@@ -1,7 +1,7 @@
 ---
-title: "About"
+title: "About: Max Himself"
 permalink: /about/
-excerpt: "I believe that building a relationship with my audience based on trust is important, and I hope that by getting to know a little about me, my passions, goals, struggles, and interests, you will feel more connected to my content and journey. Thank you for visiting my about page and for taking the time to get to know me!"
+excerpt: "Establishing trust through a personal connection with my audience is crucial. Get to know me, my passions, goals, struggles, and interests to feel more connected to my content and journey. Thanks for visiting my about page and taking the time to know me!"
 header:
   overlay_image: /assets/images/pages/about-home-office-optimised.jpg
 ---

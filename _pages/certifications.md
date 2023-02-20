@@ -1,8 +1,8 @@
 ---
-title: "Certifications"
+title: "Certifications: Knowledge is Power"
 permalink: /certifications/
 date: 2022-08-01T03:02:20+00:00
-excerpt: "A page dedicated to all the courses I've taken over the past years."
+excerpt: "A page dedicated to all the relevant courses I've taken and completed over the past few years."
 header:
   overlay_image: /assets/images/pages/certifcations-showcase-optimised.jpg
 ---
