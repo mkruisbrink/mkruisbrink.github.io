@@ -1,5 +1,5 @@
 ---
-title: "LearnDash"
+title: "LearnDash: Create Top Notch Online Courses"
 excerpt: "Create and manage engaging courses. Stimulate learning for your students!"
 header:
   overlay_color: "#fe8045" # brand colour
