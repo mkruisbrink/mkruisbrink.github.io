@@ -4,7 +4,7 @@ excerpt: "ChatGPT is a powerful artificial intelligence tool that can generate h
 header:
   overlay_image: /assets/images/midjourney-optimised/ai-two-robots-chatting-optimised.jpg
 category: 
-- Automation
+- AI
 tags:
 - ChatGPT
 - OpenAI
@@ -57,3 +57,6 @@ I personally might use ChatGPT to help me create or define content outlines, obt
 ChatGPT has the potential to provide benefits to a variety of users by providing quick, automated content without requiring in-depth research and human effort. This is especially true for people who fly solo or in very small teams and cannot afford large overheads nor can they hire full time designers or content writers. Nevertheless, it is important to recognize the potential pitfalls associated with ChatGPT, such as increased risk of plagiarism and a strong potential for decreased mental capacity for being original and authentic (you basically become addicted to fast-paced and easy to generate content). Ultimately, ChatGPT is a tool that should be used with extreme caution and with an understanding of the consequences of its use, as it is inherently neutral but the effects might have unintended side-effects on your ability to create quality and well-researched content in the long run. 
 
 All that being said, go see for yourself! In my opinion, is important to get your hands dirty and establish your own understanding - based on experience using tools such as these - about the range of possibilities that they open up. Most of all though, have fun getting 'creative' with OpenAI and ChatGPT!
+
+>
+Disclaimer: this article is written with the **help of** AI tools such as ChatGPT and Midjourney. 
