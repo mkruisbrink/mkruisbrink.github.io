@@ -4,7 +4,7 @@ excerpt: "A full walkthrough of the most simple, straightforward and rewarding v
 header:
   overlay_image: /assets/images/midjourney-optimised/posts-rstudio-programming-installation-optimised.jpg
 categories: 
-  - Data-Science
+  - Data Science
 tags:
   - R for Data Science
   - Visualisation
