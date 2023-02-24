@@ -220,7 +220,7 @@ sass:
 
 # Outputting
 # permalink: /:categories/:title/
-permalink: pretty
+permalink: /blog/:title
 # permalink: /:categories/:title/
 # permalink: date
 # paginate: 5 # amount of posts to show
