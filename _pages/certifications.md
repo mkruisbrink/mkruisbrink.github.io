@@ -14,8 +14,8 @@ Over the past years I followed many courses. Some for fun, others for profession
 ### Data Science
 *A program offered by HarvardX, in collaboration with edX.*
 
-| 2022 | PH125.9x: Data Science: Capstone |
-| 2022 | PH125.8x: Data Science: Machine Learning |
+| 2023 | PH125.9x: Data Science: Capstone |
+| 2023 | [PH125.8x: Data Science: Machine Learning](https://courses.edx.org/certificates/56169bfd7f1d4deeb92ec2c61a54a4f5) |
 | 2022 | [PH125.7x: Data Science: Linear Regression](https://courses.edx.org/certificates/ce37c7fa77fb4657a6a4af5ede69822e) |
 | 2022 | [PH125.6x: Data Science: Wrangling](https://courses.edx.org/certificates/aee00f9696be4bdcb80981f2a1909c08) |
 | 2022 | [PH125.5x: Data Science: Productivity Tools](https://courses.edx.org/certificates/745a00fe84324a308fc4cf093ee41612) |
@@ -57,3 +57,7 @@ Over the past years I followed many courses. Some for fun, others for profession
 | 2018 | [NGIx: The Next Generation of Infrastructure](https://courses.edx.org/certificates/53533b5ec90049c9bb86db92b9f61074) |
 | 2017 | [GEO101x: Geoscience: the Earth and its Resources](https://courses.edx.org/certificates/f59ae58a378e42a7856540b9a657e62e) |
 | 2017 | [BwN101x: Building With Nature](https://courses.edx.org/certificates/6acc98f2c7184e76b3bcb874f31995cb) |
+
+### ActiveCampaign
+
+| 2023 | [ActiveCampaign Level 1 Fundamentals Assessment](https://courses.activecampaign.com/certificates/mshrnhdxij) |
