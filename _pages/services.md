@@ -14,13 +14,13 @@ header:
 
 Eager to supercharge your email marketing? At **Maxplaining**, I'm dedicated to taking your ActiveCampaign experience to the next level. Armed with expertise and a touch of automation magic, I'll guide you through making the most of every email. Curious? Dive in and see for yourself!
 
-[Explore ActiveCampaign with Max](https://cryptomanuals.ac-page.com/activecampaign){: .btn .btn--success}{:target="_blank"}
+[Explore ActiveCampaign with Max](https://landing.maxplaining.com/activecampaign){: .btn .btn--success}{:target="_blank"}
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/pages/about-home-office-optimised.jpg" alt="Portrait Max 2021">
   <figcaption><i>Somewhere in 2021...</i></figcaption>
 </figure>
 
-From actionable tips to in-depth strategy consultations, I've got your back. Whether you're new to ActiveCampaign or a seasoned pro, I'm here to assist every step of the way. Why wait? Let's enhance your email strategy together. [Get Started Now](https://cryptomanuals.ac-page.com/activecampaign).
+From actionable tips to in-depth strategy consultations, I've got your back. Whether you're new to ActiveCampaign or a seasoned pro, I'm here to assist every step of the way. Why wait? Let's enhance your email strategy together. [Get Started Now](https://landing.maxplaining.com/activecampaign).
 
 
