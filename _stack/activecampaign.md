@@ -153,16 +153,18 @@ Overall, [WildMail is a great tool to integrate with your business](https://app.
 
 WildMail handles nearly everything you can imagine. Here are some of the things I use WildMail for which are a core part of my business:
 
-*   Lead information obtained from other tools such as TimerCampaign and RightMessage are stored in custom fields for use in personalization.
-*   WP Fusion is the WordPress plugin that seamlessly connects ActiveCampaign/WildMail to my WordPress sites.
+*   Lead information obtained from other tools such as [TimerCampaign](https://timercampaign.com/a/99a8a2aeebf2a500833a/){:target="_blank"}{:rel="sponsored"} and [RightMessage](https://rightmessage.com/?fp_ref=max56){:target="_blank"}{:rel="sponsored"} are stored in custom fields for use in personalization.
+*   [WP Fusion](https://wpfusion.com/ref/404/){:target="_blank"}{:rel="sponsored"} is the WordPress plugin that seamlessly connects ActiveCampaign/WildMail to my WordPress sites.
 *   I automatically send any leads their requested leadmagnets automatically by using personalized automations.
 *   I track engagement via custom fields and automated rules to add or subtract points.
+*   I create special touch points during the customer journey where I send personalized video messages to my leads using [Bonjoro](https://www.bonjoro.com/?ref=maxkruisbrink){:target="_blank"}{:rel="sponsored"}
 *   I use automations to create a content journey and implement rules and conditions to make sure contacts get to experience the right piece of content at the right time.
 *   I maintain an automated evergreen newsletter.
 *   After leadmagnets are delivered, contacts automatically enter a personalized onboarding campaign based on their custom fields (segmentation).
 *   At certain moments, I pitch one of my products. This might be every x-weeks or x-months or could be linked to customer engagement.
+*   If no native integration or automation is possible, I use a tool like [Make](https://www.make.com/en/register?pc=maxplaining){:target="_blank"}{:rel="sponsored"} to create a specialized scenario to achieve the desired goal. 
 
-There are tons of other possibilities, so get out there and go see for yourself! 
+Read more about the different tools that I use on my [Stack](https://www.maxplaining.com/stack/) page. There are tons of other possibilities, so get out there and go see for yourself! 
 
 I literally want to automate everything but it all takes quite some effort to set-up and manage, especially if you are by yourself. However, there are over 125 carefully curated and tested templates that you can use. This potentially saves you a lot of time since you might not want to spend hours designing something from scratch while you have options that work for you straight out of the box! 
 
@@ -176,3 +178,4 @@ Got questions or would like some assistance? Feel free to send me a message! Tha
 
 
 
+https://www.make.com/en/register?pc=maxplaining
