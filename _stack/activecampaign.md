@@ -15,7 +15,7 @@ sidebar:
 
 Behind WildMail is a company called WildAudience - which is a Europe-based reseller of ActiveCampaign. ActiveCampaign is an all-in-one marketing tool that offers innovative features to automate and personalize your business while generating revenue. 
 
-[Visit WildMail](https://wildaudience.com/wildmail/?via=max){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
+[Visit WildMail - 14 Day Free Trial](https://app.wildmail.io/trial?via=max&_lang=EN){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
 
 Email marketing is an efficient and cost-effective way of engaging with your customers. However, as consumerism is growing, market competition is drastically increasing. Every product has hundreds of alternatives, making it extremely difficult to stand out and get recognized. Without carefully curated marketing campaigns and advertisements, it is nearly impossible to gain a firm footing in the cut-throat world of business (also depending on your product and/or offer). 
 
@@ -85,7 +85,7 @@ Okay, now let's talk about what makes WildMail stand out from the standard Activ
 
 ### BONUS: WildMetrics
 
-Personally, I found the analytics provided by ActiveCampaign lacking and frustrating. This is exactly where WildMetrics comes in. It is your custom analytics dashboard for ActiveCampaign showing you exactly how your marketing machine is performing. [You can try WildMetrics for free!](https://wildaudience.com/wildmetrics/?via=max){:target="_blank"}{:rel="sponsored"}
+Personally, I found the analytics provided by ActiveCampaign lacking and frustrating. This is exactly where WildMetrics comes in. It is your custom analytics dashboard for ActiveCampaign showing you exactly how your marketing machine is performing. NOTE: At the moment, WildMetrics is not accepting new accounts and they're focusing on the Spanish version of the product.
 
 You sync your account, implement your customer segments, define your funnels via tags or automations and view convertions and events such as new subscribers, email opens and other interactions in real-time. I'm sure they will help you with the set-up and configuration via a free call if you need assitance. 
 
@@ -126,7 +126,7 @@ Apart from WildMail, there are several other email marketing tools that you can 
 
 ## Why should you use WildMail?
 
-Overall, [WildMail is a great tool to integrate with your business](https://wildaudience.com/wildmail/?via=max){:target="_blank"}{:rel="sponsored"}. The tool ensures that your leads can convert into customers through its advanced features and email marketing strategies that you can build and automate yourself. WildMail comes packed with several stand-out features that will free up a lot of your time, enables hyper-personalization if you want it, has the potential to drive up your profits while helping you improve your business model via automation at the same time. I love WildMail and couldn’t do without them at this time. 
+Overall, [WildMail is a great tool to integrate with your business](https://app.wildmail.io/trial?via=max&_lang=EN){:target="_blank"}{:rel="sponsored"}. The tool ensures that your leads can convert into customers through its advanced features and email marketing strategies that you can build and automate yourself. WildMail comes packed with several stand-out features that will free up a lot of your time, enables hyper-personalization if you want it, has the potential to drive up your profits while helping you improve your business model via automation at the same time. I love WildMail and couldn’t do without them at this time. 
 
 
 ### ActiveCampaign/WildMail Pros
@@ -171,7 +171,7 @@ You'll also receive access to Relationship Funnels and WildMetrics with the free
 
 Got questions or would like some assistance? Feel free to send me a message! Thanks for reading and have fun trying out WildMail!
 
-[Try WildMail for FREE for 14 days!](https://app.wildmail.io/trial?via=max){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
+[Try WildMail for FREE for 14 days!](https://app.wildmail.io/trial?via=max&_lang=EN){: .btn .btn--success}{:target="_blank"}{:rel="sponsored"}
 
 
 
