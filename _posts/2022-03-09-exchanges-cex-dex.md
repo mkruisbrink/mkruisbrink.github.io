@@ -14,7 +14,7 @@ tags:
 ## Introduction
 
 In this article we’re going to import cryptocurrency related data via
-the API provided by [Nomics.com](https://www.nomics.com) into RStudio.
+the API provided by [Nomics.com](https://www.nomics.com) into RStudio. *NOTE: Nomics doesn't exist anymore*.
 
 - Find an endpoint you want to look at
 - Construct the endpoint URL
