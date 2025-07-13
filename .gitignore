@@ -49,3 +49,4 @@ _drafts
 
 # Rbenv?
 .ruby-version
+assets/js/main.min.js
