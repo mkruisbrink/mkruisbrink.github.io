@@ -46,9 +46,13 @@ My set-up looks something like this, though I've moved my office and some proper
 
 ## Experience
 
-After obtaining my civil engineering degree, I've been working as an engineer at various reputable international construction/offshore/dredging companies. In addition to that I initiated [Cryptomanuals, a learning platform for cryptocurrencies](https://www.cryptomanuals.com/) while on an internship in Costa Rica.
+After obtaining my civil engineering degree, I've been working as an engineer at various reputable international construction/offshore/dredging companies. 
 
-In the Netherlands we currently run [Cryptocommunity, a community platform for crypto enthousiasts](https://cryptocommunity.nl/). If you [visit my LinkedIn profile](https://www.linkedin.com/in/mkruisbrink/), you can see exactly what I've been up to over the past years. 
+In the Netherlands we currently run [StudioAIT](https://studioait.nl/). A tech-marketing company aimed at helping starting businesses grow and scale at pace.
+
+As a crypto enthousiast, we also built and run [Cryptocommunity, a community platform for crypto enthousiasts](https://cryptocommunity.nl/). 
+
+If you [visit my LinkedIn profile](https://www.linkedin.com/in/mkruisbrink/), you can see exactly what I've been up to over the past years. 
 
 >
 | **Degree** | Civil Engineering - Harbour, Coast & Dredging |
