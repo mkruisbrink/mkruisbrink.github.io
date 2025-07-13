@@ -1,39 +1,52 @@
+/* ==========================================================================
+   Maxplaining Custom Styles
+   Custom overrides and additions for the Maxplaining website
+   ========================================================================== */
+
+/*
+   Image Styling
+   ========================================================================== */
+
+/* Default image shadow for all images */
 img {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.icon {
+/* Remove shadow from icons and sidebar images */
+.icon,
+.icon-center-small,
+.sidebar img {
     box-shadow: none;
 }
 
+/* Small centered icon styling */
 .icon-center-small {
-    box-shadow: none;
     width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.sidebar img{
-    box-shadow:none;
-}
-
+/* Figure border styling */
 figure {
-    border: 1px;
-    border-color: black;
+    border: 1px solid black;
 }
 
-/* image align center medium size */
+/*
+   Layout & Alignment Utilities
+   ========================================================================== */
 
+/* Center-aligned medium-width images */
 .align-center-medium {
     width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-
+/* Center-aligned button container */
 .align-center-button {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
